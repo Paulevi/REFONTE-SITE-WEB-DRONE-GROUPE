@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?PowerDesigner signature="Workspace" version="15.1.0.2850"?>
+<!-- Veuillez ne pas modifier ce fichier -->
+
+<Workspace>
+	<Local Expanded="Yes">
+		<Model Expanded="Yes" ID="{BCF55417-D3C5-4590-A9B2-1044BB556EFB}" Name="ModeleConceptuelDonnees_1" Selected="Yes" Type="{1E597170-9350-11D1-AB3C-0020AF71E433}" URL="ModeleConceptuelDonnees_1.mcd"/>
+	</Local>
+	<BrowserModule Name="Référentiel"/>
+</Workspace>
