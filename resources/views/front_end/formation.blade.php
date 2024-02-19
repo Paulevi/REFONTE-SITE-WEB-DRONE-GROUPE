@@ -246,18 +246,13 @@
 
 		.forma > section>.text{
 			margin-top: 50px;
+			text-align:justify;
+
 		}
 
-
-
-		.specials >.text{
-			text-align: center;
-			position: relative;
-			left: 100px;
-			bottom: 80px;
-			height: 700px;
+		.forma > section >.text>h4{
+			font-size:20px;
 		}
-
 		.specials{
 			height: 600px;
 		}
@@ -265,8 +260,8 @@
 		.image{
 			height: 300px;
 			width: 300px;
-			position: relative;
-			right: 20%;
+			/* position: relative;
+			right: 20%; */
 			
 		}
 

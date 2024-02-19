@@ -105,6 +105,10 @@
 			font-size: 23px;
 		}
 
+		.specials>.text>p>strong{
+			font-family:'DIN', sans-serif;
+		}
+
 		.text > .barre, h5{
 			margin:0;
 		}
@@ -241,6 +245,21 @@
 		margin-bottom:150px;
 	}
 
+	.menu > ul >li{
+		    padding-left: 4px;
+			margin-left: 40px;
+			margin-top: 20px;
+			list-style: none;
+			background-color: #000000;
+			color:#fff;
+			height: 90px;
+			width: 80%;
+			font-size: 20px;
+			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
+
+		}
+
+
 	.menu-container{
 		
 		text-align:center;
@@ -263,33 +282,32 @@
 			font-size:15px;
 			
 		}
+
 		.metiers{
         flex-direction: column;
         align-items: stretch;
-		text-align:center;
 		position: relative;
 		left: 80px;
         }
 
+		/* .metiers>.image{
+			margin-left: 10px;
+			margin-right: 40px;
+		} */
+
 
 
 		.specials >.text{
-			text-align: center;
-			position: relative;
-			left: 100px;
-			bottom: 80px;
-			height: 700px;
+			padding-top :20px;
+			width:450px;
 		}
-
 		.specials{
-			height: 600px
+			height: 500px;
 		}
 
-		.specials >.image{
-			height: 300px;
-			width: 700px;
-			
-			
+		.special{
+			height: 330vh;
+
 		}
 		
 		.first-ligne, .second-ligne {
@@ -301,19 +319,36 @@
 			flex-direction: column;
        		 align-items: stretch;
 		}
+		.first-ligne, .second-ligne {
+		flex-direction: column;
+        align-items: stretch;
+		}
+		
 	}
 
 	
 	@media (min-width: 770px) and (max-width: 950px){
 
 .content1{
-background-color:#000000;
-padding: 50px;
-width: 70%;
-height: 60vh ;		
-}
+	background-color:#000000;
+	padding: 50px;
+	width: 70%;
+	height: 60vh ;		
+	}
 
-	
+.menu > ul >li{
+	 padding-left: 4px;
+	margin-left: 40px;
+	margin-top: 20px;
+	list-style: none;
+	background-color: #000000;
+	color:#fff;
+	height: 60px;
+	width: 80%;
+	font-size: 20px;
+	box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
+
+		}
 .content1>h1{
  margin-top:20px;
 color:#ffffff;
@@ -330,14 +365,29 @@ font-size:35px;
 font-size:10px;
 } 
 
-.specials{
-	width:951px;
+	.specials >.first-ligne>.image,
+	.specials >.second-ligne>.image{
+		height: 300px ;
+		width: 300px;
+	}
+
+	.first-ligne, .second-ligne {
+		flex-direction: column;
+        align-items: stretch;
+		padding-left:20%;
+		padding-right:20%
 		}
 
-		.specials > image{
-		width:100px;
-		height: 200vh ;
+		.specials{
+			
+			flex-direction: column;
+       		 align-items: stretch;
 		}
+
+		.specials>.text{
+			width: 500px;
+		}
+
 
 	}
 
@@ -367,6 +417,37 @@ font-size:10px;
 		width: 100%;
 	}
 
+	/* .specials{
+		width: 410px;
+	} */
+	.first-ligne, .second-ligne {
+		flex-direction: column;
+        align-items: stretch;
+		padding-left:30%
+		}
+
+		.specials{
+			
+			flex-direction: column;
+       		 align-items: stretch;
+		}
+
+		.specials>.text{
+			width: 500px;
+		}
+		.menu > ul >li{
+	 padding-left: 4px;
+	margin-left: 40px;
+	margin-top: 20px;
+	list-style: none;
+	background-color: #000000;
+	color:#fff;
+	height: 60px;
+	width: 80%;
+	font-size: 20px;
+	box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
+
+		}
 }
 		</style>
 
@@ -529,7 +610,7 @@ font-size:10px;
 				<div class="text">	
                     <h6  style="color: #fff;">ETUDIER, EVALUER, INSPECTER, CONTROLLER</h6>
 					<div class="barre"></div>
-                    <P>PHOTOGRAPHIE 3D, VIDEO 4K AERIENNE ET PANORAMIQUE SED</P>
+                    <P>PHOTOGRAPHIE <strong>3D</strong>, VIDEO <strong>4K</strong> AERIENNE ET PANORAMIQUE SED</P>
                 </div>
             </div>
             <div class="specials animate-on-scroll">
