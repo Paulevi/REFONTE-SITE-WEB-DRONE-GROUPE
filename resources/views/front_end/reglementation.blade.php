@@ -34,7 +34,8 @@
 
 	<style>
 		body{
-                font-family:'DIN', sans-serif;
+                font-family:'jumper PERSONAL USE ONLY', sans-serif;
+				font-size:20px;
             }
  
 			.content2{
@@ -70,6 +71,7 @@
             position: relative;
             left:80%;
             box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
+			font-family:'DIN Regular', sans-serif;
             
         }
 
@@ -126,6 +128,11 @@
 			right: 20px !important;
 			background-color: transparent;
 			transition: all .3s ease !important;
+		}
+
+		.sub-regle>p>strong,
+		ul > li>strong {
+			font-family:'DIN Regular', sans-serif;
 		}
 @media screen and (max-width: 769px){
 
@@ -222,28 +229,28 @@
 
 						<!-- Primary Navigation
 						============================================= -->
-						<nav class="primary-menu with-arrows on-click style-3 menu-spacing-margin  center-nav" style="position:relative; left: 5px;">
+						<nav class="primary-menu" style="position:relative; left: 5px;">
 
 							<ul class="menu-container" >
-								<li class="menu-item">
+								<li class="menu-item" >
 									<a class="menu-link" href="{{url('/presentation')}}" >
 										<div >PRESENTATION</div>
 									</a>
 								</li>
-                                <li class="menu-item ">
+								<li class="menu-item">
 									<a class="menu-link" href="{{url('/metier')}}" >
 										<div >NOS METIERS</div>
 									</a>
 								</li>
-                                <li class="menu-item ">
+								<li class="menu-item">
 									<a class="menu-link" href="{{url('/formation')}}" >
 										<div >NOS FORMATIONS</div>
 									</a>
 								</li>
-								
+								<div class="morph-marker"></div>
 							</ul>
 
-						</nav><!-- #primary-menu end -->
+							</nav><!-- #primary-menu end -->
                         
 					</div>
 				</div>
@@ -273,11 +280,11 @@
             </p>
             <div class="num animate-on-scroll">7.1.2</div>
             <p  class="animate-on-scroll">
-            Pour postuler à un AEAT, un opérateur doit détenir un Agrément de travail aérien et soumettre un dossier de cantidature à l'ANAC au moin quatre-vingt-dix (90) jours avant la date prévue d'exploitation
+            Pour postuler à un AEAT, un opérateur doit détenir un Agrément de travail aérien et soumettre un dossier de cantidature à l'ANAC au moin quatre-vingt-dix <strong> (90) </strong>jours avant la date prévue d'exploitation
             </p>
             <div class="num animate-on-scroll">7.3.3</div>
             <p  class="animate-on-scroll">
-           Les dossiers de candidature mentionnés au<span> 7.3.3 </span> doit contenir au moin les éléments suivants:
+           Les dossiers de candidature mentionnés au<strong> 7.3.3 </strong> doit contenir au moin les éléments suivants:
             </p>
             <ul class="animate-on-scroll">
                 <li>a) Un courrier de demande d'autorisation</li>
@@ -289,14 +296,14 @@
                 <li>g) les manuels d'entretien de chaque type d'aéronef télépiloté, si applicable</li>
                 <li>h) la licence, la certification ou l'attestation de formation de chaque télépilote</li>
                 <li>i)Une police d'assurance couvrant l'activité projetée</li>
-                <li>j) Le manuel d'activité particulière rédigé conformément aux spécificaxion de l'appendice <span>3</span> au présent règlement.</li>
+                <li>j) Le manuel d'activité particulière rédigé conformément aux spécificaxion de l'appendice <strong>3</strong> au présent règlement.</li>
             </ul>
             <div class="num animate-on-scroll">7.3.4</div>
             </div>
             <h3 class="sec animate-on-scroll">CHAPITRE 8:FORMATION DES TELEPILOTES</h3>
             <div class="sub-regle">
             <p  class="animate-on-scroll">
-            Nul ne peut piloter un RPA s'il n'est titulaire d'une Attestation, d'un Certificat ou d'une Licence de Télépilote en état de validité reconnue, délivrée ou validée par l'ANAC conformément aux dispositions du RACI 2000.
+            Nul ne peut piloter un RPA s'il n'est titulaire d'une Attestation, d'un Certificat ou d'une Licence de Télépilote en état de validité reconnue, délivrée ou validée par l'ANAC conformément aux dispositions du RACI<strong>2000</strong>.
             </p>
             <div class="num animate-on-scroll">8.1.1</div>
             <p  class="animate-on-scroll">

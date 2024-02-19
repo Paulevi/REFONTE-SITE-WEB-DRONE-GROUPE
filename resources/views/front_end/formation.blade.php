@@ -37,16 +37,18 @@
 		#content{
 			margin-top: 30px;
 			margin-bottom:30px;
+			
 		}
         .content1{
 			background-color:#483D8B;
 			padding: 50px;
-			width:40%;
+			width:50%;
+			
 		}
 
 		.content1>h1{
 			color:#ffffff;
-			font-family:arial;
+			font-family:'jumper PERSONAL USE ONLY', sans-serif;
 			font-size:70px
 		}
 
@@ -55,6 +57,7 @@
             background-size:cover;
             width:60%;                                                                
         }  
+
 		.sec{
 			background-color:#6A5ACD;
 			width: 550px; 
@@ -151,12 +154,18 @@
             list-style: none;
         }
 
+		.centre  strong{
+			font-family:'DIN', sans-serif;
+
+		}
+
         .centre >p{
             margin-left: 100px ;
 			margin-right: 100px;
         }
 
 		.text> p{
+			font-family:'DIN', sans-serif;
 			font-style: italic;
 			color:#483D8B;
 		}
@@ -179,8 +188,13 @@
 			font-size: 20px;
 		}
 
+		.centre >ul > li >i{
+			color:#6A5ACD;
+			font-weight:bold;
+		}
+
 		body{
-            font-family:'DIN', sans-serif;
+            font-family:'jumper PERSONAL USE ONLY', sans-serif;
             }
 		
 		.button.button-reveal i {
@@ -274,7 +288,7 @@
 		@media (min-width: 770px) and (max-width: 950px){
 	
 	.content1{
-	background-color:#000000;
+	background-color:#483D8B;
 	padding: 50px;
 	width: 70%;
 	height: 60vh ;		
@@ -284,7 +298,7 @@
 .content1>h1{
 	 margin-top:20px;
 	color:#ffffff;
-	font-family:arial;
+	font-family:'jumper PERSONAL USE ONLY', sans-serif;
 	font-size:35px;
 }
 
@@ -296,7 +310,7 @@
 @media (min-width: 951px) and (max-width: 1400px){
 
 .content1{
-background-color:#000000;
+background-color:#483D8B;
 padding: 50px;
 width: 70%;
 height: 60vh ;		
@@ -306,7 +320,7 @@ height: 60vh ;
 .content1>h1{
  margin-top:20px;
 color:#ffffff;
-font-family:arial;
+font-family:'jumper PERSONAL USE ONLY', sans-serif;
 font-size:35px;
 }
 
@@ -335,7 +349,7 @@ font-size:10px;
 
 						<div id="logo">
 							<a href="{{url('/')}}">
-								<img class="logo-default"  src="images/CFPTD_Plan de travail 1.png" alt="drone groupe Logo" style="height: 80px; width: 150px;">
+								<img class="logo-default"  src="images/CFPTD_Plan de travail 1.png" alt="drone groupe Logo" style="height: 60px; width: 100px;">
 							</a>
 						</div><!-- #logo end -->
 						<div class="primary-menu-trigger">
@@ -346,25 +360,25 @@ font-size:10px;
 
 						<!-- Primary Navigation
 						============================================= -->
-						<nav class="primary-menu with-arrows on-click style-3 menu-spacing-margin  center-nav" style="position:relative; left: 5px;">
+						<nav class="primary-menu" style="position:relative; left: 5px;">
 
 							<ul class="menu-container" >
-								<li class="menu-item">
+								<li class="menu-item" >
 									<a class="menu-link" href="{{url('/presentation')}}" >
 										<div >PRESENTATION</div>
 									</a>
 								</li>
-                                <li class="menu-item ">
+								<li class="menu-item">
 									<a class="menu-link" href="{{url('/metier')}}" >
 										<div >NOS METIERS</div>
 									</a>
 								</li>
-                                <li class="menu-item current">
+								<li class="menu-item current">
 									<a class="menu-link" href="#" >
 										<div >NOS FORMATIONS</div>
 									</a>
 								</li>
-								
+								<div class="morph-marker"></div>
 							</ul>
 
 						</nav><!-- #primary-menu end -->
@@ -378,7 +392,7 @@ font-size:10px;
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1" >
-					<h1 style=" font-family:'DIN', sans-serif;"> POURQUOI UN CENTRE DE FORMATION ?</h1>
+					<h1 > POURQUOI UN CENTRE DE FORMATION ?</h1>
 					<div class="barre"></div>
 				</div>
 				<div class="content2" >
@@ -387,7 +401,7 @@ font-size:10px;
 		</section><!-- #content end -->
 		<section class="centre">
     		<h3 class="sec">CENTRE DE FORMATION DRONE GROUPE</h3>
-            <div class="barre"></div>
+            <div class="barre-2"></div>
             <p class=" first animate-on-scroll">
             Ce département dénomé Centre de formation a pour mission de permettre à DRONE GROUPE Côte d'Ivoire de partager l'expérience et l'expertise acquise de ses animateurs dansla maitrise d'oeuvre des grands projets de dévellopement, dans l'aéronautique civile, dans les études techniques et financières des projets de divers secteurs d'activités, avec l'administration, les collectivités locales, les opérateurs économiques, les organisations non gouvernemengales et les cabinets de formation.
             </p>
@@ -401,21 +415,21 @@ font-size:10px;
            Les applications des aéronefs télépilotés à des marchés industriels ou grand public sont gigantesques. Les drones vont révolutionner nombre de métiers et de services actuels mais aussi créer de nouveaux métiers principalement dans les secteurs d’activités ci-dessous:
             </p>
             <ul class="animate-on-scroll">
-                <li><i class="fa fa-check"></i> infrastructures et transports ;</li>
-                <li><i class="fa fa-check"></i> bâtiment et architecture ;</li>
-                <li><i class="fa fa-check"></i> industrie, mines et innovation technologique ;</li>
-                <li><i class="fa fa-check"></i> urbanisme ;</li>
-                <li><i class="fa fa-check"></i> agriculture ;</li>
-                <li><i class="fa fa-check"></i> informatique et technologie de l’information et de la communication ;</li>
-                <li><i class="fa fa-check"></i> environnement et gestion urbaine ;</li>
-                <li><i class="fa fa-check"></i> planification et développement local ;</li>
-                <li><i class="fa fa-check"></i> cartographie ;</li>
-                <li><i class="fa fa-check"></i> topographie ;</li>
-                <li><i class="fa fa-check"></i> thermographie ;</li>
-                <li><i class="fa fa-check"></i> ortho photographie ;</li>
-                <li><i class="fa fa-check"></i> photogrammétrie ;</li>
-                <li><i class="fa fa-check"></i> ressources humaines ;</li>
-                <li><i class="fa fa-check"></i> management capacitaire.</li>
+                <li><i class="fa-solid fa-check"></i> infrastructures et transports ;</li>
+                <li><i class="fa-solid fa-check"></i> bâtiment et architecture ;</li>
+                <li><i class="fa-solid fa-check"></i> industrie, mines et innovation technologique ;</li>
+                <li><i class="fa-solid fa-check"></i> urbanisme ;</li>
+                <li><i class="fa-solid fa-check"></i> agriculture ;</li>
+                <li><i class="fa-solid fa-check"></i> informatique et technologie de l’information et de la communication ;</li>
+                <li><i class="fa-solid fa-check"></i> environnement et gestion urbaine ;</li>
+                <li><i class="fa-solid fa-check"></i> planification et développement local ;</li>
+                <li><i class="fa-solid fa-check"></i> cartographie ;</li>
+                <li><i class="fa-solid fa-check"></i> topographie ;</li>
+                <li><i class="fa-solid fa-check"></i> thermographie ;</li>
+                <li><i class="fa-solid fa-check"></i> ortho photographie ;</li>
+                <li><i class="fa-solid fa-check"></i> photogrammétrie ;</li>
+                <li><i class="fa-solid fa-check"></i> ressources humaines ;</li>
+                <li><i class="fa-solid fa-check"></i> management capacitaire.</li>
             </ul>
             <p  class="animate-on-scroll">
             L’équipe d’animateurs dudit Centre en matière de formation est composée d’une part des experts de DRONE GROUPE et d’autre part de consultants extérieurs chevronnés.
@@ -424,9 +438,9 @@ font-size:10px;
             Le Centre de formation entretient un réseau de partenariat de qualité avec plusieurs organismes et a une vocation régionale et internationale.
             </p>
             <p  class="animate-on-scroll">
-            Le centre de formation dispense des formations initiales et des formations spécialisées. Les sessions de formation ne se déroulent que s'il y a un minimum de cinq(5) stagiaires.
+            Le centre de formation dispense des formations initiales et des formations spécialisées. Les sessions de formation ne se déroulent que s'il y a un minimum de cinq<strong>(5)</strong> stagiaires.
             </p>
-            <div class="barre"></div>
+            <div class="barre-2"></div>
 		</section>
 		<section id="forma" class="forma">
             <h3 class="sec">NOS FORMATIONS</h3>
@@ -434,7 +448,7 @@ font-size:10px;
 			<div class="image" style="background-image:url('images/M13-02-01.jpg');background-size:cover; " ></div>
                 <div class="text">
                     <h4>FORMATION THEORIQUE </h4>
-                    <P> <i class="fa-solid fa-book-bookmark"></i>COURS DU JOUR 05 JOURS//COURS DU SOIR </P>
+                    <P> <i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR 05 JOURS//COURS DU SOIR</strong></P>
 					<ul>
 						<li><i class="fa-solid fa-angle-right"></i> DROIT ET REGLEMENTATION DES AERONEFS TELEPILOTES</li>
 						<li><i class="fa-solid fa-angle-right"></i> TECHNIQUES AERAUNOTIQUES</li>
@@ -451,7 +465,7 @@ font-size:10px;
 				<div class="image" style="background-image:url('images/Sans titre - 1-01.jpg');background-size:cover; " ></div>
                 <div class="text">
                     <h4>FORMATION PRATIQUE </h4>
-                    <P><i class="fa-solid fa-book-bookmark"></i>COURS DU JOUR 03 JOURS</P>
+                    <P><i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR 03 JOURS</strong></P>
 					<ul>
 						<li><i class="fa-solid fa-angle-right"></i> PRESENTATION ET CONNAISSANCE DS DRONES</li>
 						<li><i class="fa-solid fa-angle-right"></i> THEORIES SUR LES CONTROLES</li>
@@ -466,7 +480,7 @@ font-size:10px;
 				<div class="image" style="background-image:url('images/Sans titre HH1-01.jpg');background-size:cover;"></div>
                 <div class="text">
                     <h4>FORMATION SPECIALISEE</h4>
-                    <P><i class="fa-solid fa-book-bookmark"></i>COURS DU JOUR 05 JOURS</P>
+                    <P><i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR 05 JOURS</strong></P>
 					<ul>
 						<li><i class="fa-solid fa-angle-right"></i> TECHNIQUE DE CARTOGRAPHIE ET DE PHOTOGRAMMETRIE</li>
 						<li><i class="fa-solid fa-angle-right"></i> LASEROGRAPHIE</li>
@@ -480,7 +494,7 @@ font-size:10px;
 			<div class="image" style="background-image:url('images/KLM-01.jpg');background-size:cover;"></div>
                 <div class="text">
                     <h4>FORMATION AU TELEPILOTAGE</h4>
-                    <P><i class="fa-solid fa-book-bookmark"></i>COURS DU JOUR 03 JOURS</P>
+                    <P><i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR 03 JOURS</strong></P>
 					<ul>
 						<li><i class="fa-solid fa-angle-right"></i> INTRODUCTION A LA REGLEMENTATION AERIENNE</li>
 						<li><i class="fa-solid fa-angle-right"></i> PRESENTATION GENERALE DES DRONES</li>

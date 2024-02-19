@@ -32,9 +32,16 @@
 	<title>DRONE GROUPE</title>
 
 	<style>	
-
+		@font-face {
+			font-family: 'Jumper PERSONAL USE ONLY-Regular';
+			src: url('police/jumper/JumperPERSONALUSEONLY-Regular.ttf') format('ttf'); 
+			font-weight: normal;
+			font-style: normal;
+			}
+  
+			
 			body{
-                font-family:'DIN', sans-serif;
+                font-family:'Jumper PERSONAL USE ONLY-Regular', sans-serif;
             }
 
 			.swiper-slide >a {
@@ -43,6 +50,7 @@
 			}
 
 			.swiper-slide >a{
+				background:transparent ;
 				border: 2px solid;
 				border-radius: 3px;
 				color: #fff;
@@ -77,8 +85,25 @@
 
 			}
 
+			.menu-container > .menu-item > .menu-link >div{
+				font-size:15px;
+			}
+
+			.sub-menu-container {
+				background-color:#696969;
+				opacity: 0.8;
+				width: 300px;
+			}
+
+			
+        /* Style du soulignement au survol */
+        .sub-menu-container > .menu-item > .menu-link:hover{
+           color:#FFD966
+
+        }
+
 		#content{
-			margin-top: 30px;
+			margin-top: 10px;
 			
 			height:80vh
 		}
@@ -96,7 +121,7 @@
 
 		.content1>h1{
 			color:#ffffff;
-			font-family:arial;
+			font-family:'jumper', sans-serif;
 			font-size:60px
 		}
 		.content-wrap-2{
@@ -104,11 +129,19 @@
 			background-color: #000000;
 			height: 80vh ;
 		}
-
+		.col-md-4 > a > h1{
+			color:#ffffff;
+			font-size:60px;
+			font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
+		}
+		.col-md-4 > a > h1:hover{
+			color:#FFD966;
+		}
 		.barre{
 			height: 3px;
 			background-color: #ffffff;
 			margin-top: 30px;
+
 		}
 		.swiper-pagination {
 			--cnvs-swiper-bar-color: #000;
@@ -219,16 +252,18 @@
 			height: 20%;
 			width: 100%;
 			opacity: 0.7;
-			box-shadow: 8px 15px 20px ;
+			/* box-shadow: 8px 15px 20px ; */
 			background-color: #0000CD	;
+
 		}
 		.Title> h3{
 			color:#FFD966;
-			font-family:'DIN', sans-serif;
+			font-family:'Jumper PERSONAL USE ONLY-Regular', sans-serif;
 		}
 
-		.menu-item{
+		.sub-menu-container>.menu-item{
 			text-align: center;
+			border-bottom: 2px solid #fff;
 		}
 		#video-slider-mute {
             position: absolute;
@@ -270,7 +305,23 @@
 			background-color: transparent;
 			transition: all .3s ease !important;
 		}
+
+		.logo-default{
+		height: 5px;
+	}
 @media screen and (max-width: 769px){
+
+	#logo > a{
+		height: 20px;
+	}
+
+	
+	.menu-container{
+		text-align: justify;
+	}
+	.menu-item> .menu-link{
+		text-align: justify;
+	}
 
 	.swiper-pagination{
 		position: relative;
@@ -288,12 +339,7 @@
 	}
 
 	.swiper-slide >a{
-		position: relative;
-		top:15%;
-		left:15%;
-		height: 15px;
-		margin-top: 20px;
-		font-size: 10px;
+		display:none;
 				
 	}
 	.swiper-slide-bg{
@@ -309,6 +355,11 @@
 	}
 	.content1> .barre{
 		width: 200px;
+	}
+
+	.sub-menu-container{
+		background-color:transparent;
+		width: 100%;
 	}
 
 	.first-row, .second-row{
@@ -329,7 +380,7 @@
 	.col-md-4> .barre{
 		width: 80%;
 		height: 2px;
-		margin-bottom: 70px;
+		margin-bottom: 10px;
 		margin-left: 40px;
 		text-align: center;
 	}
@@ -339,16 +390,43 @@
         left: 0
     }
 
+	.col-md-4 > a > h1{
+		font-size:35px;
+		text-align: center;
+
+		}
+
+
 }
-	@media (min-width: 770px) and (max-width: 950px){
-	
+	@media (min-width: 770px) and (max-width: 1000px){
+
+		#logo > a{
+			height: 25px;
+			}
+
 		.content1{
 		background-color:#000000;
 		padding: 50px;
 		width: 70%;
 		height: 60vh ;		
+		}
+
+	.menu-container{
+		position: relative;
+		left: 30%;
+	}
+	.sub-menu-container{
+		background-color:transparent;
+		width: 100%;
 	}
 
+	.menu-item> .menu-link{
+		text-align: justify;
+	}
+	.swiper-slide >a{
+		display:none;
+				
+	}
 			
 	.content1>h1{
 		 margin-top:20px;
@@ -357,13 +435,23 @@
 		font-size:35px;
 	}
 
-		.swiper-wrapper {
-			height: 60vh ;
-			width: 100%;
-		}
+	.swiper-wrapper {
+		height: 60vh ;
+		width: 100%;
 	}
-	@media (min-width: 951px) and (max-width: 1400px){
+	.col-md-4 > a > h1{
+		font-size:35px;
+		text-align: center;
+
+		}
 	
+	}
+@media (min-width: 1001px) and (max-width: 1400px){
+	
+		#logo > a{
+		height: 30px;
+		}
+
 	.content1{
 	background-color:#000000;
 	padding: 50px;
@@ -384,12 +472,18 @@
 		width: 100%;
 	}
 
-#video h1{
-	font-size:10px;
-}
+.center-nav{
+        position: relative;
+        left: 0
+    }
+
+
+
 
 }
-
+	#logo > a{
+		height: 35px;
+	}
 
     
 
@@ -406,8 +500,8 @@
 					<div class="header-row">
 
 						<div id="logo">
-							<a href="#">
-								<img class="logo-default"  src="images/logodronegroupe.png" alt="drone groupe Logo" style="height: 40px; width: auto;">
+							<a href="#" >
+								<img class="logo-default"  src="images/logodronegroupe.png" alt="drone groupe Logo" >
 							</a>
 						</div><!-- #logo end -->
 						<div class="primary-menu-trigger">
@@ -418,7 +512,7 @@
 
 						<!-- Primary Navigation
 						============================================= -->
-						<nav class="primary-menu with-arrows on-click style-3 menu-spacing-margin  center-nav">
+						<nav class="primary-menu   on-click menu-spacing-margin  center-nav">
 							<ul class="menu-container" >
 								<li class="menu-item">
 									<a class="menu-link" href="#" >
@@ -444,22 +538,22 @@
 		<section id="content">
 			<div class="content-wrap py-0">
 				<div class="content1">
-					<h1 style=" font-family:'DIN', sans-serif;">BIENVENUE CHEZ LES PROFESSIONNELS DU DRONE</h1>
+					<h1 style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;">BIENVENUE CHEZ LES PROFESSIONNELS DU DRONE</h1>
 					<div class="barre"></div>
 				</div>
 				<div class="slider-element swiper_wrapper min-vh-100 customjs">
 					<div class="swiper swiper-parent" >
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
-								<a href="{{url('/actu')}}" class="button button-xlarge button-circle   button-reveal " ><i class="bi-arrow-right" ></i><span><strong>CONSULTER</strong></a>
-								<div class="swiper-slide-bg" style="background-image:url('images/M3_Plan de travail 1-01.jpg')"></div>
+								<a href="{{url('/actu')}}" class="button  button-circle   button-reveal " ><i class="bi-arrow-right" ></i><span><strong>CONSULTER</strong></a>
+								<div class="swiper-slide-bg" style="background-image:url('images/M3_Plan de travail 1-01.jpg');" ></div>
 							</div>
 							<div class="swiper-slide">
-								<a href="{{url('/actu')}}" class="button button-xlarge button-circle  button-reveal "><i class="bi-arrow-right"></i><span><strong>CONSULTER</strong></a>
+								<a href="{{url('/actu')}}" class="button  button-circle  button-reveal "><i class="bi-arrow-right"></i><span><strong>CONSULTER</strong></a>
 								<div class="swiper-slide-bg" style="background-image:url('images/M8_Plan de travail 1-01.png')"></div>
 							</div>
 							<div class="swiper-slide">
-								<a href="{{url('/actu')}}" class="button button-xlarge button-circle button-reveal "><i class="bi-arrow-right"></i><span><strong>CONSULTER</strong></a>
+								<a href="{{url('/actu')}}" class="button  button-circle button-reveal "><i class="bi-arrow-right"></i><span><strong>CONSULTER</strong></a>
 								<div class="swiper-slide-bg" style="background-image:url('images/M11-02-01.jpg')"></div>
 							</div>
 						</div>
@@ -497,7 +591,7 @@
            			 <div class="col-md-6 col-padding animate-on-scroll box">
                			 <a href="{{url('/equipement')}}" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M8_Plan de travail 1-01.png");background-size: cover;'>
                     		<div class="Title">
-								<h3 class="text-transform-none ls-0 text-larger mt-3">NOS EQUIPEMENTS ET MISSIONS REALISEES</h3>
+								<h3 class="text-transform-none ls-0 text-larger mt-3">NOS EQUIPEMENTS</h3>
                    			 </div>
 						</a>
             		</div>
@@ -508,8 +602,8 @@
 			<div class="content-wrap-2">
 				<div class="row justify-content-around align-items-center">
 					<div class="col-md-4">
-						<a href="{{url('/video')}}" id="display"><h1 class="display-5 fw-medium "  style="color:#ffffff; font-size:60px; font-family:'DIN', sans-serif;">VIDEOTHEQUE</h1></a>
-						<div class="barre" style="margin-right:120px"></div>
+						<a href="{{url('/video')}}"><h1>VIDEOTHEQUE</h1></a>
+						<div class="barre"></div>
 					</div>
 					<div class="col-md-6 rounded-5">
 						<video id="slide-video" class="d-block w-100 h-100 rounded-5 shadow" poster="images/videos/explore-poster.jpg" preload="auto" loop autoplay playsinline muted>

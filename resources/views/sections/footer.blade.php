@@ -1,12 +1,10 @@
 <style>
-	  @font-face {
-			font-family: 'DIN Regular'; 
-			src: url('police/DIN Regular/DIN Regular.ttf') format('ttf'); 
-			font-style: normal;
-			}
-		
+  
+		.numb{
+			color:#fff
+		}
 		.numb:hover{
-			color:#6A5ACD;
+			color:#FFD966;
 		}
 		
 	  .consulter{
@@ -48,6 +46,7 @@
 
 		#copyrights{
 			background-color:#000000;
+			font-family:'DIN REGULAR', sans-serif;
 			color:#ffffff;
 		}
 
@@ -78,7 +77,7 @@
 
 		.grid-container p{
 			font-size: 15px;
-			font-family:'DIN Regular', sans-serif;
+			font-family:'DIN REGULAR', sans-serif;
 		}
 
 		.grid-container > .first-row{
@@ -135,9 +134,7 @@
 			margin-left: 40px;
 			text-align: center;
 		}
-		.sub-menu-container > .menu-item > .menu-link:hover{
-			color: yellow;
-		}
+
 		.menu-container > .menu-item > .menu-link:hover{
 			color: yellow;
 		}
@@ -145,8 +142,26 @@
 		flex-direction: column;
         align-items: stretch;
 		}
+		#consulter > h5 > span {
+		padding: 5px;
+    border-bottom:NONE;
+}
+
 
 	}
+
+
+	#consulter > h5 > span {
+		padding: 10px;
+    border-bottom: 2px solid #FFD966;
+}
+
+#consulter > h5 >i{
+	font-size: 30px;
+}
+
+	
+
 </style>
 <section id="autorisations" class="autorisations" >
 			<div >
@@ -180,9 +195,9 @@
 				</div>
 			</section>
 			<section id="consulter" class="consulter">
-				<h5   style="color:#FFFF66; "><i class="uil uil-file-alt"></i>EXTRAIT DU REGLEMENT AERONAUTIQUE DE COTE D'IVOIRE (RACI 2009) AMENDEMENT 02, EDITION 03</h5>
-				<div class="barre" style="background-color:#FFFF66; height:1px; margin-top: 3px; margin-left: 140px;  margin-right: 140px; "></div>
-				<a href="{{url('/reglementation')}}" class="button button-xlarge button-circle button-dark button-reveal text-transform-none ls-0"  style="background-color:#FFFF66; margin-top: 20px; " ><i class="bi-arrow-right" style="color:#6A5ACD;"></i><span style="color:#6A5ACD; "><strong>CONSULTER</strong></a>
+				<h5   style="color:#FFD966; "><i class="uil uil-file-alt"></i><span>EXTRAIT DU REGLEMENT AERONAUTIQUE DE COTE D'IVOIRE (RACI 2009) AMENDEMENT 02, EDITION 03</span></h5>
+				<div></div>
+				<a href="{{url('/reglementation')}}" class="button button-xlarge button-circle button-dark button-reveal text-transform-none ls-0"  style="background-color:#FFD966; margin-top: 20px; " ><i class="bi-arrow-right" style="color:#6A5ACD;"></i><span style="color:#6A5ACD; "><strong>CONSULTER</strong></a>
 			</section>
 			<footer >
 			<!-- Copyrights

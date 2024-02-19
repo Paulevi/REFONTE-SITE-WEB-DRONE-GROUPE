@@ -34,8 +34,8 @@
 
 	<style>
 
-		 body{
-                font-family:'DIN', sans-serif;
+		body{
+            font-family:'jumper PERSONAL USE ONLY', sans-serif;
             }
 		
 		.content{
@@ -54,15 +54,6 @@
 			font-weight: lighter;
 			font-family:'DIN Regular', sans-serif;
 		}
-        
-        .menu > .barre{
-            background-color: #000000;
-            
-            height: 1px;
-            margin-bottom 20px;
-            margin-left: 50px;
-            margin-right: 50px;
-        }
 
         .menu > p{
             margin: 40px;
@@ -182,7 +173,7 @@
 			color:#ffffff;
 			font-family:arial;
 			font-size:70px;
-			font-family:'DIN', sans-serif;
+			font-family:'jumper PERSONAL USE ONLY', sans-serif;
 		}
 
 		.content2>img{
@@ -220,6 +211,28 @@
 			right: 20px !important;
 			background-color: transparent;
 			transition: all .3s ease !important;
+		}
+
+		.menu > ul{
+			margin-top: 50px;
+		}
+		.menu > ul >li{
+			margin-left: 40px;
+			margin-top: 20px;
+			list-style: none;
+			background-color: #000000;
+			color:#fff;
+			height: 40px;
+			width: 80%;
+			font-size: 20px;
+			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
+
+		}
+
+		.menu > ul >li >i{
+			margin-left: 40px;
+			margin-right:20px;
+			color:#FFD966
 		}
 		
 @media screen and (max-width: 769px){
@@ -380,28 +393,28 @@ font-size:10px;
 
 						<!-- Primary Navigation
 						============================================= -->
-						<nav class="primary-menu with-arrows on-click style-3 menu-spacing-margin  center-nav" style="position:relative; left: 5px;">
+						<nav class="primary-menu" style="position:relative; left: 5px;">
 
 							<ul class="menu-container" >
-								<li class="menu-item">
+								<li class="menu-item" >
 									<a class="menu-link" href="{{url('/presentation')}}" >
 										<div >PRESENTATION</div>
 									</a>
 								</li>
-                                <li class="menu-item current">
+								<li class="menu-item current">
 									<a class="menu-link" href="#" >
 										<div >NOS METIERS</div>
 									</a>
 								</li>
-                                <li class="menu-item">
+								<li class="menu-item">
 									<a class="menu-link" href="{{url('/formation')}}" >
 										<div >NOS FORMATIONS</div>
 									</a>
 								</li>
-								
+								<div class="morph-marker"></div>
 							</ul>
 
-						</nav><!-- #primary-menu end -->
+							</nav><!-- #primary-menu end -->
                         
 					</div>
 				</div>
@@ -422,14 +435,34 @@ font-size:10px;
 		</section><!-- #content end -->
 		<section class="menu">
     		<h3 class="sec">EXPLORATION GEOSPACIALE</h3>
-            <div class="barre"></div>
+            <div class="barre-2"></div>
             <p class="animate-on-scroll">
             DRONE GROUPE vous met à votre disposition le potentiel des drones professionnels homologués, du matériel de géodétection à la pointe de la technologie pour différentes applications techniques et audiovisuelles et des opérateurs chevronnés.
             </p>
             <p  class="animate-on-scroll">
 			Partenaire de référence des entreprises, industriels et collectivités publiques, DRONE GROUPE est un acteur majeur de l’imagerie aérienne par drones et l'exploration géospatiale, implanté sur le territoire français et en Afrique de l'ouest en attendant le déploiement dans les autres régions de l'Afrique. Nous innovons constamment pour garantir les meilleurs diagnostics et les meilleurs études aux moindres coûts avec un maximum de souplesse et de réactivité.
             </p>
-            <div class="barre"></div>
+			<h3 class="sec">EXPLORATION CAPACITAIRE</h3>
+            <div class="barre-2"></div>
+            <p class="animate-on-scroll">
+			DRONE GROUPE, grâce à des recherches poussées, a réussi à développer au moyen de l'intelligence artificielle, une solution innovante permettant de numériser les capacités intrinsèques de l'être humain et son environnement.
+			Ainsi, nous offrons aux particuliers, entreprises et organisations, la possibilité de fonctionner plus efficacement, car ayant des employés et des collaborateurs plus efficients à leurs postes.</p>
+			<h3 class="sec">QU'EST CE QUE LA MANAGEMENT CAPACITAIRE</h3>
+            <div class="barre-2"></div>
+            <p class="animate-on-scroll">
+			Le management capacitaire prend en compte les exigences capacitaires des entreprises, des organisations et des postes de travail, et leur confrontation aux capacités des postulants ou des salariés. C’est un moyen complémentaire aux méthodes classiques traditionnellement utilisées pour les prises de décision. Le management capacitaire permet d’améliorer la performance et l’efficacité des organisations et des entreprises par la réduction des dysfonctionnements résultant des insuffisances capacitaires humaines, par un choix optimal dès le recrutement et de l’affectation du personnel à des postes adéquats.
+			Le management capacitaire utilise des outils innovants permettant de répondre aux interrogations portant sur des questions irrationnelles telles que :</p>
+            <div class="barre-2"></div>
+			<ul class="animate-on-scroll">
+				<li class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE PROBITE MORALE OU D'INTEGRITE</li>
+				<li class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE GESTION DE CONFLITS, DE REGULATION OU D'AUTO-REGULATION</li>
+				<li class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE LUCIDITE, DE VIGILANCE ET D'ATTENTION</li>
+				<li class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE REFLEXION (ELABORATION DE STRATEGIES ET DE SCENARIOS)</li>
+				<li class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE ENTREPRENARIALE</li>
+				<li class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE MANAGERIALE</li>
+				<li class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE D'ENDURANCE ET DE PERSEVERANCE</li>
+				<li class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE DYNAMISME ET DE MOBILISATION DE RESSOURCES</li>
+			</ul>
 		</section>
 		<section id="metier" class="metier">
             <h3 class="sec">NOS METIERS</h3>

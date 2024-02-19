@@ -34,7 +34,7 @@
 	<style>
  		
 		 body{
-                font-family:'DIN', sans-serif;
+                font-family:'jumper PERSONAL USE ONLY', sans-serif;
             }
 
 		#content{
@@ -49,7 +49,7 @@
 
 		.content1>h1{
 			color:#ffffff;
-			font-family:arial;
+			font-family:'jumper PERSONAL USE ONLY', sans-serif;
 			font-size:70px
 		}
 
@@ -93,11 +93,45 @@
 
         .present > p{
             margin: 40px;
+			font-size: 20px;
         }
 
 		#equip{
 			margin-top: 40px;
 		} 
+
+		#equip > .content-wrap{
+			justify-content:space-around;
+		}
+
+		.row{
+			justify-content:space-around;
+			width: 100%;
+		}
+
+		.col-md-4 {
+			padding-top: 150px;
+			width: 600px;
+
+		}
+		.col-md-4 > a > h1{
+			color:#ffffff;
+			 font-size:50px;
+			  font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
+		}
+
+		.col-md-4 > a > h1:hover{
+			color:#FFD966;
+			
+		}
+		.col-md-6 {
+			width: 500px;
+		}
+
+		.col-md-6 > img{
+			height: 500px;
+			width: 500px;
+		}
 		
 
 		@keyframes swiperSVGAnim {
@@ -148,9 +182,27 @@
 			
 		}
 
+		.col-md-4 {
+			padding-top: 10px;
+		}
+		.col-md-4 > a >h1{
+			text-align:center;
+			font-size:35px
+		}
+
+		.col-md-6 > img{
+			height: 300px;
+			width: 350px;
+		}
+
+		#equip >.content-wrap{
+			flex-direction: column;
+            align-items: stretch;
+		}
+
 		.first-row, .second-row{
-		flex-direction: column;
-        align-items: stretch;
+			flex-direction: column;
+			align-items: stretch;
 		}
 		.rounded-5{
 			width: 80%;
@@ -175,7 +227,7 @@
   
 	}
 
-	@media (min-width: 770px) and (max-width: 950px){
+	@media (min-width: 770px) and (max-width: 1100px){
 
 .content1{
 background-color:#000000;
@@ -197,13 +249,17 @@ font-size:35px;
 	width: 100%;
 }
 
-#video h1{
-font-size:10px;
-} 
+.col-md-4{
+	padding-top: 25px;
+}
+
+.col-md-6{
+	margin-top: 10px;
+}
 
 	}
 
-@media (min-width: 951px) and (max-width: 1400px){
+@media (min-width: 1101px) and (max-width: 1400px){
 	
 	.content1{
 	background-color:#000000;
@@ -220,14 +276,13 @@ font-size:10px;
 	font-size: 45px;;
 }
 
-	.content2 {
-		height: 60vh ;
-		width: 100%;
-	}
-
+.content2 {
+	height: 60vh ;
+	width: 100%;
 }
 
-		
+
+}		
 </style>
 
 </head>
@@ -252,7 +307,7 @@ font-size:10px;
 						</div>
 						<!-- Primary Navigation
 						============================================= -->
-						<nav class="primary-menu with-arrows on-click style-3 menu-spacing-margin  center-nav" style="position:relative; left: 5px;">
+						<nav class="primary-menu" style="position:relative; left: 5px;">
 
 							<ul class="menu-container" >
 								<li class="menu-item current" >
@@ -270,7 +325,7 @@ font-size:10px;
 										<div >NOS FORMATIONS</div>
 									</a>
 								</li>
-								
+								<div class="morph-marker"></div>
 							</ul>
 
 						</nav><!-- #primary-menu end -->
@@ -284,7 +339,7 @@ font-size:10px;
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1" >
-					<h1 style=" font-family:'DIN', sans-serif;"> DRONE GROUPE QUI SOMMES NOUS ?</h1>
+					<h1 style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;"> DRONE GROUPE QUI SOMMES NOUS ?</h1>
 					<div class="barre"></div>
 				</div>
 				<div class="content2" >
@@ -294,20 +349,20 @@ font-size:10px;
 		</section><!-- #content end -->
 		<section class="present">
     		<div class="presen"><h3>PRESENTATION</h3></div>
-            <div ></div>
+            <div class="barre-2"></div>
             <p class=" animate-on-scroll">
             DRONE GROUPE est une société présente en France, au Sénégal et en Côte d’Ivoire. Nous sommes un bureau d’études techniques, prestations de services, conseils se rapportant à l’acquisition et au traitement de données numériques, aériennes, terrestres sous-terrestres , marines et sous-marines.
             </p>
             <p class=" animate-on-scroll">
             Nous effectuons des prises de vues, des relevés cartographiques et géométriques notamment par l’utilisation d’aéronefs télépilotés (drones), de radars, de satellites pour la création, la production, la commercialisation de tout type de vidéos, photographies, aériennes, au sol, enterrées, sous l’eau, en vue d’effectuer des analyses et des traitements des données collectées.
             </p>
-            <div class="barre"></div>
+            <div class="barre-2"></div>
 		</section>
 		<section id="equip" class="equip">
 			<div class="content-wrap animate-on-scroll">
-				<div class="row justify-content-around align-items-center">
+				<div class="row">
 					<div class="col-md-4">
-						<a href="#"><h1 class="display-5 fw-medium" style="color:#ffffff; font-size:50px; font-family:'DIN', sans-serif;">NOS EQUIPEMENTS ET MISSIONS REALISEES</h1></a>
+						<a href="{{url('/equipement')}}"><h1>NOS EQUIPEMENTS ET MISSIONS REALISEES</h1></a>
 						<div class="barre"></div>
 					</div>
 					<div class="col-md-6 rounded-5">
