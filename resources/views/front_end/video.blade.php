@@ -34,7 +34,7 @@
 	<style>
  		
 		 body{
-                font-family:'jumper PERSONAL USE ONLY', sans-serif;', sans-serif;
+                font-family:'jumper PERSONAL USE ONLY', sans-serif;
             }
 
             @-webkit-keyframes scaleIn {
@@ -87,50 +87,7 @@
 			height: 70vh;
 			width: 230vh;
 			}
-       
-		.content-wrap{
-			display: flex;
-			background-color: #000000;
-		}
-        .content{
-            background-size:cover;
-            width:60%;                                                                
-        }  
-
-		.present > .presen{
-			background-color:#6A5ACD;
-			width: 300px; 
-			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
-			margin-left: 10px;
-            color: yellow;
-			padding-left:35px;
-		}
-
-        .present >.presen > h3{
-            color: yellow;
-			font-weight: lighter;
-			font-family:'DIN Regular', sans-serif;
-        }
-
-        .present > .barre{
-            background-color: #000000;
-            
-            height: 1px;
-            margin-bottom 20px;
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-
-        .present > p{
-            margin: 40px;
-			font-size: 20px;
-        }
-
-		#equip{
-			margin-top: 40px;
-		} 
-		
-
+			
 		@keyframes swiperSVGAnim {
 			0% {
 				stroke-dashoffset: 260;
@@ -209,6 +166,11 @@
 		.menu-container > .menu-item > .menu-link:hover{
 			color: yellow;
 		}
+
+		.menu-item{
+			text-align: center;
+			border-bottom: 2px solid #fff;
+		}
   
 	}
 
@@ -225,7 +187,6 @@ height: 60vh ;
 .content1>h1{
  margin-top:20px;
 color:#ffffff;
-font-family:arial;
 font-size:35px;
 }
 
@@ -238,10 +199,12 @@ font-size:35px;
 font-size:10px;
 } 
 
+
 	}
 
 @media (min-width: 951px) and (max-width: 1400px){
-	
+
+
 	.content1{
 	background-color:#000000;
 	padding: 50px;
@@ -253,7 +216,6 @@ font-size:10px;
 .content1>h1{
 	 margin-top:20px;
 	color:#ffffff;
-	font-family:arial;
 	font-size: 45px;;
 }
 
@@ -262,7 +224,28 @@ font-size:10px;
 		width: 100%;
 	}
 
-}		
+}	
+
+.grid-inner{
+	border-radius: 10px;
+}
+
+.grid-inner>.portfolio-image>a>.minia{
+		height: 200px;
+		border-radius: 0px;}
+
+.portfolio-desc{
+	background-color:#000;
+	color:#fff;
+}
+
+.portfolio-desc>h3{
+	color:#fff;
+	font-family: 'jumper PERSONAL USE ONLY', sans-serif;;
+}
+.portfolio {
+	margin-top: 50px;
+}
 </style>
 
 </head>
@@ -291,7 +274,7 @@ font-size:10px;
 
 							<ul class="menu-container" >
 								<li class="menu-item " >
-									<a class="menu-link" href="#" >
+									<a class="menu-link" href="{{url('/presentation')}}" >
 										<div >PRESENTATION</div>
 									</a>
 								</li>
@@ -319,7 +302,7 @@ font-size:10px;
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1" >
-					<h1 style=" font-family:'DIN', sans-serif;">BIENVENU A NOTRE VIDEOTHEQUE</h1>
+					<h1>BIENVENU A NOTRE VIDEOTHEQUE</h1>
 					<div class="barre"></div>
 				</div>
 				<div class="content2" >
@@ -334,41 +317,14 @@ font-size:10px;
 		</section><!-- #content end -->
 		<!-- Portfolio Item: Start -->
                     <div class="container">
-                         <div id="portfolio" class="portfolio row gutter-40">
-                            <article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
-								<!-- Grid Inner: Start -->
-								<div class="grid-inner">
-									<!-- Image: Start -->
-									<div class="portfolio-image rounded-5">
-										<a href="#">
-											<img src="images/portfolio/4/1.jpg" alt="Open Imagination">
-										</a>
-										<!-- Overlay: Start -->
-										<div class="bg-overlay">
-											<div class="bg-overlay-content dark" >
-												<a href="https://www.youtube.com/watch?v=P3Huse9K6Xs" class="overlay-trigger-icon text-size-xl text-white op-1"  data-hover-animate="scaleIn" data-hover-animate-out="scaleOut" data-hover-speed="350" data-lightbox="iframe"><i class="bi-play-circle-fill"></i></a>
-											</div>
-											<div class="bg-overlay-bg bg-dark bg-opacity-40" data-hover-animate="fadeIn"></div>
-										</div>
-										<!-- Overlay: End -->
-									</div>
-									<!-- Image: End -->
-									<!-- Decription: Start -->
-									<div class="portfolio-desc">
-										<h3><a href="#">Open Imagination</a></h3>
-									</div>
-									<!-- Description: End -->
-								</div>
-								<!-- Grid Inner: End -->
-							</article>
-
+                         <div id="portfolio"  class="portfolio row gutter-40">
 							<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
 								<!-- Grid Inner: Start -->
 								<div class="grid-inner">
 									<!-- Image: Start -->
 									<div class="portfolio-image rounded-5">
 										<a href="#">
-											<img src="images/videos/explore-poster.jpg" alt="Beauty Cosmetics">
+											<img class="minia" src="images/videos/explore-poster.jpg" alt="Beauty Cosmetics">
 										</a>
 										<!-- Overlay: Start -->
 										<div class="bg-overlay">
@@ -382,7 +338,7 @@ font-size:10px;
 									<!-- Image: End -->
 									<!-- Decription: Start -->
 									<div class="portfolio-desc">
-										<h3>mission hokoumbo</h3>
+										<h3>prospection dans une plantation</h3>
 										<small class="text-contrast-500 font-monospace"><i class="bi-play-circle-fill"></i> 07:33</small>
 									</div>
 									<!-- Description: End -->
@@ -395,7 +351,7 @@ font-size:10px;
 									<!-- Image: Start -->
 									<div class="portfolio-image rounded-5">
 										<a href="#">
-											<img src="images/videos/explore-poster.jpg" alt="Beauty Cosmetics">
+											<img class="minia" src="images/videos/explore-poster.jpg" alt="Beauty Cosmetics">
 										</a>
 										<!-- Overlay: Start -->
 										<div class="bg-overlay">
@@ -409,7 +365,7 @@ font-size:10px;
 									<!-- Image: End -->
 									<!-- Decription: Start -->
 									<div class="portfolio-desc">
-										<h3>mission hokoumbo</h3>
+										<h3>mission kokoumbo</h3>
 										<small class="text-contrast-500 font-monospace"><i class="bi-play-circle-fill"></i> 07:33</small>
 									</div>
 									<!-- Description: End -->
@@ -422,7 +378,7 @@ font-size:10px;
 									<!-- Image: Start -->
 									<div class="portfolio-image rounded-5">
 										<a href="#">
-											<img src="images/videos/explore-poster.jpg" alt="Beauty Cosmetics">
+											<img class="minia" src="images/videos/explore-poster.jpg" alt="Beauty Cosmetics">
 										</a>
 										<!-- Overlay: Start -->
 										<div class="bg-overlay">
@@ -436,7 +392,7 @@ font-size:10px;
 									<!-- Image: End -->
 									<!-- Decription: Start -->
 									<div class="portfolio-desc">
-										<h3>mission hokoumbo</h3>
+										<h3>mission kokoumbo</h3>
 										<small class="text-contrast-500 font-monospace"><i class="bi-play-circle-fill"></i> 07:33</small>
 									</div>
 									<!-- Description: End -->

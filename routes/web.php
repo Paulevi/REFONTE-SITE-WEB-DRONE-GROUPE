@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\TemplateController;
+use App\Http\Controllers\ViewController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,10 +15,9 @@ use App\Http\Controllers\TemplateController;
 |
 */
 
-Route::get('/video', [TemplateController::class, 'Video']);
-
-Route::get('/actu', [TemplateController::class, 'actu']);
-Route::get('/equipement', [TemplateController::class, 'equipement']);
+Route::get('/video', [ViewController::class, 'Video']);
+Route::get('/', [TemplateController::class, 'images_actus']);
+Route::get('/equipement', [ViewController::class, 'equipement']);
 
 
 Route::get('/', function () {

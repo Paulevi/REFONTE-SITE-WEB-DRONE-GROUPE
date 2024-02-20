@@ -43,6 +43,7 @@
 			background-color:#483D8B;
 			padding: 50px;
 			width:50%;
+			height: 80vh ;
 			
 		}
 
@@ -52,11 +53,15 @@
 			font-size:70px
 		}
 
-		.content2{
-            background-image:url("images/M4_Plan de travail 1-01-01.jpg");
-            background-size:cover;
+		.content2{       
+			height: 80vh ;     
             width:60%;                                                                
         }  
+
+		.content2>img{
+			height: 80vh ;
+			width: 100%;                                                               
+		}  
 
 		.sec{
 			background-color:#6A5ACD;
@@ -207,6 +212,11 @@
 
 @media screen and (max-width: 769px){
 
+	.menu-item{
+			text-align: center;
+			border-bottom: 2px solid #fff;
+		}
+
 		.sticky {
 			position: fixed;
 			top: 0;
@@ -214,18 +224,26 @@
 		}
 		#content{
 			height: 30vh;	
-			margin-bottom:150px;
+			margin-bottom:50px;
 		}
 		.content1{
 			background-color: #483D8B;
 			padding: 30px;
 			width: 50%;
+			height: 30vh ;
+
 		}
 
 		.content2 {
-			height: 37vh ;
+			height: 30vh ;
 			width: 100%;
 		}
+
+		.content2>img{
+			height: 30vh ;
+			width: 100%;
+		}
+		
 		.content1>h1{
 			margin-top:30px;
 			color:#ffffff;
@@ -289,6 +307,7 @@
 	height: 60vh ;		
 }
 
+
 		
 .content1>h1{
 	 margin-top:20px;
@@ -297,12 +316,23 @@
 	font-size:35px;
 }
 
+.content2>img{
+			height: 60vh ;
+			width: 100%;
+		}
+
+		.content2{
+			height: 60vh ;
+			width: 100%;
+		}
+
 	.swiper-wrapper {
 		height: 60vh ;
 		width: 100%;
 	}
 }
 @media (min-width: 951px) and (max-width: 1400px){
+
 
 .content1{
 background-color:#483D8B;
@@ -319,7 +349,12 @@ font-family:'jumper PERSONAL USE ONLY', sans-serif;
 font-size:35px;
 }
 
-..content2 {
+.content2>img{
+	height: 60vh ;
+	width: 100%;
+}
+
+.content2{
 	height: 60vh ;
 	width: 100%;
 }
@@ -344,7 +379,7 @@ font-size:10px;
 
 						<div id="logo">
 							<a href="{{url('/')}}">
-								<img class="logo-default"  src="images/CFPTD_Plan de travail 1.png" alt="drone groupe Logo" style="height: 60px; width: 100px;">
+								<img class="logo-default"  src="images/CFPTD_Plan de travail 1.png" alt="drone groupe Logo" style="height: 90px; width: 180px;">
 							</a>
 						</div><!-- #logo end -->
 						<div class="primary-menu-trigger">
@@ -391,6 +426,7 @@ font-size:10px;
 					<div class="barre"></div>
 				</div>
 				<div class="content2" >
+					<img src="images/M4_Plan de travail 1-01-01.jpg" alt="">
                 </div>
 		<div>
 		</section><!-- #content end -->
@@ -505,46 +541,46 @@ font-size:10px;
 			<h1>PLANNING DE FORMATION<br> SEPT <span style="color: #483D8B;">2023 </span>- MARS <span  style="color: #483D8B;">2024</span></h1>
 			<table class=" animate-on-scroll">
 				<tr class="blue">
-					<td>moqsdvlsjdbv</td>
-					<td>ùflvùlsdfjbvsdvazeùflv</td>
-					<td>az*pvi*zdkvn*zdlvkn</td>
-					<td>az*vikaz*ldkvnzlkdvn</td>
+					<td>aucun renseignement</td>
+					<td>aucun renseignement</td>
+					<td>aucun renseignement</td>
+					<td>aucun renseignement</td>
 				</tr>
 				<tr class="sky">
-					<td>azbvazefbaerberb</td>
-					<td>aerfbaefbeb</td>
-					<td>aefbaefbef</td>
-					<td>aezrfbazerfbae</td>
+					<td>aucun renseignement</td>
+					<td>aucun renseignement</td>
+					<td>aucun renseignement</td>
+					<td>aucun renseignement</td>
 				</tr>
 				<tr class="jaune">
-					<td>aerfbazefrberf</td>
-					<td>aefbazefbaefbv</td>
-					<td>azerbvazbaz</td>
-					<td>azfdvbazrbv</td>
+					<td>aucun renseignement</td>
+					<td>aucun renseignement</td>
+					<td>aucun renseignement</td>
+					<td>aucun renseignement</td>
 				</tr>
 				<tr>
 					<td></td>
-					<td class="sky">>ùflvùlsdfjbvsdvazeùflv</td>
-					<td class="sky">>az*pvi*zdkvn*zdlvkn</td>
-					<td class="sky">>az*vikaz*ldkvnzlkdvn</td>
+					<td class="sky">aucun renseignement</td>
+					<td class="sky">aucun renseignement</td>
+					<td class="sky">aucun renseignement</td>
 				</tr>
 				<tr>
 					<td></td>
-					<td class="jaune">ùflvùlsdfjbvsdvazeùflv</td>
-					<td class="jaune">az*pvi*zdkvn*zdlvkn</td>
-					<td class="jaune">az*vikaz*ldkvnzlkdvn</td>
-				</tr>
-				<tr>
-					<td></td>
-					<td></td>
-					<td></td>
-					<td class="sky">>az*vikaz*ldkvnzlkdvn</td>
+					<td class="jaune">aucun renseignement</td>
+					<td class="jaune">aucun renseignement</td>
+					<td class="jaune">aucun renseignement</td>
 				</tr>
 				<tr>
 					<td></td>
 					<td></td>
 					<td></td>
-					<td class="jaune">az*vikaz*ldkvnzlkdvn</td>
+					<td class="sky">aucun renseignement</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="jaune">aucun renseignement</td>
 				</tr>
 			</table>
 		</section>

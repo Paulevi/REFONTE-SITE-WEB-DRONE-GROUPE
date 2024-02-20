@@ -44,18 +44,22 @@
         .content1{
 			background-color:#000000;
 			padding: 50px;
-			/* width: 40%; */
+			width: 90%;
+			height: 80vh;
 		}
 
 		.content1>h1{
 			color:#ffffff;
 			font-family:'jumper PERSONAL USE ONLY', sans-serif;
-			font-size:70px
+			font-size:70px;
+		}
+		.content2{
+			width: 100%;
 		}
 
-		.content2{
-			height: 70vh;
-			width: 230vh;
+		.content2>img{
+			height: 80vh;
+			width: 100%;
 			}
        
 		.content-wrap{
@@ -163,16 +167,22 @@
 	
 		#content{
 			height: 30vh;	
-			margin-bottom:150px;
+			margin-bottom:50px;
+
 		}
 		.content1{
 			background-color: #000000;
 			padding: 30px;
 			width: 50%;
+			height: 30vh;
 		}
+		.content2>img{
+			height: 30vh;
+			width: 100%;
+			}
 
 		.content2 {
-			height: 37vh ;
+			height: 30vh ;
 			width: 100%;
 		}
 		.content1>h1{
@@ -181,6 +191,8 @@
 			font-size:15px;
 			
 		}
+
+		
 
 		.col-md-4 {
 			padding-top: 10px;
@@ -224,7 +236,11 @@
 		.menu-container > .menu-item > .menu-link:hover{
 			color: yellow;
 		}
-  
+		
+		.menu-item{
+			text-align: center;
+			border-bottom: 2px solid #fff;
+		}
 	}
 
 	@media (min-width: 770px) and (max-width: 1100px){
@@ -249,6 +265,11 @@ font-size:35px;
 	width: 100%;
 }
 
+.content2>img{
+	height: 60vh ;
+	width: 100%;                                                               
+}  
+
 .col-md-4{
 	padding-top: 25px;
 }
@@ -260,7 +281,7 @@ font-size:35px;
 	}
 
 @media (min-width: 1101px) and (max-width: 1400px){
-	
+
 	.content1{
 	background-color:#000000;
 	padding: 50px;
@@ -281,6 +302,10 @@ font-size:35px;
 	width: 100%;
 }
 
+.content2>img{
+	height: 60vh ;
+	width: 100%;                                                               
+}  
 
 }		
 </style>

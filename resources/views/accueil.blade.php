@@ -1,3 +1,7 @@
+<!-- 
+@php
+    $images = App\Models\my_model::all();
+@endphp -->
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
@@ -119,6 +123,11 @@
 			width: 100%;
 		}
 
+		.swiper-slide-bg>img {
+			height: 80vh ;
+			width: 100%;
+		}
+
 		.content1>h1{
 			color:#ffffff;
 			font-family:'jumper', sans-serif;
@@ -142,6 +151,11 @@
 			background-color: #ffffff;
 			margin-top: 30px;
 
+		}
+
+		.feature-box{
+			height: 400px;
+			width: 400px;
 		}
 		.swiper-pagination {
 			--cnvs-swiper-bar-color: #000;
@@ -202,7 +216,7 @@
 
 
 		.swiper-pagination-bullet circle {
-			stroke: #ffffff;
+			stroke: #FFD966;
 			stroke-width: var(--cnvs-swiper-stroke-width);
 			fill: none;
 		}
@@ -243,16 +257,11 @@
 			}
 		}
 
-		.feature-box{
-			height: 400px;
-			width: 400px;
-		}
-
 		.Title{
 			height: 20%;
 			width: 100%;
 			opacity: 0.7;
-			/* box-shadow: 8px 15px 20px ; */
+			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
 			background-color: #0000CD	;
 
 		}
@@ -346,6 +355,11 @@
 		height: 30vh ;
 		width: 100%;
 	}
+
+	.swiper-slide-bg>img {
+			height: 30vh ;
+			width: 100%;
+		}
 	
 	.content1>h1{
 		 margin-top:1px;
@@ -419,6 +433,11 @@
 		background-color:transparent;
 		width: 100%;
 	}
+
+	.swiper-slide-bg>img {
+			height: 60vh ;
+			width: 100%;
+		}
 
 	.menu-item> .menu-link{
 		text-align: justify;
@@ -544,18 +563,21 @@
 				<div class="slider-element swiper_wrapper min-vh-100 customjs">
 					<div class="swiper swiper-parent" >
 						<div class="swiper-wrapper">
+						
+						@foreach ($images as $image)
 							<div class="swiper-slide">
 								<a href="{{url('/actu')}}" class="button  button-circle   button-reveal " ><i class="bi-arrow-right" ></i><span><strong>CONSULTER</strong></a>
-								<div class="swiper-slide-bg" style="background-image:url('images/M3_Plan de travail 1-01.jpg');" ></div>
+								<div class="swiper-slide-bg"><img src="data:image/png;base64,{{ base64_encode($image->donnee_image) }}" alt=""></div>
 							</div>
-							<div class="swiper-slide">
+						@endforeach
+							<!-- <div class="swiper-slide">
 								<a href="{{url('/actu')}}" class="button  button-circle  button-reveal "><i class="bi-arrow-right"></i><span><strong>CONSULTER</strong></a>
-								<div class="swiper-slide-bg" style="background-image:url('images/M8_Plan de travail 1-01.png')"></div>
+								<div class="swiper-slide-bg"><img src="images/M8_Plan de travail 1-01.png" alt=""></div>
 							</div>
 							<div class="swiper-slide">
 								<a href="{{url('/actu')}}" class="button  button-circle button-reveal "><i class="bi-arrow-right"></i><span><strong>CONSULTER</strong></a>
-								<div class="swiper-slide-bg" style="background-image:url('images/M11-02-01.jpg')"></div>
-							</div>
+								<div class="swiper-slide-bg"><img src="images/M11-02-01.jpg" alt=""></div>
+							</div> -->
 						</div>
 						<!-- If we need pagination -->
 						<!-- <div class="swiper-pagination center-right"></div> -->
@@ -565,8 +587,9 @@
 			<div class="swiper-pagination"></div>
 		</section><!-- #content end -->
 		<section id="menu">
+		<div class="barre-2"></div>
     		<div class="container mw-md" >
-       			 <div class="row align-items-stretch ">
+       			 <div class="row align-items-stretch">
            			 <div class="col-md-6 col-padding animate-on-scroll box">
                			 <a href="{{url('/presentation')}}" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M6_Plan de travail 1-01-01-01-01.jpg"); background-size: cover;'>
                     		<div class="Title">
@@ -593,10 +616,11 @@
                     		<div class="Title">
 								<h3 class="text-transform-none ls-0 text-larger mt-3">NOS EQUIPEMENTS</h3>
                    			 </div>
-						</a>
+						  </a>
             		</div>
         		</div>
     		</div>
+		  <div class="barre-2"></div>
 		</section>
 		<section id="video" class="video animate-on-scroll">
 			<div class="content-wrap-2">

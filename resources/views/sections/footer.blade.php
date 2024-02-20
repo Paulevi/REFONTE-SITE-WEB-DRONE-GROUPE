@@ -29,8 +29,8 @@
 			right: 20px;
 			width: 40px;
 			height: 40px;
-			background-color: #FFD966; /* Couleur de fond de la flèche */
-			color: #483D8B; /* Couleur du texte de la flèche */
+			background-color: #483D8B; /* Couleur de fond de la flèche */
+			color: #FFD966; /* Couleur du texte de la flèche */
 			font-size: 24px;
 			text-align: center;
 			line-height: 40px;
@@ -40,8 +40,8 @@
 		}
 
 		.scroll:hover {
-			background-color:  #483D8B;
-			color:#FFD966;
+			background-color:  #FFD966;
+			color:#483D8B;
 		}
 
 		#copyrights{

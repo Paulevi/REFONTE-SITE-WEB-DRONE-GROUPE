@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TemplateController extends Controller
+class ViewController extends Controller
 {
     public function Video()
     {
@@ -20,4 +20,5 @@ class TemplateController extends Controller
     {
         return view('front_end.equipement'); 
     }
+
 }

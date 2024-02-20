@@ -38,10 +38,9 @@
 				font-size:20px;
             }
  
-			.content2{
-            background-image:url("images/M1_Plan de travail 1.jpg");
-            background-size:cover;
-            width:60%;                                                                
+			.content2>img{
+				height: 80vh ;
+				width: 100%;                                                               
         }  
 
 		.sec{
@@ -89,19 +88,25 @@
 		#content{
 			margin-top: 30px;
 			margin-bottom:30px;
+			height: 80vh ;
 		}
         .content1{
 			background-color:#000000;
 			padding: 50px;
 			width:60%;
+			height: 80vh ;
 		}
 
 		.content1>h1{
 			color:#ffffff;
-			font-family:arial;
+			font-family:'jumper PERSONAL USE ONLY', sans-serif;
 			font-size:50px
 		}
-       
+
+		.content1>h1>strong{
+			font-family:'DIN Regular', sans-serif;
+			color:#ffffff;
+		}
 		.content-wrap{
 			display: flex;
 			
@@ -137,24 +142,29 @@
 @media screen and (max-width: 769px){
 
 		#content{
-			height: 30vh;	
+			height:30vh;
 			margin-bottom:150px;
 		}
 		.content1{
 			background-color: #000000;
-			padding: 30px;
-			width: 50%;
+			padding: 40px;
+			width: 70%;
 			height: 30vh;
 		}
 
 		.content2 {
-			height: 30vh ;
+			height: 40vh;
+			width: 100%;
+		}
+
+		.content2>img{
+			height: 30vh;
 			width: 100%;
 		}
 		.content1>h1{
-		    margin-top:20px;
+		    margin-top:10px;
 			color:#ffffff;
-			font-size:15px;
+			font-size:12px;
 			
 		}
 
@@ -170,37 +180,78 @@
 			font-family:'DIN Regular', sans-serif; 
 
 	}
+
+	.menu-item{
+			text-align: center;
+			border-bottom: 2px solid #fff;
+		}
 }
+@media (min-width: 770px) and (max-width: 950px){
 
 
-@media (min-width: 770px) and (max-width: 1400px){
-	
-
-
-	.content1{
+.content1{
 	background-color:#000000;
 	padding: 50px;
 	width: 70%;
-	height: 60vh;
+	height: 60vh ;		
+	}
+
+
+.content1>h1{
+	margin-top:50px;
+	color:#ffffff;
+	font-size:25px;
+	}
+
+.content2 {
+	height: 60vh ;
+	width: 100%;
 }
+
+.content2>img{
+	height: 60vh ;
+	width: 100%;                                                               
+}  
+
+
+
+
+
+.sec{
+	width: 700px;
+	}
+}
+
+@media (min-width: 951px) and (max-width: 1400px){
+	
+	.content1{
+			background-color: #000000;
+			padding: 30px;
+			width: 70%;
+			height: 60vh;
+				}
+
+		.content2 {
+			height: 60vh;
+			width: 100%;
+		}
+
+		.content2>img{
+				height: 60vh ;
+				width: 100%;                                                               
+        }  
+
+	.content1>h1{
+		    margin-top:30px;
+			color:#ffffff;
+			font-size:25px;
+			
+		}
 
 	.sec{
 		background-color:#6A5ACD;
-		width: 500px;
+		width: 700px;
 }
-
-		
-.content1>h1{
-	 margin-top:20px;
-	color:#ffffff;
-	font-family:arial;
-	font-size: 45px;;
-}
-		
-	.content2 {
-		height: 60vh;
-		width: 100%;
-	}
 
 }
 
@@ -261,9 +312,10 @@
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1" >
-					<h1 style=" font-family:'DIN', sans-serif;"> EXTRAIT DU REGLEMENT AERONAUTIQUE DE COTE D'IVOIRE (RACI 2009) AMENDEMENT 02, EDITION 03</h1>
+					<h1> EXTRAIT DU REGLEMENT AERONAUTIQUE DE COTE D'IVOIRE <strong>(RACI 2009)</strong> AMENDEMENT <strong>02</strong>, EDITION <strong>03</strong></h1>
 				</div>
 				<div class="content2" >
+					<img src="images/M1_Plan de travail 1.jpg" alt="">
                 </div>
 		<div>
 		</section><!-- #content end -->

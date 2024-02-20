@@ -37,12 +37,6 @@
 		body{
             font-family:'jumper PERSONAL USE ONLY', sans-serif;
             }
-		
-		.content{
-            background-image:url("images/M9_Plan de travail 1-01.jpg");
-            background-size:cover;
-            width:60%;                                                                
-        }  
 
 		.sec{
 			background-color:#6A5ACD;
@@ -163,25 +157,24 @@
 
 			#content{
 			margin-top: 30px;
-			height:60vh;
+			height:80vh;
 			margin-bottom: 60px;
 		}
 		.content1{
 			background-color:#000000;
 			padding: 50px;
 			width: 50%;
-			height: 60vh ;
+			height: 80vh ;
 		}
 
 		.content1>h1{
 			color:#ffffff;
-			font-family:arial;
 			font-size:70px;
 			font-family:'jumper PERSONAL USE ONLY', sans-serif;
 		}
 
 		.content2>img{
-			height: 60vh ;
+			height: 80vh ;
 			width: 100%;
 		}
        
@@ -275,12 +268,16 @@
 			height: 30vh;
 			width: 100%;
 		}
+		.content2>img{
+			height: 30vh ;
+			width: 100%;                                                               
+		}  
 	.content1>h1{
 		    margin-top:30px;
 			color:#ffffff;
-			font-family:arial;
 			font-size:15px;
-			
+			font-family:'jumper PERSONAL USE ONLY', sans-serif;
+
 		}
 
 		.metiers{
@@ -323,11 +320,11 @@
 		flex-direction: column;
         align-items: stretch;
 		}
-		
+
 	}
 
 	
-	@media (min-width: 770px) and (max-width: 950px){
+@media (min-width: 770px) and (max-width: 950px){
 
 .content1{
 	background-color:#000000;
@@ -352,7 +349,7 @@
 .content1>h1{
  margin-top:20px;
 color:#ffffff;
-font-family:arial;
+font-family:'jumper PERSONAL USE ONLY', sans-serif;
 font-size:35px;
 }
 
@@ -360,6 +357,11 @@ font-size:35px;
 	height: 60vh ;
 	width: 100%;
 }
+
+.content2>img{
+	height: 60vh ;
+	width: 100%;                                                               
+}  
 
 #video h1{
 font-size:10px;
@@ -393,6 +395,11 @@ font-size:10px;
 
 @media (min-width: 951px) and (max-width: 1400px){
 	
+
+	.menu-item{
+			text-align: center;
+			border-bottom: 2px solid #fff;
+		}
 	.specials > image{
 		width:100px;
 		}
@@ -408,14 +415,20 @@ font-size:10px;
 .content1>h1{
 	 margin-top:20px;
 	color:#ffffff;
-	font-family:arial;
-	font-size: 45px;;
+	font-size: 45px;
+	font-family:'jumper PERSONAL USE ONLY', sans-serif;
+
 }
 
 	.content2 {
 		height: 60vh ;
 		width: 100%;
 	}
+
+	.content2>img{
+	height: 60vh ;
+	width: 100%;                                                               
+	}  
 
 	/* .specials{
 		width: 410px;
@@ -518,7 +531,7 @@ font-size:10px;
     		<h3 class="sec">EXPLORATION GEOSPACIALE</h3>
             <div class="barre-2"></div>
             <p class="animate-on-scroll">
-            DRONE GROUPE vous met à votre disposition le potentiel des drones professionnels homologués, du matériel de géodétection à la pointe de la technologie pour différentes applications techniques et audiovisuelles et des opérateurs chevronnés.
+            DRONE GROUPE met à votre disposition le potentiel des drones professionnels homologués, du matériel de géodétection à la pointe de la technologie pour différentes applications techniques et audiovisuelles et des opérateurs chevronnés.
             </p>
             <p  class="animate-on-scroll">
 			Partenaire de référence des entreprises, industriels et collectivités publiques, DRONE GROUPE est un acteur majeur de l’imagerie aérienne par drones et l'exploration géospatiale, implanté sur le territoire français et en Afrique de l'ouest en attendant le déploiement dans les autres régions de l'Afrique. Nous innovons constamment pour garantir les meilleurs diagnostics et les meilleurs études aux moindres coûts avec un maximum de souplesse et de réactivité.

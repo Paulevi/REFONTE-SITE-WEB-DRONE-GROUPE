@@ -9,6 +9,6 @@ class my_model extends Model
 {
     use HasFactory;
    
-    protected $table = 'table_images';
+    protected $table = 'images';
 
 }
