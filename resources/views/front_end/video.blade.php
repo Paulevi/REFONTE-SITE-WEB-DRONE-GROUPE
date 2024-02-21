@@ -1,3 +1,6 @@
+@php
+    $videos = App\Models\VideosModel::all();
+@endphp
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>
@@ -132,9 +135,15 @@
 		}
 
 		.content2 {
-			height: 37vh ;
+			height: 30vh ;
 			width: 100%;
 		}
+
+		.content2>iframe{
+		height: 30vh ;
+		width: 100%;                                                               
+		}  
+
 		.content1>h1{
 		    margin-top:30px;
 			color:#ffffff;
@@ -176,6 +185,11 @@
 
 	@media (min-width: 770px) and (max-width: 950px){
 
+#content{
+height: 60vh;	
+
+}
+
 .content1{
 background-color:#000000;
 padding: 50px;
@@ -193,7 +207,14 @@ font-size:35px;
 .content2 {
 	height: 60vh ;
 	width: 100%;
+	background-color:#000000;
 }
+
+.content2>iframe{
+		height: 60vh ;
+		width: 100%;                                                               
+		}  
+
 
 #video h1{
 font-size:10px;
@@ -203,6 +224,7 @@ font-size:10px;
 	}
 
 @media (min-width: 951px) and (max-width: 1400px){
+
 
 
 	.content1{
@@ -222,7 +244,13 @@ font-size:10px;
 	.content2 {
 		height: 60vh ;
 		width: 100%;
+		background-color:#000000;
 	}
+
+	.content2>iframe{
+		height: 60vh ;
+		width: 100%;                                                               
+		}  
 
 }	
 
@@ -309,27 +337,28 @@ font-size:10px;
                     <iframe width="400" height="300"
                         src="https://www.youtube.com/embed/w-97BKpDlf0?autoplay=1&mute=1&loop=1&controls=0">
                     </iframe>
-                    <button type="button" id="video-slider-mute">
+                    <!-- <button type="button" id="video-slider-mute">
                         <i class="bi-volume-mute-fill"></i><i class="bi-volume-up-fill"></i>
-                    </button>
+                    </button> -->
                 </div>
 		<div>
 		</section><!-- #content end -->
 		<!-- Portfolio Item: Start -->
                     <div class="container">
                          <div id="portfolio"  class="portfolio row gutter-40">
+						 @foreach ($videos as $video)
 							<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
 								<!-- Grid Inner: Start -->
 								<div class="grid-inner">
 									<!-- Image: Start -->
 									<div class="portfolio-image rounded-5">
 										<a href="#">
-											<img class="minia" src="images/videos/explore-poster.jpg" alt="Beauty Cosmetics">
+											<img class="minia" src="data:image/png;base64,{{ base64_encode($video->capture_video) }}" alt="Beauty Cosmetics">
 										</a>
 										<!-- Overlay: Start -->
 										<div class="bg-overlay">
 											<div class="bg-overlay-content dark">
-												<a href="images/videos/explore.mp4" class="overlay-trigger-icon text-size-xl text-white op-1" data-hover-animate="scaleIn" data-hover-animate-out="scaleOut" data-hover-speed="350" data-lightbox="iframe"><i class="bi-play-circle-fill"></i></a>
+												<a href="{{$video->lien_video}}" class="overlay-trigger-icon text-size-xl text-white op-1" data-hover-animate="scaleIn" data-hover-animate-out="scaleOut" data-hover-speed="350" data-lightbox="iframe"><i class="bi-play-circle-fill"></i></a>
 											</div>
 											<div class="bg-overlay-bg bg-dark bg-opacity-40" data-hover-animate="fadeIn"></div>
 										</div>
@@ -338,67 +367,15 @@ font-size:10px;
 									<!-- Image: End -->
 									<!-- Decription: Start -->
 									<div class="portfolio-desc">
-										<h3>prospection dans une plantation</h3>
-										<small class="text-contrast-500 font-monospace"><i class="bi-play-circle-fill"></i> 07:33</small>
+										<h3>{{$video->titre_video}}</h3>
 									</div>
 									<!-- Description: End -->
 								</div>
 								<!-- Grid Inner: End -->
 							</article>
-                            <article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
+							@endforeach
+                          <article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
 								<!-- Grid Inner: Start -->
-								<div class="grid-inner">
-									<!-- Image: Start -->
-									<div class="portfolio-image rounded-5">
-										<a href="#">
-											<img class="minia" src="images/videos/explore-poster.jpg" alt="Beauty Cosmetics">
-										</a>
-										<!-- Overlay: Start -->
-										<div class="bg-overlay">
-											<div class="bg-overlay-content dark">
-												<a href="images/videos/explore.mp4" class="overlay-trigger-icon text-size-xl text-white op-1" data-hover-animate="scaleIn" data-hover-animate-out="scaleOut" data-hover-speed="350" data-lightbox="iframe"><i class="bi-play-circle-fill"></i></a>
-											</div>
-											<div class="bg-overlay-bg bg-dark bg-opacity-40" data-hover-animate="fadeIn"></div>
-										</div>
-										<!-- Overlay: End -->
-									</div>
-									<!-- Image: End -->
-									<!-- Decription: Start -->
-									<div class="portfolio-desc">
-										<h3>mission kokoumbo</h3>
-										<small class="text-contrast-500 font-monospace"><i class="bi-play-circle-fill"></i> 07:33</small>
-									</div>
-									<!-- Description: End -->
-								</div>
-								<!-- Grid Inner: End -->
-							</article>
-                            <article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
-								<!-- Grid Inner: Start -->
-								<div class="grid-inner">
-									<!-- Image: Start -->
-									<div class="portfolio-image rounded-5">
-										<a href="#">
-											<img class="minia" src="images/videos/explore-poster.jpg" alt="Beauty Cosmetics">
-										</a>
-										<!-- Overlay: Start -->
-										<div class="bg-overlay">
-											<div class="bg-overlay-content dark">
-												<a href="images/videos/explore.mp4" class="overlay-trigger-icon text-size-xl text-white op-1" style="height:50" data-hover-animate="scaleIn" data-hover-animate-out="scaleOut" data-hover-speed="350" data-lightbox="iframe"><i class="bi-play-circle-fill"></i></a>
-											</div>
-											<div class="bg-overlay-bg bg-dark bg-opacity-40" data-hover-animate="fadeIn"></div>
-										</div>
-										<!-- Overlay: End -->
-									</div>
-									<!-- Image: End -->
-									<!-- Decription: Start -->
-									<div class="portfolio-desc">
-										<h3>mission kokoumbo</h3>
-										<small class="text-contrast-500 font-monospace"><i class="bi-play-circle-fill"></i> 07:33</small>
-									</div>
-									<!-- Description: End -->
-								</div>
-								<!-- Grid Inner: End -->
-							</article>
                         </div>
                     </div>
 

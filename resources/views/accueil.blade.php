@@ -1,7 +1,7 @@
-<!-- 
+
 @php
     $images = App\Models\my_model::all();
-@endphp -->
+@endphp
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
 <head>

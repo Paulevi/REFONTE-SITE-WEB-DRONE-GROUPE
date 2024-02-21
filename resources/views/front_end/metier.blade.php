@@ -287,11 +287,10 @@
 		left: 80px;
         }
 
-		/* .metiers>.image{
-			margin-left: 10px;
-			margin-right: 40px;
-		} */
-
+		.menu-item{
+			text-align: center;
+			border-bottom: 2px solid #fff;
+		}
 
 
 		.specials >.text{
@@ -396,10 +395,7 @@ font-size:10px;
 @media (min-width: 951px) and (max-width: 1400px){
 	
 
-	.menu-item{
-			text-align: center;
-			border-bottom: 2px solid #fff;
-		}
+	
 	.specials > image{
 		width:100px;
 		}
