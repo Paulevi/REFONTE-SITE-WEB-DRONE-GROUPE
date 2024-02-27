@@ -275,7 +275,7 @@
 	.content1>h1{
 		    margin-top:30px;
 			color:#ffffff;
-			font-size:15px;
+			font-size:20px;
 			font-family:'jumper PERSONAL USE ONLY', sans-serif;
 
 		}
@@ -458,6 +458,11 @@ font-size:10px;
 
 		}
 }
+
+#logo > a{
+		height: 35px;
+		width: 200px;
+	}
 		</style>
 
 </head>
@@ -472,7 +477,7 @@ font-size:10px;
 
 						<div id="logo">
 							<a href="{{url('/')}}">
-								<img class="logo-default"  src="images/logodronegroupe.png" alt="drone groupe Logo" style="height: 40px; width: auto;">
+								<img class="logo-default"  src="images/logodronegroupe.png" alt="drone groupe Logo">
 							</a>
 						</div><!-- #logo end -->
 						<div class="primary-menu-trigger">
@@ -515,7 +520,7 @@ font-size:10px;
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1" >
-					<h1> C'EST QUOI NOTRE METIER ?</h1>
+					<h1 class="text-transform-none " data-animate="fadeInUp"> C'EST QUOI NOTRE METIER ?</h1>
 					<div class="barre"></div>
 				</div>
 				<div class="content2" >
@@ -526,20 +531,20 @@ font-size:10px;
 		<section class="menu">
     		<h3 class="sec">EXPLORATION GEOSPACIALE</h3>
             <div class="barre-2"></div>
-            <p class="animate-on-scroll">
+            <p>
             DRONE GROUPE met à votre disposition le potentiel des drones professionnels homologués, du matériel de géodétection à la pointe de la technologie pour différentes applications techniques et audiovisuelles et des opérateurs chevronnés.
             </p>
-            <p  class="animate-on-scroll">
+            <p>
 			Partenaire de référence des entreprises, industriels et collectivités publiques, DRONE GROUPE est un acteur majeur de l’imagerie aérienne par drones et l'exploration géospatiale, implanté sur le territoire français et en Afrique de l'ouest en attendant le déploiement dans les autres régions de l'Afrique. Nous innovons constamment pour garantir les meilleurs diagnostics et les meilleurs études aux moindres coûts avec un maximum de souplesse et de réactivité.
             </p>
 			<h3 class="sec">EXPLORATION CAPACITAIRE</h3>
             <div class="barre-2"></div>
-            <p class="animate-on-scroll">
+            <p>
 			DRONE GROUPE, grâce à des recherches poussées, a réussi à développer au moyen de l'intelligence artificielle, une solution innovante permettant de numériser les capacités intrinsèques de l'être humain et son environnement.
 			Ainsi, nous offrons aux particuliers, entreprises et organisations, la possibilité de fonctionner plus efficacement, car ayant des employés et des collaborateurs plus efficients à leurs postes.</p>
 			<h3 class="sec">QU'EST CE QUE LA MANAGEMENT CAPACITAIRE</h3>
             <div class="barre-2"></div>
-            <p class="animate-on-scroll">
+            <p>
 			Le management capacitaire prend en compte les exigences capacitaires des entreprises, des organisations et des postes de travail, et leur confrontation aux capacités des postulants ou des salariés. C’est un moyen complémentaire aux méthodes classiques traditionnellement utilisées pour les prises de décision. Le management capacitaire permet d’améliorer la performance et l’efficacité des organisations et des entreprises par la réduction des dysfonctionnements résultant des insuffisances capacitaires humaines, par un choix optimal dès le recrutement et de l’affectation du personnel à des postes adéquats.
 			Le management capacitaire utilise des outils innovants permettant de répondre aux interrogations portant sur des questions irrationnelles telles que :</p>
             <div class="barre-2"></div>
@@ -561,7 +566,7 @@ font-size:10px;
                     <h3>AUDIT ET DETECTION DES INFRASTRUCTURES AERIENNES, ENTERREES, TERRESTES ET SOUS-TERRAINES, MARINES ET SOUS-MARINES</h3>
                     <P>AVEC NOS SOLUTIONS DE DETECTION POUR DECOUVRIR DES DONNEES DE RESEAUX, RELEVER NUMERIQUEMENT VOS SOUS-SURFACES ET LES CONVERTIR IMMEDIATEMENT EN INFORMATIONS EXPLOITABLES ADAPTEES A VOS BESOINS, AUSSI BIEN SUR LE TERRAIN </P>
                 </div>
-                <div class="image"><img src="images/M11-02.jpg" alt=""></div>
+                <div class="image"><img src="images/hhj_Plan de travail 1 (1).jpg" alt=""></div>
             </div>
             <div class="metiers animate-on-scroll">
                 <div class="text">

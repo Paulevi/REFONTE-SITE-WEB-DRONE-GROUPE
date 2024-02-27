@@ -165,17 +165,34 @@
 		}
 @media screen and (max-width: 769px){
 	
+
+	#logo > a{
+		height: 15px;
+	}
 		#content{
 			height: 30vh;	
 			margin-bottom:50px;
 
 		}
 		.content1{
-			background-color: #000000;
-			padding: 30px;
-			width: 50%;
-			height: 30vh;
-		}
+		background-color:#000000;
+		padding: 10px;
+		width: 50%;
+		height: 30vh ;		
+	}
+
+	
+	.content1>h1{
+		margin-bottom:2px;
+
+		 margin-top:5px;
+		color:#ffffff;
+		font-size:20px;
+	}
+  .content1> .barre{
+		margin-top:10px;
+		width: 200px;
+	}
 		.content2>img{
 			height: 30vh;
 			width: 100%;
@@ -184,17 +201,7 @@
 		.content2 {
 			height: 30vh ;
 			width: 100%;
-		}
-		.content1>h1{
-		    margin-top:30px;
-			color:#ffffff;
-			font-size:15px;
-			
-		}
-
-		
-
-		.col-md-4 {
+		}	.col-md-4 {
 			padding-top: 10px;
 		}
 		.col-md-4 > a >h1{
@@ -308,6 +315,10 @@ font-size:35px;
 }  
 
 }		
+
+#logo > a{
+		height: 35px;
+	}
 </style>
 
 </head>
@@ -364,7 +375,7 @@ font-size:35px;
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1" >
-					<h1 style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;"> DRONE GROUPE QUI SOMMES NOUS ?</h1>
+					<h1 class="text-transform-none " data-animate="fadeInUp" style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;"> DRONE GROUPE QUI SOMMES NOUS ?</h1>
 					<div class="barre"></div>
 				</div>
 				<div class="content2" >
@@ -378,23 +389,10 @@ font-size:35px;
             <p class=" animate-on-scroll">
             DRONE GROUPE est une société présente en France, au Sénégal et en Côte d’Ivoire. Nous sommes un bureau d’études techniques, prestations de services, conseils se rapportant à l’acquisition et au traitement de données numériques, aériennes, terrestres sous-terrestres , marines et sous-marines.
             </p>
-            <p class=" animate-on-scroll">
+            <p >
             Nous effectuons des prises de vues, des relevés cartographiques et géométriques notamment par l’utilisation d’aéronefs télépilotés (drones), de radars, de satellites pour la création, la production, la commercialisation de tout type de vidéos, photographies, aériennes, au sol, enterrées, sous l’eau, en vue d’effectuer des analyses et des traitements des données collectées.
             </p>
             <div class="barre-2"></div>
-		</section>
-		<section id="equip" class="equip">
-			<div class="content-wrap animate-on-scroll">
-				<div class="row">
-					<div class="col-md-4">
-						<a href="{{url('/equipement')}}"><h1>NOS EQUIPEMENTS ET MISSIONS REALISEES</h1></a>
-						<div class="barre"></div>
-					</div>
-					<div class="col-md-6 rounded-5">
-						<img src="images/M8_Plan de travail 1-01.png" alt="">
-					</div>
-				</div>
-			</div>
 		</section>
 		@include('sections.footer')
 		</body>

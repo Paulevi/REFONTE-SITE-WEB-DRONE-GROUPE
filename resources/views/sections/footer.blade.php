@@ -168,25 +168,25 @@
 				<div class='au'><h3>AUTORISATIONS</h3></div>
 					<div class="grid-container">
 						<div class="first-row">
-							<div class="grid-item animate-on-scroll">
+							<div class="grid-item ">
 								<p>AGRMENT DU TRAVAIL AERIEN:</p>
 								<p><strong>ATA/DGP/2019-005/ANAC/DSV DU 20/04/2023</strong></p>
 							</div>
-							<div  class="grid-item animate-on-scroll">
+							<div  class="grid-item ">
 								<p>AUTORISATION D'EXPLOITATION D'AERONEF TELEPILOTE:</p>
 								<p><strong>AEAT/DGP/2023-005/ANAC/DSV DU 20/04/2023</strong></p>
 							</div>
-							<div  class="grid-item animate-on-scroll">
+							<div  class="grid-item">
 								<p>AUTORISATION DE FORMATION DE PILOTE DE DRONE:</p>
 								<p><strong>000648/ANAC/DSV/SPDLA/SREF DU 20/01/2023</strong></p>
 							</div>
 						</div>
 						<div class="second-row">
-							<div  class="grid-item animate-on-scroll">
+							<div  class="grid-item">
 								<p>SPECIFICATIONS RELATIVES A L'AUTORISATION D'EXPLOITATION</p>
 								<p> D'AERONEF TELEPILOTE:<strong>AEAT/DGP/2023-005/ANAC/DSV DU 20/04/2023</strong></p>
 							</div>
-							<div  class="grid-item animate-on-scroll">
+							<div  class="grid-item">
 								<p>APPROBATION AU PROGRAMME DE FORMATION AU </p>
 								<p>TELEPILOTAGE:<strong>003840/ANAC/DSV/SPDLA/SREF DU 20/06/2021</strong></p>
 							</div>

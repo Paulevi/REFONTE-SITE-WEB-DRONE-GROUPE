@@ -107,7 +107,6 @@
 		}
 
 		.image{
-			
 			width: 400px;
 			
 		}
@@ -365,6 +364,10 @@ font-size:10px;
 
 }
 
+#logo > a{
+		height: 60px;
+	}
+
 		</style>
 
 </head>
@@ -376,7 +379,6 @@ font-size:10px;
 			<div id="header-wrap">
 				<div class="container">
 					<div class="header-row">
-
 						<div id="logo">
 							<a href="{{url('/')}}">
 								<img class="logo-default"  src="images/CFPTD_Plan de travail 1.png" alt="drone groupe Logo" style="height: 90px; width: 180px;">
@@ -422,7 +424,7 @@ font-size:10px;
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1" >
-					<h1 > POURQUOI UN CENTRE DE FORMATION ?</h1>
+					<h1 class="text-transform-none " data-animate="fadeInUp"> POURQUOI UN CENTRE DE FORMATION ?</h1>
 					<div class="barre"></div>
 				</div>
 				<div class="content2" >
@@ -433,19 +435,19 @@ font-size:10px;
 		<section class="centre">
     		<h3 class="sec">CENTRE DE FORMATION DRONE GROUPE</h3>
             <div class="barre-2"></div>
-            <p class=" first animate-on-scroll">
+            <p>
             Ce département dénomé Centre de formation a pour mission de permettre à DRONE GROUPE Côte d'Ivoire de partager l'expérience et l'expertise acquise de ses animateurs dansla maitrise d'oeuvre des grands projets de dévellopement, dans l'aéronautique civile, dans les études techniques et financières des projets de divers secteurs d'activités, avec l'administration, les collectivités locales, les opérateurs économiques, les organisations non gouvernemengales et les cabinets de formation.
             </p>
-            <p  class="animate-on-scroll">
+            <p>
             Le centre de formation de DRONE GROUPE Côte d'Ivoire est un outil de promotion et de valorisation des secteurs privé et public.
             </p>
-            <p  class="animate-on-scroll">
+            <p>
             Les aéronefs télépilotés, engins autonomes ou commandés à distance, associés aux objets connectés sont l’un des piliers de l’industrie du Futur et constituent un enjeu majeur de société. La Science, la Technologie et l’Innovation se développent très rapidement et les nouveaux usages et gisements de valeurs associés sont encore en grande partie méconnus par la population.
             </p>
-            <p  class="animate-on-scroll">
+            <p>
            Les applications des aéronefs télépilotés à des marchés industriels ou grand public sont gigantesques. Les drones vont révolutionner nombre de métiers et de services actuels mais aussi créer de nouveaux métiers principalement dans les secteurs d’activités ci-dessous:
             </p>
-            <ul class="animate-on-scroll">
+            <ul>
                 <li><i class="fa-solid fa-check"></i> infrastructures et transports ;</li>
                 <li><i class="fa-solid fa-check"></i> bâtiment et architecture ;</li>
                 <li><i class="fa-solid fa-check"></i> industrie, mines et innovation technologique ;</li>
@@ -462,13 +464,13 @@ font-size:10px;
                 <li><i class="fa-solid fa-check"></i> ressources humaines ;</li>
                 <li><i class="fa-solid fa-check"></i> management capacitaire.</li>
             </ul>
-            <p  class="animate-on-scroll">
+            <p>
             L’équipe d’animateurs dudit Centre en matière de formation est composée d’une part des experts de DRONE GROUPE et d’autre part de consultants extérieurs chevronnés.
             </p>
-            <p  class="animate-on-scroll">
+            <p>
             Le Centre de formation entretient un réseau de partenariat de qualité avec plusieurs organismes et a une vocation régionale et internationale.
             </p>
-            <p  class="animate-on-scroll">
+            <p>
             Le centre de formation dispense des formations initiales et des formations spécialisées. Les sessions de formation ne se déroulent que s'il y a un minimum de cinq<strong>(5)</strong> stagiaires.
             </p>
             <div class="barre-2"></div>
@@ -537,9 +539,9 @@ font-size:10px;
 				</div>
             </section>
 		</section>
-		<section class="planning animate-on-scroll">
+		<section class="planning ">
 			<h1>PLANNING DE FORMATION<br> SEPT <span style="color: #483D8B;">2023 </span>- MARS <span  style="color: #483D8B;">2024</span></h1>
-			<table class=" animate-on-scroll">
+			<table>
 				<tr class="blue">
 					<td>aucun renseignement</td>
 					<td>aucun renseignement</td>

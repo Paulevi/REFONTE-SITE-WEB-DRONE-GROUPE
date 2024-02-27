@@ -1,9 +1,9 @@
 
 @php
-    $images = App\Models\my_model::all();
+    $actus = App\Models\actu_model::all();
 @endphp
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
+<html dir="ltr" lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -48,16 +48,18 @@
                 font-family:'Jumper PERSONAL USE ONLY-Regular', sans-serif;
             }
 
+			
+
 			.swiper-slide >a {
 				margin-top: 60px;
 				height: auto !important;
 			}
 
 			.swiper-slide >a{
-				background:transparent ;
-				border: 2px solid;
+				background:#fff ;
+				border: 2px solid #000;
 				border-radius: 3px;
-				color: #fff;
+				color: #000;
 				letter-spacing: 2px;
 				padding: 12px 30px;
 				text-transform: uppercase;
@@ -68,15 +70,14 @@
 			}
 
 			.swiper-slide >a:hover {
-				background: #6A5ACD none repeat scroll 0 0;
-				border-color: #6A5ACD;
+				background: #fff none repeat scroll 0 0;
+				border-color: #fff;
 				color: #ffffff;
 			}
 
 			.swiper-slide >a{
 				position: relative;
-				top:60%;
-				left:40%;
+				bottom:5% ;
 				
 			}
 
@@ -114,9 +115,10 @@
         .content1{
 			background-color:#000000;
 			padding: 50px;
-			width: 45%;
+			width: 40%;
 			height: 80vh ;
 		}
+
 
 		.swiper-slide-bg {
 			height: 80vh ;
@@ -131,7 +133,7 @@
 		.content1>h1{
 			color:#ffffff;
 			font-family:'jumper', sans-serif;
-			font-size:60px
+			font-size:60px;
 		}
 		.content-wrap-2{
 			display: flex;
@@ -156,6 +158,10 @@
 		.feature-box{
 			height: 400px;
 			width: 400px;
+		}
+
+		.swiper-pagination{
+			display:none;
 		}
 		.swiper-pagination {
 			--cnvs-swiper-bar-color: #000;
@@ -256,8 +262,13 @@
 				stroke-dashoffset: 0;
 			}
 		}
+        
+		.col-md-6 >a{
+			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
 
+		}
 		.Title{
+			padding:50%
 			height: 20%;
 			width: 100%;
 			opacity: 0.7;
@@ -265,9 +276,10 @@
 			background-color: #0000CD	;
 
 		}
-		.Title> h3{
+		.Title> h1{
 			color:#FFD966;
 			font-family:'Jumper PERSONAL USE ONLY-Regular', sans-serif;
+			/* font-size: 50px; */
 		}
 
 		.sub-menu-container>.menu-item{
@@ -298,6 +310,8 @@
             left: 1px;
         }
 
+		
+
         #video-slider-mute i:nth-of-type(2),
         #video-slider-mute.video-muted i:nth-of-type(1) { display: none; }
 
@@ -318,10 +332,12 @@
 		.logo-default{
 		height: 5px;
 	}
+
+
 @media screen and (max-width: 769px){
 
-	#logo > a{
-		height: 20px;
+	#logo{
+		height: 5px;
 	}
 
 	
@@ -342,14 +358,15 @@
 
 	.content1{
 		background-color:#000000;
-		padding: 30px;
+		padding: 10px;
 		width: 50%;
 		height: 30vh ;		
 	}
 
-	.swiper-slide >a{
-		display:none;
-				
+	.content1 >a{
+		/* display:none; */
+		margin-top:20px;
+	
 	}
 	.swiper-slide-bg{
 		height: 30vh ;
@@ -362,12 +379,14 @@
 		}
 	
 	.content1>h1{
-		 margin-top:1px;
+		margin-bottom:2px;
+
+		 margin-top:5px;
 		color:#ffffff;
-		font-family:arial;
 		font-size:20px;
 	}
 	.content1> .barre{
+		margin-top:5px;
 		width: 200px;
 	}
 
@@ -442,15 +461,10 @@
 	.menu-item> .menu-link{
 		text-align: justify;
 	}
-	.swiper-slide >a{
-		display:none;
-				
-	}
 			
 	.content1>h1{
 		 margin-top:20px;
 		color:#ffffff;
-		font-family:arial;
 		font-size:35px;
 	}
 
@@ -482,7 +496,6 @@
 .content1>h1{
 	 margin-top:20px;
 	color:#ffffff;
-	font-family:arial;
 	font-size:35px;
 }
 
@@ -556,36 +569,34 @@
 		</header><!-- #header end -->
 		<section id="content">
 			<div class="content-wrap py-0">
-				<div class="content1">
-					<h1 style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;">BIENVENUE CHEZ LES PROFESSIONNELS DU DRONE</h1>
-					<div class="barre"></div>
+				<div class="slider-element swiper_wrapper min-vh-100 customjs">
+						<div class="swiper swiper-parent" >
+							<div class="swiper-wrapper">
+							@foreach ($actus as $actu)
+								<div class="content1 swiper-slide dark" data-animate="fadeInUp">
+									<h1 style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;">{{$actu->titre_actu}}</h1>
+									<div class="barre"></div>
+									<a href="{{ route('actu.show', ['id' => $actu->id_actu]) }}"  class="button  button-circle   button-reveal " ><i class="bi-arrow-right" ></i><span><strong>CONSULTER</strong></a>
+
+								</div>
+								@endforeach
+							</div>
+						</div>
 				</div>
 				<div class="slider-element swiper_wrapper min-vh-100 customjs">
 					<div class="swiper swiper-parent" >
 						<div class="swiper-wrapper">
-						
-						@foreach ($images as $image)
-							<div class="swiper-slide">
-								<a href="{{url('/actu')}}" class="button  button-circle   button-reveal " ><i class="bi-arrow-right" ></i><span><strong>CONSULTER</strong></a>
-								<div class="swiper-slide-bg"><img src="data:image/png;base64,{{ base64_encode($image->donnee_image) }}" alt=""></div>
+						@foreach ($actus as $actu)
+							<div class=" swiper-slide dark">
+								<div class="swiper-slide-bg"><img src="data:image/png;base64,{{ base64_encode($actu->image_actu) }}" alt=""></div>
 							</div>
-						@endforeach
-							<!-- <div class="swiper-slide">
-								<a href="{{url('/actu')}}" class="button  button-circle  button-reveal "><i class="bi-arrow-right"></i><span><strong>CONSULTER</strong></a>
-								<div class="swiper-slide-bg"><img src="images/M8_Plan de travail 1-01.png" alt=""></div>
-							</div>
-							<div class="swiper-slide">
-								<a href="{{url('/actu')}}" class="button  button-circle button-reveal "><i class="bi-arrow-right"></i><span><strong>CONSULTER</strong></a>
-								<div class="swiper-slide-bg"><img src="images/M11-02-01.jpg" alt=""></div>
-							</div> -->
+							@endforeach
 						</div>
-						<!-- If we need pagination -->
-						<!-- <div class="swiper-pagination center-right"></div> -->
 					</div>
 				</div>
+				<div class="swiper-pagination"></div>
 			</div>
-			<div class="swiper-pagination"></div>
-		</section><!-- #content end -->
+		</section>
 		<section id="menu">
 		<div class="barre-2"></div>
     		<div class="container mw-md" >
@@ -593,40 +604,33 @@
            			 <div class="col-md-6 col-padding animate-on-scroll box">
                			 <a href="{{url('/presentation')}}" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M6_Plan de travail 1-01-01-01-01.jpg"); background-size: cover;'>
                     		<div class="Title">
-                    			<h3 class="text-transform-none ls-0 text-larger mt-3">PRESENTATION</h3>
+                    			<h1 >PRESENTATION</h1>
                     		</div>
 						</a>
            			 </div>
-           			 <div class="col-md-6 col-padding animate-on-scroll box">
+           			 <div class="col-md-6 col-padding animate-on-scroll  box">
                 		<a href="{{url('/metier')}}" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M9_Plan de travail 1-01.jpg");background-size: cover;'>
                     		<div class="Title">
-								<h3 class="text-transform-none ls-0 text-larger mt-3">NOS METIERS</h3>
+								<h1>NOS METIERS</h1>
                    			</div>
 						</a>
            			 </div>
-           			 <div class="col-md-6 col-padding animate-on-scroll box">
+           			 <div class="col-md-6 col-padding  animate-on-scroll box" >
               			<a href="{{url('/formation')}}" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M7_Plan de travail 1-01-01-01-01-01.jpg");background-size: cover;'>
                     		<div class="Title">
-								<h3 class="text-transform-none ls-0 text-larger mt-3">NOS FORMATIONS</h3>
+								<h1>NOS FORMATIONS</h1>
                    			 </div>
 						</a>
            			 </div>
-           			 <div class="col-md-6 col-padding animate-on-scroll box">
-               			 <a href="{{url('/equipement')}}" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M8_Plan de travail 1-01.png");background-size: cover;'>
-                    		<div class="Title">
-								<h3 class="text-transform-none ls-0 text-larger mt-3">NOS EQUIPEMENTS</h3>
-                   			 </div>
-						  </a>
-            		</div>
         		</div>
     		</div>
 		  <div class="barre-2"></div>
 		</section>
-		<section id="video" class="video animate-on-scroll">
+		<section id="video" class="video ">
 			<div class="content-wrap-2">
 				<div class="row justify-content-around align-items-center">
 					<div class="col-md-4">
-						<a href="{{url('/video')}}"><h1>VIDEOTHEQUE</h1></a>
+						<a href="{{url('/video')}}"><h1 data-animate="fadeInUpSmall">VIDEOTHEQUE</h1></a>
 						<div class="barre"></div>
 					</div>
 					<div class="col-md-6 rounded-5">

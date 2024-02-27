@@ -20938,7 +20938,7 @@ body:not(.stretched) .slider-parallax .slider-inner {
   overflow: hidden;
 }
 .swiper_wrapper .swiper-slide [data-caption-animate] {
-  -webkit-backface-visibility: hidden;
+  /* -webkit-backface-visibility: hidden; */
 }
 
 .swiper-slide-bg {

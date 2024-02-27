@@ -5,10 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class my_model extends Model
+class paragraphe extends Model
 {
     use HasFactory;
-   
-    protected $table = 'images';
-
+    protected $table = 'paragraphe';
 }

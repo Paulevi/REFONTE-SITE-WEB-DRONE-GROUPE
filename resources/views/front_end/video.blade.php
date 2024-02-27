@@ -147,7 +147,7 @@
 		.content1>h1{
 		    margin-top:30px;
 			color:#ffffff;
-			font-size:15px;
+			font-size:20px;
 			
 		}
 
@@ -274,6 +274,10 @@ font-size:10px;
 .portfolio {
 	margin-top: 50px;
 }
+
+#logo > a{
+		height: 35px;
+	}
 </style>
 
 </head>
@@ -330,7 +334,7 @@ font-size:10px;
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1" >
-					<h1>BIENVENU A NOTRE VIDEOTHEQUE</h1>
+					<h1 class="text-transform-none " data-animate="fadeInUp">BIENVENU A NOTRE VIDEOTHEQUE</h1>
 					<div class="barre"></div>
 				</div>
 				<div class="content2" >

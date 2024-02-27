@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ViewController;
+use App\Http\Controllers\ActuController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,13 +17,16 @@ use App\Http\Controllers\ViewController;
 */
 
 Route::get('/video', [ViewController::class, 'Video']);
-Route::get('/', [TemplateController::class, 'images_actus']);
+Route::get('/actu', [ViewController::class, 'actu']);
 Route::get('/equipement', [ViewController::class, 'equipement']);
+Route::get('/actu/{id}', [ActuController::class, 'afficherActualite'])->name('actu.show');
+
 
 
 Route::get('/', function () {
     return view('accueil');
 });
+
 
 
 Route::get('/presentation', function () {

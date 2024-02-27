@@ -255,6 +255,9 @@
 
 }
 
+#logo > a{
+		height: 35px;
+	}
 		</style>
 
 </head>
@@ -312,7 +315,7 @@
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1" >
-					<h1> EXTRAIT DU REGLEMENT AERONAUTIQUE DE COTE D'IVOIRE <strong>(RACI 2009)</strong> AMENDEMENT <strong>02</strong>, EDITION <strong>03</strong></h1>
+					<h1 class="text-transform-none " data-animate="fadeInUp"> EXTRAIT DU REGLEMENT AERONAUTIQUE DE COTE D'IVOIRE <strong>(RACI 2009)</strong> AMENDEMENT <strong>02</strong>, EDITION <strong>03</strong></h1>
 				</div>
 				<div class="content2" >
 					<img src="images/M1_Plan de travail 1.jpg" alt="">
