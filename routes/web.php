@@ -17,8 +17,6 @@ use App\Http\Controllers\ActuController;
 */
 
 Route::get('/video', [ViewController::class, 'Video']);
-Route::get('/actu', [ViewController::class, 'actu']);
-Route::get('/equipement', [ViewController::class, 'equipement']);
 Route::get('/actu/{id}', [ActuController::class, 'afficherActualite'])->name('actu.show');
 
 

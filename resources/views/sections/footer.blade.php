@@ -8,7 +8,7 @@
 		}
 		
 	  .consulter{
-			height: 31vh;
+			height: 25vh;
 			width: 100%;
 			background-color:#6A5ACD;
 			font-size: 30px;
@@ -120,6 +120,7 @@
 			height:35vh
 				
 		}
+
 		.rounded-5{
 			width: 80%;
 		}
@@ -153,7 +154,7 @@
 
 	#consulter > h5 > span {
 		padding: 10px;
-    border-bottom: 2px solid #FFD966;
+    	border-bottom: 2px solid #FFD966;
 }
 
 #consulter > h5 >i{

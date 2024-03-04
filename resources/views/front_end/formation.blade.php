@@ -43,7 +43,7 @@
 			background-color:#483D8B;
 			padding: 50px;
 			width:50%;
-			height: 80vh ;
+			height: 70vh ;
 			
 		}
 
@@ -54,12 +54,12 @@
 		}
 
 		.content2{       
-			height: 80vh ;     
+			height: 70vh ;     
             width:60%;                                                                
         }  
 
 		.content2>img{
-			height: 80vh ;
+			height: 70vh ;
 			width: 100%;                                                               
 		}  
 
@@ -67,6 +67,7 @@
 			background-color:#6A5ACD;
 			width: 550px; 
 			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
+			background: linear-gradient(to left, #000 0%, #6A5ACD 100%);
 			margin-left: 10px;
             color: yellow;
 			padding-left:35px;
@@ -78,7 +79,7 @@
             background-color: #000000;
             
             height: 1px;
-            margin-bottom 20px;
+            margin-bottom: 20px;
             margin-left: 50px;
             margin-right: 50px;
         }
@@ -110,7 +111,12 @@
 			width: 400px;
 			
 		}
+
+		.planning{
+			margin-top: 20px;
+		}
 		.planning> h1{
+			margin-top: 100px;
 			text-align:center;
 			color: #483D8B;
 			
@@ -259,6 +265,10 @@
 		text-align:center;
 		position: relative;
 		left: 80px;
+		}
+
+		.text> .prerequis{
+			width: 300px;
 		}
 
 		.forma > section>.text{
@@ -436,7 +446,7 @@ font-size:10px;
     		<h3 class="sec">CENTRE DE FORMATION DRONE GROUPE</h3>
             <div class="barre-2"></div>
             <p>
-            Ce département dénomé Centre de formation a pour mission de permettre à DRONE GROUPE Côte d'Ivoire de partager l'expérience et l'expertise acquise de ses animateurs dansla maitrise d'oeuvre des grands projets de dévellopement, dans l'aéronautique civile, dans les études techniques et financières des projets de divers secteurs d'activités, avec l'administration, les collectivités locales, les opérateurs économiques, les organisations non gouvernemengales et les cabinets de formation.
+            Ce département dénomé Centre de formation a pour mission de permettre à DRONE GROUPE Côte d'Ivoire de partager l'expérience et l'expertise acquise de ses animateurs dans la maitrise d'oeuvre des grands projets de dévellopement, dans l'aéronautique civile, dans les études techniques et financières des projets de divers secteurs d'activités, avec l'administration, les collectivités locales, les opérateurs économiques, les organisations non gouvernemengales et les cabinets de formation.
             </p>
             <p>
             Le centre de formation de DRONE GROUPE Côte d'Ivoire est un outil de promotion et de valorisation des secteurs privé et public.
@@ -447,7 +457,7 @@ font-size:10px;
             <p>
            Les applications des aéronefs télépilotés à des marchés industriels ou grand public sont gigantesques. Les drones vont révolutionner nombre de métiers et de services actuels mais aussi créer de nouveaux métiers principalement dans les secteurs d’activités ci-dessous:
             </p>
-            <ul>
+            <ul class="animate-on-scroll">
                 <li><i class="fa-solid fa-check"></i> infrastructures et transports ;</li>
                 <li><i class="fa-solid fa-check"></i> bâtiment et architecture ;</li>
                 <li><i class="fa-solid fa-check"></i> industrie, mines et innovation technologique ;</li>
@@ -471,7 +481,7 @@ font-size:10px;
             Le Centre de formation entretient un réseau de partenariat de qualité avec plusieurs organismes et a une vocation régionale et internationale.
             </p>
             <p>
-            Le centre de formation dispense des formations initiales et des formations spécialisées. Les sessions de formation ne se déroulent que s'il y a un minimum de cinq<strong>(5)</strong> stagiaires.
+            Le centre de formation dispense des formations initiales et des formations spécialisées. Les sessions de formation ne se déroulent que s'il y a un minimum de cinq<strong> (5)</strong> stagiaires.
             </p>
             <div class="barre-2"></div>
 		</section>
@@ -500,7 +510,7 @@ font-size:10px;
                     <h4>FORMATION PRATIQUE </h4>
                     <P><i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR 03 JOURS</strong></P>
 					<ul>
-						<li><i class="fa-solid fa-angle-right"></i> PRESENTATION ET CONNAISSANCE DS DRONES</li>
+						<li><i class="fa-solid fa-angle-right"></i> PRESENTATION ET CONNAISSANCE DES DRONES</li>
 						<li><i class="fa-solid fa-angle-right"></i> THEORIES SUR LES CONTROLES</li>
 						<li><i class="fa-solid fa-angle-right"></i> SIMMULATEUR DE VOL</li>
 						<li><i class="fa-solid fa-angle-right"></i> CONCEPTION, PREPARATION ET EXECUTION DE MISSION</li>

@@ -48,14 +48,16 @@
                 font-family:'Jumper PERSONAL USE ONLY-Regular', sans-serif;
             }
 
-			
+			.swiper-slide{
+				display:flex;
+			}
 
-			.swiper-slide >a {
+			 .content1>a {
 				margin-top: 60px;
 				height: auto !important;
 			}
 
-			.swiper-slide >a{
+			.content1>a{
 				background:#fff ;
 				border: 2px solid #000;
 				border-radius: 3px;
@@ -65,17 +67,17 @@
 				text-transform: uppercase;
 			}
 
-			.swiper-slide >a:last-child {
+			.content1>:last-child {
 				margin-left: 20px;
 			}
 
-			.swiper-slide >a:hover {
-				background: #fff none repeat scroll 0 0;
+			.content1>a:hover {
+				background: #000 none repeat scroll 0 0;
 				border-color: #fff;
 				color: #ffffff;
 			}
 
-			.swiper-slide >a{
+			.content1>a{
 				position: relative;
 				bottom:5% ;
 				
@@ -89,6 +91,7 @@
 				color:#ffffff;
 
 			}
+	
 
 			.menu-container > .menu-item > .menu-link >div{
 				font-size:15px;
@@ -96,7 +99,7 @@
 
 			.sub-menu-container {
 				background-color:#696969;
-				opacity: 0.8;
+				opacity: 0.9;
 				width: 300px;
 			}
 
@@ -108,44 +111,49 @@
         }
 
 		#content{
-			margin-top: 10px;
-			
-			height:80vh
+			margin-top: 30px;
+			height: 80vh ;
 		}
-        .content1{
+        .swiper-slide >.content1{
 			background-color:#000000;
 			padding: 50px;
-			width: 40%;
+			width: 45%;
 			height: 80vh ;
 		}
 
 
-		.swiper-slide-bg {
-			height: 80vh ;
-			width: 100%;
-		}
-
-		.swiper-slide-bg>img {
+		.swiper-slide >.swiper-slide-bg {
 			height: 80vh ;
 			width: 100%;
 		}
 
-		.content1>h1{
+		.swiper-slide >.swiper-slide-bg>img {
+			float:right;
+			height: 80vh ;
+			width: 55%;
+		}
+
+		.swiper-slide>.content1>h1{
 			color:#ffffff;
 			font-family:'jumper', sans-serif;
-			font-size:60px;
+			font-size:53px;
 		}
 		.content-wrap-2{
 			display: flex;
 			background-color: #000000;
 			height: 80vh ;
 		}
+		.col-md-4 > a > h1  > span {
+			color:#ffffff;
+			padding: 10px;
+    		border-bottom: 4px solid #fff;
+		}
 		.col-md-4 > a > h1{
 			color:#ffffff;
-			font-size:60px;
+			font-size:30px;
 			font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
 		}
-		.col-md-4 > a > h1:hover{
+		.col-md-4 > a > h1:hover .col-md-4 > a > h1 >span{
 			color:#FFD966;
 		}
 		.barre{
@@ -157,17 +165,13 @@
 
 		.feature-box{
 			height: 400px;
-			width: 400px;
-		}
-
-		.swiper-pagination{
-			display:none;
+			width: 450px;
 		}
 		.swiper-pagination {
-			--cnvs-swiper-bar-color: #000;
+			--cnvs-swiper-bar-color: #FFF;
 			--cnvs-swiper-bar-size: 30px;
 			--cnvs-swiper-bar-dot-size: 8px;
-			--cnvs-swiper-bar-dot-color: #000;
+			--cnvs-swiper-bar-dot-color: #FFF;
 			--cnvs-swiper-stroke-width: 6;
 			--cnvs-swiper-autoplay-speed: 5000ms;
 			--cnvs-swiper-bullet-gutter: 3px;
@@ -220,9 +224,8 @@
 			background: transparent !important;
 		}
 
-
 		.swiper-pagination-bullet circle {
-			stroke: #FFD966;
+			stroke: var(--cnvs-swiper-bar-color);
 			stroke-width: var(--cnvs-swiper-stroke-width);
 			fill: none;
 		}
@@ -234,7 +237,7 @@
 			top: 50%;
 			width: var(--cnvs-swiper-bar-dot-size);
 			height: var(--cnvs-swiper-bar-dot-size);
-			background: #ffffff;
+			background: var(--cnvs-swiper-bar-dot-color);
 			border-radius: 50%;
 			transform: translate(-50%, -50%);
 		}
@@ -264,6 +267,8 @@
 		}
         
 		.col-md-6 >a{
+			border-radius:10px;
+			background-size: cover;
 			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
 
 		}
@@ -271,12 +276,16 @@
 			padding:50%
 			height: 20%;
 			width: 100%;
-			opacity: 0.7;
+			opacity: 0.8;
+			border-radius:10px 10px 0px 0px;
+
 			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
+			background: linear-gradient(to left, #000 0%, #0000CD 100%);
 			background-color: #0000CD	;
 
 		}
 		.Title> h1{
+			margin-top:20px;
 			color:#FFD966;
 			font-family:'Jumper PERSONAL USE ONLY-Regular', sans-serif;
 			/* font-size: 50px; */
@@ -318,7 +327,7 @@
         #video-slider-mute.video-muted i:nth-of-type(2) { display: block; }
 
 		.content-wrap{
-			display: flex;
+			/* display: flex; */
 		}
 
 		.button.button-reveal i {
@@ -336,10 +345,11 @@
 
 @media screen and (max-width: 769px){
 
-	#logo{
-		height: 5px;
-	}
 
+	.content-wrap{
+		height: 40vh;
+	}
+	
 	
 	.menu-container{
 		text-align: justify;
@@ -348,44 +358,19 @@
 		text-align: justify;
 	}
 
-	.swiper-pagination{
-		position: relative;
-		bottom: 2px;
-	}
+
 	#content{
-		height: 30vh ;	
+		height: 40vh ;
 	}
 
-	.content1{
-		background-color:#000000;
-		padding: 10px;
-		width: 50%;
-		height: 30vh ;		
-	}
-
-	.content1 >a{
+	.swiper-slide >.content1 >a{
 		/* display:none; */
 		margin-top:20px;
-	
-	}
-	.swiper-slide-bg{
-		height: 30vh ;
-		width: 100%;
 	}
 
-	.swiper-slide-bg>img {
-			height: 30vh ;
-			width: 100%;
-		}
 	
-	.content1>h1{
-		margin-bottom:2px;
-
-		 margin-top:5px;
-		color:#ffffff;
-		font-size:20px;
-	}
-	.content1> .barre{
+	
+	.swiper-slide .content1> .barre{
 		margin-top:5px;
 		width: 200px;
 	}
@@ -428,18 +413,50 @@
 		text-align: center;
 
 		}
+		.swiper-slide>.content1{
+		background-color:#000000;
+		padding: 30px;
+		width: 50%;
+		height: 40vh ;		
+		}
 
+		.swiper-slide>.content1>a{
+			width: 150px;
+			margin-right: 10px;
+			font-size:10px;
+		}
+		.swiper-slide>.content1>h1{
+		 
+		color:#ffffff;
+		font-size:20px;
+	}
 
-}
+	.swiper-wrapper>.swiper-slide {
+		height: 40vh ;
+		width: 100%;
+	}
+
+	.swiper-slide>.swiper-slide-bg{
+		height: 40vh ;
+		width: 100%;
+	}
+
+	.swiper-slide>.swiper-slide-bg>img {
+			height: 40vh ;
+			width: 50%;
+		}
+	}
 	@media (min-width: 770px) and (max-width: 1000px){
 
 		#logo > a{
 			height: 25px;
 			}
-
+		.content-wrap{
+		 	height: 60vh;
+	}
 		.content1{
 		background-color:#000000;
-		padding: 50px;
+		padding: 10px;
 		width: 70%;
 		height: 60vh ;		
 		}
@@ -448,27 +465,36 @@
 		position: relative;
 		left: 30%;
 	}
+
+	.col-md-4>a{
+		font-size:10px;
+	}
 	.sub-menu-container{
 		background-color:transparent;
 		width: 100%;
 	}
 
-	.swiper-slide-bg>img {
+	.swiper-slide>.swiper-slide-bg{
+		height: 60vh ;
+		width: 100%;
+	}
+
+	.swiper-slide>.swiper-slide-bg>img {
 			height: 60vh ;
-			width: 100%;
+			width: 50%;
 		}
 
 	.menu-item> .menu-link{
 		text-align: justify;
 	}
 			
-	.content1>h1{
+	.swiper-slide>.content1>h1{
 		 margin-top:20px;
 		color:#ffffff;
-		font-size:35px;
+		font-size:30px;
 	}
 
-	.swiper-wrapper {
+	.swiper-wrapper>.swiper-slide {
 		height: 60vh ;
 		width: 100%;
 	}
@@ -485,22 +511,29 @@
 		height: 30px;
 		}
 
-	.content1{
+		.content-wrap{
+		 	height: 70vh;
+	}
+	.swiper-slide>.content1{
 	background-color:#000000;
 	padding: 50px;
-	width: 70%;
-	height: 60vh ;		
+	width: 50%;
+	height: 70vh ;		
 }
 
+.swiper-slide>.swiper-slide-bg>img {
+			height: 70vh ;
+			width: 50%;
+		}
 		
-.content1>h1{
+.swiper-slide>.content1>h1{
 	 margin-top:20px;
 	color:#ffffff;
-	font-size:35px;
+	font-size:40px;
 }
 
 	.swiper-wrapper {
-		height: 60vh ;
+		height: 70vh ;
 		width: 100%;
 	}
 
@@ -551,7 +584,7 @@
 										<div >Notre centre de formation</div>
 									</a>
 									<ul class="sub-menu-container">
-										<li class="menu-item"><a class="menu-link" href="{{url('/formation#theorique')}}"><div>FORMATION THEORIQIUE</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#theorique')}}"><div>FORMATION THEORIQUE</div></a></li>
 										
 										<li class="menu-item"><a class="menu-link" href="{{url('/formation#pratique')}}"><div>FORMATION PRATIQUE</div></a></li>
 										
@@ -567,9 +600,9 @@
 			</div>
 			<div class="header-wrap-clone"></div>
 		</header><!-- #header end -->
-		<section id="content">
-			<div class="content-wrap py-0">
-				<div class="slider-element swiper_wrapper min-vh-100 customjs">
+		<section id="content" classe="slider-element slider-parallax swiper_wrapper min-vh-75">
+			<div class="slider-inner">
+				<!-- <div class="slider-element swiper_wrapper min-vh-100 customjs">
 						<div class="swiper swiper-parent" >
 							<div class="swiper-wrapper">
 							@foreach ($actus as $actu)
@@ -582,41 +615,48 @@
 								@endforeach
 							</div>
 						</div>
-				</div>
+				</div> -->
 				<div class="slider-element swiper_wrapper min-vh-100 customjs">
 					<div class="swiper swiper-parent" >
 						<div class="swiper-wrapper">
 						@foreach ($actus as $actu)
-							<div class=" swiper-slide dark">
+							<div class="swiper-slide  dark">
+								<div class="content1 ">
+										<h1 style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;">{{$actu->titre_actu}}</h1>
+										<div class="barre"></div>
+										<a href="{{ route('actu.show', ['id' => $actu->id_actu]) }}"  class="button button-xlarge button-circle  button-reveal text-transform-none ls-0" ><i class="bi-arrow-right" ></i><span><strong>CONSULTER</strong></a>
+								</div>
+								
 								<div class="swiper-slide-bg"><img src="data:image/png;base64,{{ base64_encode($actu->image_actu) }}" alt=""></div>
+								
 							</div>
-							@endforeach
+						@endforeach
 						</div>
 					</div>
 				</div>
-				<div class="swiper-pagination"></div>
+				<div class="swiper-pagination center-right"></div>
 			</div>
 		</section>
 		<section id="menu">
 		<div class="barre-2"></div>
-    		<div class="container mw-md" >
+    		<div class="container mw-md">
        			 <div class="row align-items-stretch">
            			 <div class="col-md-6 col-padding animate-on-scroll box">
-               			 <a href="{{url('/presentation')}}" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M6_Plan de travail 1-01-01-01-01.jpg"); background-size: cover;'>
+               			 <a href="{{url('/presentation')}}" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M6_Plan de travail 1-01-01-01-01.jpg");'>
                     		<div class="Title">
                     			<h1 >PRESENTATION</h1>
                     		</div>
 						</a>
            			 </div>
            			 <div class="col-md-6 col-padding animate-on-scroll  box">
-                		<a href="{{url('/metier')}}" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M9_Plan de travail 1-01.jpg");background-size: cover;'>
+                		<a href="{{url('/metier')}}" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M9_Plan de travail 1-01.jpg");'>
                     		<div class="Title">
 								<h1>NOS METIERS</h1>
                    			</div>
 						</a>
            			 </div>
-           			 <div class="col-md-6 col-padding  animate-on-scroll box" >
-              			<a href="{{url('/formation')}}" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M7_Plan de travail 1-01-01-01-01-01.jpg");background-size: cover;'>
+           			 <div class="col-md-6 col-padding  animate-on-scroll box"  style="padding-top:5px">
+              			<a href="{{url('/formation')}}" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M7_Plan de travail 1-01-01-01-01-01.jpg");'>
                     		<div class="Title">
 								<h1>NOS FORMATIONS</h1>
                    			 </div>
@@ -630,8 +670,8 @@
 			<div class="content-wrap-2">
 				<div class="row justify-content-around align-items-center">
 					<div class="col-md-4">
-						<a href="{{url('/video')}}"><h1 data-animate="fadeInUpSmall">VIDEOTHEQUE</h1></a>
-						<div class="barre"></div>
+						<a href="{{url('/video')}}"><h1 data-animate="fadeInUpSmall"><span style="color:#ffffff;font-size:55px">VIDEOTHEQUE<span></h1></a>
+						
 					</div>
 					<div class="col-md-6 rounded-5">
 						<video id="slide-video" class="d-block w-100 h-100 rounded-5 shadow" poster="images/videos/explore-poster.jpg" preload="auto" loop autoplay playsinline muted>

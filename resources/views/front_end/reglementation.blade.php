@@ -39,7 +39,7 @@
             }
  
 			.content2>img{
-				height: 80vh ;
+				height: 70vh ;
 				width: 100%;                                                               
         }  
 
@@ -47,6 +47,7 @@
 			background-color:#6A5ACD;
 			width: 1200px; 
 			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
+			background: linear-gradient(to left, #000 0%, #6A5ACD 100%);
 			margin-left: 10px;
             color: yellow;
 			padding-left:35px;
@@ -88,13 +89,13 @@
 		#content{
 			margin-top: 30px;
 			margin-bottom:30px;
-			height: 80vh ;
+			height: 70vh ;
 		}
         .content1{
 			background-color:#000000;
 			padding: 50px;
 			width:60%;
-			height: 80vh ;
+			height: 70vh ;
 		}
 
 		.content1>h1{
@@ -110,6 +111,10 @@
 		.content-wrap{
 			display: flex;
 			
+		}
+
+		.barre{
+			margin-top: 1px;
 		}
 
 
@@ -142,14 +147,14 @@
 @media screen and (max-width: 769px){
 
 		#content{
-			height:30vh;
+			height:40vh;
 			margin-bottom:150px;
 		}
 		.content1{
 			background-color: #000000;
-			padding: 40px;
+			padding: 30px;
 			width: 70%;
-			height: 30vh;
+			height: 40vh;
 		}
 
 		.content2 {
@@ -158,13 +163,13 @@
 		}
 
 		.content2>img{
-			height: 30vh;
+			height: 40vh;
 			width: 100%;
 		}
 		.content1>h1{
-		    margin-top:10px;
+		    margin-top:5px;
 			color:#ffffff;
-			font-size:12px;
+			font-size:18px;
 			
 		}
 
@@ -200,7 +205,7 @@
 .content1>h1{
 	margin-top:50px;
 	color:#ffffff;
-	font-size:25px;
+	font-size:30px;
 	}
 
 .content2 {
@@ -315,7 +320,8 @@
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1" >
-					<h1 class="text-transform-none " data-animate="fadeInUp"> EXTRAIT DU REGLEMENT AERONAUTIQUE DE COTE D'IVOIRE <strong>(RACI 2009)</strong> AMENDEMENT <strong>02</strong>, EDITION <strong>03</strong></h1>
+					<h1 class="text-transform-none " data-animate="fadeInUp"> EXTRAIT DU REGLEMENT AERONAUTIQUE DE COTE D'IVOIRE (RACI <strong>2009</strong>) AMENDEMENT <strong>02</strong>, EDITION <strong>03</strong></h1>
+					<div class="barre"></div>
 				</div>
 				<div class="content2" >
 					<img src="images/M1_Plan de travail 1.jpg" alt="">
@@ -323,48 +329,48 @@
 		<div>
 		</section><!-- #content end -->
 		<section class="regle">
-    		<h3 class="sec animate-on-scroll">CHAPITRE 7: AUTORISATIONS ET TITRE D'UTILISATION DES AERONEFS TELEPILOTES</h3>
+    		<h3 class="sec">CHAPITRE 7: AUTORISATIONS ET TITRE D'UTILISATION DES AERONEFS TELEPILOTES</h3>
             <div class="sub-regle">
             <div class="barre"></div>
-            <p class="animate-on-scroll">
+            <p >
 			Nul ne peut exploiter un Aéronef Télépiloté sans y avoir été formellement autorisé par l'ANAC.
             </p>
-            <div class="num animate-on-scroll"> 7.1.1</div>
-            <p  class="animate-on-scroll">
+            <div class="num"> 7.1.1</div>
+            <p  >
             Un exploitant ne peut exploiter un Aéronef Télépiloté pour des activités de travail aérien que s'il détient un agrément de travail aérien et une Autorisation d'Exploitation d' Aéronef Télépiloté (AEAT) en état de validité délivré par l'ANAC.
             </p>
-            <div class="num animate-on-scroll">7.1.2</div>
-            <p  class="animate-on-scroll">
+            <div class="num">7.1.2</div>
+            <p  >
             Pour postuler à un AEAT, un opérateur doit détenir un Agrément de travail aérien et soumettre un dossier de cantidature à l'ANAC au moin quatre-vingt-dix <strong> (90) </strong>jours avant la date prévue d'exploitation
             </p>
-            <div class="num animate-on-scroll">7.3.3</div>
-            <p  class="animate-on-scroll">
+            <div class="num">7.3.3</div>
+            <p>
            Les dossiers de candidature mentionnés au<strong> 7.3.3 </strong> doit contenir au moin les éléments suivants:
             </p>
             <ul class="animate-on-scroll">
-                <li>a) Un courrier de demande d'autorisation</li>
-                <li>b) Une lettre d'engagement du postulant</li>
-                <li>c) Une autorisation du ministère de la défense nationnale autorisant les activités particulières projetées</li>
-                <li>d)Une autorisation du ministère en charge de la sécurité autorisant les activités projetées</li>
-                <li>e) l'attestation d'enregistrement de chaque aéronef télépiloté</li>
-                <li>f) les manuels d'utilisation de chaque type d'aéronef télépiloté</li>
-                <li>g) les manuels d'entretien de chaque type d'aéronef télépiloté, si applicable</li>
-                <li>h) la licence, la certification ou l'attestation de formation de chaque télépilote</li>
-                <li>i)Une police d'assurance couvrant l'activité projetée</li>
-                <li>j) Le manuel d'activité particulière rédigé conformément aux spécificaxion de l'appendice <strong>3</strong> au présent règlement.</li>
+                <li class="animate-on-scroll">a) Un courrier de demande d'autorisation</li>
+                <li class="animate-on-scroll">b) Une lettre d'engagement du postulant</li>
+                <li class="animate-on-scroll">c) Une autorisation du ministère de la défense nationnale autorisant les activités particulières projetées</li>
+                <li class="animate-on-scroll">d)Une autorisation du ministère en charge de la sécurité autorisant les activités projetées</li>
+                <li class="animate-on-scroll">e) l'attestation d'enregistrement de chaque aéronef télépiloté</li>
+                <li class="animate-on-scroll">f) les manuels d'utilisation de chaque type d'aéronef télépiloté</li>
+                <li class="animate-on-scroll">g) les manuels d'entretien de chaque type d'aéronef télépiloté, si applicable</li>
+                <li class="animate-on-scroll">h) la licence, la certification ou l'attestation de formation de chaque télépilote</li>
+                <li class="animate-on-scroll">i)Une police d'assurance couvrant l'activité projetée</li>
+                <li class="animate-on-scroll">j) Le manuel d'activité particulière rédigé conformément aux spécificaxion de l'appendice <strong>3</strong> au présent règlement.</li>
             </ul>
-            <div class="num animate-on-scroll">7.3.4</div>
+            <div  class="num">7.3.4</div>
             </div>
-            <h3 class="sec animate-on-scroll">CHAPITRE 8:FORMATION DES TELEPILOTES</h3>
+            <h3 class="sec">CHAPITRE 8:FORMATION DES TELEPILOTES</h3>
             <div class="sub-regle">
-            <p  class="animate-on-scroll">
+            <p>
             Nul ne peut piloter un RPA s'il n'est titulaire d'une Attestation, d'un Certificat ou d'une Licence de Télépilote en état de validité reconnue, délivrée ou validée par l'ANAC conformément aux dispositions du RACI<strong>2000</strong>.
             </p>
-            <div class="num animate-on-scroll">8.1.1</div>
-            <p  class="animate-on-scroll">
+            <div class="num">8.1.1</div>
+            <p>
             La formation théorique doit être dispensée dans un organisme de formation agréé ou habileté et le programme de formation doit être accepté par l'ANAC
             </p>
-            <div class="num animate-on-scroll">8.2.2.2</div>
+            <div class="num">8.2.2.2</div>
              </div>
             <div class="barre"></div>
 		</section>

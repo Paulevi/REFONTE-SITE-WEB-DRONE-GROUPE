@@ -38,6 +38,7 @@
             }
 
 		#content{
+			height: 70vh;
 			margin-top: 30px;
 			margin-bottom:30px;
 		}
@@ -45,20 +46,20 @@
 			background-color:#000000;
 			padding: 50px;
 			width: 90%;
-			height: 80vh;
+			height: 70vh;
 		}
 
 		.content1>h1{
 			color:#ffffff;
 			font-family:'jumper PERSONAL USE ONLY', sans-serif;
-			font-size:70px;
+			font-size:60px;
 		}
 		.content2{
 			width: 100%;
 		}
 
 		.content2>img{
-			height: 80vh;
+			height: 70vh;
 			width: 100%;
 			}
        
@@ -74,6 +75,8 @@
 		.present > .presen{
 			background-color:#6A5ACD;
 			width: 600px; 
+			background: linear-gradient(to left, #000 0%, #6A5ACD 100%);
+
 			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
 			margin-left: 10px;
 			padding-left:35px;
@@ -174,8 +177,8 @@
 
 		}
 		.content1{
-		background-color:#000000;
-		padding: 10px;
+			background-color:#000000;
+		padding: 30px;
 		width: 50%;
 		height: 30vh ;		
 	}
@@ -376,7 +379,7 @@ font-size:35px;
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1" >
-					<h1 class="text-transform-none " style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;">{{ $actu->titre_actu }}</h1>
+					<h1 data-animate="fadeInUp"   class="text-transform-none " style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;">{{ $actu->titre_actu }}</h1>
 					<div class="barre"></div>
 				</div>
 				<div class="content2" >

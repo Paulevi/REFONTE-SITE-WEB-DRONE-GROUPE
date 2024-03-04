@@ -15,7 +15,7 @@ class actu_model extends Model
 
     public function paragraphe()
     {
-        return $this->hasMany(paragraphe::class, 'id_actus');
+        return $this->hasMany(paragraphe::class, 'id_actu');
     }
     
     

@@ -71,10 +71,13 @@
 		}
 
 		#content{
+			background-color:#000000;
+			height: 70vh;
 			margin-top: 30px;
 			margin-bottom:30px;
 		}
         .content1{
+			height: 70vh;
 			background-color:#000000;
 			padding: 50px;
 			/* width: 40%; */
@@ -85,11 +88,10 @@
 			font-family:'jumper PERSONAL USE ONLY', sans-serif;
 			font-size:70px
 		}
-
 		.content2{
 			height: 70vh;
 			width: 230vh;
-			}
+		}
 			
 		@keyframes swiperSVGAnim {
 			0% {
@@ -117,6 +119,37 @@
 			transition: all .3s ease !important;
 		}
 
+		#video-slider-mute {
+            position: absolute;
+            top: auto;
+            left: auto;
+            right: 20px;
+            bottom: 10px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--cnvs-contrast-0);
+            color: var(--cnvs-contrast-1000);
+            font-size: 1.25rem;
+            border: 0;
+        }
+
+		.menu{
+			margin-top: 20px;
+		}
+
+        #video-slider-mute i {
+            position: relative;
+            left: 1px;
+        }
+
+		
+
+        #video-slider-mute i:nth-of-type(2),
+        #video-slider-mute.video-muted i:nth-of-type(1) { display: none; }
+
+        #video-slider-mute.video-muted i:nth-of-type(2) { display: block; }
+
         /* #portfolio{
          flex-direction: column;
         align-items: stretch;
@@ -132,10 +165,11 @@
 			background-color: #000000;
 			padding: 30px;
 			width: 50%;
+			height: 30vh;
 		}
 
 		.content2 {
-			height: 30vh ;
+			height: 30vh;
 			width: 100%;
 		}
 
@@ -194,7 +228,7 @@ height: 60vh;
 background-color:#000000;
 padding: 50px;
 width: 70%;
-height: 60vh ;		
+height: 60vh;		
 }
 
 	
@@ -205,7 +239,7 @@ font-size:35px;
 }
 
 .content2 {
-	height: 60vh ;
+	height: 60vh;	
 	width: 100%;
 	background-color:#000000;
 }
@@ -265,6 +299,8 @@ font-size:10px;
 .portfolio-desc{
 	background-color:#000;
 	color:#fff;
+	height:100px;
+
 }
 
 .portfolio-desc>h3{
@@ -338,12 +374,13 @@ font-size:10px;
 					<div class="barre"></div>
 				</div>
 				<div class="content2" >
-                    <iframe width="400" height="300"
-                        src="https://www.youtube.com/embed/w-97BKpDlf0?autoplay=1&mute=1&loop=1&controls=0">
-                    </iframe>
-                    <!-- <button type="button" id="video-slider-mute">
-                        <i class="bi-volume-mute-fill"></i><i class="bi-volume-up-fill"></i>
-                    </button> -->
+						<video id="slide-video" class="d-block w-100 h-100 rounded-5 shadow" poster="images/videos/explore-poster.jpg" preload="auto" loop autoplay playsinline muted>
+                            <source src='images/videos/explore.webm' type='video/webm'>
+                            <source src='images/videos/explore.mp4' type='video/mp4'>
+                        </video>
+						<button type="button" id="video-slider-mute">
+                            <i class="bi-volume-mute-fill"></i><i class="bi-volume-up-fill"></i>
+                        </button>
                 </div>
 		<div>
 		</section><!-- #content end -->
@@ -351,7 +388,7 @@ font-size:10px;
                     <div class="container">
                          <div id="portfolio"  class="portfolio row gutter-40">
 						 @foreach ($videos as $video)
-							<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
+							<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12 animate-on-scroll ">
 								<!-- Grid Inner: Start -->
 								<div class="grid-inner">
 									<!-- Image: Start -->

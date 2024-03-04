@@ -42,6 +42,7 @@
 			background-color:#6A5ACD;
 			width: 500px; 
 			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
+			background: linear-gradient(to left, #000 0%, #6A5ACD 100%);
 			margin-left: 10px;
             color: yellow;
 			padding-left:35px;
@@ -117,6 +118,10 @@
 		.special{
 			background-color:#000000;
 		}
+		.special> h1 > span{
+			padding: 10px;
+    	border-bottom: 4px solid #FFF;
+		}
 		.special> h1{
 			color: #fff;
 			text-align:center;
@@ -157,14 +162,14 @@
 
 			#content{
 			margin-top: 30px;
-			height:80vh;
+			height:70vh;
 			margin-bottom: 60px;
 		}
 		.content1{
 			background-color:#000000;
 			padding: 50px;
 			width: 50%;
-			height: 80vh ;
+			height: 70vh ;
 		}
 
 		.content1>h1{
@@ -174,7 +179,7 @@
 		}
 
 		.content2>img{
-			height: 80vh ;
+			height: 70vh ;
 			width: 100%;
 		}
        
@@ -234,7 +239,7 @@
 		
 @media screen and (max-width: 769px){
 	#content{
-		height: 30vh;	
+		height: 40vh;	
 		margin-bottom:150px;
 	}
 
@@ -303,7 +308,11 @@
 
 		.special{
 			height: 330vh;
+			width: 100%;
+		}
 
+		.metiers>.text{
+			width: 300px;
 		}
 		
 		.first-ligne, .second-ligne {
@@ -542,21 +551,21 @@ font-size:10px;
             <p>
 			DRONE GROUPE, grâce à des recherches poussées, a réussi à développer au moyen de l'intelligence artificielle, une solution innovante permettant de numériser les capacités intrinsèques de l'être humain et son environnement.
 			Ainsi, nous offrons aux particuliers, entreprises et organisations, la possibilité de fonctionner plus efficacement, car ayant des employés et des collaborateurs plus efficients à leurs postes.</p>
-			<h3 class="sec">QU'EST CE QUE LA MANAGEMENT CAPACITAIRE</h3>
+			<h3 class="sec">QU'EST CE QUE LE MANAGEMENT CAPACITAIRE ?</h3>
             <div class="barre-2"></div>
             <p>
 			Le management capacitaire prend en compte les exigences capacitaires des entreprises, des organisations et des postes de travail, et leur confrontation aux capacités des postulants ou des salariés. C’est un moyen complémentaire aux méthodes classiques traditionnellement utilisées pour les prises de décision. Le management capacitaire permet d’améliorer la performance et l’efficacité des organisations et des entreprises par la réduction des dysfonctionnements résultant des insuffisances capacitaires humaines, par un choix optimal dès le recrutement et de l’affectation du personnel à des postes adéquats.
 			Le management capacitaire utilise des outils innovants permettant de répondre aux interrogations portant sur des questions irrationnelles telles que :</p>
             <div class="barre-2"></div>
 			<ul class="animate-on-scroll">
-				<li class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE PROBITE MORALE OU D'INTEGRITE</li>
-				<li class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE GESTION DE CONFLITS, DE REGULATION OU D'AUTO-REGULATION</li>
-				<li class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE LUCIDITE, DE VIGILANCE ET D'ATTENTION</li>
-				<li class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE REFLEXION (ELABORATION DE STRATEGIES ET DE SCENARIOS)</li>
-				<li class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE ENTREPRENARIALE</li>
-				<li class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE MANAGERIALE</li>
-				<li class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE D'ENDURANCE ET DE PERSEVERANCE</li>
-				<li class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE DYNAMISME ET DE MOBILISATION DE RESSOURCES</li>
+				<li><i class="fa fa-check"></i>LA CAPACITE DE PROBITE MORALE OU D'INTEGRITE</li>
+				<li><i class="fa fa-check"></i>LA CAPACITE DE GESTION DE CONFLITS, DE REGULATION OU D'AUTO-REGULATION</li>
+				<li><i class="fa fa-check"></i>LA CAPACITE DE LUCIDITE, DE VIGILANCE ET D'ATTENTION</li>
+				<li><i class="fa fa-check"></i>LA CAPACITE DE REFLEXION (ELABORATION DE STRATEGIES ET DE SCENARIOS)</li>
+				<li><i class="fa fa-check"></i>LA CAPACITE ENTREPRENARIALE</li>
+				<li><i class="fa fa-check"></i>LA CAPACITE MANAGERIALE</li>
+				<li><i class="fa fa-check"></i>LA CAPACITE D'ENDURANCE ET DE PERSEVERANCE</li>
+				<li><i class="fa fa-check"></i>LA CAPACITE DE DYNAMISME ET DE MOBILISATION DE RESSOURCES</li>
 			</ul>
 		</section>
 		<section id="metier" class="metier">
@@ -598,10 +607,9 @@ font-size:10px;
             </div>
 		</section>
 		<section class="special">
-			<h1>NOS SPECIALITES</h1>
-			<div class="barre"  style="margin-left: 540px; margin-right:540px; height:0.5px; margin-top:-25px;"></div>
+			<h1> <span  style="color:#ffffff;">NOS SPECIALITES</span></h1>
 			<div class="first-ligne">
-			<div class="specials animate-on-scroll">
+			<div class="specials" data-animate="fadeInLeft">
 			<div class="image"><img src="images/M12_Plan de travail 1-01.jpg" alt=""></div>
                 <div class="text">
                     <h6  style="color: #fff;">DETECTER, REPERTORIER, NUMERISER</h6>
@@ -609,7 +617,7 @@ font-size:10px;
                     <P>INSPECTION TEMPORELLE DES BATIMENTS, CHANTIERS, BTP</P>
                 </div>
             </div>
-            <div class="specials animate-on-scroll">
+            <div class="specials" data-animate="fadeInRight" >
 				<div class="image"><img src="images/M13-01.jpg" alt=""></div>
 				<div class="text">
                     <h6  style="color: #fff;">CARTOGRAPHIE, TOPOGRAPHIE</h6>
@@ -619,7 +627,7 @@ font-size:10px;
             </div>
 			</div>
 			<div class="second-ligne">
-			<div class="specials animate-on-scroll">
+			<div class="specials" data-animate="fadeInLeft">
 				<div class="image"><img src="images/KKK-01.jpg" alt=""></div>
 				<div class="text">	
                     <h6  style="color: #fff;">ETUDIER, EVALUER, INSPECTER, CONTROLLER</h6>
@@ -627,7 +635,7 @@ font-size:10px;
                     <P>PHOTOGRAPHIE <strong>3D</strong>, VIDEO <strong>4K</strong> AERIENNE ET PANORAMIQUE SED</P>
                 </div>
             </div>
-            <div class="specials animate-on-scroll">
+            <div class="specials" data-animate="fadeInRight">
 				<div class="image"><img src="images/EEE- 1-01.jpg" alt=""></div>
                 <div class="text">
                     <h6 style="color: #fff;">REALITE AUGMENTEE, TOURS ET VISITES VIRTUELLES</h6>

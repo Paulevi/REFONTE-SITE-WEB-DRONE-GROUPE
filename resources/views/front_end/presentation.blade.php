@@ -45,7 +45,7 @@
 			background-color:#000000;
 			padding: 50px;
 			width: 90%;
-			height: 80vh;
+			height: 70vh;
 		}
 
 		.content1>h1{
@@ -58,7 +58,7 @@
 		}
 
 		.content2>img{
-			height: 80vh;
+			height: 70vh;
 			width: 100%;
 			}
        
@@ -75,6 +75,7 @@
 			background-color:#6A5ACD;
 			width: 300px; 
 			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
+			background: linear-gradient(to left, #000 0%, #6A5ACD 100%);
 			margin-left: 10px;
             color: yellow;
 			padding-left:35px;
@@ -176,7 +177,7 @@
 		}
 		.content1{
 		background-color:#000000;
-		padding: 10px;
+		padding: 5%;
 		width: 50%;
 		height: 30vh ;		
 	}
@@ -187,7 +188,7 @@
 
 		 margin-top:5px;
 		color:#ffffff;
-		font-size:20px;
+		font-size:25px;
 	}
   .content1> .barre{
 		margin-top:10px;
@@ -386,7 +387,7 @@ font-size:35px;
 		<section class="present">
     		<div class="presen"><h3>PRESENTATION</h3></div>
             <div class="barre-2"></div>
-            <p class=" animate-on-scroll">
+            <p>
             DRONE GROUPE est une société présente en France, au Sénégal et en Côte d’Ivoire. Nous sommes un bureau d’études techniques, prestations de services, conseils se rapportant à l’acquisition et au traitement de données numériques, aériennes, terrestres sous-terrestres , marines et sous-marines.
             </p>
             <p >
