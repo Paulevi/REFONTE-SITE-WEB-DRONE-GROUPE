@@ -13,7 +13,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fontawesome.com/icons/file-lines?f=classic&s=thin" integrity="sha512-xxNO0nSN9+hE5CoefSwoHd4WwITb+jq0sE7o7dbzAeXNr9l6iQ7Dwlsl+fpdOebQKEp26OJmtunQrTJN6PizQA==" crossorigin="anonymous" />
 	<link rel="icon" src="images/logodronegroupe.png">
-	<link rel="shortcut icon" type="image/ico" src="images/logodronegroupe.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/60PX-01.png"/>
 	
 	<!-- Core Style -->
 	<link rel="stylesheet" href="style.css">
@@ -33,6 +33,37 @@
 	<title>DRONE GROUPE</title>
 
 	<style>
+
+
+.primary-menu > .menu-container >.current> .menu-link,
+.primary-menu > .menu-container >.menu-item:hover> .menu-link{
+  color:#483D8B;
+}
+
+@media (min-width: 992px) {
+  .morph-marker {
+    --cnvs-morph-height: 3px;
+    --cnvs-morph-duration: .3s;
+    position: absolute;
+    display: block;
+    background: #483D8B;
+    height: var(--cnvs-morph-height);
+    border-radius: var(--bs-border-radius);
+    transition: all var(--cnvs-morph-duration);
+  }
+  .morph-bg .morph-marker {
+    --cnvs-morph-height: 100%;
+    opacity: .1;
+    bottom: 0 !important;
+  }
+
+  .morph-bg .menu-link {
+    position: relative;
+    --cnvs-primary-menu-padding-y: 11px;
+    --cnvs-primary-menu-hover-color: var(--cnvs-primary-menu-color);
+    z-index: 1;
+  }
+}
 
 		#content{
 			margin-top: 30px;
@@ -65,14 +96,17 @@
 
 		.sec{
 			background-color:#6A5ACD;
-			width: 550px; 
-			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
-			background: linear-gradient(to left, #000 0%, #6A5ACD 100%);
+			width: 500px; 
+			background: linear-gradient(to right, #6A5ACD 60%, #fff 100%);
 			margin-left: 10px;
             color: yellow;
 			padding-left:35px;
 			font-weight: lighter;
 			font-family:'DIN Regular', sans-serif;
+		}
+
+		#first-sec{
+			width: 700px; 
 		}
         
         .menu > .barre{
@@ -228,38 +262,55 @@
 			width: 100%
 		}
 		#content{
-			height: 30vh;	
+			height: 50vh;	
 			margin-bottom:50px;
 		}
+		
 		.content1{
-			background-color: #483D8B;
 			padding: 30px;
-			width: 50%;
-			height: 30vh ;
+			width: 100%;
+			height: 50vh ;
+			background-image:url('images/M4_Plan de travail 1-01-01.jpg');
+			background-size:cover;
 
+		}
+
+		.barre{
+			background-color: #483D8B;
+			
 		}
 
 		.content2 {
-			height: 30vh ;
+			height: 50vh ;
 			width: 100%;
+			display:none;
 		}
 
 		.content2>img{
-			height: 30vh ;
+			height: 50vh ;
 			width: 100%;
 		}
 		
 		.content1>h1{
-			margin-top:30px;
-			color:#ffffff;
-			font-size:25px;
+			margin-top:15%;
+			color: #483D8B;
+			font-size:40px;
+			
 			
 		}
-		.content1> .barre{
-			width: 200px;
-		}
 
+		
+		.centre>ul>li{
+			margin-left: 40px;
+		}
+		
+		.centre>p{
+			margin-left: 40px;
+			margin-right: 20px;
+		}
+		
 		.forma > section{
+			margin: 20px;
 		flex-direction: column;
 		align-items: stretch;
 		text-align:center;
@@ -268,13 +319,29 @@
 		}
 
 		.text> .prerequis{
-			width: 300px;
+			width: 430px;
 		}
 
 		.forma > section>.text{
 			margin-top: 50px;
 			text-align:justify;
 
+		}
+
+		.forma{
+			margin-left: -45px;
+			margin-right: 20px;
+			width: 100%;
+			
+		}
+
+		.formas>.text{
+			width: 430px;
+			font-size: 15px;
+		}
+		.formas{
+			margin: 20px;
+			justify-content:space-between;
 		}
 
 		.forma > section >.text>h4{
@@ -284,9 +351,17 @@
 			height: 600px;
 		}
 
+		.sec{
+			width: 400px;
+		}
+
+		#first-sec{
+			width: 540px; 
+		}
+
 		.image{
 			height: 300px;
-			width: 300px;
+			width: 430px;
 			/* position: relative;
 			right: 20%; */
 			
@@ -305,7 +380,7 @@
 			margin-top: 100px;
 		}
 
-		}
+	}
 
 		@media (min-width: 770px) and (max-width: 950px){
 	
@@ -374,9 +449,6 @@ font-size:10px;
 
 }
 
-#logo > a{
-		height: 60px;
-	}
 
 		</style>
 
@@ -385,13 +457,13 @@ font-size:10px;
 	<body>
 		<!-- Header
 		============================================= -->
-		<header id="header" class="sticky dark">
+		<header id="header" class="sticky ">
 			<div id="header-wrap">
 				<div class="container">
 					<div class="header-row">
 						<div id="logo">
 							<a href="{{url('/')}}">
-								<img class="logo-default"  src="images/CFPTD_Plan de travail 1.png" alt="drone groupe Logo" style="height: 90px; width: 180px;">
+								<img class="logo-default"  src="images/60PX-01.png" alt="drone groupe Logo">
 							</a>
 						</div><!-- #logo end -->
 						<div class="primary-menu-trigger">
@@ -435,7 +507,7 @@ font-size:10px;
 		<div class="content-wrap py-0">
 				<div class="content1" >
 					<h1 class="text-transform-none " data-animate="fadeInUp"> POURQUOI UN CENTRE DE FORMATION ?</h1>
-					<div class="barre"></div>
+					<div class="barre"  data-animate="fadeInUp"></div>
 				</div>
 				<div class="content2" >
 					<img src="images/M4_Plan de travail 1-01-01.jpg" alt="">
@@ -443,7 +515,7 @@ font-size:10px;
 		<div>
 		</section><!-- #content end -->
 		<section class="centre">
-    		<h3 class="sec">CENTRE DE FORMATION DRONE GROUPE</h3>
+    		<h3 id="first-sec"class="sec">CENTRE DE FORMATION DRONE GROUPE</h3>
             <div class="barre-2"></div>
             <p>
             Ce département dénomé Centre de formation a pour mission de permettre à DRONE GROUPE Côte d'Ivoire de partager l'expérience et l'expertise acquise de ses animateurs dans la maitrise d'oeuvre des grands projets de dévellopement, dans l'aéronautique civile, dans les études techniques et financières des projets de divers secteurs d'activités, avec l'administration, les collectivités locales, les opérateurs économiques, les organisations non gouvernemengales et les cabinets de formation.
@@ -484,9 +556,9 @@ font-size:10px;
             Le centre de formation dispense des formations initiales et des formations spécialisées. Les sessions de formation ne se déroulent que s'il y a un minimum de cinq<strong> (5)</strong> stagiaires.
             </p>
             <div class="barre-2"></div>
+			<h3 class="sec" style="margin-bottom:10px">NOS FORMATIONS</h3>
 		</section>
 		<section id="forma" class="forma">
-            <h3 class="sec">NOS FORMATIONS</h3>
             <section id = "theorique"class="formas animate-on-scroll">
 			<div class="image" style="background-image:url('images/M13-02-01.jpg');background-size:cover; " ></div>
                 <div class="text">

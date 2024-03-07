@@ -13,7 +13,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fontawesome.com/icons/file-lines?f=classic&s=thin" integrity="sha512-xxNO0nSN9+hE5CoefSwoHd4WwITb+jq0sE7o7dbzAeXNr9l6iQ7Dwlsl+fpdOebQKEp26OJmtunQrTJN6PizQA==" crossorigin="anonymous" />
 	<link rel="icon" src="images/logodronegroupe.png">
-	<link rel="shortcut icon" type="image/ico" src="images/logodronegroupe.png" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/logodronegroupe.png"/>
 	
 	<!-- Core Style -->
 	<link rel="stylesheet" href="style.css">
@@ -41,8 +41,7 @@
 		.sec{
 			background-color:#6A5ACD;
 			width: 500px; 
-			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
-			background: linear-gradient(to left, #000 0%, #6A5ACD 100%);
+			background: linear-gradient(to right, #6A5ACD 60%, #fff 100%);
 			margin-left: 10px;
             color: yellow;
 			padding-left:35px;
@@ -227,7 +226,9 @@
 			height: 40px;
 			width: 80%;
 			font-size: 20px;
-			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
+			background: linear-gradient(to right, #000 60%, #fff 100%);
+
+			/* box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5); */
 
 		}
 
@@ -236,24 +237,36 @@
 			margin-right:20px;
 			color:#FFD966
 		}
+
+		.troisieme{
+			width: 800px;
+		}
+
+		.dernier{
+			margin-top:20px;
+		}
 		
 @media screen and (max-width: 769px){
 	#content{
-		height: 40vh;	
-		margin-bottom:150px;
+		height: 50vh;	
+		margin-bottom:50px;
+	}
+
+	.menu > ul >li>i{
+		margin-left: 4px;
 	}
 
 	.menu > ul >li{
-		    padding-left: 4px;
+		    font-size:15px;
+			padding-left:2px;
 			margin-left: 40px;
 			margin-top: 20px;
 			list-style: none;
+			background: linear-gradient(to right, #000 70%, #fff 100%);
 			background-color: #000000;
 			color:#fff;
-			height: 90px;
-			width: 80%;
-			font-size: 20px;
-			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
+			height: 50px;
+			width: 90%;
 
 		}
 
@@ -263,34 +276,40 @@
 		text-align:center;
 		}
 	.content1{
-			background-color: #000000;
+			/* background-color: #000000; */
+			background-image:url('images/M10_Plan de travail 1-01.jpg');
+			background-size:cover;
 			padding: 30px;
-			width: 50%;
-			height: 30vh;
+			width: 100%;
+			height: 50vh;
 				}
 
 		.content2 {
-			height: 30vh;
+			height: 50vh;
 			width: 100%;
+			display:none;
 		}
 		.content2>img{
-			height: 30vh ;
+			height: 50vh ;
 			width: 100%;                                                               
 		}  
 	.content1>h1{
-		    margin-top:30px;
+			margin-top:15%;
 			color:#ffffff;
-			font-size:20px;
+			font-size:40px;
 			font-family:'jumper PERSONAL USE ONLY', sans-serif;
 
+		}
+
+		.metier{
+			margin-left:-65px
 		}
 
 		.metiers{
         flex-direction: column;
         align-items: stretch;
 		position: relative;
-		left: 80px;
-        }
+		left: 80px;}
 
 		.menu-item{
 			text-align: center;
@@ -310,9 +329,21 @@
 			height: 330vh;
 			width: 100%;
 		}
-
 		.metiers>.text{
-			width: 300px;
+			width: 400px;
+		}
+
+		.metiers>.image{
+			width: 400px;
+		}
+
+		.sec{
+			padding-left:4px;
+			width: 400px;
+		}
+
+		.troisieme{
+			width: 400px;
 		}
 		
 		.first-ligne, .second-ligne {
@@ -528,9 +559,9 @@ font-size:10px;
 	
 		<section id="content">
 		<div class="content-wrap py-0">
-				<div class="content1" >
+				<div class="content1">
 					<h1 class="text-transform-none " data-animate="fadeInUp"> C'EST QUOI NOTRE METIER ?</h1>
-					<div class="barre"></div>
+					<div class="barre" data-animate="fadeInUp"></div>
 				</div>
 				<div class="content2" >
 					<img src="images/M10_Plan de travail 1-01.jpg" alt="">
@@ -538,7 +569,7 @@ font-size:10px;
 		<div>
 		</section><!-- #content end -->
 		<section class="menu">
-    		<h3 class="sec">EXPLORATION GEOSPACIALE</h3>
+    		<h3 class="sec premier">EXPLORATION GEOSPACIALE</h3>
             <div class="barre-2"></div>
             <p>
             DRONE GROUPE met à votre disposition le potentiel des drones professionnels homologués, du matériel de géodétection à la pointe de la technologie pour différentes applications techniques et audiovisuelles et des opérateurs chevronnés.
@@ -546,30 +577,30 @@ font-size:10px;
             <p>
 			Partenaire de référence des entreprises, industriels et collectivités publiques, DRONE GROUPE est un acteur majeur de l’imagerie aérienne par drones et l'exploration géospatiale, implanté sur le territoire français et en Afrique de l'ouest en attendant le déploiement dans les autres régions de l'Afrique. Nous innovons constamment pour garantir les meilleurs diagnostics et les meilleurs études aux moindres coûts avec un maximum de souplesse et de réactivité.
             </p>
-			<h3 class="sec">EXPLORATION CAPACITAIRE</h3>
+			<h3 class="sec deuxieme">EXPLORATION CAPACITAIRE</h3>
             <div class="barre-2"></div>
             <p>
 			DRONE GROUPE, grâce à des recherches poussées, a réussi à développer au moyen de l'intelligence artificielle, une solution innovante permettant de numériser les capacités intrinsèques de l'être humain et son environnement.
 			Ainsi, nous offrons aux particuliers, entreprises et organisations, la possibilité de fonctionner plus efficacement, car ayant des employés et des collaborateurs plus efficients à leurs postes.</p>
-			<h3 class="sec">QU'EST CE QUE LE MANAGEMENT CAPACITAIRE ?</h3>
+			<h3 class="sec troisieme">QU'EST-CE QUE LE MANAGEMENT CAPACITAIRE ?</h3>
             <div class="barre-2"></div>
             <p>
 			Le management capacitaire prend en compte les exigences capacitaires des entreprises, des organisations et des postes de travail, et leur confrontation aux capacités des postulants ou des salariés. C’est un moyen complémentaire aux méthodes classiques traditionnellement utilisées pour les prises de décision. Le management capacitaire permet d’améliorer la performance et l’efficacité des organisations et des entreprises par la réduction des dysfonctionnements résultant des insuffisances capacitaires humaines, par un choix optimal dès le recrutement et de l’affectation du personnel à des postes adéquats.
 			Le management capacitaire utilise des outils innovants permettant de répondre aux interrogations portant sur des questions irrationnelles telles que :</p>
             <div class="barre-2"></div>
 			<ul class="animate-on-scroll">
-				<li><i class="fa fa-check"></i>LA CAPACITE DE PROBITE MORALE OU D'INTEGRITE</li>
-				<li><i class="fa fa-check"></i>LA CAPACITE DE GESTION DE CONFLITS, DE REGULATION OU D'AUTO-REGULATION</li>
-				<li><i class="fa fa-check"></i>LA CAPACITE DE LUCIDITE, DE VIGILANCE ET D'ATTENTION</li>
-				<li><i class="fa fa-check"></i>LA CAPACITE DE REFLEXION (ELABORATION DE STRATEGIES ET DE SCENARIOS)</li>
-				<li><i class="fa fa-check"></i>LA CAPACITE ENTREPRENARIALE</li>
-				<li><i class="fa fa-check"></i>LA CAPACITE MANAGERIALE</li>
-				<li><i class="fa fa-check"></i>LA CAPACITE D'ENDURANCE ET DE PERSEVERANCE</li>
-				<li><i class="fa fa-check"></i>LA CAPACITE DE DYNAMISME ET DE MOBILISATION DE RESSOURCES</li>
+				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE PROBITE MORALE OU D'INTEGRITE</li>
+				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE GESTION DE CONFLITS, DE REGULATION OU D'AUTO-REGULATION</li>
+				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE LUCIDITE, DE VIGILANCE ET D'ATTENTION</li>
+				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE REFLEXION (ELABORATION DE STRATEGIES ET DE SCENARIOS)</li>
+				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE ENTREPRENARIALE</li>
+				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE MANAGERIALE</li>
+				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE D'ENDURANCE ET DE PERSEVERANCE</li>
+				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE DYNAMISME ET DE MOBILISATION DE RESSOURCES</li>
 			</ul>
 		</section>
+		<h3 class="sec dernier">NOS METIERS</h3>
 		<section id="metier" class="metier">
-            <h3 class="sec">NOS METIERS</h3>
             <div class="metiers animate-on-scroll">
                 <div class="text">
                     <h3>AUDIT ET DETECTION DES INFRASTRUCTURES AERIENNES, ENTERREES, TERRESTES ET SOUS-TERRAINES, MARINES ET SOUS-MARINES</h3>

@@ -13,8 +13,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fontawesome.com/icons/file-lines?f=classic&s=thin" integrity="sha512-xxNO0nSN9+hE5CoefSwoHd4WwITb+jq0sE7o7dbzAeXNr9l6iQ7Dwlsl+fpdOebQKEp26OJmtunQrTJN6PizQA==" crossorigin="anonymous" />
 	<link rel="icon" src="images/logodronegroupe.png">
-	<link rel="shortcut icon" type="image/ico" src="images/logodronegroupe.png" />
-	
+	<link rel="shortcut icon" type="image/x-icon" href="images/logodronegroupe.png"/>	
 	<!-- Core Style -->
 	<link rel="stylesheet" href="style.css">
 
@@ -45,9 +44,8 @@
 
 		.sec{
 			background-color:#6A5ACD;
-			width: 1200px; 
-			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
-			background: linear-gradient(to left, #000 0%, #6A5ACD 100%);
+			width: 500px; 
+			background: linear-gradient(to right, #6A5ACD 60%, #fff 100%);
 			margin-left: 10px;
             color: yellow;
 			padding-left:35px;
@@ -96,6 +94,14 @@
 			padding: 50px;
 			width:60%;
 			height: 70vh ;
+		}
+
+		.premier{
+			width:1200px
+		}
+
+		.deuxieme{
+			width:700px
 		}
 
 		.content1>h1{
@@ -147,37 +153,40 @@
 @media screen and (max-width: 769px){
 
 		#content{
-			height:40vh;
-			margin-bottom:150px;
+			height:50vh;
+			margin-bottom:50px;
 		}
 		.content1{
+			background-image:url('images/M1_Plan de travail 1.jpg');
+			background-size:cover;
 			background-color: #000000;
 			padding: 30px;
-			width: 70%;
-			height: 40vh;
+			width: 100%;
+			height: 50vh;
 		}
 
 		.content2 {
 			height: 40vh;
 			width: 100%;
-		}
-
-		.content2>img{
-			height: 40vh;
-			width: 100%;
+			display:none
 		}
 		.content1>h1{
-		    margin-top:5px;
+		    margin-top:10%;
 			color:#ffffff;
-			font-size:18px;
+			font-size:30px;
+			font-family:'jumper PERSONAL USE ONLY', sans-serif;
 			
 		}
 
+		.premier{
+			width:490px
+		}
 
+		.deuxieme{
+			width:490px
+		}
 		.sec{
 			background-color:#6A5ACD;
-			width: 400px;
-			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
 			margin-left: 10px;
             color: yellow;
 			padding-left:35px;
@@ -203,9 +212,9 @@
 
 
 .content1>h1{
-	margin-top:50px;
+	margin-top:10%;
 	color:#ffffff;
-	font-size:30px;
+	font-size:25px;
 	}
 
 .content2 {
@@ -247,9 +256,9 @@
         }  
 
 	.content1>h1{
-		    margin-top:30px;
+		    margin-top:10%;
 			color:#ffffff;
-			font-size:25px;
+			font-size:30px;
 			
 		}
 
@@ -257,6 +266,10 @@
 		background-color:#6A5ACD;
 		width: 700px;
 }
+
+.premier{
+			width:1000px
+		}
 
 }
 
@@ -321,7 +334,7 @@
 		<div class="content-wrap py-0">
 				<div class="content1" >
 					<h1 class="text-transform-none " data-animate="fadeInUp"> EXTRAIT DU REGLEMENT AERONAUTIQUE DE COTE D'IVOIRE (RACI <strong>2009</strong>) AMENDEMENT <strong>02</strong>, EDITION <strong>03</strong></h1>
-					<div class="barre"></div>
+					<div class="barre"  data-animate="fadeInUp"></div>
 				</div>
 				<div class="content2" >
 					<img src="images/M1_Plan de travail 1.jpg" alt="">
@@ -329,7 +342,7 @@
 		<div>
 		</section><!-- #content end -->
 		<section class="regle">
-    		<h3 class="sec">CHAPITRE 7: AUTORISATIONS ET TITRE D'UTILISATION DES AERONEFS TELEPILOTES</h3>
+    		<h3 class="sec premier">CHAPITRE 7: AUTORISATIONS ET TITRE D'UTILISATION DES AERONEFS TELEPILOTES</h3>
             <div class="sub-regle">
             <div class="barre"></div>
             <p >
@@ -361,7 +374,7 @@
             </ul>
             <div  class="num">7.3.4</div>
             </div>
-            <h3 class="sec">CHAPITRE 8:FORMATION DES TELEPILOTES</h3>
+            <h3 class="sec deuxieme">CHAPITRE 8:FORMATION DES TELEPILOTES</h3>
             <div class="sub-regle">
             <p>
             Nul ne peut piloter un RPA s'il n'est titulaire d'une Attestation, d'un Certificat ou d'une Licence de Télépilote en état de validité reconnue, délivrée ou validée par l'ANAC conformément aux dispositions du RACI<strong>2000</strong>.

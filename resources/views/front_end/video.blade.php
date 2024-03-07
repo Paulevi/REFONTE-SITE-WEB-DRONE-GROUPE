@@ -16,8 +16,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fontawesome.com/icons/file-lines?f=classic&s=thin" integrity="sha512-xxNO0nSN9+hE5CoefSwoHd4WwITb+jq0sE7o7dbzAeXNr9l6iQ7Dwlsl+fpdOebQKEp26OJmtunQrTJN6PizQA==" crossorigin="anonymous" />
 	<link rel="icon" src="images/logodronegroupe.png">
-	<link rel="shortcut icon" type="image/ico" src="images/logodronegroupe.png" />
-	<!-- Core Style -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/logodronegroupe.png"/>	<!-- Core Style -->
 	<link rel="stylesheet" href="style.css">
 
 	<!-- Font Icons -->
@@ -159,7 +158,7 @@
 	
 		#content{
 			height: 30vh;	
-			margin-bottom:150px;
+			margin-bottom:50px;
 		}
 		.content1{
 			background-color: #000000;
@@ -374,7 +373,7 @@ font-size:10px;
 					<div class="barre"></div>
 				</div>
 				<div class="content2" >
-						<video id="slide-video" class="d-block w-100 h-100 rounded-5 shadow" poster="images/videos/explore-poster.jpg" preload="auto" loop autoplay playsinline muted>
+	<video id="slide-video" class="d-block w-100 h-100 rounded-5 shadow" poster="images/videos/explore-poster.jpg" preload="auto" loop autoplay playsinline muted>
                             <source src='images/videos/explore.webm' type='video/webm'>
                             <source src='images/videos/explore.mp4' type='video/mp4'>
                         </video>

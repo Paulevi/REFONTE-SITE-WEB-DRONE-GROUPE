@@ -17,8 +17,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fontawesome.com/icons/file-lines?f=classic&s=thin" integrity="sha512-xxNO0nSN9+hE5CoefSwoHd4WwITb+jq0sE7o7dbzAeXNr9l6iQ7Dwlsl+fpdOebQKEp26OJmtunQrTJN6PizQA==" crossorigin="anonymous" />
 	<link rel="icon" src="images/logodronegroupe.png">
-	<link rel=icon type=image/png src="images/logodronegroupe.png"/>
-	<!-- Core Style -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/logodronegroupe.png"/>	<!-- Core Style -->
 	<link rel="stylesheet" href="style.css">
 
 	<!-- Font Icons -->
@@ -106,7 +105,7 @@
 			
         /* Style du soulignement au survol */
         .sub-menu-container > .menu-item > .menu-link:hover{
-           color:#FFD966
+           color:#8FAADC
 
         }
 
@@ -120,6 +119,11 @@
 			width: 45%;
 			height: 80vh ;
 		}
+
+		.swiper-slide >.content1> h1 {
+    -webkit-animation: 1s ease 0.5s normal both 1 running fadeInUp;
+    animation: 1s ease 0.5s normal both 1 running fadeInUp;
+}
 
 
 		.swiper-slide >.swiper-slide-bg {
@@ -141,7 +145,7 @@
 		.content-wrap-2{
 			display: flex;
 			background-color: #000000;
-			height: 80vh ;
+			height: 100vh ;
 		}
 		.col-md-4 > a > h1  > span {
 			color:#ffffff;
@@ -150,7 +154,7 @@
 		}
 		.col-md-4 > a > h1{
 			color:#ffffff;
-			font-size:30px;
+			font-size:70px;
 			font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
 		}
 		.col-md-4 > a > h1:hover .col-md-4 > a > h1 >span{
@@ -272,23 +276,32 @@
 			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
 
 		}
+
+		.col-md-6 video{
+			height: 80VH;
+			width: 100%;
+		}
 		.Title{
 			padding:50%
-			height: 20%;
+			height: 10px;
 			width: 100%;
-			opacity: 0.8;
+			opacity: 0.85;
 			border-radius:10px 10px 0px 0px;
 
 			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
-			background: linear-gradient(to left, #000 0%, #0000CD 100%);
-			background-color: #0000CD	;
+			background: linear-gradient(to right, #1901B5 10%, #000 100%);
+
+			/* background: linear-gradient(to left, #000 0%, #0000CD 100%); */
+			/* background-color: #2F5597	; */
 
 		}
 		.Title> h1{
-			margin-top:20px;
+			margin-top:15px;
+			margin-left:15px;
 			color:#FFD966;
 			font-family:'Jumper PERSONAL USE ONLY-Regular', sans-serif;
-			/* font-size: 50px; */
+			font-size: 27px;
+			text-align:justify;
 		}
 
 		.sub-menu-container>.menu-item{
@@ -346,6 +359,11 @@
 @media screen and (max-width: 769px){
 
 
+	.sub-menu-container > .menu-item > .menu-link:hover{
+           color:#FFD966
+
+        }
+
 	.content-wrap{
 		height: 40vh;
 	}
@@ -360,7 +378,7 @@
 
 
 	#content{
-		height: 40vh ;
+		height: 50vh ;
 	}
 
 	.swiper-slide >.content1 >a{
@@ -368,11 +386,16 @@
 		margin-top:20px;
 	}
 
+	.feature-box{
+			height: 400px;
+			width: 400px;
+		}
 	
 	
 	.swiper-slide .content1> .barre{
 		margin-top:5px;
 		width: 200px;
+		display:none;
 	}
 
 	.sub-menu-container{
@@ -409,41 +432,45 @@
     }
 
 	.col-md-4 > a > h1{
-		font-size:35px;
+		font-size:50px;
 		text-align: center;
 
 		}
 		.swiper-slide>.content1{
-		background-color:#000000;
+		background-color:transparent;
 		padding: 30px;
-		width: 50%;
-		height: 40vh ;		
+		width: 100%;
+		height: 50vh ;		
 		}
 
 		.swiper-slide>.content1>a{
+			color:#fff;
+			border: 2px solid #fff;
+			background-color:transparent;
 			width: 150px;
 			margin-right: 10px;
 			font-size:10px;
 		}
 		.swiper-slide>.content1>h1{
-		 
-		color:#ffffff;
-		font-size:20px;
+			margin-top:5%;
+			color:#ffffff;
+			font-size:25px;
+			font-family:'jumper PERSONAL USE ONLY', sans-serif;argin-right: 10px;
 	}
 
 	.swiper-wrapper>.swiper-slide {
-		height: 40vh ;
+		height: 50vh ;
 		width: 100%;
 	}
 
 	.swiper-slide>.swiper-slide-bg{
-		height: 40vh ;
+		height: 100vh ;
 		width: 100%;
 	}
 
 	.swiper-slide>.swiper-slide-bg>img {
-			height: 40vh ;
-			width: 50%;
+			height: 50vh ;
+			width: 100%;
 		}
 	}
 	@media (min-width: 770px) and (max-width: 1000px){
@@ -466,9 +493,11 @@
 		left: 30%;
 	}
 
-	.col-md-4>a{
-		font-size:10px;
-	}
+	.col-md-4 > a > h1{
+		font-size:50px;
+		text-align: center;
+
+		}
 	.sub-menu-container{
 		background-color:transparent;
 		width: 100%;
@@ -638,28 +667,35 @@
 			</div>
 		</section>
 		<section id="menu">
-		<div class="barre-2"></div>
+		<div class="barre-2" style="margin-top: 20px; margin-bottom: 0px"></div>
     		<div class="container mw-md">
        			 <div class="row align-items-stretch">
            			 <div class="col-md-6 col-padding animate-on-scroll box">
-               			 <a href="{{url('/presentation')}}" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M6_Plan de travail 1-01-01-01-01.jpg");'>
-                    		<div class="Title">
+               			 <a href="{{url('/presentation')}}" data-animate="fadeInLeft" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M6_Plan de travail 1-01-01-01-01.jpg");'>
+                    		<div class="Title"style="height: 25%;">
                     			<h1 >PRESENTATION</h1>
                     		</div>
 						</a>
            			 </div>
-           			 <div class="col-md-6 col-padding animate-on-scroll  box">
-                		<a href="{{url('/metier')}}" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M9_Plan de travail 1-01.jpg");'>
-                    		<div class="Title">
+           			<div class="col-md-6 col-padding animate-on-scroll  box">
+                		<a href="{{url('/metier')}}" data-animate="fadeInRight" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M9_Plan de travail 1-01.jpg");'>
+                    		<div class="Title" style="height: 25%;">
 								<h1>NOS METIERS</h1>
                    			</div>
 						</a>
-           			 </div>
-           			 <div class="col-md-6 col-padding  animate-on-scroll box"  style="padding-top:5px">
-              			<a href="{{url('/formation')}}" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M7_Plan de travail 1-01-01-01-01-01.jpg");'>
-                    		<div class="Title">
+           			</div>
+           			 <div class="col-md-6 col-padding  animate-on-scroll box" data-animate="fadeInLeft" style="padding-top:5px">
+              			<a href="{{url('/formation')}}" data-animate="fadeInLeft" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M7_Plan de travail 1-01-01-01-01-01.jpg");'>
+                    		<div class="Title"style="height: 25%;">
 								<h1>NOS FORMATIONS</h1>
                    			 </div>
+						</a>
+           			 </div>
+						<div class="col-md-6 col-padding animate-on-scroll  box" data-animate="fadeInRight" style="padding-top:5px">
+                		<a href="{{url('/reglementation')}}" data-animate="fadeInRight" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M1_Plan de travail 1.jpg"); background-size:cover'>
+                    		<div class="Title"style="height: 25%;">
+								<h1>CONSULTER UN EXTRAIT DE LA REGLEMENTATION</h1>
+                   			</div>
 						</a>
            			 </div>
         		</div>
@@ -670,7 +706,7 @@
 			<div class="content-wrap-2">
 				<div class="row justify-content-around align-items-center">
 					<div class="col-md-4">
-						<a href="{{url('/video')}}"><h1 data-animate="fadeInUpSmall"><span style="color:#ffffff;font-size:55px">VIDEOTHEQUE<span></h1></a>
+						<a href="{{url('/video')}}"><h1 data-animate="fadeInUpSmall"><span style="color:#ffffff;">VIDEOTHEQUE<span></h1></a>
 						
 					</div>
 					<div class="col-md-6 rounded-5">

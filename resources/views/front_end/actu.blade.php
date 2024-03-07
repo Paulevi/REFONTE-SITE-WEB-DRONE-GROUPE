@@ -13,7 +13,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fontawesome.com/icons/file-lines?f=classic&s=thin" integrity="sha512-xxNO0nSN9+hE5CoefSwoHd4WwITb+jq0sE7o7dbzAeXNr9l6iQ7Dwlsl+fpdOebQKEp26OJmtunQrTJN6PizQA==" crossorigin="anonymous" />
 	<link rel="icon" src="../images/logodronegroupe.png">
-	<link rel=icon type=image/png src="../images/logodronegroupe.png"/>
+	<link rel="shortcut icon" type="image/x-icon" href="images/logodronegroupe.png"/>
 	<!-- Core Style -->
 	<link rel="stylesheet" href="../style.css">
 
@@ -72,14 +72,14 @@
             width:60%;                                                                
         }  
 
-		.present > .presen{
+		.present > .presen>h3{
 			background-color:#6A5ACD;
-			width: 600px; 
-			background: linear-gradient(to left, #000 0%, #6A5ACD 100%);
-
-			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
+			background: linear-gradient(to right, #6A5ACD 60%, #fff 100%);
 			margin-left: 10px;
+            color: yellow;
 			padding-left:35px;
+			font-weight: lighter;
+			font-family:'DIN Regular', sans-serif;
 		}
 
         .present >.presen > h3{
@@ -172,36 +172,42 @@
 @media screen and (max-width: 769px){
 	
 		#content{
-			height: 30vh;	
+			height: 50vh;	
 			margin-bottom:50px;
 
 		}
+
+		.content-wrap{
+			position: relative;
+
+			background-color: transparent;
+		}
+		
 		.content1{
-			background-color:#000000;
-		padding: 30px;
-		width: 50%;
-		height: 30vh ;		
+			background-color:transparent;
+			padding: 30px;
+			width: 100%;
+			height: 50vh;
+			position: absolute;
 	}
+
 		.content2>img{
-			height: 30vh;
+			height: 50vh;
 			width: 100%;
 			}
 
 		.content2 {
-			height: 30vh ;
+			
+			height: 50vh ;
 			width: 100%;
 		}
     .content1>h1{
-		margin-bottom:2px;
-
-		 margin-top:5px;
-		color:#ffffff;
-		font-size:20px;
+			margin-top:15%;
+			color:#ffffff;
+			font-size:35px;
+			font-family:'jumper PERSONAL USE ONLY', sans-serif;
 	}
-  .content1> .barre{
-		margin-top:10px;
-		width: 200px;
-	}
+ 
 		
 
 		.col-md-4 {
@@ -388,7 +394,7 @@ font-size:35px;
 		<div>
 		</section><!-- #content end -->
 		<section class="present">
-    		<div class="presen"><h3>{{$actu->sous_titre}}</h3></div>
+    		<div class="presen"><h3><span>{{$actu->sous_titre}}<span></h3></div>
             <div class="barre-2"></div>
 			@foreach ($actu->paragraphe as $paragraphe)
 				<p>{{$paragraphe->contenu }}</p>

@@ -10,7 +10,7 @@
 	  .consulter{
 			height: 25vh;
 			width: 100%;
-			background-color:#6A5ACD;
+			background-color:#3A2F7C;
 			font-size: 30px;
 			text-align: center;
 			padding: 30px;
@@ -19,10 +19,9 @@
 		.but{
 			margin-top: 20px;
 			border-radius: 100px;
-			
+			color: #3A2F7C;
 			background-color: #FCDC12;
 		}
-
 		.scroll{
 			position: fixed;
 			bottom: 20px;

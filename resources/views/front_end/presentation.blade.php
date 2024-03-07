@@ -12,9 +12,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fontawesome.com/icons/file-lines?f=classic&s=thin" integrity="sha512-xxNO0nSN9+hE5CoefSwoHd4WwITb+jq0sE7o7dbzAeXNr9l6iQ7Dwlsl+fpdOebQKEp26OJmtunQrTJN6PizQA==" crossorigin="anonymous" />
-	<link rel="icon" src="images/logodronegroupe.png">
-	<link rel="shortcut icon" type="image/ico" src="images/logodronegroupe.png" />
-	<!-- Core Style -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/logodronegroupe.png"/>	<!-- Core Style -->
 	<link rel="stylesheet" href="style.css">
 
 	<!-- Font Icons -->
@@ -73,12 +71,13 @@
 
 		.present > .presen{
 			background-color:#6A5ACD;
-			width: 300px; 
-			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
-			background: linear-gradient(to left, #000 0%, #6A5ACD 100%);
+			width: 500px; 
+			background: linear-gradient(to right, #6A5ACD 60%, #fff 100%);
 			margin-left: 10px;
             color: yellow;
 			padding-left:35px;
+			font-weight: lighter;
+			font-family:'DIN Regular', sans-serif;
 		}
 
         .present >.presen > h3{
@@ -171,38 +170,39 @@
 		height: 15px;
 	}
 		#content{
-			height: 30vh;	
+			height: 50vh;	
 			margin-bottom:50px;
 
 		}
 		.content1{
-		background-color:#000000;
-		padding: 5%;
-		width: 50%;
-		height: 30vh ;		
+			background-size:cover;
+			padding: 30px;
+			width: 100%;
+			height: 50vh;
+		background-image:url('images/M9_Plan de travail 1-01.jpg');
 	}
 
 	
 	.content1>h1{
-		margin-bottom:2px;
-
-		 margin-top:5px;
-		color:#ffffff;
-		font-size:25px;
+		margin-top:15%;
+			color:#ffffff;
+			font-size:40px;
+			font-family:'jumper PERSONAL USE ONLY', sans-serif;
 	}
-  .content1> .barre{
-		margin-top:10px;
-		width: 200px;
-	}
+  
 		.content2>img{
 			height: 30vh;
 			width: 100%;
+			display:none
 			}
 
 		.content2 {
 			height: 30vh ;
 			width: 100%;
-		}	.col-md-4 {
+			display:none
+		}	
+		
+		.col-md-4 {
 			padding-top: 10px;
 		}
 		.col-md-4 > a >h1{
@@ -377,9 +377,9 @@ font-size:35px;
 		<div class="content-wrap py-0">
 				<div class="content1" >
 					<h1 class="text-transform-none " data-animate="fadeInUp" style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;"> DRONE GROUPE QUI SOMMES NOUS ?</h1>
-					<div class="barre"></div>
+					<div class="barre"  data-animate="fadeInUp"></div>
 				</div>
-				<div class="content2" >
+				<div class="content2">
 					<img src="images/M9_Plan de travail 1-01.jpg" alt="">
                 </div>
 		<div>
