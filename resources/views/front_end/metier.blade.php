@@ -248,7 +248,7 @@
 		
 @media screen and (max-width: 769px){
 	#content{
-		height: 50vh;	
+		height: 90vh;	
 		margin-bottom:50px;
 	}
 
@@ -281,7 +281,7 @@
 			background-size:cover;
 			padding: 30px;
 			width: 100%;
-			height: 50vh;
+			height: 90vh;
 				}
 
 		.content2 {
@@ -294,10 +294,10 @@
 			width: 100%;                                                               
 		}  
 	.content1>h1{
-			margin-top:15%;
-			color:#ffffff;
-			font-size:40px;
-			font-family:'jumper PERSONAL USE ONLY', sans-serif;
+		margin-top:18%;
+		color:#FFF;
+		font-size:45px;
+		font-family:'jumper PERSONAL USE ONLY', sans-serif;
 
 		}
 
@@ -382,7 +382,6 @@
 	height: 60px;
 	width: 80%;
 	font-size: 20px;
-	box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
 
 		}
 .content1>h1{
@@ -493,8 +492,7 @@ font-size:10px;
 	color:#fff;
 	height: 60px;
 	width: 80%;
-	font-size: 20px;
-	box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
+	font-size: 20px;gba(0, 0, 0, 0.5);
 
 		}
 }
@@ -533,7 +531,7 @@ font-size:10px;
 							<ul class="menu-container" >
 								<li class="menu-item" >
 									<a class="menu-link" href="{{url('/presentation')}}" >
-										<div >PRESENTATION</div>
+										<div >PRéSENTATION</div>
 									</a>
 								</li>
 								<li class="menu-item current">
@@ -544,6 +542,11 @@ font-size:10px;
 								<li class="menu-item">
 									<a class="menu-link" href="{{url('/formation')}}" >
 										<div >NOS FORMATIONS</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="{{url('/video')}}" >
+										<div >VIDEOTHèQUE</div>
 									</a>
 								</li>
 								<div class="morph-marker"></div>
@@ -589,56 +592,56 @@ font-size:10px;
 			Le management capacitaire utilise des outils innovants permettant de répondre aux interrogations portant sur des questions irrationnelles telles que :</p>
             <div class="barre-2"></div>
 			<ul class="animate-on-scroll">
-				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE PROBITE MORALE OU D'INTEGRITE</li>
-				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE GESTION DE CONFLITS, DE REGULATION OU D'AUTO-REGULATION</li>
-				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE LUCIDITE, DE VIGILANCE ET D'ATTENTION</li>
-				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE REFLEXION (ELABORATION DE STRATEGIES ET DE SCENARIOS)</li>
-				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE ENTREPRENARIALE</li>
-				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE MANAGERIALE</li>
-				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE D'ENDURANCE ET DE PERSEVERANCE</li>
-				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITE DE DYNAMISME ET DE MOBILISATION DE RESSOURCES</li>
+				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITÉ DE PROBITÉ MORALE OU D'INTEGRITÉ</li>
+				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITÉ DE GESTION DE CONFLITS, DE REGULATION OU D'AUTO-REGULATION</li>
+				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITÉ DE LUCIDITÉ, DE VIGILANCE ET D'ATTENTION</li>
+				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITÉ DE REFLEXION (ÉLABORATION DE STRATÉGIES ET DE SCÉNARIOS)</li>
+				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITÉ ENTREPRENARIALE</li>
+				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITÉ MANAGÉRIALE</li>
+				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITÉ D'ENDURANCE ET DE PERSÉVÉRANCE</li>
+				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITÉ DE DYNAMISME ET DE MOBILISATION DE RESSOURCES</li>
 			</ul>
 		</section>
 		<h3 class="sec dernier">NOS METIERS</h3>
 		<section id="metier" class="metier">
             <div class="metiers animate-on-scroll">
                 <div class="text">
-                    <h3>AUDIT ET DETECTION DES INFRASTRUCTURES AERIENNES, ENTERREES, TERRESTES ET SOUS-TERRAINES, MARINES ET SOUS-MARINES</h3>
-                    <P>AVEC NOS SOLUTIONS DE DETECTION POUR DECOUVRIR DES DONNEES DE RESEAUX, RELEVER NUMERIQUEMENT VOS SOUS-SURFACES ET LES CONVERTIR IMMEDIATEMENT EN INFORMATIONS EXPLOITABLES ADAPTEES A VOS BESOINS, AUSSI BIEN SUR LE TERRAIN </P>
+                    <h3>AUDIT ET DÉTECTION DES INFRASTRUCTURES AÉRIENNES, ENTERRÉES, TERRESTES ET SOUS-TERRAINES, MARINES ET SOUS-MARINES</h3>
+                    <P>AVEC NOS SOLUTIONS DE DÉTECTION POUR DECOUVRIR DES DONNÉES DE RESEAUX, RELEVER NUMERIQUEMENT VOS SOUS-SURFACES ET LES CONVERTIR IMMÉDIATEMENT EN INFORMATIONS EXPLOITABLES ADAPTÉES A VOS BESOINS, AUSSI BIEN SUR LE TERRAIN </P>
                 </div>
                 <div class="image"><img src="images/hhj_Plan de travail 1 (1).jpg" alt=""></div>
             </div>
             <div class="metiers animate-on-scroll">
                 <div class="text">
-                    <h3>TRAITEMENT DE DONNEES</h3>
-                    <P>(CARTOGRAPHIE, TERMOGRAPHIE, LASEROGRAMMETRIE, ORTHOPHOTO, PHOTOGRAMMETRIE)</P>
+                    <h3>TRAITEMENT DE DONNÉES</h3>
+                    <P>(CARTOGRAPHIE, TERMOGRAPHIE, LASEROGRAMMETRIE, ORTHOPHOTO, PHOTOGRAMMÉTRIE)</P>
                 </div>
                 <div class="image"><img src="images/M11-02.jpg" alt="" ></div>
             </div>
             <div class="metiers animate-on-scroll">
                 <div class="text">
-                    <h3>FORMATION TELEPILOTES</h3>
-                    <P>NOTRE CENTRE DE FORMATION HOMOLOGUE PAR L'ANAC DISPENSE DES FORMATIONS THEORIQUES, PRATIQUES OU ENCORE SPECIALISEES POUR FAIRE DE VOUS DES PROFESSIONNELS. </P>
+                    <h3>FORMATION TÉLÉPILOTES</h3>
+                    <P>NOTRE CENTRE DE FORMATION HOMOLOGUÉ PAR L'ANAC DISPENSE DES FORMATIONS THÉORIQUES, PRATIQUES OU ENCORE SPECIALISÉES POUR FAIRE DE VOUS DES PROFESSIONNELS. </P>
                 </div>
                 <div class="image"><img src="images/M11-02-01.jpg" alt="" ></div>
             </div>
             <div class="metiers animate-on-scroll">
                 <div class="text">
                     <h3>EXPLORATION CAPACITAIRE</h3>
-                    <P>GRACE A NOS RECHERCHES POUSSES , NOUS AVONS REUSSIT A DEVELOPPER AU MOYEN DE L'INTELLIGENCE ARTIFICIELLE, UNE SOLUTION INNOVANTE PERMETTANT DE NUMERISER LES CAPACITES INTRINSEQUE(APTITUDE NATURELLE, INNEE) DE L'ETRE HUMAIN ET SON ENVIRONNEMENT, AINSI NOUS OFFRONS AUX PARTICULIERS, ENTREPRISES ET ORGANISATIONS, LA POSSIBILITE DE FONCTIONNER PLUS EFFICACEMENT, CAR AYANT DES EMPLOYES ET DES COLLABORATEURS PLUS EFFICACES A LEURS POSTES.</P>
+                    <P>GRACE A NOS RECHERCHES POUSSÉES , NOUS AVONS REUSSIT A DEVELOPPER AU MOYEN DE L'INTELLIGENCE ARTIFICIELLE, UNE SOLUTION INNOVANTE PERMETTANT DE NUMERISER LES CAPACITÉS INTRINSEQUE(APTITUDE NATURELLE, INNÉE) DE L'ETRE HUMAIN ET SON ENVIRONNEMENT, AINSI NOUS OFFRONS AUX PARTICULIERS, ENTREPRISES ET ORGANISATIONS, LA POSSIBILITÉ DE FONCTIONNER PLUS EFFICACEMENT, CAR AYANT DES EMPLOYÉS ET DES COLLABORATEURS PLUS EFFICACES A LEURS POSTES.</P>
                 </div>
                 <div class="image"><img src="images/M2_Plan de travail 1-01.jpg" alt="" ></div>
             </div>
             <div class="metiers animate-on-scroll">
                 <div class="text">
-                    <h3>SECURITE PUPLIQUE ET SURVEILLANCE</h3>
+                    <h3>SECURITÉ PUPLIQUE ET SURVEILLANCE</h3>
                     <P>(RECONNAISSANCE FACIALE PAR IA)</P>
                 </div>
                 <div class="image"><img src="images/neuronne2.png" alt="" style="height=300px; width=300px"></div>
             </div>
 		</section>
 		<section class="special">
-			<h1> <span  style="color:#ffffff;">NOS SPECIALITES</span></h1>
+			<h1> <span  style="color:#ffffff;">NOS SPECIALITÉS</span></h1>
 			<div class="first-ligne">
 			<div class="specials" data-animate="fadeInLeft">
 			<div class="image"><img src="images/M12_Plan de travail 1-01.jpg" alt=""></div>
@@ -669,9 +672,9 @@ font-size:10px;
             <div class="specials" data-animate="fadeInRight">
 				<div class="image"><img src="images/EEE- 1-01.jpg" alt=""></div>
                 <div class="text">
-                    <h6 style="color: #fff;">REALITE AUGMENTEE, TOURS ET VISITES VIRTUELLES</h6>
+                    <h6 style="color: #fff;">REALITÉ AUGMENTÉE, TOURS ET VISITES VIRTUELLES</h6>
 					<div class="barre"></div>
-                    <P>AFFICHAGE D'INFRASTRUCTURES AVEC LA REALITE AUGMENTEE, VIRTUALISATION DE L'ENVIRONNEMENT INTERIEUR ET EXTERIEUR</P>
+                    <P>AFFICHAGE D'INFRASTRUCTURES AVEC LA REALITÉ AUGMENTÉE, VIRTUALISATION DE L'ENVIRONNEMENT INTERIEUR ET EXTERIEUR</P>
                 </div>
                
             </div>

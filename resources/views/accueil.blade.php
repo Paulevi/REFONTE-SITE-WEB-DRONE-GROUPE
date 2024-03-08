@@ -35,6 +35,10 @@
 	<title>DRONE GROUPE</title>
 
 	<style>	
+
+
+
+
 		@font-face {
 			font-family: 'Jumper PERSONAL USE ONLY-Regular';
 			src: url('police/jumper/JumperPERSONALUSEONLY-Regular.ttf') format('ttf'); 
@@ -353,7 +357,7 @@
 
 		.logo-default{
 		height: 5px;
-	}
+	}	
 
 
 @media screen and (max-width: 769px){
@@ -365,7 +369,7 @@
         }
 
 	.content-wrap{
-		height: 40vh;
+		height: 100vh;
 	}
 	
 	
@@ -378,7 +382,7 @@
 
 
 	#content{
-		height: 50vh ;
+		height: 100vh ;
 	}
 
 	.swiper-slide >.content1 >a{
@@ -452,14 +456,14 @@
 			font-size:10px;
 		}
 		.swiper-slide>.content1>h1{
-			margin-top:5%;
+			margin-top:15%;
 			color:#ffffff;
-			font-size:25px;
+			font-size:40px;
 			font-family:'jumper PERSONAL USE ONLY', sans-serif;argin-right: 10px;
 	}
 
 	.swiper-wrapper>.swiper-slide {
-		height: 50vh ;
+		height: 100vh ;
 		width: 100%;
 	}
 
@@ -469,7 +473,7 @@
 	}
 
 	.swiper-slide>.swiper-slide-bg>img {
-			height: 50vh ;
+			height: 90vh ;
 			width: 100%;
 		}
 	}
@@ -579,13 +583,29 @@
 		height: 35px;
 	}
 
-    
+	  #header{
+		z-index: 1;
+	  }
+
+	 #loader{
+		height:100VH;
+		width:100%;
+		background: #fff url('images/SpxP.gif') no-repeat center center;
+		z-index: 100;
+		position: fixed;
+	} 
+
+
 
 </style>
 
 </head>
 
 	<body>
+
+		<div id="loader"></div>
+
+	
 		<!-- Header
 		============================================= -->
 		<header id="header" class="sticky dark ">
@@ -613,13 +633,13 @@
 										<div >Notre centre de formation</div>
 									</a>
 									<ul class="sub-menu-container">
-										<li class="menu-item"><a class="menu-link" href="{{url('/formation#theorique')}}"><div>FORMATION THEORIQUE</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#theorique')}}"><div>FORMATION THÉORIQUE</div></a></li>
 										
 										<li class="menu-item"><a class="menu-link" href="{{url('/formation#pratique')}}"><div>FORMATION PRATIQUE</div></a></li>
 										
-										<li class="menu-item"><a class="menu-link" href="{{url('/formation#specialise')}}"><div>FORMATION SPECIALISEE</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#specialise')}}"><div>FORMATION SPECIALISÉE</div></a></li>
 										
-										<li class="menu-item"><a class="menu-link" href="{{url('/formation#tele')}}"><div>FORMATION AU TELEPILOTAGE</div></a></li>
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#tele')}}"><div>FORMATION AU TÉLÉPILOTAGE</div></a></li>
 									</ul>
 								</li>
 							</ul>
@@ -673,7 +693,7 @@
            			 <div class="col-md-6 col-padding animate-on-scroll box">
                			 <a href="{{url('/presentation')}}" data-animate="fadeInLeft" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M6_Plan de travail 1-01-01-01-01.jpg");'>
                     		<div class="Title"style="height: 25%;">
-                    			<h1 >PRESENTATION</h1>
+                    			<h1 >PRÉSENTATION</h1>
                     		</div>
 						</a>
            			 </div>
@@ -706,7 +726,7 @@
 			<div class="content-wrap-2">
 				<div class="row justify-content-around align-items-center">
 					<div class="col-md-4">
-						<a href="{{url('/video')}}"><h1 data-animate="fadeInUpSmall"><span style="color:#ffffff;">VIDEOTHEQUE<span></h1></a>
+						<a href="{{url('/video')}}"><h1 data-animate="fadeInUpSmall"><span style="color:#ffffff;">VIDEOTHÈQUE<span></h1></a>
 						
 					</div>
 					<div class="col-md-6 rounded-5">
@@ -737,6 +757,12 @@
 	<script src="js/functions.bundle.js"></script>
 
 	<script>
+		
+		var loader= document.getElementById("loader");
+		window.addEventListener('load', function(){
+			loader.style.display="none";
+		})
+
 		jQuery(window).on( 'load', function(){
 			var cssVarSpeed = getComputedStyle(document.querySelector('.swiper-pagination'));
 			var swiperSpeed = (cssVarSpeed.getPropertyValue('--cnvs-swiper-autoplay-speed')).split('ms');

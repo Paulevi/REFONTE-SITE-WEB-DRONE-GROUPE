@@ -262,41 +262,37 @@
 			width: 100%
 		}
 		#content{
-			height: 50vh;	
+			height: 90vh;	
 			margin-bottom:50px;
 		}
-		
 		.content1{
-			padding: 30px;
-			width: 100%;
-			height: 50vh ;
+			/* background-color: #000000; */
 			background-image:url('images/M4_Plan de travail 1-01-01.jpg');
 			background-size:cover;
-
-		}
-
-		.barre{
-			background-color: #483D8B;
+			padding: 30px;
+			width: 100%;
+			height: 90vh;
+				}
 			
-		}
+				.barre{
+					background-color:#483D8B;
+				}
 
 		.content2 {
-			height: 50vh ;
+			height: 50vh;S
 			width: 100%;
 			display:none;
 		}
-
 		.content2>img{
 			height: 50vh ;
-			width: 100%;
-		}
-		
-		.content1>h1{
-			margin-top:15%;
-			color: #483D8B;
-			font-size:40px;
-			
-			
+			width: 100%;                                                               
+		}  
+	.content1>h1{
+		margin-top:18%;
+		color:#483D8B;
+		font-size:45px;
+		font-family:'jumper PERSONAL USE ONLY', sans-serif;
+
 		}
 
 		
@@ -479,7 +475,7 @@ font-size:10px;
 							<ul class="menu-container" >
 								<li class="menu-item" >
 									<a class="menu-link" href="{{url('/presentation')}}" >
-										<div >PRESENTATION</div>
+										<div >PRéSENTATION</div>
 									</a>
 								</li>
 								<li class="menu-item">
@@ -490,6 +486,11 @@ font-size:10px;
 								<li class="menu-item current">
 									<a class="menu-link" href="#" >
 										<div >NOS FORMATIONS</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="{{url('/video')}}" >
+										<div >VIDEOTHèQUE</div>
 									</a>
 								</li>
 								<div class="morph-marker"></div>
@@ -562,17 +563,17 @@ font-size:10px;
             <section id = "theorique"class="formas animate-on-scroll">
 			<div class="image" style="background-image:url('images/M13-02-01.jpg');background-size:cover; " ></div>
                 <div class="text">
-                    <h4>FORMATION THEORIQUE </h4>
+                    <h4>FORMATION THÉORIQUE </h4>
                     <P> <i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR 05 JOURS//COURS DU SOIR</strong></P>
 					<ul>
-						<li><i class="fa-solid fa-angle-right"></i> DROIT ET REGLEMENTATION DES AERONEFS TELEPILOTES</li>
-						<li><i class="fa-solid fa-angle-right"></i> TECHNIQUES AERAUNOTIQUES</li>
+						<li><i class="fa-solid fa-angle-right"></i> DROIT ET RÈGLEMENTATION DES AÉRONEFS TELEPILOTÉS</li>
+						<li><i class="fa-solid fa-angle-right"></i> TECHNIQUES AÉRAUNOTIQUES</li>
 						<li><i class="fa-solid fa-angle-right"></i> FACTEURS HUMAINS ET COMMUNICATION</li>
-						<li><i class="fa-solid fa-angle-right"></i> NOTION DE METEOROLOGIE AERONAUTIQUE</li>
-						<li><i class="fa-solid fa-angle-right"></i> PROCEDURES OPERATIONNELLES</li>
+						<li><i class="fa-solid fa-angle-right"></i> NOTION DE MÉTÉOROLOGIE AÉRONAUTIQUE</li>
+						<li><i class="fa-solid fa-angle-right"></i> PROCEDURES OPÉRATIONNELLES</li>
 					</ul>
 					<div class="prerequis">
-						<span>PREREQUIS: </span>TOUTE PERSONNE AYANT DES APTITUDES EN MATHEMATIQUE ET SCIENCE-PHYSIQUE
+						<span>PRÉREQUIS: </span>TOUTE PERSONNE AYANT DES APTITUDES EN MATHÉMATIQUE ET SCIENCE-PHYSIQUE
 					</div>
 				</div>
             </section>
@@ -582,42 +583,42 @@ font-size:10px;
                     <h4>FORMATION PRATIQUE </h4>
                     <P><i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR 03 JOURS</strong></P>
 					<ul>
-						<li><i class="fa-solid fa-angle-right"></i> PRESENTATION ET CONNAISSANCE DES DRONES</li>
-						<li><i class="fa-solid fa-angle-right"></i> THEORIES SUR LES CONTROLES</li>
+						<li><i class="fa-solid fa-angle-right"></i> PRÉSENTATION ET CONNAISSANCE DES DRONES</li>
+						<li><i class="fa-solid fa-angle-right"></i> THÉORIES SUR LES CONTROLES</li>
 						<li><i class="fa-solid fa-angle-right"></i> SIMMULATEUR DE VOL</li>
-						<li><i class="fa-solid fa-angle-right"></i> CONCEPTION, PREPARATION ET EXECUTION DE MISSION</li>
+						<li><i class="fa-solid fa-angle-right"></i> CONCEPTION, PRÉPARATION ET EXÉCUTION DE MISSION</li>
 						<li><i class="fa-solid fa-angle-right"></i> SORTIES SUR TERRAIN</li>
 					</ul>
-				<div class="prerequis"><span>PREREQUIS: </span>TOUTE PERSONNE AYANT DES APTITUDES THEORIQUES AU TELEPILOTAGE </div>
+				<div class="prerequis"><span>PRÉREQUIS: </span>TOUTE PERSONNE AYANT DES APTITUDES THÉORIQUES AU TÉLÉPILOTAGE </div>
 				</div>
 			</section>
             <section id = "specialise" class="formas animate-on-scroll">
 				<div class="image" style="background-image:url('images/Sans titre HH1-01.jpg');background-size:cover;"></div>
                 <div class="text">
-                    <h4>FORMATION SPECIALISEE</h4>
+                    <h4>FORMATION SPÉCIALISÉE</h4>
                     <P><i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR 05 JOURS</strong></P>
 					<ul>
-						<li><i class="fa-solid fa-angle-right"></i> TECHNIQUE DE CARTOGRAPHIE ET DE PHOTOGRAMMETRIE</li>
+						<li><i class="fa-solid fa-angle-right"></i> TECHNIQUE DE CARTOGRAPHIE ET DE PHOTOGRAMMÉTRIE</li>
 						<li><i class="fa-solid fa-angle-right"></i> LASEROGRAPHIE</li>
 						<li><i class="fa-solid fa-angle-right"></i> TECHNIQUES DE L'AUDIOVISUEL</li>
 						<li><i class="fa-solid fa-angle-right"></i> TECHNIQUES DE COMMUNICATION</li>
 					</ul>
-				<div class="prerequis"><span>PREREQUIS: </span>TOUTE PERSONNE AYANT DES APTITUDES THEORIQUES AU TELEPILOTAGE</div>
+				<div class="prerequis"><span>PRÉREQUIS: </span>TOUTE PERSONNE AYANT DES APTITUDES THÉORIQUES AU TÉLÉPILOTAGE</div>
 				</div>
 			</section>
             <section id = "tele" class="formas animate-on-scroll">
 			<div class="image" style="background-image:url('images/KLM-01.jpg');background-size:cover;"></div>
                 <div class="text">
-                    <h4>FORMATION AU TELEPILOTAGE</h4>
+                    <h4>FORMATION AU TÉLÉPILOTAGE</h4>
                     <P><i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR 03 JOURS</strong></P>
 					<ul>
-						<li><i class="fa-solid fa-angle-right"></i> INTRODUCTION A LA REGLEMENTATION AERIENNE</li>
-						<li><i class="fa-solid fa-angle-right"></i> PRESENTATION GENERALE DES DRONES</li>
+						<li><i class="fa-solid fa-angle-right"></i> INTRODUCTION A LA RÈGLEMENTATION AÉRIENNE</li>
+						<li><i class="fa-solid fa-angle-right"></i> PRÉSENTATION GÉNERALE DES DRONES</li>
 						<li><i class="fa-solid fa-angle-right"></i>PERFORMANCE HUMAINE // COMMUNICATION</li>
 						<li><i class="fa-solid fa-angle-right"></i> SIMMULATEUR DE VOL</li>
 						<li><i class="fa-solid fa-angle-right"></i>SORTIES SUR TERRAIN</li>
 					</ul>
-					<div class="prerequis"><span>PREREQUIS: </span>AUCUN</div>
+					<div class="prerequis"><span>PRÉREQUIS: </span>AUCUN</div>
 				</div>
             </section>
 		</section>

@@ -28,7 +28,7 @@
 			right: 20px;
 			width: 40px;
 			height: 40px;
-			background-color: #483D8B; /* Couleur de fond de la flèche */
+			background-color: #3A2F7C; /* Couleur de fond de la flèche */
 			color: #FFD966; /* Couleur du texte de la flèche */
 			font-size: 24px;
 			text-align: center;
@@ -40,7 +40,7 @@
 
 		.scroll:hover {
 			background-color:  #FFD966;
-			color:#483D8B;
+			color:#3A2F7C;
 		}
 
 		#copyrights{
@@ -197,7 +197,7 @@
 			<section id="consulter" class="consulter">
 				<h5   style="color:#FFD966; "><i class="uil uil-file-alt"></i><span>EXTRAIT DU REGLEMENT AERONAUTIQUE DE COTE D'IVOIRE (RACI 2009) AMENDEMENT 02, EDITION 03</span></h5>
 				<div></div>
-				<a href="{{url('/reglementation')}}" class="button button-xlarge button-circle button-dark button-reveal text-transform-none ls-0"  style="background-color:#FFD966; margin-top: 20px; " ><i class="bi-arrow-right" style="color:#6A5ACD;"></i><span style="color:#6A5ACD; "><strong>CONSULTER</strong></a>
+				<a href="{{url('/reglementation')}}" class="button button-xlarge button-circle button-dark button-reveal text-transform-none ls-0"  style="background-color:#FFD966; margin-top: 20px; " ><i class="bi-arrow-right" style="color:#3A2F7C;"></i><span style="color:#3A2F7C; "><strong>CONSULTER</strong></a>
 			</section>
 			<footer >
 			<!-- Copyrights

@@ -170,7 +170,7 @@
 		height: 15px;
 	}
 		#content{
-			height: 50vh;	
+			height: 100vh;	
 			margin-bottom:50px;
 
 		}
@@ -178,16 +178,16 @@
 			background-size:cover;
 			padding: 30px;
 			width: 100%;
-			height: 50vh;
+			height: 80vh;
 		background-image:url('images/M9_Plan de travail 1-01.jpg');
 	}
 
 	
 	.content1>h1{
-		margin-top:15%;
-			color:#ffffff;
-			font-size:40px;
-			font-family:'jumper PERSONAL USE ONLY', sans-serif;
+		margin-top:18%;
+		color:#000;
+		font-size:45px;
+		font-family:'jumper PERSONAL USE ONLY', sans-serif;
 	}
   
 		.content2>img{
@@ -349,7 +349,7 @@ font-size:35px;
 							<ul class="menu-container" >
 								<li class="menu-item current" >
 									<a class="menu-link" href="#" >
-										<div >PRESENTATION</div>
+										<div >PRéSENTATION</div>
 									</a>
 								</li>
                                 <li class="menu-item">
@@ -360,6 +360,11 @@ font-size:35px;
                                 <li class="menu-item">
 									<a class="menu-link" href="{{url('/formation')}}" >
 										<div >NOS FORMATIONS</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="{{url('/video')}}" >
+										<div >VIDEOTHèQUE</div>
 									</a>
 								</li>
 								<div class="morph-marker"></div>
@@ -385,7 +390,7 @@ font-size:35px;
 		<div>
 		</section><!-- #content end -->
 		<section class="present">
-    		<div class="presen"><h3>PRESENTATION</h3></div>
+    		<div class="presen"><h3>PRÉSENTATION</h3></div>
             <div class="barre-2"></div>
             <p>
             DRONE GROUPE est une société présente en France, au Sénégal et en Côte d’Ivoire. Nous sommes un bureau d’études techniques, prestations de services, conseils se rapportant à l’acquisition et au traitement de données numériques, aériennes, terrestres sous-terrestres , marines et sous-marines.

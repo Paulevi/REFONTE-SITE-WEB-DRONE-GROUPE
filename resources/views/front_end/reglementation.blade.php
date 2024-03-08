@@ -304,9 +304,14 @@
 						<nav class="primary-menu" style="position:relative; left: 5px;">
 
 							<ul class="menu-container" >
+							<li class="menu-item current" >
+									<a class="menu-link" href="#" >
+										<div >REGLEMENTATION</div>
+									</a>
+								</li>
 								<li class="menu-item" >
 									<a class="menu-link" href="{{url('/presentation')}}" >
-										<div >PRESENTATION</div>
+										<div >PRéSENTATION</div>
 									</a>
 								</li>
 								<li class="menu-item">
@@ -317,6 +322,11 @@
 								<li class="menu-item">
 									<a class="menu-link" href="{{url('/formation')}}" >
 										<div >NOS FORMATIONS</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="{{url('/video')}}" >
+										<div >VIDEOTHèQUE</div>
 									</a>
 								</li>
 								<div class="morph-marker"></div>

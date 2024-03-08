@@ -361,6 +361,11 @@ font-size:35px;
 										<div >actualité</div>
 									</a>
 								</li>
+								<li class="menu-item" >
+									<a class="menu-link" href="{{url('/presentation')}}" >
+										<div >PRéSENTATION</div>
+									</a>
+								</li>
                                 <li class="menu-item">
 									<a class="menu-link" href="{{url('/metier')}}" >
 										<div >NOS METIERS</div>
@@ -369,6 +374,11 @@ font-size:35px;
                                 <li class="menu-item">
 									<a class="menu-link" href="{{url('/formation')}}" >
 										<div >NOS FORMATIONS</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a class="menu-link" href="{{url('/video')}}" >
+										<div >VIDEOTHèQUE</div>
 									</a>
 								</li>
 								<div class="morph-marker"></div>
