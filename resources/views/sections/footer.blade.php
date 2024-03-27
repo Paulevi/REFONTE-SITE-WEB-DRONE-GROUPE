@@ -1,3 +1,4 @@
+
 <style>
   
 		.numb{
@@ -6,15 +7,20 @@
 		.numb:hover{
 			color:#FFD966;
 		}
-		
-	  .consulter{
-			height: 25vh;
-			width: 100%;
-			background-color:#3A2F7C;
-			font-size: 30px;
-			text-align: center;
-			padding: 30px;
+
+		.consulter>a{
+			margin-bottom:5%;
 		}
+		
+		.consulter{
+				height: 25vh;
+				width: 100%;
+				background-color:#3A2F7C;
+				font-size: 30px;
+				text-align: center;
+				padding: 30px;
+				overflow:hidden
+			}
 
 		.but{
 			margin-top: 20px;
@@ -116,7 +122,7 @@
         align-items: stretch;
 		}
 		.consulter{
-			height:35vh
+			height:250px
 				
 		}
 
@@ -142,22 +148,29 @@
 		flex-direction: column;
         align-items: stretch;
 		}
-		#consulter > h5 > span {
-		padding: 5px;
-    border-bottom:NONE;
+}
+
+@media (min-width: 770px) and (max-width: 1100px){
+	.consulter{
+		height: 30vh;
+	}
 }
 
 
-	}
-
-
 	#consulter > h5 > span {
-		padding: 10px;
+		padding: 2px;
     	border-bottom: 2px solid #FFD966;
 }
 
 #consulter > h5 >i{
 	font-size: 30px;
+}
+
+@media (min-width: 1101px) and (max-width: 1400px){
+
+	.consulter{
+		height: 30vh;
+	}
 }
 
 	
@@ -196,8 +209,7 @@
 			</section>
 			<section id="consulter" class="consulter">
 				<h5   style="color:#FFD966; "><i class="uil uil-file-alt"></i><span>EXTRAIT DU REGLEMENT AERONAUTIQUE DE COTE D'IVOIRE (RACI 2009) AMENDEMENT 02, EDITION 03</span></h5>
-				<div></div>
-				<a href="{{url('/reglementation')}}" class="button button-xlarge button-circle button-dark button-reveal text-transform-none ls-0"  style="background-color:#FFD966; margin-top: 20px; " ><i class="bi-arrow-right" style="color:#3A2F7C;"></i><span style="color:#3A2F7C; "><strong>CONSULTER</strong></a>
+				<a href="{{url('/reglementation')}}" class="button button-xlarge button-circle button-dark button-reveal text-transform-none ls-0"  style="background-color:#FFD966; margin-top: 20px;" ><i class="bi-arrow-right" style="color:#3A2F7C;"></i><span style="color:#3A2F7C; "><strong>CONSULTER</strong></a>
 			</section>
 			<footer >
 			<!-- Copyrights

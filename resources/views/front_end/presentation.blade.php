@@ -170,7 +170,7 @@
 		height: 15px;
 	}
 		#content{
-			height: 100vh;	
+			height: 350px ;		
 			margin-bottom:50px;
 
 		}
@@ -178,16 +178,22 @@
 			background-size:cover;
 			padding: 30px;
 			width: 100%;
-			height: 80vh;
+			height: 350px ;		
 		background-image:url('images/M9_Plan de travail 1-01.jpg');
 	}
 
 	
 	.content1>h1{
 		margin-top:18%;
-		color:#000;
-		font-size:45px;
+		color:#FFF;
+		text-align: center;
+		font-size:35px;
 		font-family:'jumper PERSONAL USE ONLY', sans-serif;
+	}
+
+	.barre{
+		background:#FFF;
+		
 	}
   
 		.content2>img{
@@ -249,15 +255,31 @@
 			text-align: center;
 			border-bottom: 2px solid #fff;
 		}
+
+		.menu-item:hover{
+				background-color:#fff;
+				transition:  all .5s ease !important;
+		}
+
+		.primary-menu > .menu-container >.menu-item:hover> .menu-link{
+			color:#000;
+		}
 	}
 
 	@media (min-width: 770px) and (max-width: 1100px){
+
+#content{
+	height:500px ;		
+margin-bottom:50px;
+
+}
 
 .content1{
 background-color:#000000;
 padding: 50px;
 width: 70%;
-height: 60vh ;		
+height: 500px ;		
+	
 }
 
 	
@@ -265,16 +287,16 @@ height: 60vh ;
  margin-top:20px;
 color:#ffffff;
 font-family:arial;
-font-size:35px;
+font-size:45px;
 }
 
 .content2 {
-	height: 60vh ;
+	height: 500px ;		
 	width: 100%;
 }
 
 .content2>img{
-	height: 60vh ;
+	height: 500px ;		
 	width: 100%;                                                               
 }  
 
@@ -286,6 +308,19 @@ font-size:35px;
 	margin-top: 10px;
 }
 
+.menu-item{
+			text-align: center;
+			border-bottom: 2px solid #fff;
+		}
+
+.menu-item:hover{
+		background-color:#fff;
+		transition:  all .5s ease !important;
+}
+.primary-menu > .menu-container >.menu-item:hover> .menu-link{
+	color:#000;
+}
+
 	}
 
 @media (min-width: 1101px) and (max-width: 1400px){
@@ -294,7 +329,7 @@ font-size:35px;
 	background-color:#000000;
 	padding: 50px;
 	width: 70%;
-	height: 60vh ;		
+	height: 500px ;		
 }
 
 		
@@ -302,16 +337,16 @@ font-size:35px;
 	 margin-top:20px;
 	color:#ffffff;
 	font-family:arial;
-	font-size: 45px;;
+	font-size: 45px;
 }
 
 .content2 {
-	height: 60vh ;
+	height: 500px ;		
 	width: 100%;
 }
 
 .content2>img{
-	height: 60vh ;
+	height: 500px ;		
 	width: 100%;                                                               
 }  
 
@@ -325,6 +360,8 @@ font-size:35px;
 </head>
 
 	<body id="body" class="body">
+
+	<div id="loader"></div>
 		<!-- Header
 		============================================= -->
 		<header id="header" class="sticky dark">
@@ -364,7 +401,7 @@ font-size:35px;
 								</li>
 								<li class="menu-item">
 									<a class="menu-link" href="{{url('/video')}}" >
-										<div >VIDEOTHèQUE</div>
+										<div >VIDÉOTHèQUE</div>
 									</a>
 								</li>
 								<div class="morph-marker"></div>

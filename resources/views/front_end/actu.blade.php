@@ -19,6 +19,8 @@
 
 	<!-- Font Icons -->
 	<link rel="stylesheet" href="../css/font-icons.css">
+	<link rel="shortcut icon" type="image/x-icon" href="../images/logodronegroupe.png"/>	<!-- Core Style -->
+
 
 	<!-- Plugins/Components CSS -->
 	<link rel="stylesheet" href="../css/swiper.css">
@@ -172,10 +174,12 @@
 @media screen and (max-width: 769px){
 	
 		#content{
-			height: 50vh;	
+			height: 350px;	
 			margin-bottom:50px;
 
 		}
+
+		
 
 		.content-wrap{
 			position: relative;
@@ -187,24 +191,25 @@
 			background-color:transparent;
 			padding: 30px;
 			width: 100%;
-			height: 50vh;
+			height: 350px;
 			position: absolute;
 	}
 
 		.content2>img{
-			height: 50vh;
+			height: 350px;
 			width: 100%;
 			}
 
 		.content2 {
 			
-			height: 50vh ;
+			height: 350px ;
 			width: 100%;
 		}
     .content1>h1{
-			margin-top:15%;
+			margin-top:8%;
 			color:#ffffff;
 			font-size:35px;
+			text-align: center;
 			font-family:'jumper PERSONAL USE ONLY', sans-serif;
 	}
  
@@ -257,16 +262,30 @@
 			text-align: center;
 			border-bottom: 2px solid #fff;
 		}
+
+		.menu-item:hover{
+				background-color:#fff;
+				transition:  all .5s ease !important;
+		}
+
+		.primary-menu > .menu-container >.menu-item:hover> .menu-link{
+			color:#000;
+		}
 	}
 
 
 	@media (min-width: 770px) and (max-width: 1100px){
 
+#content{
+	height: 400px;	
+	margin-bottom:50px
+}
+
 .content1{
 background-color:#000000;
 padding: 50px;
 width: 70%;
-height: 60vh ;		
+height: 400px ;		
 }
 
 	
@@ -278,12 +297,12 @@ font-size:35px;
 }
 
 .content2 {
-	height: 60vh ;
+	height: 400px ;
 	width: 100%;
 }
 
 .content2>img{
-	height: 60vh ;
+	height: 400px ;
 	width: 100%;                                                               
 }  
 
@@ -294,6 +313,8 @@ font-size:35px;
 .col-md-6{
 	margin-top: 10px;
 }
+
+
 
 	}
 
@@ -334,6 +355,8 @@ font-size:35px;
 </head>
 
 	<body id="body" class="body">
+
+	<div id="loader"></div>
 		<!-- Header
 		============================================= -->
 		<header id="header" class="sticky dark">
@@ -378,7 +401,7 @@ font-size:35px;
 								</li>
 								<li class="menu-item">
 									<a class="menu-link" href="{{url('/video')}}" >
-										<div >VIDEOTHèQUE</div>
+										<div >VIDÉOTHèQUE</div>
 									</a>
 								</li>
 								<div class="morph-marker"></div>

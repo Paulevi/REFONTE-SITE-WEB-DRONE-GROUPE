@@ -40,7 +40,7 @@
   color:#483D8B;
 }
 
-@media (min-width: 992px) {
+
   .morph-marker {
     --cnvs-morph-height: 3px;
     --cnvs-morph-duration: .3s;
@@ -62,14 +62,16 @@
     --cnvs-primary-menu-padding-y: 11px;
     --cnvs-primary-menu-hover-color: var(--cnvs-primary-menu-color);
     z-index: 1;
+
   }
-}
+
 
 		#content{
 			margin-top: 30px;
 			margin-bottom:30px;
 			
 		}
+
         .content1{
 			background-color:#483D8B;
 			padding: 50px;
@@ -91,7 +93,8 @@
 
 		.content2>img{
 			height: 70vh ;
-			width: 100%;                                                               
+			width: 100%;
+			object-fit:fill                                                             
 		}  
 
 		.sec{
@@ -135,6 +138,14 @@
 		.formas>.text{
 			width: 60%;
 			font-size: 20px;
+		}
+
+		.formas>.text>h3{
+			font-family:'jumper PERSONAL USE ONLY', sans-serif;
+		}
+
+		.formas>.text>p{
+			margin-bottom: 15px;
 		}
 
 		.text > .barre, h5{
@@ -251,10 +262,19 @@
 
 @media screen and (max-width: 769px){
 
-	.menu-item{
-			text-align: center;
-			border-bottom: 2px solid #fff;
-		}
+		.menu-item{
+				text-align: center;
+				border-bottom: 2px solid #000;
+			}
+
+			.menu-item:hover{
+				background-color:#000;
+				transition:  all .5s ease !important;
+			}
+
+			.primary-menu > .menu-container >.menu-item:hover> .menu-link{
+				color:#fff;
+			}
 
 		.sticky {
 			position: fixed;
@@ -262,7 +282,7 @@
 			width: 100%
 		}
 		#content{
-			height: 90vh;	
+			height: 300px;	
 			margin-bottom:50px;
 		}
 		.content1{
@@ -271,29 +291,31 @@
 			background-size:cover;
 			padding: 30px;
 			width: 100%;
-			height: 90vh;
+			height: 300px;
 				}
 			
-				.barre{
-					background-color:#483D8B;
-				}
+		.barre{
+			background-color:#483D8B;
+			
+		}
 
 		.content2 {
-			height: 50vh;S
+			height: 300px;
 			width: 100%;
 			display:none;
 		}
 		.content2>img{
-			height: 50vh ;
+			height: 300px ;
 			width: 100%;                                                               
 		}  
-	.content1>h1{
-		margin-top:18%;
-		color:#483D8B;
-		font-size:45px;
-		font-family:'jumper PERSONAL USE ONLY', sans-serif;
+		.content1>h1{
+			margin-top:18%;
+			color:#483D8B;
+			font-size:35px;
+			text-align: center;
+			font-family:'jumper PERSONAL USE ONLY', sans-serif;
 
-		}
+			}
 
 		
 		.centre>ul>li{
@@ -319,16 +341,29 @@
 		}
 
 		.forma > section>.text{
-			margin-top: 50px;
+			margin-top: 20px;
 			text-align:justify;
 
 		}
 
 		.forma{
-			margin-left: -45px;
+			margin-left: -70px;
 			margin-right: 20px;
 			width: 100%;
 			
+		}
+
+		.formas>.text>h3{
+			font-size: 25px;
+			margin-bottom: 15px;
+		}
+
+		.formas>.text>p{
+			font-size: 20px;
+		}
+
+		.formas>.text>UL>LI{
+			font-size: 14px;
 		}
 
 		.formas>.text{
@@ -343,6 +378,11 @@
 		.forma > section >.text>h4{
 			font-size:20px;
 		}
+
+		.planning >table{
+			margin-left: 0px;
+		}
+
 		.specials{
 			height: 600px;
 		}
@@ -381,11 +421,11 @@
 		@media (min-width: 770px) and (max-width: 950px){
 	
 	.content1{
-	background-color:#483D8B;
-	padding: 50px;
-	width: 70%;
-	height: 60vh ;		
-}
+		background-color:#483D8B;
+		padding: 50px;
+		width: 70%;
+		height: 60vh ;		
+	}
 
 
 		
@@ -410,6 +450,11 @@
 		height: 60vh ;
 		width: 100%;
 	}
+
+	.menu-item{
+				text-align: center;
+				border-bottom: 2px solid #000;
+			}
 }
 @media (min-width: 951px) and (max-width: 1400px){
 
@@ -421,12 +466,13 @@ width: 70%;
 height: 60vh ;		
 }
 
+
 	
 .content1>h1{
  margin-top:20px;
 color:#ffffff;
 font-family:'jumper PERSONAL USE ONLY', sans-serif;
-font-size:35px;
+font-size:45px;
 }
 
 .content2>img{
@@ -451,6 +497,8 @@ font-size:10px;
 </head>
 
 	<body>
+
+	<div id="loader"></div>
 		<!-- Header
 		============================================= -->
 		<header id="header" class="sticky ">
@@ -490,7 +538,7 @@ font-size:10px;
 								</li>
 								<li class="menu-item">
 									<a class="menu-link" href="{{url('/video')}}" >
-										<div >VIDEOTHèQUE</div>
+										<div >VIDÉOTHèQUE</div>
 									</a>
 								</li>
 								<div class="morph-marker"></div>
@@ -563,8 +611,8 @@ font-size:10px;
             <section id = "theorique"class="formas animate-on-scroll">
 			<div class="image" style="background-image:url('images/M13-02-01.jpg');background-size:cover; " ></div>
                 <div class="text">
-                    <h4>FORMATION THÉORIQUE </h4>
-                    <P> <i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR 05 JOURS//COURS DU SOIR</strong></P>
+                    <h3>FORMATION THÉORIQUE </h3>
+                    <P> <i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR: 05 JOURS // COURS DU SOIR: 10 JOURS</strong></P>
 					<ul>
 						<li><i class="fa-solid fa-angle-right"></i> DROIT ET RÈGLEMENTATION DES AÉRONEFS TELEPILOTÉS</li>
 						<li><i class="fa-solid fa-angle-right"></i> TECHNIQUES AÉRAUNOTIQUES</li>
@@ -580,8 +628,8 @@ font-size:10px;
             <section id = "pratique" class="formas animate-on-scroll" >
 				<div class="image" style="background-image:url('images/Sans titre - 1-01.jpg');background-size:cover; " ></div>
                 <div class="text">
-                    <h4>FORMATION PRATIQUE </h4>
-                    <P><i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR 03 JOURS</strong></P>
+                    <h3>FORMATION PRATIQUE </h3>
+                    <P><i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR: 03 JOURS</strong></P>
 					<ul>
 						<li><i class="fa-solid fa-angle-right"></i> PRÉSENTATION ET CONNAISSANCE DES DRONES</li>
 						<li><i class="fa-solid fa-angle-right"></i> THÉORIES SUR LES CONTROLES</li>
@@ -595,8 +643,8 @@ font-size:10px;
             <section id = "specialise" class="formas animate-on-scroll">
 				<div class="image" style="background-image:url('images/Sans titre HH1-01.jpg');background-size:cover;"></div>
                 <div class="text">
-                    <h4>FORMATION SPÉCIALISÉE</h4>
-                    <P><i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR 05 JOURS</strong></P>
+                    <h3>FORMATION SPÉCIALISÉE</h3>
+                    <P><i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR: 05 JOURS</strong></P>
 					<ul>
 						<li><i class="fa-solid fa-angle-right"></i> TECHNIQUE DE CARTOGRAPHIE ET DE PHOTOGRAMMÉTRIE</li>
 						<li><i class="fa-solid fa-angle-right"></i> LASEROGRAPHIE</li>
@@ -609,8 +657,8 @@ font-size:10px;
             <section id = "tele" class="formas animate-on-scroll">
 			<div class="image" style="background-image:url('images/KLM-01.jpg');background-size:cover;"></div>
                 <div class="text">
-                    <h4>FORMATION AU TÉLÉPILOTAGE</h4>
-                    <P><i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR 03 JOURS</strong></P>
+                    <h3>FORMATION AU TÉLÉPILOTAGE</h3>
+                    <P><i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR: 03 JOURS</strong></P>
 					<ul>
 						<li><i class="fa-solid fa-angle-right"></i> INTRODUCTION A LA RÈGLEMENTATION AÉRIENNE</li>
 						<li><i class="fa-solid fa-angle-right"></i> PRÉSENTATION GÉNERALE DES DRONES</li>

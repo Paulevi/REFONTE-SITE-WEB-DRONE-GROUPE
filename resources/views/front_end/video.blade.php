@@ -70,7 +70,7 @@
 		}
 
 		#content{
-			background-color:#000000;
+			
 			height: 70vh;
 			margin-top: 30px;
 			margin-bottom:30px;
@@ -106,6 +106,10 @@
 			width: 400px;
 		}
 
+		.hidden{
+			display:none;
+		}
+
 		.menu-item{
 			text-align: center;
 		}
@@ -117,6 +121,11 @@
 			background-color: transparent;
 			transition: all .3s ease !important;
 		}
+
+		/* .article{
+			width: 300px;
+            height: 500px;
+		} */
 
 		#video-slider-mute {
             position: absolute;
@@ -157,36 +166,52 @@
 @media screen and (max-width: 769px){
 	
 		#content{
-			height: 30vh;	
-			margin-bottom:50px;
+		height: 350px ;
+		margin-bottom:50px;
 		}
 		.content1{
-			background-color: #000000;
+			display:none;
+			background-color:transparent;
 			padding: 30px;
 			width: 50%;
-			height: 30vh;
+			height: 350px ;
 		}
-
 		.content2 {
-			height: 30vh;
+			height: 350px ;
 			width: 100%;
 		}
 
+		.hidden>h1, .barre{
+			font-family:'jumper PERSONAL USE ONLY', sans-serif;
+			text-align: center;
+			font-size: 35px;
+			position: relative;
+			bottom:110%;
+		}
+
+		.hidden{
+			/* background-color:RED; */
+			position: relative;
+			bottom:50%;
+			display:unset;
+		}
+
 		.content2>iframe{
-		height: 30vh ;
-		width: 100%;                                                               
+			height: 350px ;
+			width: 100%;                                                               
 		}  
 
 		.content1>h1{
-		    margin-top:30px;
+		    margin-top:35px;
+			text-align:center;
 			color:#ffffff;
 			font-size:20px;
 			
 		}
 
 		.first-row, .second-row{
-		flex-direction: column;
-        align-items: stretch;
+			flex-direction: column;
+			align-items: stretch;
 		}
 		.rounded-5{
 			width: 80%;
@@ -213,79 +238,110 @@
 			text-align: center;
 			border-bottom: 2px solid #fff;
 		}
+
+		.menu-item:hover{
+				background-color:#fff;
+				transition:  all .5s ease !important;
+		}
+
+		.primary-menu > .menu-container >.menu-item:hover> .menu-link{
+			color:#000;
+		}
   
 	}
 
 	@media (min-width: 770px) and (max-width: 950px){
 
-#content{
-height: 60vh;	
+			#content{
+				height: 500px ;
 
-}
+			}
 
-.content1{
-background-color:#000000;
-padding: 50px;
-width: 70%;
-height: 60vh;		
-}
+			.hidden>h1, .barre{
+			font-family:'jumper PERSONAL USE ONLY', sans-serif;
+			text-align: center;
+			position: relative;
+			bottom:130%;
+		}
 
-	
-.content1>h1{
- margin-top:20px;
-color:#ffffff;
-font-size:35px;
-}
+			.content1{
+			background-color:#000000;
+			padding: 50px;
+			width: 70%;
+			height: 500px ;
+			}
 
-.content2 {
-	height: 60vh;	
-	width: 100%;
-	background-color:#000000;
-}
+				
+			.content1>h1{
+			margin-top:20px;
+			color:#ffffff;
+			font-size:45px;
+			}
 
-.content2>iframe{
-		height: 60vh ;
-		width: 100%;                                                               
-		}  
+			.content2 {
+				height: 500px ;
+				width: 100%;
+				background-color:#000000;
+			}
+
+			.content2>iframe{
+				height: 500px ;
+				width: 100%;                                                               
+			}  
 
 
-#video h1{
-font-size:10px;
-} 
+			#video h1{
+				font-size:10px;
+			} 
+			.menu-item{
+			text-align: center;
+			border-bottom: 2px solid #fff;
+		}
 
+		.menu-item:hover{
+				background-color:#fff;
+				transition:  all .5s ease !important;
+		}
+
+		.primary-menu > .menu-container >.menu-item:hover> .menu-link{
+			color:#000;
+		}
 
 	}
 
-@media (min-width: 951px) and (max-width: 1400px){
+		@media (min-width: 951px) and (max-width: 1400px){
 
+		#content{
+			height: 500px ;
 
+		}
 
-	.content1{
-	background-color:#000000;
-	padding: 50px;
-	width: 70%;
-	height: 60vh ;		
-}
+		.content1{
+			background-color:#000000;
+			padding: 50px;
+			width: 70%;
+			height: 500px ;
+		}
 
-		
-.content1>h1{
-	 margin-top:20px;
-	color:#ffffff;
-	font-size: 45px;;
-}
+				
+		.content1>h1{
+			margin-top:20px;
+			color:#ffffff;
+			font-size: 45px;;
+		}
 
-	.content2 {
-		height: 60vh ;
-		width: 100%;
-		background-color:#000000;
-	}
+		.content2 {
+			height: 500px ;
+			width: 100%;
+			background-color:#000000;
+		}
 
-	.content2>iframe{
-		height: 60vh ;
-		width: 100%;                                                               
+			.content2>iframe{
+			height: 500px ;
+			width: 100%;                                                               
 		}  
 
-}	
+		}	
 
 .grid-inner{
 	border-radius: 10px;
@@ -313,11 +369,43 @@ font-size:10px;
 #logo > a{
 		height: 35px;
 	}
+
+.portfolio-item{
+	margin-left:10px;
+	width: 650px;
+	height: 450px;
+	border-radius:20px;
+	
+}
+
+.iframe{
+	width: 650px;
+	/* border-radius:10px 10px 0px 0px; */
+	height: 400px;
+}
+
+.portfolio-item>h1{
+	/* height: 80px; */
+	text-align:center;
+	font-size: 35px;
+	background-color:#000;
+	color:#fff;
+	margin-top:5px;
+	/* border-radius:0px 0px 10px 10px; */
+}
+
+
+
+
 </style>
 
 </head>
 
 	<body id="body" class="body">
+		
+	<div id="loader"></div>
+
+
 		<!-- Header
 		============================================= -->
 		<header id="header" class="sticky dark">
@@ -357,7 +445,7 @@ font-size:10px;
 								</li>
 								<li class="menu-item current">
 									<a class="menu-link" href="{{url('/video')}}" >
-										<div >VIDEOTHèQUE</div>
+										<div >VIDÉOTHèQUE</div>
 									</a>
 								</li>
 								<div class="morph-marker"></div>
@@ -374,56 +462,41 @@ font-size:10px;
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1" >
-					<h1 class="text-transform-none " data-animate="fadeInUp">BIENVENU A NOTRE VIDEOTHEQUE</h1>
+					<h1 class="text-transform-none " data-animate="fadeInUp">BIENVENUE À NOTRE VIDÉOTHÈQUE</h1>
 					<div class="barre"></div>
 				</div>
-				<div class="content2" >
-	<video id="slide-video" class="d-block w-100 h-100 rounded-5 shadow" poster="images/videos/explore-poster.jpg" preload="auto" loop autoplay playsinline muted>
-                            <source src='images/videos/explore.webm' type='video/webm'>
-                            <source src='images/videos/explore.mp4' type='video/mp4'>
-                        </video>
-						<button type="button" id="video-slider-mute">
-                            <i class="bi-volume-mute-fill"></i><i class="bi-volume-up-fill"></i>
-                        </button>
-                </div>
+				<div class="content2 section dark m-0 border-0 mt-0">
+					<div class="container d-flex justify-content-center align-items-end" style="min-height: 450px;">
+						<div class="row g-5 justify-content-between">
+							<div class="col-md-4 hidden">
+							<h1 class="text-transform-none " data-animate="fadeInUp">BIENVENUE À NOTRE VIDEOTHÈQUE</h1>
+					<div class="barre"></div>
+							</div>
+						</div>
+					</div>
+					<div class="video-wrap no-placeholder">
+						<video poster="images/videos/deskwork.jpg" preload="auto" loop autoplay muted playsinline>
+							<source src='demos/drone/images/video.mp4' type='video/mp4'>
+						</video>
+						<div class="position-absolute w-100 h-100 top-0 start-0 z-1 bg-dark bg-opacity-10"></div>
+					</div>
+				</div>
+			
 		<div>
 		</section><!-- #content end -->
 		<!-- Portfolio Item: Start -->
+		<section>
                     <div class="container">
                          <div id="portfolio"  class="portfolio row gutter-40">
 						 @foreach ($videos as $video)
-							<article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12 animate-on-scroll ">
-								<!-- Grid Inner: Start -->
-								<div class="grid-inner">
-									<!-- Image: Start -->
-									<div class="portfolio-image rounded-5">
-										<a href="#">
-											<img class="minia" src="data:image/png;base64,{{ base64_encode($video->capture_video) }}" alt="Beauty Cosmetics">
-										</a>
-										<!-- Overlay: Start -->
-										<div class="bg-overlay">
-											<div class="bg-overlay-content dark">
-												<a href="{{$video->lien_video}}" class="overlay-trigger-icon text-size-xl text-white op-1" data-hover-animate="scaleIn" data-hover-animate-out="scaleOut" data-hover-speed="350" data-lightbox="iframe"><i class="bi-play-circle-fill"></i></a>
-											</div>
-											<div class="bg-overlay-bg bg-dark bg-opacity-40" data-hover-animate="fadeIn"></div>
-										</div>
-										<!-- Overlay: End -->
-									</div>
-									<!-- Image: End -->
-									<!-- Decription: Start -->
-									<div class="portfolio-desc">
-										<h3>{{$video->titre_video}}</h3>
-									</div>
-									<!-- Description: End -->
-								</div>
-								<!-- Grid Inner: End -->
+							<article class= "portfolio-item col-lg-3 col-md-4 col-sm-6 col-12 animate-on-scroll ">
+								<iframe class="iframe" src="{{$video->lien_video}}" frameborder="0" allowfullscreen></iframe>
+								<h1>{{$video->titre_video}}</h1>
 							</article>
 							@endforeach
-                          <article class="portfolio-item col-lg-3 col-md-4 col-sm-6 col-12">
-								<!-- Grid Inner: Start -->
-                        </div>
-                    </div>
+					 </div>
 
+		</section>
 		@include('sections.footer')
 		</body>
 

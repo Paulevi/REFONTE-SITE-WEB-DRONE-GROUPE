@@ -55,17 +55,20 @@
         }
 
         .metier{
-            margin-top: 40px;
+            margin-top: 50px;
         }
 
 		.metiers{
 			display:flex;
 			margin: 40px;
+			margin-top: 50px;
 			justify-content:space-evenly;
 		}
 
 		.metiers >.text > h3{
-			font-family:'DIN', sans-serif;
+			font-family:'jumper PERSONAL USE ONLY', sans-serif;
+			font-size: 35px;
+
 		}
 
 		.metiers >.text >p{
@@ -74,12 +77,12 @@
 
 		.metiers>.text{
 			width: 60%;
-			font-size: 20px;
+			font-size: 25px;
 		}
 
 		.metiers>.image >img{
-			height: 300px;
-			width: 500px;
+			height: 100%;
+			width: 400px;
 		}
 
 		.specials>.text{
@@ -91,6 +94,10 @@
 
 		.specials>.text>p{
 			font-size: 15px;
+		}
+
+		.specials>.text>.barre{
+			margin-bottom: 5px;
 		}
 		
 
@@ -107,12 +114,12 @@
 			margin:0;
 		}
 
-		.image{
+		/* .image{
 			height: 300px;
 			width: 300px;
 			
 			background-size:cover;
-		}
+		} */
         
 		.special{
 			background-color:#000000;
@@ -245,10 +252,12 @@
 		.dernier{
 			margin-top:20px;
 		}
+
+
 		
 @media screen and (max-width: 769px){
 	#content{
-		height: 90vh;	
+		height:350px;	
 		margin-bottom:50px;
 	}
 
@@ -281,7 +290,7 @@
 			background-size:cover;
 			padding: 30px;
 			width: 100%;
-			height: 90vh;
+			height: 350px;
 				}
 
 		.content2 {
@@ -295,8 +304,9 @@
 		}  
 	.content1>h1{
 		margin-top:18%;
-		color:#FFF;
-		font-size:45px;
+		color:#fff;
+		font-size:35px;
+		text-align: center;
 		font-family:'jumper PERSONAL USE ONLY', sans-serif;
 
 		}
@@ -305,15 +315,30 @@
 			margin-left:-65px
 		}
 
+		
+
 		.metiers{
         flex-direction: column;
         align-items: stretch;
 		position: relative;
 		left: 80px;}
 
+		.metiers > .text >h3{
+			font-size:30px;
+		}
+
 		.menu-item{
 			text-align: center;
 			border-bottom: 2px solid #fff;
+		}
+
+		.menu-item:hover{
+				background-color:#fff;
+				transition:  all .5s ease !important;
+		}
+
+		.primary-menu > .menu-container >.menu-item:hover> .menu-link{
+			color:#000;
 		}
 
 
@@ -326,7 +351,7 @@
 		}
 
 		.special{
-			height: 330vh;
+			height:100%;
 			width: 100%;
 		}
 		.metiers>.text{
@@ -335,6 +360,10 @@
 
 		.metiers>.image{
 			width: 400px;
+		}
+
+		.metiers>.image>img{
+			height: 350px;
 		}
 
 		.sec{
@@ -364,12 +393,18 @@
 
 	
 @media (min-width: 770px) and (max-width: 950px){
+	
+#content{
+	height: 500px ;
+}
+
+
 
 .content1{
 	background-color:#000000;
 	padding: 50px;
 	width: 70%;
-	height: 60vh ;		
+	height: 500px ;		
 	}
 
 .menu > ul >li{
@@ -388,16 +423,16 @@
  margin-top:20px;
 color:#ffffff;
 font-family:'jumper PERSONAL USE ONLY', sans-serif;
-font-size:35px;
+font-size:55px;
 }
 
 .content2 {
-	height: 60vh ;
+	height: 500px ;
 	width: 100%;
 }
 
 .content2>img{
-	height: 60vh ;
+	height: 500px ;
 	width: 100%;                                                               
 }  
 
@@ -427,13 +462,28 @@ font-size:10px;
 		.specials>.text{
 			width: 500px;
 		}
+		.menu-item{
+			text-align: center;
+			border-bottom: 2px solid #fff;
+		}
 
+		.menu-item:hover{
+				background-color:#fff;
+				transition:  all .5s ease !important;
+		}
+
+		.primary-menu > .menu-container >.menu-item:hover> .menu-link{
+			color:#000;
+		}
 
 	}
 
 @media (min-width: 951px) and (max-width: 1400px){
 	
+#content{
+	height: 500px ;		
 
+}
 	
 	.specials > image{
 		width:100px;
@@ -443,25 +493,25 @@ font-size:10px;
 	background-color:#000000;
 	padding: 50px;
 	width: 70%;
-	height: 60vh ;		
+	height: 500px ;		
 }
 
 		
 .content1>h1{
 	 margin-top:20px;
 	color:#ffffff;
-	font-size: 45px;
+	font-size: 55px;
 	font-family:'jumper PERSONAL USE ONLY', sans-serif;
 
 }
 
 	.content2 {
-		height: 60vh ;
+		height: 500px ;		
 		width: 100%;
 	}
 
 	.content2>img{
-	height: 60vh ;
+	height: 500px ;		
 	width: 100%;                                                               
 	}  
 
@@ -506,6 +556,8 @@ font-size:10px;
 </head>
 
 	<body>
+
+	<div id="loader"></div>
 		<!-- Header
 		============================================= -->
 		<header id="header" class="sticky dark">
@@ -546,7 +598,7 @@ font-size:10px;
 								</li>
 								<li class="menu-item">
 									<a class="menu-link" href="{{url('/video')}}" >
-										<div >VIDEOTHèQUE</div>
+										<div >VIDÉOTHèQUE</div>
 									</a>
 								</li>
 								<div class="morph-marker"></div>

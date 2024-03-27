@@ -1,6 +1,6 @@
 
 @php
-    $actus = App\Models\actu_model::all();
+    $actus = App\Models\actu_model::all(); 
 @endphp
 <!DOCTYPE html>
 <html dir="ltr" lang="fr">
@@ -108,25 +108,28 @@
 
 			
         /* Style du soulignement au survol */
-        .sub-menu-container > .menu-item > .menu-link:hover{
-           color:#8FAADC
 
-        }
-
+		/* .sub-menu-container>.menu-item{
+			text-align: center;
+			border-bottom: 2px solid #fff;
+		} */
+        
 		#content{
 			margin-top: 30px;
 			height: 80vh ;
 		}
         .swiper-slide >.content1{
 			background-color:#000000;
-			padding: 50px;
+			padding: 4%;
 			width: 45%;
 			height: 80vh ;
+
 		}
 
-		.swiper-slide >.content1> h1 {
-    -webkit-animation: 1s ease 0.5s normal both 1 running fadeInUp;
-    animation: 1s ease 0.5s normal both 1 running fadeInUp;
+		.content1> h1 {
+			-webkit-animation: 1s ease 0.5s normal both 1 running fadeInUp;
+			animation: 1s ease 0.5s normal both 1 running fadeInUp;
+			display:flex
 }
 
 
@@ -145,6 +148,9 @@
 			color:#ffffff;
 			font-family:'jumper', sans-serif;
 			font-size:53px;
+			display:flex;
+			justify-content:center;
+			align-items:center
 		}
 		.content-wrap-2{
 			display: flex;
@@ -161,20 +167,25 @@
 			font-size:70px;
 			font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
 		}
-		.col-md-4 > a > h1:hover .col-md-4 > a > h1 >span{
-			color:#FFD966;
-		}
+		
 		.barre{
 			height: 3px;
 			background-color: #ffffff;
 			margin-top: 30px;
-
 		}
 
 		.feature-box{
 			height: 400px;
-			width: 450px;
+			width: 500px;
 		}
+
+		 .column1{
+			margin-left: -100px;
+		}
+
+		.column2{
+			margin-left: -20px;
+		} 
 		.swiper-pagination {
 			--cnvs-swiper-bar-color: #FFF;
 			--cnvs-swiper-bar-size: 30px;
@@ -229,13 +240,27 @@
 
 		.swiper-pagination span:hover,
 		.swiper-pagination span.swiper-pagination-bullet-active {
-			background: transparent !important;
+			background: none !important;
 		}
 
-		.swiper-pagination-bullet circle {
-			stroke: var(--cnvs-swiper-bar-color);
-			stroke-width: var(--cnvs-swiper-stroke-width);
+		.swiper-pagination-bullet{
+			position: relative;
+			left:40%
+		}
+		
+		.swiper-pagination-bullet:hover::before{
+			height: 15px;
+			width: 15px;
+			background: yellow !important;
+		}
+
+		
+
+		.swiper-pagination-bullet  {
+			/* stroke: var(--cnvs-swiper-bar-color);
+			stroke-width: var(--cnvs-swiper-stroke-width); */
 			fill: none;
+			background-color: yellow;
 		}
 
 		.swiper-pagination-bullet::before {
@@ -243,9 +268,22 @@
 			position: absolute;
 			left: 50%;
 			top: 50%;
-			width: var(--cnvs-swiper-bar-dot-size);
-			height: var(--cnvs-swiper-bar-dot-size);
-			background: var(--cnvs-swiper-bar-dot-color);
+			width: 10px;
+			height:10px;
+			background: #fff;
+			border-radius: 50%;
+			transition: ease;
+			transform: translate(-50%, -50%);
+		}
+
+		.swiper-pagination-bullet-active::before {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			height: 13px;
+			width: 13px;
+			background: yellow;
 			border-radius: 50%;
 			transform: translate(-50%, -50%);
 		}
@@ -254,16 +292,7 @@
 			stroke-dashoffset: 260;
 			stroke-dasharray: 259;
 		}
-		.swiper-pagination-bullet-active circle {
-			transform: rotate(-90deg);
-			transform-origin: center;
-			animation-name: swiperSVGAnim;
-			animation-duration: var(--cnvs-swiper-autoplay-speed);
-			animation-timing-function: ease-in;
-			animation-iteration-count: 1;
-			animation-direction: alternate;
-			animation-fill-mode: forwards;
-		}
+		
 
 		@keyframes swiperSVGAnim {
 			0% {
@@ -281,9 +310,9 @@
 
 		}
 
-		.col-md-6 video{
+		.rounded-5{
 			height: 80VH;
-			width: 100%;
+			/* width: 100%; */
 		}
 		.Title{
 			padding:50%
@@ -300,18 +329,16 @@
 
 		}
 		.Title> h1{
-			margin-top:15px;
+			padding-top:10px;
 			margin-left:15px;
+			Padding-right:10px;
+
 			color:#FFD966;
 			font-family:'Jumper PERSONAL USE ONLY-Regular', sans-serif;
-			font-size: 27px;
+			font-size: 30px;
 			text-align:justify;
 		}
 
-		.sub-menu-container>.menu-item{
-			text-align: center;
-			border-bottom: 2px solid #fff;
-		}
 		#video-slider-mute {
             position: absolute;
             top: auto;
@@ -336,12 +363,11 @@
             left: 1px;
         }
 
-		
+		#slide-video{
+			height: 100%;
+		}
 
-        #video-slider-mute i:nth-of-type(2),
-        #video-slider-mute.video-muted i:nth-of-type(1) { display: none; }
-
-        #video-slider-mute.video-muted i:nth-of-type(2) { display: block; }
+       
 
 		.content-wrap{
 			/* display: flex; */
@@ -363,14 +389,28 @@
 @media screen and (max-width: 769px){
 
 
+	.menu-link>div>i{
+		display:none
+	}
+
+	
 	.sub-menu-container > .menu-item > .menu-link:hover{
            color:#FFD966
 
         }
 
 	.content-wrap{
-		height: 100vh;
+		height: 350px;
 	}
+
+	.sub-menu-container >.menu-item:hover{
+				background-color:#fff;
+				transition:  all .5s ease !important;
+		}
+
+		.sub-menu-container >.menu-item:hover> .menu-link{
+			color:#000;
+		}
 	
 	
 	.menu-container{
@@ -380,9 +420,20 @@
 		text-align: justify;
 	}
 
+	.feature-box{
+			height: 400px;
+			width: 400px;
+		}
+	.column1{
+			margin-left: 0px;
+		}
+
+		.column2{
+			margin-left: 0px;
+		} 
 
 	#content{
-		height: 100vh ;
+		height: 350px ;
 	}
 
 	.swiper-slide >.content1 >a{
@@ -390,16 +441,14 @@
 		margin-top:20px;
 	}
 
-	.feature-box{
-			height: 400px;
-			width: 400px;
-		}
+	
 	
 	
 	.swiper-slide .content1> .barre{
 		margin-top:5px;
-		width: 200px;
+		width: 100%;
 		display:none;
+		
 	}
 
 	.sub-menu-container{
@@ -412,7 +461,7 @@
         align-items: stretch;
 	}
 	.consulter{
-		height:35vh
+		height:50px
 				/* overflow: hidden; */
 	}
 	.rounded-5{
@@ -444,59 +493,101 @@
 		background-color:transparent;
 		padding: 30px;
 		width: 100%;
-		height: 50vh ;		
+		height: 350px ;		
 		}
 
 		.swiper-slide>.content1>a{
+			text-align: center;
 			color:#fff;
 			border: 2px solid #fff;
 			background-color:transparent;
 			width: 150px;
-			margin-right: 10px;
+			margin-left: 35%;
 			font-size:10px;
 		}
+
+		.swiper-slide>.content1>a:hover{
+			background-color:transparent;
+			color:#fff;
+			border: 2px solid #fff;
+
+		}
 		.swiper-slide>.content1>h1{
-			margin-top:15%;
-			color:#ffffff;
-			font-size:40px;
+			text-align: center;
+			margin-top:5%;
+			color:#fff;
+			font-size:30px;
 			font-family:'jumper PERSONAL USE ONLY', sans-serif;argin-right: 10px;
 	}
 
 	.swiper-wrapper>.swiper-slide {
-		height: 100vh ;
+		height: 350px ;
 		width: 100%;
 	}
 
 	.swiper-slide>.swiper-slide-bg{
-		height: 100vh ;
+		height: 350px ;
 		width: 100%;
 	}
 
 	.swiper-slide>.swiper-slide-bg>img {
-			height: 90vh ;
+			height: 350px ;
 			width: 100%;
 		}
-	}
-	@media (min-width: 770px) and (max-width: 1000px){
 
-		#logo > a{
-			height: 25px;
+	.center-right{
+		display:none;
+	}
+
+		.menu-item{
+			text-align: center;
+			border-bottom: 2px solid #fff;
+		}
+
+		/* .swiper-pagination {
+			display:none;
+		} */
+
+	}
+
+	@media (min-width: 770px) and (max-width: 1100px){
+
+		.menu-link>div>i{
+		display:none
+	}
+
+		#header > a{
+			height: 25vh;
 			}
 		.content-wrap{
-		 	height: 60vh;
+		 	height: 500px;
 	}
-		.content1{
-		background-color:#000000;
-		padding: 10px;
-		width: 70%;
-		height: 60vh ;		
-		}
+	
 
 	.menu-container{
 		position: relative;
 		left: 30%;
 	}
 
+	.swiper-slide>.content1>a{
+			text-align: center;
+			color:#fff;
+			border: 3px solid #fff;
+			background-color:transparent;
+			width: 150px;
+			margin-left: 43%;
+			font-size:10px;
+		}
+
+		.swiper-slide>.content1>a:hover{
+			background-color:transparent;
+
+		}
+		.barre{
+			display:none;
+		}
+
+		
 	.col-md-4 > a > h1{
 		font-size:50px;
 		text-align: center;
@@ -506,14 +597,105 @@
 		background-color:transparent;
 		width: 100%;
 	}
+	.swiper-wrapper>.swiper-slide {
+		height: 500px ;
+		width: 100%;
+	}
 
 	.swiper-slide>.swiper-slide-bg{
-		height: 60vh ;
+		height: 500px ;
 		width: 100%;
 	}
 
 	.swiper-slide>.swiper-slide-bg>img {
-			height: 60vh ;
+			height: 500px ;
+			width: 100%;
+		}
+	
+	.swiper-slide>.content1{
+	background-color:transparent;
+	padding: 50px;
+	width: 100%;
+	height: 500px ;		
+}
+
+		.feature-box{
+			height: 400px;
+			width: 400px;
+		}
+		.column1{
+			margin-left:0px;
+		}
+
+		.column2{
+			
+			margin-left: 5px;
+			margin-right: 5px;
+
+		} 
+
+
+
+	.menu-item> .menu-link{
+		text-align: justify;
+	}
+			
+	.swiper-slide>.content1>h1{
+		 margin-top:30px;
+		color:#ffffff;
+		font-size:40px;
+		text-align: center;
+	}
+
+	.swiper-wrapper>.swiper-slide {
+		height: 500px ;
+		width: 100%;
+	}
+	.col-md-4 > a > h1{
+		font-size:35px;
+		text-align: center;
+
+		}
+
+		.menu-item{
+			text-align: center;
+			border-bottom: 2px solid #fff;
+		}
+
+		.sub-menu-container>.menu-item:hover{
+				background-color:#fff;
+				transition:  all .5s ease !important;
+		}
+
+		.sub-menu-container >.menu-item:hover> .menu-link{
+			color:#000;
+		}
+	
+	}
+@media (min-width: 1101px) and (max-width: 1400px){
+	
+		#logo > a{
+		height: 30px;
+		}
+
+		.swiper-wrapper>.swiper-slide {
+		height: 80vh ;
+		width: 100%;
+	}
+
+
+	
+	.swiper-slide>.content1{
+	background-color:#000000;
+	padding: 50px;
+	width: 50%;
+	height: 80vh ;		
+}
+
+
+
+.swiper-slide>.swiper-slide-bg>img {
+			height: 80vh ;
 			width: 50%;
 		}
 
@@ -522,53 +704,20 @@
 	}
 			
 	.swiper-slide>.content1>h1{
-		 margin-top:20px;
+		 margin-top:45px;
 		color:#ffffff;
-		font-size:30px;
+		font-size:50px;
 	}
 
 	.swiper-wrapper>.swiper-slide {
-		height: 60vh ;
+		height: 80vh ;
 		width: 100%;
 	}
 	.col-md-4 > a > h1{
-		font-size:35px;
+		font-size:55px;
 		text-align: center;
 
 		}
-	
-	}
-@media (min-width: 1001px) and (max-width: 1400px){
-	
-		#logo > a{
-		height: 30px;
-		}
-
-		.content-wrap{
-		 	height: 70vh;
-	}
-	.swiper-slide>.content1{
-	background-color:#000000;
-	padding: 50px;
-	width: 50%;
-	height: 70vh ;		
-}
-
-.swiper-slide>.swiper-slide-bg>img {
-			height: 70vh ;
-			width: 50%;
-		}
-		
-.swiper-slide>.content1>h1{
-	 margin-top:20px;
-	color:#ffffff;
-	font-size:40px;
-}
-
-	.swiper-wrapper {
-		height: 70vh ;
-		width: 100%;
-	}
 
 .center-nav{
         position: relative;
@@ -577,23 +726,21 @@
 
 
 
-
 }
 	#logo > a{
 		height: 35px;
 	}
 
-	  #header{
-		z-index: 1;
-	  }
+	.content1> h1 {
+			-webkit-animation: 1s ease 0.5s normal both 1 running fadeInUp;
+			animation: 1s ease 0.5s normal both 1 running fadeInUp;
+			display:flex
+}
 
-	 #loader{
-		height:100VH;
-		width:100%;
-		background: #fff url('images/SpxP.gif') no-repeat center center;
-		z-index: 100;
-		position: fixed;
-	} 
+	  	  /* #header{
+		z-index: 1;
+	  } */
+
 
 
 
@@ -630,7 +777,7 @@
 							<ul class="menu-container" >
 								<li class="menu-item">
 									<a class="menu-link" href="#" >
-										<div >Notre centre de formation</div>
+										<div >Notre centre de formation <i class="fa-solid fa-angle-down"></i></div>
 									</a>
 									<ul class="sub-menu-container">
 										<li class="menu-item"><a class="menu-link" href="{{url('/formation#theorique')}}"><div>FORMATION THÉORIQUE</div></a></li>
@@ -671,7 +818,8 @@
 						@foreach ($actus as $actu)
 							<div class="swiper-slide  dark">
 								<div class="content1 ">
-										<h1 style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;">{{$actu->titre_actu}}</h1>
+										<h1 style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif; -webkit-animation: 1s ease 0.5s normal both 1 running fadeInUp;
+			animation: 1s ease 0.5s normal both 1 running fadeInUp;">{{$actu->titre_actu}}</h1>
 										<div class="barre"></div>
 										<a href="{{ route('actu.show', ['id' => $actu->id_actu]) }}"  class="button button-xlarge button-circle  button-reveal text-transform-none ls-0" ><i class="bi-arrow-right" ></i><span><strong>CONSULTER</strong></a>
 								</div>
@@ -683,36 +831,36 @@
 						</div>
 					</div>
 				</div>
-				<div class="swiper-pagination center-right"></div>
+				<div class="swiper-pagination"></div>
 			</div>
 		</section>
 		<section id="menu">
 		<div class="barre-2" style="margin-top: 20px; margin-bottom: 0px"></div>
     		<div class="container mw-md">
        			 <div class="row align-items-stretch">
-           			 <div class="col-md-6 col-padding animate-on-scroll box">
-               			 <a href="{{url('/presentation')}}" data-animate="fadeInLeft" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M6_Plan de travail 1-01-01-01-01.jpg");'>
+           			 <div class="col-md-6 col-padding animate-on-scroll ">
+               			 <a href="{{url('/presentation')}}" data-animate="fadeInLeft" class="column1 feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M6_Plan de travail 1-01-01-01-01.jpg");'>
                     		<div class="Title"style="height: 25%;">
                     			<h1 >PRÉSENTATION</h1>
                     		</div>
 						</a>
            			 </div>
            			<div class="col-md-6 col-padding animate-on-scroll  box">
-                		<a href="{{url('/metier')}}" data-animate="fadeInRight" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M9_Plan de travail 1-01.jpg");'>
+                		<a href="{{url('/metier')}}" data-animate="fadeInRight" class="column2 feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M9_Plan de travail 1-01.jpg");'>
                     		<div class="Title" style="height: 25%;">
 								<h1>NOS METIERS</h1>
                    			</div>
 						</a>
            			</div>
            			 <div class="col-md-6 col-padding  animate-on-scroll box" data-animate="fadeInLeft" style="padding-top:5px">
-              			<a href="{{url('/formation')}}" data-animate="fadeInLeft" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M7_Plan de travail 1-01-01-01-01-01.jpg");'>
+              			<a href="{{url('/formation')}}" data-animate="fadeInLeft" class="column1 feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M7_Plan de travail 1-01-01-01-01-01.jpg");'>
                     		<div class="Title"style="height: 25%;">
 								<h1>NOS FORMATIONS</h1>
                    			 </div>
 						</a>
            			 </div>
 						<div class="col-md-6 col-padding animate-on-scroll  box" data-animate="fadeInRight" style="padding-top:5px">
-                		<a href="{{url('/reglementation')}}" data-animate="fadeInRight" class="feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M1_Plan de travail 1.jpg"); background-size:cover'>
+                		<a href="{{url('/reglementation')}}" data-animate="fadeInRight" class="column2 feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M1_Plan de travail 1.jpg"); background-size:cover'>
                     		<div class="Title"style="height: 25%;">
 								<h1>CONSULTER UN EXTRAIT DE LA REGLEMENTATION</h1>
                    			</div>
@@ -726,17 +874,13 @@
 			<div class="content-wrap-2">
 				<div class="row justify-content-around align-items-center">
 					<div class="col-md-4">
-						<a href="{{url('/video')}}"><h1 data-animate="fadeInUpSmall"><span style="color:#ffffff;">VIDEOTHÈQUE<span></h1></a>
+						<a href="{{url('/video')}}"><h1 data-animate="fadeInUpSmall"><span style="color:#ffffff;">VIDÉOTHÈQUE<span></h1></a>
 						
 					</div>
-					<div class="col-md-6 rounded-5">
-						<video id="slide-video" class="d-block w-100 h-100 rounded-5 shadow" poster="images/videos/explore-poster.jpg" preload="auto" loop autoplay playsinline muted>
-                            <source src='images/videos/explore.webm' type='video/webm'>
-                            <source src='images/videos/explore.mp4' type='video/mp4'>
+					<div class="col-md-6 " >
+						<video id="slide-video" class="d-block w-100 h-100  shadow" poster="images/videos/deskwork.jpg" preload="auto" loop autoplay playsinline muted  style="height:60VH">
+                            <source src='demos/drone/images/video.mp4' type='video/mp4'>
                         </video>
-						<button type="button" id="video-slider-mute">
-                            <i class="bi-volume-mute-fill"></i><i class="bi-volume-up-fill"></i>
-                        </button>
 					</div>
 				</div>
 			</div>
@@ -823,6 +967,8 @@
 					});
 				}
 
+
+				
             // Créer un nouvel observateur d'intersection avec la fonction de gestion
             const observer = new IntersectionObserver(handleIntersection, { rootMargin: "-50px 0px" });
 

@@ -32,6 +32,13 @@
 	<title>DRONE GROUPE</title>
 
 	<style>
+
+@font-face {
+      font-family: 'DIN-Black';
+      src: url('police/DIN-Black Regular/DIN-Black Regular.ttf') format('ttf'); 
+      font-weight: normal;
+      font-style: normal;
+      }
 		body{
                 font-family:'jumper PERSONAL USE ONLY', sans-serif;
 				font-size:20px;
@@ -44,7 +51,7 @@
 
 		.sec{
 			background-color:#6A5ACD;
-			width: 500px; 
+			width: 550px; 
 			background: linear-gradient(to right, #6A5ACD 60%, #fff 100%);
 			margin-left: 10px;
             color: yellow;
@@ -68,7 +75,6 @@
             margin: 20px;
             position: relative;
             left:80%;
-            box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
 			font-family:'DIN Regular', sans-serif;
             
         }
@@ -106,13 +112,8 @@
 
 		.content1>h1{
 			color:#ffffff;
-			font-family:'jumper PERSONAL USE ONLY', sans-serif;
+			font-family:'DIN', sans-serif;
 			font-size:50px
-		}
-
-		.content1>h1>strong{
-			font-family:'DIN Regular', sans-serif;
-			color:#ffffff;
 		}
 		.content-wrap{
 			display: flex;
@@ -153,7 +154,7 @@
 @media screen and (max-width: 769px){
 
 		#content{
-			height:50vh;
+			height: 350px ;		
 			margin-bottom:50px;
 		}
 		.content1{
@@ -162,11 +163,11 @@
 			background-color: #000000;
 			padding: 30px;
 			width: 100%;
-			height: 50vh;
+			height: 350px ;		
 		}
 
 		.content2 {
-			height: 40vh;
+			height: 350px ;		
 			width: 100%;
 			display:none
 		}
@@ -174,7 +175,8 @@
 		    margin-top:10%;
 			color:#ffffff;
 			font-size:30px;
-			font-family:'jumper PERSONAL USE ONLY', sans-serif;
+			text-align: center;
+			font-family:'DIN', sans-serif;
 			
 		}
 
@@ -199,37 +201,59 @@
 			text-align: center;
 			border-bottom: 2px solid #fff;
 		}
+
+		.menu-item:hover{
+				background-color:#fff;
+				transition:  all .5s ease !important;
+		}
+
+		.primary-menu > .menu-container >.menu-item:hover> .menu-link{
+			color:#000;
+		}
 }
 @media (min-width: 770px) and (max-width: 950px){
 
+	#content{
+		height: 500px ;
+	}
 
 .content1{
 	background-color:#000000;
 	padding: 50px;
 	width: 70%;
-	height: 60vh ;		
+	height: 500px ;		
 	}
 
 
 .content1>h1{
 	margin-top:10%;
 	color:#ffffff;
-	font-size:25px;
+	font-size:35px;
 	}
 
 .content2 {
-	height: 60vh ;
+	height: 500px ;
 	width: 100%;
 }
 
 .content2>img{
-	height: 60vh ;
+	height: 500px ;
 	width: 100%;                                                               
 }  
 
+.menu-item{
+			text-align: center;
+			border-bottom: 2px solid #fff;
+		}
 
+.menu-item:hover{
+		background-color:#fff;
+		transition:  all .5s ease !important;
+}
 
-
+.primary-menu > .menu-container >.menu-item:hover> .menu-link{
+	color:#000;
+}
 
 .sec{
 	width: 700px;
@@ -237,28 +261,31 @@
 }
 
 @media (min-width: 951px) and (max-width: 1400px){
+
+	#content{
+		height: 500px ;
+	}
 	
 	.content1{
 			background-color: #000000;
 			padding: 30px;
 			width: 70%;
-			height: 60vh;
-				}
+			height: 500px ;				}
 
 		.content2 {
-			height: 60vh;
+			height: 500px ;
 			width: 100%;
 		}
 
 		.content2>img{
-				height: 60vh ;
-				width: 100%;                                                               
+			height: 500px ;
+			width: 100%;                                                               
         }  
 
 	.content1>h1{
 		    margin-top:10%;
 			color:#ffffff;
-			font-size:30px;
+			font-size:35px;
 			
 		}
 
@@ -281,6 +308,8 @@
 </head>
 
 	<body>
+
+	<div id="loader"></div>
 		<!-- Header
 		============================================= -->
 		<header id="header" class="sticky dark">
@@ -326,7 +355,7 @@
 								</li>
 								<li class="menu-item">
 									<a class="menu-link" href="{{url('/video')}}" >
-										<div >VIDEOTHèQUE</div>
+										<div >VIDÉOTHèQUE</div>
 									</a>
 								</li>
 								<div class="morph-marker"></div>
@@ -343,7 +372,7 @@
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1" >
-					<h1 class="text-transform-none " data-animate="fadeInUp"> EXTRAIT DU REGLEMENT AERONAUTIQUE DE COTE D'IVOIRE (RACI <strong>2009</strong>) AMENDEMENT <strong>02</strong>, EDITION <strong>03</strong></h1>
+					<h1 class="text-transform-none " data-animate="fadeInUp"> EXTRAIT DU REGLEMENT AERONAUTIQUE DE COTE D'IVOIRE (RACI 2009) AMENDEMENT 02, EDITION 03</h1>
 					<div class="barre"  data-animate="fadeInUp"></div>
 				</div>
 				<div class="content2" >

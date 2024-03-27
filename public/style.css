@@ -209,6 +209,18 @@ font-size:15px;
   color:#FFD966;
 }
 
+#header{
+  z-index: 99;
+  }
+#loader{
+  height:100VH;
+  width:100%;
+  background: #fff url('images/preloader@2x.gif') no-repeat center center;
+  z-index: 100;
+  position: fixed;
+} 
+
+
 @media (min-width: 992px) {
   .morph-marker {
     --cnvs-morph-height: 3px;
@@ -261,6 +273,13 @@ font-size:15px;
     font-weight: normal;
     font-style: normal;
     }
+
+    @font-face {
+      font-family: 'DIN-Black';
+      src: url('police/DIN-Black Regular/DIN-Black Regular.ttf') format('ttf'); 
+      font-weight: normal;
+      font-style: normal;
+      }
 
 .barre-2{
   background-color: #000000;

@@ -8766,3 +8766,8 @@ if( typeof jQuery !== 'undefined' ) {
 		// BSComponents Functions End
 	};
 })));
+
+var loader= document.getElementById("loader");
+window.addEventListener('load', function(){
+	loader.style.display="none";
+})
