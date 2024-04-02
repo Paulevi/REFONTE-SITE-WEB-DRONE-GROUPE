@@ -11,27 +11,26 @@
 	<meta name="author" content="SemiColonWeb">
 	<meta name="description" content="Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
 
-	<!-- Font Imports -->
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fontawesome.com/icons/file-lines?f=classic&s=thin" integrity="sha512-xxNO0nSN9+hE5CoefSwoHd4WwITb+jq0sE7o7dbzAeXNr9l6iQ7Dwlsl+fpdOebQKEp26OJmtunQrTJN6PizQA==" crossorigin="anonymous" />
 	<link rel="icon" src="images/logodronegroupe.png">
-	<link rel="shortcut icon" type="image/x-icon" href="images/logodronegroupe.png"/>	<!-- Core Style -->
+	<link rel="shortcut icon" type="image/x-icon" href="images/logodronegroupe.png"/>	
 	<link rel="stylesheet" href="style.css">
 
-	<!-- Font Icons -->
+	
 	<link rel="stylesheet" href="css/font-icons.css">
 
-	<!-- Plugins/Components CSS -->
+	
 	<link rel="stylesheet" href="css/swiper.css">
 
-	<!-- Custom CSS -->
+	
 	<link rel="stylesheet" href="css/custom.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Document Title
-	============================================= -->
+	
 	<title>DRONE GROUPE</title>
 
 	<style>	
@@ -107,12 +106,7 @@
 			}
 
 			
-        /* Style du soulignement au survol */
-
-		/* .sub-menu-container>.menu-item{
-			text-align: center;
-			border-bottom: 2px solid #fff;
-		} */
+       
         
 		#content{
 			margin-top: 30px;
@@ -257,8 +251,6 @@
 		
 
 		.swiper-pagination-bullet  {
-			/* stroke: var(--cnvs-swiper-bar-color);
-			stroke-width: var(--cnvs-swiper-stroke-width); */
 			fill: none;
 			background-color: yellow;
 		}
@@ -312,7 +304,6 @@
 
 		.rounded-5{
 			height: 80VH;
-			/* width: 100%; */
 		}
 		.Title{
 			padding:50%
@@ -324,8 +315,7 @@
 			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
 			background: linear-gradient(to right, #1901B5 10%, #000 100%);
 
-			/* background: linear-gradient(to left, #000 0%, #0000CD 100%); */
-			/* background-color: #2F5597	; */
+			
 
 		}
 		.Title> h1{
@@ -369,9 +359,7 @@
 
        
 
-		.content-wrap{
-			/* display: flex; */
-		}
+		
 
 		.button.button-reveal i {
 			opacity: 0;
@@ -437,7 +425,7 @@
 	}
 
 	.swiper-slide >.content1 >a{
-		/* display:none; */
+		
 		margin-top:20px;
 	}
 
@@ -544,9 +532,7 @@
 			border-bottom: 2px solid #fff;
 		}
 
-		/* .swiper-pagination {
-			display:none;
-		} */
+		
 
 	}
 
@@ -737,9 +723,7 @@
 			display:flex
 }
 
-	  	  /* #header{
-		z-index: 1;
-	  } */
+	  	
 
 
 
@@ -753,8 +737,7 @@
 		<div id="loader"></div>
 
 	
-		<!-- Header
-		============================================= -->
+		
 		<header id="header" class="sticky dark ">
 			<div id="header-wrap">
 				<div class="container">
@@ -764,15 +747,14 @@
 							<a href="#" >
 								<img class="logo-default"  src="images/logodronegroupe.png" alt="drone groupe Logo" >
 							</a>
-						</div><!-- #logo end -->
+						</div>
 						<div class="primary-menu-trigger">
 							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
 								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
 							</button>
 						</div>
 
-						<!-- Primary Navigation
-						============================================= -->
+						
 						<nav class="primary-menu   on-click menu-spacing-margin  center-nav">
 							<ul class="menu-container" >
 								<li class="menu-item">
@@ -790,28 +772,15 @@
 									</ul>
 								</li>
 							</ul>
-						</nav><!-- #primary-menu end -->
+						</nav>
                     </div>
 				</div>
 			</div>
 			<div class="header-wrap-clone"></div>
-		</header><!-- #header end -->
+		</header>
 		<section id="content" classe="slider-element slider-parallax swiper_wrapper min-vh-75">
 			<div class="slider-inner">
-				<!-- <div class="slider-element swiper_wrapper min-vh-100 customjs">
-						<div class="swiper swiper-parent" >
-							<div class="swiper-wrapper">
-							@foreach ($actus as $actu)
-								<div class="content1 swiper-slide dark" data-animate="fadeInUp">
-									<h1 style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;">{{$actu->titre_actu}}</h1>
-									<div class="barre"></div>
-									<a href="{{ route('actu.show', ['id' => $actu->id_actu]) }}"  class="button  button-circle   button-reveal " ><i class="bi-arrow-right" ></i><span><strong>CONSULTER</strong></a>
-
-								</div>
-								@endforeach
-							</div>
-						</div>
-				</div> -->
+				
 				<div class="slider-element swiper_wrapper min-vh-100 customjs">
 					<div class="swiper swiper-parent" >
 						<div class="swiper-wrapper">
@@ -819,7 +788,7 @@
 							<div class="swiper-slide  dark">
 								<div class="content1 ">
 										<h1 style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif; -webkit-animation: 1s ease 0.5s normal both 1 running fadeInUp;
-			animation: 1s ease 0.5s normal both 1 running fadeInUp;">{{$actu->titre_actu}}</h1>
+										animation: 1s ease 0.5s normal both 1 running fadeInUp;">{{$actu->titre_actu}}</h1>
 										<div class="barre"></div>
 										<a href="{{ route('actu.show', ['id' => $actu->id_actu]) }}"  class="button button-xlarge button-circle  button-reveal text-transform-none ls-0" ><i class="bi-arrow-right" ></i><span><strong>CONSULTER</strong></a>
 								</div>
@@ -889,14 +858,6 @@
 </body>
 </html>
 
-<!-- #wrapper end -->
-
-	<!-- Go To Top
-	============================================= -->
-	<!-- <div id="gotoTop" class="uil uil-angle-up"></div> -->
-
-	<!-- JavaScripts
-	============================================= -->
 	<script src="js/plugins.min.js"></script>
 	<script src="js/functions.bundle.js"></script>
 
@@ -931,16 +892,12 @@
 			});
 		});
 
-		// When the user scrolls the page, execute myFunction
 			window.onscroll = function() {myFunction()};
 
-			// Get the header
 			var header = document.getElementById("header");
 
-			// Get the offset position of the navbar
 			var sticky = header.offsetTop;
 
-			// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
 			function myFunction() {
 			if (window.pageYOffset > sticky) {
 				header.classList.add("sticky");
@@ -952,12 +909,10 @@
 			function changeColor() {
             var myDiv = document.getElementById('container');
 
-            // Changer la couleur de la div en noir
             myDiv.style.backgroundColor = 'black';
 			 }
 
 			document.addEventListener("DOMContentLoaded", function() {
-				// Fonction pour observer les éléments et appliquer la classe "is-visible"
 				function handleIntersection(entries, observer) {
 					entries.forEach(entry => {
 						if (entry.isIntersecting) {
@@ -969,10 +924,8 @@
 
 
 				
-            // Créer un nouvel observateur d'intersection avec la fonction de gestion
             const observer = new IntersectionObserver(handleIntersection, { rootMargin: "-50px 0px" });
 
-            // Observez tous les éléments avec la classe "animate-on-scroll"
             document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
         });
 
@@ -998,7 +951,6 @@
     		});
 		}
 
-// Afficher ou masquer la flèche en fonction de la position de défilement
 		window.onscroll = function () {
 			var scrollButton = document.querySelector('.scroll-to-top');
 
