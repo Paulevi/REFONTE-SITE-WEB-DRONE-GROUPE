@@ -34,20 +34,15 @@
 	<style>
 
 @font-face {
-      font-family: 'DIN-Black';
-      src: url('police/DIN-Black Regular/DIN-Black Regular.ttf') format('ttf'); 
-      font-weight: normal;
-      font-style: normal;
-      }
+  font-family: 'jumper PERSONAL USE ONLY';
+  src: url('police/jumper/JumperPERSONALUSEONLY-Regular.ttf') format('ttf'); 
+  font-weight: normal;
+  font-style: normal;
+  }
 		body{
                 font-family:'jumper PERSONAL USE ONLY', sans-serif;
 				font-size:20px;
-            }
- 
-			.content2>img{
-				height: 70vh ;
-				width: 100%;                                                               
-        }  
+            } 
 
 		.sec{
 			background-color:#6A5ACD;
@@ -98,22 +93,38 @@
         .content1{
 			background-color:#000000;
 			padding: 50px;
+			padding-top: 90px;
 			width:60%;
 			height: 70vh ;
 		}
 
+		.content1>h1{
+			color:#ffffff;
+			font-family:'jumper PERSONAL USE ONLY', sans-serif;
+			font-size:50px
+		}
+
+		.content2{
+			width: 40%;  
+		}
+
+		.content2>img{
+			height: 70vh ;
+			width: 100%;                                                               
+        } 
+
 		.premier{
-			width:1200px
+			width:1300px
 		}
 
 		.deuxieme{
-			width:700px
+			width:740px
 		}
 
-		.content1>h1{
-			color:#ffffff;
-			font-family:'DIN', sans-serif;
-			font-size:50px
+		strong{
+			font-family:'Arial', sans-serif;
+			
+
 		}
 		.content-wrap{
 			display: flex;
@@ -146,11 +157,7 @@
 			background-color: transparent;
 			transition: all .3s ease !important;
 		}
-
-		.sub-regle>p>strong,
-		ul > li>strong {
-			font-family:'DIN Regular', sans-serif;
-		}
+		
 @media screen and (max-width: 769px){
 
 		#content{
@@ -198,17 +205,17 @@
 	}
 
 	.menu-item{
-			text-align: center;
+			text-align: justify;
 			border-bottom: 2px solid #fff;
 		}
 
-		.menu-item:hover{
-				background-color:#fff;
-				transition:  all .5s ease !important;
+		p{
+			font-size: 17px;
 		}
 
-		.primary-menu > .menu-container >.menu-item:hover> .menu-link{
-			color:#000;
+		ul>li{
+			font-size: 17px;
+
 		}
 }
 @media (min-width: 770px) and (max-width: 950px){
@@ -242,18 +249,9 @@
 }  
 
 .menu-item{
-			text-align: center;
+			text-align: justify;
 			border-bottom: 2px solid #fff;
 		}
-
-.menu-item:hover{
-		background-color:#fff;
-		transition:  all .5s ease !important;
-}
-
-.primary-menu > .menu-container >.menu-item:hover> .menu-link{
-	color:#000;
-}
 
 .sec{
 	width: 700px;
@@ -372,7 +370,7 @@
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1" >
-					<h1 class="text-transform-none " data-animate="fadeInUp"> EXTRAIT DU REGLEMENT AERONAUTIQUE DE COTE D'IVOIRE (RACI 2009) AMENDEMENT 02, EDITION 03</h1>
+					<h1 class="text-transform-none " data-animate="fadeInUp"> EXTRAIT DU REGLEMENT AERONAUTIQUE DE COTE D'IVOIRE (RACI <strong>2009</strong>) AMENDEMENT <strong>02</strong>, EDITION <strong>03</strong></h1>
 					<div class="barre"  data-animate="fadeInUp"></div>
 				</div>
 				<div class="content2" >
@@ -416,7 +414,7 @@
             <h3 class="sec deuxieme">CHAPITRE 8:FORMATION DES TELEPILOTES</h3>
             <div class="sub-regle">
             <p>
-            Nul ne peut piloter un RPA s'il n'est titulaire d'une Attestation, d'un Certificat ou d'une Licence de Télépilote en état de validité reconnue, délivrée ou validée par l'ANAC conformément aux dispositions du RACI<strong>2000</strong>.
+            Nul ne peut piloter un RPA s'il n'est titulaire d'une Attestation, d'un Certificat ou d'une Licence de Télépilote en état de validité reconnue, délivrée ou validée par l'ANAC conformément aux dispositions du RACI<strong> 2000</strong>.
             </p>
             <div class="num">8.1.1</div>
             <p>

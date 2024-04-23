@@ -50,9 +50,11 @@
 		}
 
         .menu > p{
-            margin: 40px;
+			margin-left: 100px ;
+			margin-right: 100px;
 			font-size: 20px;
         }
+		
 
         .metier{
             margin-top: 50px;
@@ -67,17 +69,19 @@
 
 		.metiers >.text > h3{
 			font-family:'jumper PERSONAL USE ONLY', sans-serif;
-			font-size: 35px;
+			font-size: 25px;
 
 		}
 
 		.metiers >.text >p{
-			font-style:italic;
+			/* font-style:italic; */
+			text-transform: lowercase;
 		}
 
 		.metiers>.text{
 			width: 60%;
-			font-size: 25px;
+			font-size: 20px;
+			
 		}
 
 		.metiers>.image >img{
@@ -174,14 +178,20 @@
 		.content1{
 			background-color:#000000;
 			padding: 50px;
-			width: 50%;
+			padding-top: 90px;
+			width: 43%;
 			height: 70vh ;
 		}
 
 		.content1>h1{
 			color:#ffffff;
-			font-size:70px;
+			font-size:62px;
 			font-family:'jumper PERSONAL USE ONLY', sans-serif;
+		}
+
+		.content2{
+			height: 70vh ;
+			width: 57%;
 		}
 
 		.content2>img{
@@ -261,6 +271,12 @@
 		margin-bottom:50px;
 	}
 
+	.menu > p{
+			margin-left: 50px ;
+			margin-right: 50px;
+			font-size: 17px;
+        }
+
 	.menu > ul >li>i{
 		margin-left: 4px;
 	}
@@ -286,7 +302,7 @@
 		}
 	.content1{
 			/* background-color: #000000; */
-			background-image:url('images/M10_Plan de travail 1-01.jpg');
+			background-image:url('images/drone2.jpg');
 			background-size:cover;
 			padding: 30px;
 			width: 100%;
@@ -324,23 +340,16 @@
 		left: 80px;}
 
 		.metiers > .text >h3{
-			font-size:30px;
+			font-size:20px;
+		}
+		.metiers > .text >p{
+			font-size:17px;
 		}
 
 		.menu-item{
-			text-align: center;
+			text-align: justify;
 			border-bottom: 2px solid #fff;
 		}
-
-		.menu-item:hover{
-				background-color:#fff;
-				transition:  all .5s ease !important;
-		}
-
-		.primary-menu > .menu-container >.menu-item:hover> .menu-link{
-			color:#000;
-		}
-
 
 		.specials >.text{
 			padding-top :20px;
@@ -463,17 +472,8 @@ font-size:10px;
 			width: 500px;
 		}
 		.menu-item{
-			text-align: center;
+			text-align: justify;
 			border-bottom: 2px solid #fff;
-		}
-
-		.menu-item:hover{
-				background-color:#fff;
-				transition:  all .5s ease !important;
-		}
-
-		.primary-menu > .menu-container >.menu-item:hover> .menu-link{
-			color:#000;
 		}
 
 	}
@@ -615,11 +615,11 @@ font-size:10px;
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1">
-					<h1 class="text-transform-none " data-animate="fadeInUp"> C'EST QUOI NOTRE METIER ?</h1>
+					<h1 class="text-transform-none " data-animate="fadeInUp"> QUELS SONT NOS METIERS ?</h1>
 					<div class="barre" data-animate="fadeInUp"></div>
 				</div>
 				<div class="content2" >
-					<img src="images/M10_Plan de travail 1-01.jpg" alt="">
+					<img src="images/drone2.jpg" alt="">
                 </div>
 		<div>
 		</section><!-- #content end -->
@@ -642,7 +642,6 @@ font-size:10px;
             <p>
 			Le management capacitaire prend en compte les exigences capacitaires des entreprises, des organisations et des postes de travail, et leur confrontation aux capacités des postulants ou des salariés. C’est un moyen complémentaire aux méthodes classiques traditionnellement utilisées pour les prises de décision. Le management capacitaire permet d’améliorer la performance et l’efficacité des organisations et des entreprises par la réduction des dysfonctionnements résultant des insuffisances capacitaires humaines, par un choix optimal dès le recrutement et de l’affectation du personnel à des postes adéquats.
 			Le management capacitaire utilise des outils innovants permettant de répondre aux interrogations portant sur des questions irrationnelles telles que :</p>
-            <div class="barre-2"></div>
 			<ul class="animate-on-scroll">
 				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITÉ DE PROBITÉ MORALE OU D'INTEGRITÉ</li>
 				<li  class="animate-on-scroll"><i class="fa fa-check"></i>LA CAPACITÉ DE GESTION DE CONFLITS, DE REGULATION OU D'AUTO-REGULATION</li>
@@ -954,6 +953,7 @@ jQuery(window).on( 'load', function(){
     }
 });
   </script>
+
 
 </body>
 </html>

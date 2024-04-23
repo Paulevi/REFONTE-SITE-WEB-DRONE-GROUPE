@@ -21078,40 +21078,31 @@ body:not(.has-plugin-html5video) .video-wrap video {
 
 /* Slider Caption
 -----------------------------------------------------------------*/
-.slider-caption,
+ .slider-caption,
 .flex-caption {
-  --cnvs-slider-caption-font-color: var(--cnvs-contrast-800);
-  position: relative;
   display: flex;
-  height: 100%;
   flex-flow: column;
-  justify-content: center;
-  z-index: 20;
-  max-width: var(--cnvs-slider-caption-width);
-  color: var(--cnvs-slider-caption-font-color);
-  font-size: var(--cnvs-slider-caption-font-weight);
-  font-weight: var(--cnvs-slider-caption-font-weight);
-  transition: top 0.3s ease;
-}
-@media (prefers-reduced-motion: reduce) {
+ 
+} 
+/* @media (prefers-reduced-motion: reduce) {
   .slider-caption,
   .flex-caption {
     transition: none;
   }
-}
+} */
 
 .slider-caption h2, .slider-caption .h2 {
   color: var(--cnvs-slider-caption-font-color);
   text-shadow: none;
 }
-.slider-caption h2, .slider-caption .h2 {
+/* .slider-caption h2, .slider-caption .h2 {
   font-size: 4.5rem;
   letter-spacing: 0;
   text-transform: none;
   font-weight: 600;
   line-height: 1;
   margin-bottom: 0;
-}
+} */
 @media (max-width: 767.98px) {
   .slider-caption h2, .slider-caption .h2 {
     font-size: 5.5vw;

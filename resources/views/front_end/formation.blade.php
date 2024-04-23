@@ -75,7 +75,8 @@
         .content1{
 			background-color:#483D8B;
 			padding: 50px;
-			width:50%;
+			padding-top: 90px;
+			width:40%;
 			height: 70vh ;
 			
 		}
@@ -83,7 +84,7 @@
 		.content1>h1{
 			color:#ffffff;
 			font-family:'jumper PERSONAL USE ONLY', sans-serif;
-			font-size:70px
+			font-size:60px
 		}
 
 		.content2{       
@@ -99,7 +100,6 @@
 
 		.sec{
 			background-color:#6A5ACD;
-			width: 500px; 
 			background: linear-gradient(to right, #6A5ACD 60%, #fff 100%);
 			margin-left: 10px;
             color: yellow;
@@ -107,14 +107,19 @@
 			font-weight: lighter;
 			font-family:'DIN Regular', sans-serif;
 		}
-
+		
 		#first-sec{
-			width: 700px; 
+			width: 800px;
 		}
+
+		#second-sec{
+			width: 500px;
+		}
+
+		
         
         .menu > .barre{
             background-color: #000000;
-            
             height: 1px;
             margin-bottom: 20px;
             margin-left: 50px;
@@ -122,7 +127,6 @@
         }
 
         .menu > p{
-            margin: 40px;
 			font-size: 20px;
         }
         .forma{
@@ -210,7 +214,7 @@
         }
 
 		.centre  strong{
-			font-family:'DIN', sans-serif;
+			font-family:'Arial', sans-serif;
 
 		}
 
@@ -263,17 +267,8 @@
 @media screen and (max-width: 769px){
 
 		.menu-item{
-				text-align: center;
+				text-align: justify;
 				border-bottom: 2px solid #000;
-			}
-
-			.menu-item:hover{
-				background-color:#000;
-				transition:  all .5s ease !important;
-			}
-
-			.primary-menu > .menu-container >.menu-item:hover> .menu-link{
-				color:#fff;
 			}
 
 		.sticky {
@@ -326,6 +321,10 @@
 			margin-left: 40px;
 			margin-right: 20px;
 		}
+
+		#first-sec{
+			padding-left:2px;
+		}
 		
 		.forma > section{
 			margin: 20px;
@@ -362,8 +361,12 @@
 			font-size: 20px;
 		}
 
+		UL>LI{
+			font-size: 17px;
+		}
+
 		.formas>.text>UL>LI{
-			font-size: 14px;
+			font-size: 17px;
 		}
 
 		.formas>.text{
@@ -392,7 +395,7 @@
 		}
 
 		#first-sec{
-			width: 540px; 
+			width: 100%; 
 		}
 
 		.image{
@@ -416,6 +419,9 @@
 			margin-top: 100px;
 		}
 
+		p{
+			font-size: 17px;
+		}
 	}
 
 		@media (min-width: 770px) and (max-width: 950px){
@@ -452,7 +458,7 @@
 	}
 
 	.menu-item{
-				text-align: center;
+				text-align: justify;
 				border-bottom: 2px solid #000;
 			}
 }
@@ -564,7 +570,7 @@ font-size:10px;
 		<div>
 		</section><!-- #content end -->
 		<section class="centre">
-    		<h3 id="first-sec"class="sec">CENTRE DE FORMATION DRONE GROUPE</h3>
+    		<h3 id="first-sec" class="sec">CENTRE DE FORMATION DRONE GROUPE</h3>
             <div class="barre-2"></div>
             <p>
             Ce département dénomé Centre de formation a pour mission de permettre à DRONE GROUPE Côte d'Ivoire de partager l'expérience et l'expertise acquise de ses animateurs dans la maitrise d'oeuvre des grands projets de dévellopement, dans l'aéronautique civile, dans les études techniques et financières des projets de divers secteurs d'activités, avec l'administration, les collectivités locales, les opérateurs économiques, les organisations non gouvernemengales et les cabinets de formation.
@@ -605,11 +611,11 @@ font-size:10px;
             Le centre de formation dispense des formations initiales et des formations spécialisées. Les sessions de formation ne se déroulent que s'il y a un minimum de cinq<strong> (5)</strong> stagiaires.
             </p>
             <div class="barre-2"></div>
-			<h3 class="sec" style="margin-bottom:10px">NOS FORMATIONS</h3>
+			<h3 id="second-sec" class="sec" style="margin-bottom:10px">NOS FORMATIONS</h3>
 		</section>
 		<section id="forma" class="forma">
             <section id = "theorique"class="formas animate-on-scroll">
-			<div class="image" style="background-image:url('images/M13-02-01.jpg');background-size:cover; " ></div>
+				<div class="image" style="background-image:url('images/WhatsApp Image 2024-04-19 at 13.29.12 (2).jpeg');background-size:cover; " ></div>
                 <div class="text">
                     <h3>FORMATION THÉORIQUE </h3>
                     <P> <i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR: 05 JOURS // COURS DU SOIR: 10 JOURS</strong></P>
@@ -626,7 +632,7 @@ font-size:10px;
 				</div>
             </section>
             <section id = "pratique" class="formas animate-on-scroll" >
-				<div class="image" style="background-image:url('images/Sans titre - 1-01.jpg');background-size:cover; " ></div>
+				<div class="image" style="background-image:url('images/dronemapping.jpg');background-size:cover; " ></div>
                 <div class="text">
                     <h3>FORMATION PRATIQUE </h3>
                     <P><i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR: 03 JOURS</strong></P>
@@ -655,7 +661,7 @@ font-size:10px;
 				</div>
 			</section>
             <section id = "tele" class="formas animate-on-scroll">
-			<div class="image" style="background-image:url('images/KLM-01.jpg');background-size:cover;"></div>
+			<div class="image" style="background-image:url('images/DRONE4.jpg');background-size:cover;"></div>
                 <div class="text">
                     <h3>FORMATION AU TÉLÉPILOTAGE</h3>
                     <P><i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR: 03 JOURS</strong></P>
@@ -924,6 +930,7 @@ jQuery(window).on( 'load', function(){
     }
 });
   </script>
+
 
 </body>
 </html>

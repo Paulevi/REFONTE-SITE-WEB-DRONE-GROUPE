@@ -42,17 +42,18 @@
         .content1{
 			background-color:#000000;
 			padding: 50px;
-			width: 90%;
+			padding-top: 90px;
+			width: 40%;
 			height: 70vh;
 		}
 
 		.content1>h1{
 			color:#ffffff;
 			font-family:'jumper PERSONAL USE ONLY', sans-serif;
-			font-size:70px;
+			font-size:60px;
 		}
 		.content2{
-			width: 100%;
+			width: 60%;
 		}
 
 		.content2>img{
@@ -96,7 +97,8 @@
         }
 
         .present > p{
-            margin: 40px;
+            margin-left: 100px ;
+			margin-right: 100px;
 			font-size: 20px;
         }
 
@@ -179,9 +181,13 @@
 			padding: 30px;
 			width: 100%;
 			height: 350px ;		
-		background-image:url('images/M9_Plan de travail 1-01.jpg');
+			background-image:url('images/drone.jpg');
 	}
-
+	.present>p{
+			font-size: 17px;
+			margin-left:20px;
+			margin-right:20px;
+		}
 	
 	.content1>h1{
 		margin-top:18%;
@@ -244,25 +250,13 @@
 			margin-left: 40px;
 			text-align: center;
 		}
-		.sub-menu-container > .menu-item > .menu-link:hover{
-			color: yellow;
-		}
 		.menu-container > .menu-item > .menu-link:hover{
 			color: yellow;
 		}
 		
 		.menu-item{
-			text-align: center;
+			text-align:justify ;
 			border-bottom: 2px solid #fff;
-		}
-
-		.menu-item:hover{
-				background-color:#fff;
-				transition:  all .5s ease !important;
-		}
-
-		.primary-menu > .menu-container >.menu-item:hover> .menu-link{
-			color:#000;
 		}
 	}
 
@@ -309,16 +303,12 @@ font-size:45px;
 }
 
 .menu-item{
-			text-align: center;
+			text-align: justify;
 			border-bottom: 2px solid #fff;
 		}
 
-.menu-item:hover{
-		background-color:#fff;
-		transition:  all .5s ease !important;
-}
 .primary-menu > .menu-container >.menu-item:hover> .menu-link{
-	color:#000;
+	color:#FFD966;
 }
 
 	}
@@ -422,7 +412,7 @@ font-size:45px;
 					<div class="barre"  data-animate="fadeInUp"></div>
 				</div>
 				<div class="content2">
-					<img src="images/M9_Plan de travail 1-01.jpg" alt="">
+					<img src="images/drone.jpg" alt="">
                 </div>
 		<div>
 		</section><!-- #content end -->
@@ -438,6 +428,9 @@ font-size:45px;
             <div class="barre-2"></div>
 		</section>
 		@include('sections.footer')
+
+		</div>
+		<div id="gotoTop" class="uil uil-angle-up"></div>
 		</body>
 
 	<!-- #wrapper end -->

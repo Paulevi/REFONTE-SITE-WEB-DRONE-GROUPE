@@ -79,17 +79,18 @@
 			height: 70vh;
 			background-color:#000000;
 			padding: 50px;
-			/* width: 40%; */
+			padding-top: 90px;
+			width: 40%;
 		}
 
 		.content1>h1{
 			color:#ffffff;
 			font-family:'jumper PERSONAL USE ONLY', sans-serif;
-			font-size:70px
+			font-size:60px
 		}
 		.content2{
 			height: 70vh;
-			width: 230vh;
+			width: 60%;
 		}
 			
 		@keyframes swiperSVGAnim {
@@ -235,17 +236,8 @@
 		}
 
 		.menu-item{
-			text-align: center;
+			text-align: justify;
 			border-bottom: 2px solid #fff;
-		}
-
-		.menu-item:hover{
-				background-color:#fff;
-				transition:  all .5s ease !important;
-		}
-
-		.primary-menu > .menu-container >.menu-item:hover> .menu-link{
-			color:#000;
 		}
   
 	}
@@ -294,17 +286,8 @@
 				font-size:10px;
 			} 
 			.menu-item{
-			text-align: center;
+			text-align: justify;
 			border-bottom: 2px solid #fff;
-		}
-
-		.menu-item:hover{
-				background-color:#fff;
-				transition:  all .5s ease !important;
-		}
-
-		.primary-menu > .menu-container >.menu-item:hover> .menu-link{
-			color:#000;
 		}
 
 	}
@@ -498,6 +481,7 @@
 
 		</section>
 		@include('sections.footer')
+		
 		</body>
 
 	<!-- #wrapper end -->

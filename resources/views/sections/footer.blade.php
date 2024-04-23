@@ -28,25 +28,8 @@
 			color: #3A2F7C;
 			background-color: #FCDC12;
 		}
-		.scroll{
-			position: fixed;
-			bottom: 20px;
-			right: 20px;
-			width: 40px;
-			height: 40px;
-			background-color: #3A2F7C; /* Couleur de fond de la flèche */
-			color: #FFD966; /* Couleur du texte de la flèche */
-			font-size: 24px;
-			text-align: center;
-			line-height: 40px;
-			cursor: pointer;
-			border-radius: 10px;
-			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-		}
-
-		.scroll:hover {
-			background-color:  #FFD966;
-			color:#3A2F7C;
+		#gotoTop{
+			background-color:#3A2F7C 
 		}
 
 		#copyrights{
@@ -243,7 +226,7 @@
 										<i class="fa-brands fa-linkedin"></i>
 									</a>
 								</div>
-							<div class="scroll" onclick="scrollToTop()">&#8593;</div>
+								<div id="gotoTop" class="uil uil-angle-up"></div>
 						</div>
 					</div>
 				</div>

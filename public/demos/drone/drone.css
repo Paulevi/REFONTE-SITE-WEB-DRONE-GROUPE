@@ -2,6 +2,20 @@
 	Canvas: Drone
 -----------------------------------------------------------------*/
 
+
+@font-face {
+	font-family: 'Jumper PERSONAL USE ONLY-Regular';
+	src: url('police/jumper/JumperPERSONALUSEONLY-Regular.ttf') format('ttf'); 
+	font-weight: normal;
+	font-style: normal;
+	}
+
+	
+	body{
+		font-family:'Jumper PERSONAL USE ONLY-Regular', sans-serif;
+		
+	}
+
 :root {
 	--cnvs-themecolor: var(--bs-primary);
 	--cnvs-themecolor-rgb: var(--bs-primary-rgb);
@@ -19,6 +33,7 @@
 	--cnvs-primary-menu-submenu-font-weight:	400;
 	--cnvs-primary-menu-submenu-hover-font-weight: 500;
 	--cnvs-primary-menu-submenu-tt:	none;
+	font-family:'Jumper PERSONAL USE ONLY-Regular', sans-serif;
 }
 
 .is-expanded-menu .mega-menu-style-2 .mega-menu-title > .menu-link {
@@ -33,6 +48,8 @@
 	--cnvs-header-floating-top-offset: 0;
 	--cnvs-top-search-font-size: 1.125rem;
 	--cnvs-top-search-placeholder: var(--cnvs-contrast-500);
+	font-family:'Jumper PERSONAL USE ONLY-Regular', sans-serif;
+	text-transform: uppercase;
 }
 
 .is-expanded-menu .menu-link {
@@ -44,15 +61,7 @@
 	max-width: calc(100% - 30px);
 }
 
-#logo img {
-	transition: transform .5s ease;
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-}
 
-#logo:hover img {
-	transform: rotate(90deg);
-}
 
 .is-expanded-menu #header-wrap,
 .is-expanded-menu .sticky-header #header-wrap {

@@ -17,7 +17,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fontawesome.com/icons/file-lines?f=classic&s=thin" integrity="sha512-xxNO0nSN9+hE5CoefSwoHd4WwITb+jq0sE7o7dbzAeXNr9l6iQ7Dwlsl+fpdOebQKEp26OJmtunQrTJN6PizQA==" crossorigin="anonymous" />
 	<link rel="icon" src="images/logodronegroupe.png">
-	<link rel="shortcut icon" type="image/x-icon" href="images/logodronegroupe.png"/>	
+	<!-- <link rel="shortcut icon" type="image/x-icon" href="images/logodronegroupe.png"/>	 -->
 	<link rel="stylesheet" href="style.css">
 
 	
@@ -53,36 +53,25 @@
 			.swiper-slide{
 				display:flex;
 			}
-
 			 .content1>a {
 				margin-top: 60px;
 				height: auto !important;
 			}
-
 			.content1>a{
+				margin-top: 60px;
 				background:#fff ;
 				border: 2px solid #000;
-				border-radius: 3px;
+				border-radius: 50;
 				color: #000;
 				letter-spacing: 2px;
 				padding: 12px 30px;
 				text-transform: uppercase;
-			}
-
-			.content1>:last-child {
-				margin-left: 20px;
-			}
-
+				width: 350px;
+			} 
 			.content1>a:hover {
 				background: #000 none repeat scroll 0 0;
 				border-color: #fff;
 				color: #ffffff;
-			}
-
-			.content1>a{
-				position: relative;
-				bottom:5% ;
-				
 			}
 
 			.bi-arrow-right{
@@ -112,19 +101,14 @@
 			margin-top: 30px;
 			height: 80vh ;
 		}
-        .swiper-slide >.content1{
+
+		.swiper-slide >.content1{
+			padding:2%;
 			background-color:#000000;
-			padding: 4%;
-			width: 45%;
+			width: 40%;
 			height: 80vh ;
 
 		}
-
-		.content1> h1 {
-			-webkit-animation: 1s ease 0.5s normal both 1 running fadeInUp;
-			animation: 1s ease 0.5s normal both 1 running fadeInUp;
-			display:flex
-}
 
 
 		.swiper-slide >.swiper-slide-bg {
@@ -135,16 +119,19 @@
 		.swiper-slide >.swiper-slide-bg>img {
 			float:right;
 			height: 80vh ;
-			width: 55%;
+			width: 60%;
 		}
 
-		.swiper-slide>.content1>h1{
+		.slider-caption{
+			/* background-color: red; */
+		}
+		
+		.swiper-slide>.content1>.slider-caption>h1{
+			position:relative;
+			top: 40px;
 			color:#ffffff;
 			font-family:'jumper', sans-serif;
-			font-size:53px;
-			display:flex;
-			justify-content:center;
-			align-items:center
+			font-size:52px;
 		}
 		.content-wrap-2{
 			display: flex;
@@ -165,7 +152,6 @@
 		.barre{
 			height: 3px;
 			background-color: #ffffff;
-			margin-top: 30px;
 		}
 
 		.feature-box{
@@ -180,7 +166,7 @@
 		.column2{
 			margin-left: -20px;
 		} 
-		.swiper-pagination {
+		 /* .swiper-pagination {
 			--cnvs-swiper-bar-color: #FFF;
 			--cnvs-swiper-bar-size: 30px;
 			--cnvs-swiper-bar-dot-size: 8px;
@@ -293,10 +279,10 @@
 			100% {
 				stroke-dashoffset: 0;
 			}
-		}
+		} */
         
 		.col-md-6 >a{
-			border-radius:10px;
+			border-radius:30px 30px 30px 30px ;
 			background-size: cover;
 			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
 
@@ -310,7 +296,7 @@
 			height: 10px;
 			width: 100%;
 			opacity: 0.85;
-			border-radius:10px 10px 0px 0px;
+			border-radius:30px 30px 0px 0px;
 
 			box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5);
 			background: linear-gradient(to right, #1901B5 10%, #000 100%);
@@ -390,16 +376,6 @@
 	.content-wrap{
 		height: 350px;
 	}
-
-	.sub-menu-container >.menu-item:hover{
-				background-color:#fff;
-				transition:  all .5s ease !important;
-		}
-
-		.sub-menu-container >.menu-item:hover> .menu-link{
-			color:#000;
-		}
-	
 	
 	.menu-container{
 		text-align: justify;
@@ -421,17 +397,9 @@
 		} 
 
 	#content{
-		height: 350px ;
+		height: 450px ;
 	}
 
-	.swiper-slide >.content1 >a{
-		
-		margin-top:20px;
-	}
-
-	
-	
-	
 	.swiper-slide .content1> .barre{
 		margin-top:5px;
 		width: 100%;
@@ -479,9 +447,9 @@
 		}
 		.swiper-slide>.content1{
 		background-color:transparent;
-		padding: 30px;
+		padding-top: 10%;
 		width: 100%;
-		height: 350px ;		
+		height: 450px ;		
 		}
 
 		.swiper-slide>.content1>a{
@@ -489,37 +457,43 @@
 			color:#fff;
 			border: 2px solid #fff;
 			background-color:transparent;
-			width: 150px;
-			margin-left: 35%;
-			font-size:10px;
+			width: 180px;
+			margin-left: 0%;
+			font-size:15px;
+			margin-top:20px;
+			position: relative;
+			top:20%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -100px;
 		}
 
 		.swiper-slide>.content1>a:hover{
 			background-color:transparent;
 			color:#fff;
-			border: 2px solid #fff;
+			border: 4px solid #fff;
 
 		}
-		.swiper-slide>.content1>h1{
+		.swiper-slide>.content1>.slider-caption>h1{
 			text-align: center;
-			margin-top:5%;
+			/* margin-top:5%; */
 			color:#fff;
 			font-size:30px;
 			font-family:'jumper PERSONAL USE ONLY', sans-serif;argin-right: 10px;
 	}
 
 	.swiper-wrapper>.swiper-slide {
-		height: 350px ;
+		height: 450px ;
 		width: 100%;
 	}
 
 	.swiper-slide>.swiper-slide-bg{
-		height: 350px ;
+		height: 450px ;
 		width: 100%;
 	}
 
 	.swiper-slide>.swiper-slide-bg>img {
-			height: 350px ;
+			height: 450px ;
 			width: 100%;
 		}
 
@@ -594,15 +568,15 @@
 	}
 
 	.swiper-slide>.swiper-slide-bg>img {
-			height: 500px ;
-			width: 100%;
+		height: 500px ;
+		width: 100%;
 		}
 	
 	.swiper-slide>.content1{
-	background-color:transparent;
-	padding: 50px;
-	width: 100%;
-	height: 500px ;		
+		background-color:transparent;
+		padding-top: 10%;
+		width: 100%;
+		height: 750px ;	
 }
 
 		.feature-box{
@@ -626,7 +600,7 @@
 		text-align: justify;
 	}
 			
-	.swiper-slide>.content1>h1{
+	.swiper-slide>.content1>.slider-caption>h1{
 		 margin-top:30px;
 		color:#ffffff;
 		font-size:40px;
@@ -643,18 +617,13 @@
 
 		}
 
-		.menu-item{
+	.menu-item>.menu-link:hover{
+		color:#FFD966
+	}
+
+	.menu-item{
 			text-align: center;
 			border-bottom: 2px solid #fff;
-		}
-
-		.sub-menu-container>.menu-item:hover{
-				background-color:#fff;
-				transition:  all .5s ease !important;
-		}
-
-		.sub-menu-container >.menu-item:hover> .menu-link{
-			color:#000;
 		}
 	
 	}
@@ -673,8 +642,8 @@
 	
 	.swiper-slide>.content1{
 	background-color:#000000;
-	padding: 50px;
-	width: 50%;
+	padding: 20px;
+	width: 40%;
 	height: 80vh ;		
 }
 
@@ -682,17 +651,16 @@
 
 .swiper-slide>.swiper-slide-bg>img {
 			height: 80vh ;
-			width: 50%;
+			width: 60%;
 		}
 
 	.menu-item> .menu-link{
 		text-align: justify;
 	}
 			
-	.swiper-slide>.content1>h1{
-		 margin-top:45px;
+	.swiper-slide>.content1>.slider-caption>h1{
 		color:#ffffff;
-		font-size:50px;
+		font-size:45px;
 	}
 
 	.swiper-wrapper>.swiper-slide {
@@ -717,11 +685,11 @@
 		height: 35px;
 	}
 
-	.content1> h1 {
+	/* .content1> h1 {
 			-webkit-animation: 1s ease 0.5s normal both 1 running fadeInUp;
 			animation: 1s ease 0.5s normal both 1 running fadeInUp;
 			display:flex
-}
+} */
 
 	  	
 
@@ -732,11 +700,11 @@
 
 </head>
 
-	<body>
+	<body  class="stretched">
 
 		<div id="loader"></div>
 
-	
+		<div id="wrapper">
 		
 		<header id="header" class="sticky dark ">
 			<div id="header-wrap">
@@ -778,29 +746,29 @@
 			</div>
 			<div class="header-wrap-clone"></div>
 		</header>
-		<section id="content" classe="slider-element slider-parallax swiper_wrapper min-vh-75">
+		<section id="content" class="slider-element swiper_wrapper min-vh-60 " data-loop="true">
 			<div class="slider-inner">
-				
-				<div class="slider-element swiper_wrapper min-vh-100 customjs">
-					<div class="swiper swiper-parent" >
-						<div class="swiper-wrapper">
-						@foreach ($actus as $actu)
-							<div class="swiper-slide  dark">
-								<div class="content1 ">
-										<h1 style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif; -webkit-animation: 1s ease 0.5s normal both 1 running fadeInUp;
-										animation: 1s ease 0.5s normal both 1 running fadeInUp;">{{$actu->titre_actu}}</h1>
-										<div class="barre"></div>
-										<a href="{{ route('actu.show', ['id' => $actu->id_actu]) }}"  class="button button-xlarge button-circle  button-reveal text-transform-none ls-0" ><i class="bi-arrow-right" ></i><span><strong>CONSULTER</strong></a>
-								</div>
-								
+				<div class="swiper swiper-parent">
+					<div class="swiper-wrapper">
+					@foreach ($actus as $actu)
+							<div class="swiper-slide dark">
+								<div class="content1">
+									<div class="slider-caption">
+										<h1 data-animate="fadeInUp" data-delay="200" style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;">{{$actu->titre_actu}}</h1>
+									</div>
+									<div ata-animate="fadeInUp" data-delay="200"  class="barre"></div>
+									<a ata-animate="fadeInUp" data-delay="200"  class="button button-xlarge button-circle  button-reveal text-transform-none ls-0"  href="{{ route('actu.show', ['id' => $actu->id_actu]) }}"><i class="bi-arrow-right" ></i><span><strong>CONSULTER</strong></a>
+								</div>	
 								<div class="swiper-slide-bg"><img src="data:image/png;base64,{{ base64_encode($actu->image_actu) }}" alt=""></div>
-								
 							</div>
-						@endforeach
-						</div>
+					@endforeach
 					</div>
+					</div>
+					<div class="slider-arrow-left"><i class="uil uil-angle-left-b"></i></div>
+					<div class="slider-arrow-right"><i class="uil uil-angle-right-b"></i></div>
+					<div class="slide-number"><div class="slide-number-current"></div><span>/</span><div class="slide-number-total"></div></div>
 				</div>
-				<div class="swiper-pagination"></div>
+
 			</div>
 		</section>
 		<section id="menu">
@@ -808,28 +776,36 @@
     		<div class="container mw-md">
        			 <div class="row align-items-stretch">
            			 <div class="col-md-6 col-padding animate-on-scroll ">
-               			 <a href="{{url('/presentation')}}" data-animate="fadeInLeft" class="column1 feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M6_Plan de travail 1-01-01-01-01.jpg");'>
+               			 <a href="{{url('/presentation')}}" class="column1 feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M6_Plan de travail 1-01-01-01-01.jpg");-webkit-animation: 1s ease 0.5s normal both 1 running fadeInUp;
+			animation: 1s ease 0.5s normal both 1 running fadeInUp;
+			display:flex'>
                     		<div class="Title"style="height: 25%;">
                     			<h1 >PRÉSENTATION</h1>
                     		</div>
 						</a>
            			 </div>
            			<div class="col-md-6 col-padding animate-on-scroll  box">
-                		<a href="{{url('/metier')}}" data-animate="fadeInRight" class="column2 feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M9_Plan de travail 1-01.jpg");'>
+                		<a href="{{url('/metier')}}" class="column2 feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M9_Plan de travail 1-01.jpg");-webkit-animation: 1s ease 0.5s normal both 1 running fadeInUp;
+			animation: 1s ease 0.5s normal both 1 running fadeInUp;
+			display:flex'>
                     		<div class="Title" style="height: 25%;">
 								<h1>NOS METIERS</h1>
                    			</div>
 						</a>
            			</div>
-           			 <div class="col-md-6 col-padding  animate-on-scroll box" data-animate="fadeInLeft" style="padding-top:5px">
-              			<a href="{{url('/formation')}}" data-animate="fadeInLeft" class="column1 feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M7_Plan de travail 1-01-01-01-01-01.jpg");'>
+           			 <div class="col-md-6 col-padding  animate-on-scroll box" style="padding-top:5px">
+              			<a href="{{url('/formation')}}" class="column1 feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M7_Plan de travail 1-01-01-01-01-01.jpg");-webkit-animation: 1s ease 0.5s normal both 1 running fadeInUp;
+			animation: 1s ease 0.5s normal both 1 running fadeInUp;
+			display:flex'>
                     		<div class="Title"style="height: 25%;">
 								<h1>NOS FORMATIONS</h1>
                    			 </div>
 						</a>
            			 </div>
-						<div class="col-md-6 col-padding animate-on-scroll  box" data-animate="fadeInRight" style="padding-top:5px">
-                		<a href="{{url('/reglementation')}}" data-animate="fadeInRight" class="column2 feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M1_Plan de travail 1.jpg"); background-size:cover'>
+						<div class="col-md-6 col-padding animate-on-scroll  box" style="padding-top:5px">
+                		<a href="{{url('/reglementation')}}" class="column2 feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M1_Plan de travail 1.jpg"); background-size:cover -webkit-animation: 1s ease 0.5s normal both 1 running fadeInUp;
+			animation: 1s ease 0.5s normal both 1 running fadeInUp;
+			display:flex'>
                     		<div class="Title"style="height: 25%;">
 								<h1>CONSULTER UN EXTRAIT DE LA REGLEMENTATION</h1>
                    			</div>
@@ -855,6 +831,7 @@
 			</div>
 		</section> 
 		@include('sections.footer') 
+</div>
 </body>
 </html>
 

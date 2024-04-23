@@ -44,27 +44,28 @@
 			margin-top: 30px;
 			margin-bottom:30px;
 		}
-        .content1{
+		.content1{
 			background-color:#000000;
 			padding: 50px;
-			width: 90%;
-			height: 70vh;
+			padding-top: 80px;
+			width:40%;
+			height: 70vh ;
 		}
 
 		.content1>h1{
 			color:#ffffff;
 			font-family:'jumper PERSONAL USE ONLY', sans-serif;
-			font-size:60px;
+			font-size:50px
 		}
+
 		.content2{
-			width: 100%;
+			width: 60%;  
 		}
 
 		.content2>img{
-			height: 70vh;
-			width: 100%;
-			}
-       
+			height: 70vh ;
+			width: 100%;                                                               
+        } 
 		.content-wrap{
 			display: flex;
 			background-color: #000000;
@@ -74,30 +75,18 @@
             width:60%;                                                                
         }  
 
-		.present > .presen>h3{
+		.present > .presen>h3>span{
 			background-color:#6A5ACD;
 			background: linear-gradient(to right, #6A5ACD 60%, #fff 100%);
 			margin-left: 10px;
             color: yellow;
 			padding-left:35px;
+			padding-right:20%;
+			padding-top:5px;
+			padding-bottom:5px;
 			font-weight: lighter;
 			font-family:'DIN Regular', sans-serif;
 		}
-
-        .present >.presen > h3{
-
-          color: #FFD966;
-			font-weight: lighter;
-			font-family:'DIN Regular', sans-serif;
-        }
-
-        .present > .barre{
-            background-color: #000000;
-			height: 1px;
-            margin-bottom 20px;
-            margin-left: 50px;
-            margin-right: 50px;
-        }
 
         .present > p{
             margin: 40px;
@@ -259,20 +248,35 @@
 		}
 		
 		.menu-item{
-			text-align: center;
+			text-align: justify;
 			border-bottom: 2px solid #fff;
 		}
 
-		.menu-item:hover{
-				background-color:#fff;
-				transition:  all .5s ease !important;
+	.present >p {
+	font-size: 17px;
+}
+
+		.present > .presen>h3{
+			background-color:#6A5ACD;
+			margin-left: 10px;
+            color: yellow;
+			font-size: 20px;
+			font-weight: lighter;
+			font-family:'DIN Regular', sans-serif;
+		}
+		
+		.present > .presen>h3>span{
+			background-color:red;
+			background: linear-gradient(to right, transparent 100%, #fff 100%);
+			margin-left: 10px;
+            color: yellow;
+			padding-left:5px;
+			padding-right:62%;
+			font-weight: lighter;
+			font-family:'DIN Regular', sans-serif;
 		}
 
-		.primary-menu > .menu-container >.menu-item:hover> .menu-link{
-			color:#000;
-		}
 	}
-
 
 	@media (min-width: 770px) and (max-width: 1100px){
 
@@ -314,9 +318,27 @@ font-size:35px;
 	margin-top: 10px;
 }
 
+.present > .presen>h3{
+	background-color:#6A5ACD;
+	margin-left: 10px;
+    color: yellow;
+	font-size: 20px;
+	font-weight: lighter;
+	font-family:'DIN Regular', sans-serif;
+}
+		
+.present > .presen>h3>span{
+	background-color:red;
+	background: linear-gradient(to right, transparent 100%, #fff 100%);
+	margin-left: 10px;
+    color: yellow;
+	padding-left:5px;
+	padding-right:62%;
+	font-weight: lighter;
+	font-family:'DIN Regular', sans-serif;
+}
 
-
-	}
+}
 
 @media (min-width: 1101px) and (max-width: 1400px){
 
@@ -419,7 +441,6 @@ font-size:35px;
 		<div class="content-wrap py-0">
 				<div class="content1" >
 					<h1 data-animate="fadeInUp"   class="text-transform-none " style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;">{{ $actu->titre_actu }}</h1>
-					<div class="barre"></div>
 				</div>
 				<div class="content2" >
 					<img src="data:image/png;base64,{{ base64_encode($actu->image_actu) }}" alt="">
@@ -427,7 +448,7 @@ font-size:35px;
 		<div>
 		</section><!-- #content end -->
 		<section class="present">
-    		<div class="presen"><h3><span>{{$actu->sous_titre}}<span></h3></div>
+    		<div class="presen"><h3><span>{{$actu->sous_titre}}               <span></h3></div>
             <div class="barre-2"></div>
 			@foreach ($actu->paragraphe as $paragraphe)
 				<p>{{$paragraphe->contenu }}</p>
