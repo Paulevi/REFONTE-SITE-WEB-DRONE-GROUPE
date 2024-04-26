@@ -2,43 +2,11 @@
 @php
     $actus = App\Models\actu_model::all(); 
 @endphp
-<!DOCTYPE html>
-<html dir="ltr" lang="fr">
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta http-equiv="x-ua-compatible" content="IE=edge">
-	<meta name="author" content="SemiColonWeb">
-	<meta name="description" content="Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
 
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fontawesome.com/icons/file-lines?f=classic&s=thin" integrity="sha512-xxNO0nSN9+hE5CoefSwoHd4WwITb+jq0sE7o7dbzAeXNr9l6iQ7Dwlsl+fpdOebQKEp26OJmtunQrTJN6PizQA==" crossorigin="anonymous" />
-	<link rel="icon" src="images/logodronegroupe.png">
-	<!-- <link rel="shortcut icon" type="image/x-icon" href="images/logodronegroupe.png"/>	 -->
-	<link rel="stylesheet" href="style.css">
-
-	
-	<link rel="stylesheet" href="css/font-icons.css">
-
-	
-	<link rel="stylesheet" href="css/swiper.css">
-
-	
-	<link rel="stylesheet" href="css/custom.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	
-	<title>DRONE GROUPE</title>
+@include('sections.head')
 
 	<style>	
-
-
-
-
-		@font-face {
+@font-face {
 			font-family: 'Jumper PERSONAL USE ONLY-Regular';
 			src: url('police/jumper/JumperPERSONALUSEONLY-Regular.ttf') format('ttf'); 
 			font-weight: normal;
@@ -54,11 +22,11 @@
 				display:flex;
 			}
 			 .content1>a {
-				margin-top: 60px;
+				margin-top: 30px;
 				height: auto !important;
 			}
 			.content1>a{
-				margin-top: 60px;
+				margin-top: 30px;
 				background:#fff ;
 				border: 2px solid #000;
 				border-radius: 50;
@@ -166,121 +134,7 @@
 		.column2{
 			margin-left: -20px;
 		} 
-		 /* .swiper-pagination {
-			--cnvs-swiper-bar-color: #FFF;
-			--cnvs-swiper-bar-size: 30px;
-			--cnvs-swiper-bar-dot-size: 8px;
-			--cnvs-swiper-bar-dot-color: #FFF;
-			--cnvs-swiper-stroke-width: 6;
-			--cnvs-swiper-autoplay-speed: 5000ms;
-			--cnvs-swiper-bullet-gutter: 3px;
-			--cnvs-swiper-bullet-offset: 25px;
 
-			bottom: var(--cnvs-swiper-bullet-offset) !important;
-		}
-
-		.swiper-pagination.center-left,
-		.swiper-pagination.center-right {
-			display: block;
-			width: var(--cnvs-swiper-bar-size);
-			top: 50% !important;
-			bottom: auto !important;
-			left: var(--cnvs-swiper-bullet-offset) !important;
-			transform: translateY(-50%);
-		}
-
-		.swiper-pagination.center-right {
-			right: var(--cnvs-swiper-bullet-offset) !important;
-			left: auto !important;
-		}
-
-		.dark .swiper-pagination,
-        .dark.swiper-pagination {
-			--cnvs-swiper-bar-color: var(--bs-light);
-			--cnvs-swiper-bar-dot-color: var(--bs-light);
-		}
-
-		.swiper-pagination span,
-		.swiper-pagination-bullet svg {
-			position: relative;
-			width: var(--cnvs-swiper-bar-size);
-			height: var(--cnvs-swiper-bar-size);
-			background-color: transparent;
-			border: 0;
-		}
-
-		.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-			margin: 0 var(--cnvs-swiper-bullet-gutter);
-		}
-
-		.swiper-horizontal>.swiper-pagination.center-left.swiper-pagination-bullets .swiper-pagination-bullet,
-		.swiper-horizontal>.swiper-pagination.center-right.swiper-pagination-bullets .swiper-pagination-bullet {
-			margin: var(--cnvs-swiper-bullet-gutter) 0;
-		}
-
-		.swiper-pagination span:hover,
-		.swiper-pagination span.swiper-pagination-bullet-active {
-			background: none !important;
-		}
-
-		.swiper-pagination-bullet{
-			position: relative;
-			left:40%
-		}
-		
-		.swiper-pagination-bullet:hover::before{
-			height: 15px;
-			width: 15px;
-			background: yellow !important;
-		}
-
-		
-
-		.swiper-pagination-bullet  {
-			fill: none;
-			background-color: yellow;
-		}
-
-		.swiper-pagination-bullet::before {
-			content: "";
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			width: 10px;
-			height:10px;
-			background: #fff;
-			border-radius: 50%;
-			transition: ease;
-			transform: translate(-50%, -50%);
-		}
-
-		.swiper-pagination-bullet-active::before {
-			content: "";
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			height: 13px;
-			width: 13px;
-			background: yellow;
-			border-radius: 50%;
-			transform: translate(-50%, -50%);
-		}
-
-		.swiper-pagination-bullet circle {
-			stroke-dashoffset: 260;
-			stroke-dasharray: 259;
-		}
-		
-
-		@keyframes swiperSVGAnim {
-			0% {
-				stroke-dashoffset: 260;
-			}
-			100% {
-				stroke-dashoffset: 0;
-			}
-		} */
-        
 		.col-md-6 >a{
 			border-radius:30px 30px 30px 30px ;
 			background-size: cover;
@@ -754,7 +608,7 @@
 							<div class="swiper-slide dark">
 								<div class="content1">
 									<div class="slider-caption">
-										<h1 data-animate="fadeInUp" data-delay="200" style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;">{{$actu->titre_actu}}</h1>
+										<h1 data-animate="fadeInUp" data-delay="100" style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;">{{$actu->titre_actu}}</h1>
 									</div>
 									<div ata-animate="fadeInUp" data-delay="200"  class="barre"></div>
 									<a ata-animate="fadeInUp" data-delay="200"  class="button button-xlarge button-circle  button-reveal text-transform-none ls-0"  href="{{ route('actu.show', ['id' => $actu->id_actu]) }}"><i class="bi-arrow-right" ></i><span><strong>CONSULTER</strong></a>
@@ -824,7 +678,7 @@
 					</div>
 					<div class="col-md-6 " >
 						<video id="slide-video" class="d-block w-100 h-100  shadow" poster="images/videos/deskwork.jpg" preload="auto" loop autoplay playsinline muted  style="height:60VH">
-                            <source src='demos/drone/images/video.mp4' type='video/mp4'>
+                            <source src='images/video.mp4' type='video/mp4'>
                         </video>
 					</div>
 				</div>
@@ -839,7 +693,6 @@
 	<script src="js/functions.bundle.js"></script>
 
 	<script>
-		
 		var loader= document.getElementById("loader");
 		window.addEventListener('load', function(){
 			loader.style.display="none";
