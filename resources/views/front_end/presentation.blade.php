@@ -1,147 +1,83 @@
 @include('sections.head')
 
-	<style>
+<style>
  		
-		 body{
-                font-family:'jumper PERSONAL USE ONLY', sans-serif;
-            }
-
-		#content{
-			margin-top: 30px;
-			margin-bottom:30px;
-		}
-        .content1{
-			background-color:#000000;
-			padding: 50px;
-			padding-top: 90px;
-			width: 40%;
-			height: 70vh;
-		}
-
-		.content1>h1{
-			color:#ffffff;
-			font-family:'jumper PERSONAL USE ONLY', sans-serif;
-			font-size:60px;
-		}
-		.content2{
-			width: 60%;
-		}
-
-		.content2>img{
-			height: 70vh;
-			width: 100%;
-			}
-       
-		.content-wrap{
-			display: flex;
-			background-color: #000000;
-		}
-        .content{
-            background-size:cover;
-            width:60%;                                                                
-        }  
-
-		.present > .presen{
-			background-color:#6A5ACD;
-			width: 500px; 
-			background: linear-gradient(to right, #6A5ACD 60%, #fff 100%);
-			margin-left: 10px;
-            color: yellow;
-			padding-left:35px;
-			font-weight: lighter;
-			font-family:'DIN Regular', sans-serif;
-		}
-
-        .present >.presen > h3{
-            color: yellow;
-			font-weight: lighter;
-			font-family:'DIN Regular', sans-serif;
+	 body{
+            font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
         }
-
-        .present > .barre{
-            background-color: #000000;
-            
-            height: 1px;
-            margin-bottom 20px;
-            margin-left: 50px;
-            margin-right: 50px;
-        }
-
-        .present > p{
-            margin-left: 100px ;
-			margin-right: 100px;
-			font-size: 20px;
-        }
-
-		#equip{
-			margin-top: 40px;
-		} 
-
-		#equip > .content-wrap{
-			justify-content:space-around;
-		}
-
-		.row{
-			justify-content:space-around;
-			width: 100%;
-		}
-
-		.col-md-4 {
-			padding-top: 150px;
-			width: 600px;
-
-		}
-		.col-md-4 > a > h1{
-			color:#ffffff;
-			 font-size:50px;
-			  font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
-		}
-
-		.col-md-4 > a > h1:hover{
-			color:#FFD966;
-			
-		}
-		.col-md-6 {
-			width: 500px;
-		}
-
-		.col-md-6 > img{
-			height: 500px;
-			width: 500px;
-		}
-		
-
-		@keyframes swiperSVGAnim {
-			0% {
-				stroke-dashoffset: 260;
-			}
-			100% {
-				stroke-dashoffset: 0;
-			}
-		}
-
-		.feature-box{
-			height: 400px;
-			width: 400px;
-		}
-
-		.menu-item{
-			text-align: center;
-		}
-
-		.button.button-reveal i {
-			opacity: 0;
-			left: auto !important;
-			right: 20px !important;
-			background-color: transparent;
-			transition: all .3s ease !important;
-		}
-@media screen and (max-width: 769px){
-	
-
-	#logo > a{
-		height: 15px;
+	#content{
+		margin-top: 30px;
+		margin-bottom:30px;
 	}
+    .content1{
+		background-color:#000000;
+		padding: 50px;
+		padding-top: 90px;
+		width: 40%;
+		height: 70vh;
+	}
+	.content1>h1{
+		color:#ffffff;
+		font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
+		font-size:60px;
+	}
+	.content2{
+		width: 60%;
+	}
+	.content2>img{
+		height: 70vh;
+		width: 100%;
+		}
+    
+	.content-wrap{
+		display: flex;
+		background-color: #000000;
+	}
+    .content{
+        background-size:cover;
+        width:60%;                                                                
+    }  
+	.present > .presen{
+		background-color:#6A5ACD;
+		width: 500px; 
+		background: linear-gradient(to right, #6A5ACD 60%, #fff 100%);
+		margin-left: 10px;
+        color: yellow;
+		padding-left:35px;
+		font-size: 15px;
+		font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
+	}
+    .present >.presen > h3{
+        color: yellow;
+    }
+    .present > .barre{
+        background-color: #000000;
+        
+        height: 1px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .present > p{
+        margin-left: 100px ;
+		margin-right: 100px;
+		font-size: 17px;
+		font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
+
+    }
+	
+@media screen and (max-width: 769px){
+
+	.sub-menu-container {
+    background-color:#000000;
+  
+  }
+	
+	#logo > a{
+		height:15px
+	}
+
+	
 		#content{
 			height: 350px ;		
 			margin-bottom:50px;
@@ -161,11 +97,11 @@
 		}
 	
 	.content1>h1{
-		margin-top:18%;
+		margin-top:12%;
 		color:#FFF;
 		text-align: center;
 		font-size:35px;
-		font-family:'jumper PERSONAL USE ONLY', sans-serif;
+		font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
 	}
 
 	.barre{
@@ -221,20 +157,32 @@
 			margin-left: 40px;
 			text-align: center;
 		}
-		.menu-container > .menu-item > .menu-link:hover{
-			color: yellow;
+		.sub-menu-container > .menu-item > .menu-link:hover{
+			color:#FFD966;
+;
 		}
 		
 		.menu-item{
 			text-align:justify ;
-			border-bottom: 2px solid #fff;
+			/* border-bottom: 2px solid #fff; */
 		}
 	}
+@media (min-width: 770px) and (max-width: 1100px){
 
-	@media (min-width: 770px) and (max-width: 1100px){
+
+#logo > a{
+	height:21px
+}
+
+
+.sub-menu-container {
+    background-color:#696969;
+  
+  }
+
 
 #content{
-	height:500px ;		
+height:500px ;		
 margin-bottom:50px;
 
 }
@@ -251,7 +199,6 @@ height: 500px ;
 .content1>h1{
  margin-top:20px;
 color:#ffffff;
-font-family:arial;
 font-size:45px;
 }
 
@@ -274,17 +221,32 @@ font-size:45px;
 }
 
 .menu-item{
-			text-align: justify;
-			border-bottom: 2px solid #fff;
-		}
-
-.primary-menu > .menu-container >.menu-item:hover> .menu-link{
-	color:#FFD966;
+	text-align: justify;
 }
+
+.sub-menu-container > .menu-item > .menu-link:hover{
+		color:#FFD966;
+	}
+
+	/* .menu-container{
+		margin-left:10px
+	} */
+	.menu-container > .menu-item > .menu-link >div{
+		font-size:11px;
+	}
 
 	}
 
 @media (min-width: 1101px) and (max-width: 1400px){
+
+	#logo > a{
+	height:21px
+}
+
+	.menu-container > .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+
 
 	.content1{
 	background-color:#000000;
@@ -297,7 +259,6 @@ font-size:45px;
 .content1>h1{
 	 margin-top:20px;
 	color:#ffffff;
-	font-family:arial;
 	font-size: 45px;
 }
 
@@ -311,11 +272,7 @@ font-size:45px;
 	width: 100%;                                                               
 }  
 
-}		
-
-#logo > a{
-		height: 35px;
-	}
+}
 </style>
 
 </head>
@@ -329,10 +286,9 @@ font-size:45px;
 			<div id="header-wrap">
 				<div class="container">
 					<div class="header-row">
-
 						<div id="logo">
 							<a href="{{url('/')}}">
-								<img class="logo-default"  src="images/logodronegroupe.png" alt="drone groupe Logo" style="height: 40px; width: auto;">
+								<img class="logo-default"  src="images/logodronegroupe.png" alt="drone groupe Logo">
 							</a>
 						</div><!-- #logo end -->
 						<div class="primary-menu-trigger">
@@ -342,30 +298,49 @@ font-size:45px;
 						</div>
 						<!-- Primary Navigation
 						============================================= -->
-						<nav class="primary-menu" style="position:relative; left: 5px;">
+						<nav class="primary-menu with-arrows" style="position:relative; left: 5px;">
 
-							<ul class="menu-container" >
-								<li class="menu-item current" >
-									<a class="menu-link" href="#" >
+							<ul class="menu-container " >
+							<li class="menu-item current" >
+									<a class="menu-link" href="{{url('/presentation')}}" >
 										<div >PRéSENTATION</div>
 									</a>
 								</li>
-                                <li class="menu-item">
+								<li class="menu-item">
 									<a class="menu-link" href="{{url('/metier')}}" >
 										<div >NOS METIERS</div>
 									</a>
 								</li>
-                                <li class="menu-item">
+								<li class="menu-item">
 									<a class="menu-link" href="{{url('/formation')}}" >
 										<div >NOS FORMATIONS</div>
 									</a>
+									<ul class="sub-menu-container border-0">
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#theorique')}}"><div>FORMATION THÉORIQUE</div></a></li>
+										
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#pratique')}}"><div>FORMATION PRATIQUE</div></a></li>
+										
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#specialise')}}"><div>FORMATION SPECIALISÉE</div></a></li>
+										
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#tele')}}"><div>FORMATION AU TÉLÉPILOTAGE</div></a></li>
+									</ul>
 								</li>
 								<li class="menu-item">
 									<a class="menu-link" href="{{url('/video')}}" >
 										<div >VIDÉOTHèQUE</div>
 									</a>
 								</li>
-								<div class="morph-marker"></div>
+								<li class="menu-item" >
+									<a class="menu-link" href="#" >
+										<div >actualités</div>
+									</a>
+								</li>
+								<li class="menu-item" >
+									<a class="menu-link" href="{{url('/reglementation')}}" >
+										<div >REGLEMENTATION</div>
+									</a>
+								</li>
+								<!-- <div class="morph-marker"></div> -->
 							</ul>
 
 						</nav><!-- #primary-menu end -->
@@ -379,8 +354,8 @@ font-size:45px;
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1" >
-					<h1 class="text-transform-none " data-animate="fadeInUp" style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;"> DRONE GROUPE QUI SOMMES NOUS ?</h1>
-					<div class="barre"  data-animate="fadeInUp"></div>
+					<h1 class="text-transform-none " data-animate="fadeInUp" data-delay="200"> DRONE GROUPE QUI SOMMES NOUS ?</h1>
+					<div class="barre"  data-animate="fadeInUp" data-delay="500"></div>
 				</div>
 				<div class="content2">
 					<img src="images/drone.jpg" alt="">
@@ -417,5 +392,6 @@ font-size:45px;
     <script src="js/plugins.min.js"></script>
 	<script src="js/functions.bundle.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
 
 </html>

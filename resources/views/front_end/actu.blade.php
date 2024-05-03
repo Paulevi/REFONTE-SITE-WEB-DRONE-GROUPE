@@ -36,7 +36,7 @@
 	<style>
 
 		 body{
-                font-family:'jumper PERSONAL USE ONLY', sans-serif;
+                font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
             }
 
 		#content{
@@ -54,7 +54,7 @@
 
 		.content1>h1{
 			color:#ffffff;
-			font-family:'jumper PERSONAL USE ONLY', sans-serif;
+			font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
 			font-size:50px
 		}
 
@@ -92,75 +92,17 @@
             margin: 40px;
 			font-size: 20px;
         }
-
-		#equip{
-			margin-top: 40px;
-		} 
-
-		#equip > .content-wrap{
-			justify-content:space-around;
-		}
-
-		.row{
-			justify-content:space-around;
-			width: 100%;
-		}
-
-		.col-md-4 {
-			padding-top: 150px;
-			width: 600px;
-
-		}
-		.col-md-4 > a > h1{
-			color:#ffffff;
-			 font-size:50px;
-			  font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
-		}
-
-		.col-md-4 > a > h1:hover{
-			color:#FFD966;
-			
-		}
-		.col-md-6 {
-			width: 500px;
-		}
-
-		.col-md-6 > img{
-			height: 500px;
-			width: 500px;
-		}
-		
-
-		@keyframes swiperSVGAnim {
-			0% {
-				stroke-dashoffset: 260;
-			}
-			100% {
-				stroke-dashoffset: 0;
-			}
-		}
-
-		.feature-box{
-			height: 400px;
-			width: 400px;
-		}
-
-		.menu-item{
-			text-align: center;
-		}
-
-		.button.button-reveal i {
-			opacity: 0;
-			left: auto !important;
-			right: 20px !important;
-			background-color: transparent;
-			transition: all .3s ease !important;
-		}
-
-    .logo-default{
-		height: 5px;
-	}
 @media screen and (max-width: 769px){
+
+	.sub-menu-container {
+    background-color:#000000;
+  
+  }
+
+  
+	#logo > a{
+			height: 15px;
+		}
 	
 		#content{
 			height: 350px;	
@@ -199,7 +141,6 @@
 			color:#ffffff;
 			font-size:35px;
 			text-align: center;
-			font-family:'jumper PERSONAL USE ONLY', sans-serif;
 	}
  
 		
@@ -241,15 +182,11 @@
 			text-align: center;
 		}
 		.sub-menu-container > .menu-item > .menu-link:hover{
-			color: yellow;
+			color:#FFD966;
 		}
-		.menu-container > .menu-item > .menu-link:hover{
-			color: yellow;
-		}
-		
+
 		.menu-item{
 			text-align: justify;
-			border-bottom: 2px solid #fff;
 		}
 
 	.present >p {
@@ -280,35 +217,62 @@
 
 	@media (min-width: 770px) and (max-width: 1100px){
 
-#content{
-	height: 400px;	
-	margin-bottom:50px
+
+	#logo > a{
+	height:21px
+	}
+
+	.menu-container > .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+
+
+.menu-container > .menu-item > .menu-link{
+	text-align:justify
 }
 
-.content1{
+.sub-menu-container {
+    background-color:#696969;
+  
+  }
+
+#logo > a{
+	height: 20px;
+}
+
+.sub-menu-container {
+background-color:#000000;
+  
+  }
+
+  .sub-menu-container > .menu-item > .menu-link:hover{
+			color:#FFD966;
+		}
+
+		.content1{
 background-color:#000000;
 padding: 50px;
 width: 70%;
-height: 400px ;		
+height: 500px ;		
+	
 }
 
 	
 .content1>h1{
  margin-top:20px;
 color:#ffffff;
-font-family:arial;
-font-size:35px;
+font-size:45px;
 }
 
 .content2 {
-	height: 400px ;
+	height: 500px ;		
 	width: 100%;
 }
 
 .content2>img{
-	height: 400px ;
+	height: 500px ;		
 	width: 100%;                                                               
-}  
+}    
 
 .col-md-4{
 	padding-top: 25px;
@@ -342,6 +306,14 @@ font-size:35px;
 
 @media (min-width: 1101px) and (max-width: 1400px){
 
+	#logo > a{
+	height:21px
+}
+
+	.menu-container > .menu-item > .menu-link >div{
+		font-size:13px;
+	}
+
 	.content1{
 	background-color:#000000;
 	padding: 50px;
@@ -367,11 +339,7 @@ font-size:35px;
 	width: 100%;                                                               
 }  
 
-}		
-
-#logo > a{
-		height: 35px;
-	}
+}
 </style>
 
 </head>
@@ -388,7 +356,7 @@ font-size:35px;
 
 						<div id="logo">
 							<a href="{{url('/')}}">
-								<img class="logo-default"  src="../images/logodronegroupe.png" alt="drone groupe Logo" style="height: 40px; width: auto;">
+								<img class="logo-default"  src="../images/logodronegroupe.png" alt="drone groupe Logo">
 							</a>
 						</div><!-- #logo end -->
 						<div class="primary-menu-trigger">
@@ -398,34 +366,48 @@ font-size:35px;
 						</div>
 						<!-- Primary Navigation
 						============================================= -->
-						<nav class="primary-menu" style="position:relative; left: 5px;">
-
+						<nav class="primary-menu with-arrows" style="position:relative; left: 5px;">
 							<ul class="menu-container" >
-								<li class="menu-item current" >
-									<a class="menu-link" href="#" >
-										<div >actualité</div>
-									</a>
-								</li>
 								<li class="menu-item" >
 									<a class="menu-link" href="{{url('/presentation')}}" >
 										<div >PRéSENTATION</div>
 									</a>
 								</li>
-                                <li class="menu-item">
+								<li class="menu-item">
 									<a class="menu-link" href="{{url('/metier')}}" >
 										<div >NOS METIERS</div>
 									</a>
 								</li>
-                                <li class="menu-item">
+								<li class="menu-item">
 									<a class="menu-link" href="{{url('/formation')}}" >
 										<div >NOS FORMATIONS</div>
 									</a>
+									<ul class="sub-menu-container border-0">
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#theorique')}}"><div>FORMATION THÉORIQUE</div></a></li>
+										
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#pratique')}}"><div>FORMATION PRATIQUE</div></a></li>
+										
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#specialise')}}"><div>FORMATION SPECIALISÉE</div></a></li>
+										
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#tele')}}"><div>FORMATION AU TÉLÉPILOTAGE</div></a></li>
+									</ul>
 								</li>
 								<li class="menu-item">
 									<a class="menu-link" href="{{url('/video')}}" >
 										<div >VIDÉOTHèQUE</div>
 									</a>
 								</li>
+								<li class="menu-item current" >
+									<a class="menu-link" href="#" >
+										<div >actualités</div>
+									</a>
+								</li>
+								<li class="menu-item " >
+									<a class="menu-link" href="{{url('/reglementation')}}" >
+										<div >REGLEMENTATION</div>
+									</a>
+								</li>
+
 								<div class="morph-marker"></div>
 							</ul>
 
@@ -440,7 +422,8 @@ font-size:35px;
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1" >
-					<h1 data-animate="fadeInUp"   class="text-transform-none " style=" font-family:'Jumper PERSONAL USE ONLY', sans-serif;">{{ $actu->titre_actu }}</h1>
+					<h1 data-animate="fadeInUp" data-delay="200" class="text-transform-none ">{{ $actu->titre_actu }}</h1>
+					<div class="barre" data-animate="fadeInUp" data-delay="500"></div>
 				</div>
 				<div class="content2" >
 					<img src="data:image/png;base64,{{ base64_encode($actu->image_actu) }}" alt="">

@@ -1,37 +1,40 @@
 @include('sections.head')
 
-	<style>
+<style>
+
+		#logo > a{
+			height:100%
+		}
+
+		.primary-menu > .menu-container >.current> .menu-link,
+		.primary-menu > .menu-container >.menu-item:hover> .menu-link{
+		color:#483D8B;
+		}
 
 
-.primary-menu > .menu-container >.current> .menu-link,
-.primary-menu > .menu-container >.menu-item:hover> .menu-link{
-  color:#483D8B;
-}
+		.morph-marker {
+			--cnvs-morph-height: 3px;
+			--cnvs-morph-duration: .3s;
+			position: absolute;
+			display: block;
+			background: #483D8B;
+			height: var(--cnvs-morph-height);
+			border-radius: var(--bs-border-radius);
+			transition: all var(--cnvs-morph-duration);
+		}
+		.morph-bg .morph-marker {
+			--cnvs-morph-height: 100%;
+			opacity: .1;
+			bottom: 0 !important;
+		}
 
+		.morph-bg .menu-link {
+			position: relative;
+			--cnvs-primary-menu-padding-y: 11px;
+			--cnvs-primary-menu-hover-color: var(--cnvs-primary-menu-color);
+			z-index: 1;
 
-  .morph-marker {
-    --cnvs-morph-height: 3px;
-    --cnvs-morph-duration: .3s;
-    position: absolute;
-    display: block;
-    background: #483D8B;
-    height: var(--cnvs-morph-height);
-    border-radius: var(--bs-border-radius);
-    transition: all var(--cnvs-morph-duration);
-  }
-  .morph-bg .morph-marker {
-    --cnvs-morph-height: 100%;
-    opacity: .1;
-    bottom: 0 !important;
-  }
-
-  .morph-bg .menu-link {
-    position: relative;
-    --cnvs-primary-menu-padding-y: 11px;
-    --cnvs-primary-menu-hover-color: var(--cnvs-primary-menu-color);
-    z-index: 1;
-
-  }
+		}
 
 
 		#content{
@@ -51,7 +54,7 @@
 
 		.content1>h1{
 			color:#ffffff;
-			font-family:'jumper PERSONAL USE ONLY', sans-serif;
+			font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
 			font-size:60px
 		}
 
@@ -84,7 +87,15 @@
 			width: 500px;
 		}
 
-		
+		.sub-menu-container {
+			background-color:#FBFCFA;
+			opacity: 0.9;
+			width: 300px;
+		}
+
+		.sub-menu-container >.menu-item:hover> .menu-link> div{
+		color:#483D8B;
+		}
         
         .menu > .barre{
             background-color: #000000;
@@ -117,7 +128,7 @@
 		}
 
 		.formas>.text>h3{
-			font-family:'jumper PERSONAL USE ONLY', sans-serif;
+			font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
 		}
 
 		.formas>.text>p{
@@ -225,7 +236,7 @@
 		}
 
 		body{
-            font-family:'jumper PERSONAL USE ONLY', sans-serif;
+            font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
             }
 		
 		.button.button-reveal i {
@@ -238,9 +249,18 @@
 
 @media screen and (max-width: 769px){
 
+	.sub-menu-container {
+    background-color:#ffffff;
+  
+  }
+
+		#logo > a{
+			height:50px
+		}
+
 		.menu-item{
 				text-align: justify;
-				border-bottom: 2px solid #000;
+				/* border-bottom: 2px solid #000; */
 			}
 
 		.sticky {
@@ -276,11 +296,11 @@
 			width: 100%;                                                               
 		}  
 		.content1>h1{
-			margin-top:18%;
+			margin-top:10%;
 			color:#483D8B;
 			font-size:35px;
 			text-align: center;
-			font-family:'jumper PERSONAL USE ONLY', sans-serif;
+			font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
 
 			}
 
@@ -291,10 +311,16 @@
 		
 		.centre>p{
 			margin-left: 40px;
-			margin-right: 20px;
+			margin-right: 17px;
 		}
 
 		#first-sec{
+			width: 100% ;
+			padding-left:2px;
+		}
+
+		#second-sec{
+			width: 100% ;
 			padding-left:2px;
 		}
 		
@@ -308,7 +334,7 @@
 		}
 
 		.text> .prerequis{
-			width: 430px;
+			width: 100%;
 		}
 
 		.forma > section>.text{
@@ -389,32 +415,45 @@
 	}
 
 		@media (min-width: 770px) and (max-width: 950px){
+
 	
-	.content1{
-		background-color:#483D8B;
-		padding: 50px;
-		width: 70%;
-		height: 60vh ;		
+	#logo > a{
+		height:40px
 	}
 
+	.menu-container > .menu-item > .menu-link >div{
+		font-size:11px;
+	}
 
-		
+	.sub-menu-container {
+   		 background-color:#ffffff;
+  
+  }
+	
+  .content1{
+background-color:#483D8B;
+padding: 50px;
+width: 70%;
+height: 500px ;		
+	
+}
+
+	
 .content1>h1{
-	 margin-top:20px;
-	color:#ffffff;
-	font-family:'jumper PERSONAL USE ONLY', sans-serif;
-	font-size:35px;
+ margin-top:20px;
+color:#ffffff;
+font-size:45px;
+}
+
+.content2 {
+	height: 500px ;		
+	width: 100%;
 }
 
 .content2>img{
-			height: 60vh ;
-			width: 100%;
-		}
-
-		.content2{
-			height: 60vh ;
-			width: 100%;
-		}
+	height: 500px ;		
+	width: 100%;                                                               
+ 	}
 
 	.swiper-wrapper {
 		height: 60vh ;
@@ -422,11 +461,32 @@
 	}
 
 	.menu-item{
-				text-align: justify;
-				border-bottom: 2px solid #000;
-			}
+		text-align: justify;
+	}
+
+	
+
+	.sub-menu-container > .menu-item > .menu-link:hover{
+		color:#FFD966;
+	}
 }
 @media (min-width: 951px) and (max-width: 1400px){
+
+	.menu-container{
+		margin-left:10px
+	}
+
+	#logo > a{
+	height:50px
+	}
+
+	.menu-container > .menu-item > .menu-link >div{
+		font-size:12px;
+	}
+
+	.menu-container > .menu-item > .menu-link{
+	text-align:justify
+	}
 
 
 .content1{
@@ -441,7 +501,7 @@ height: 60vh ;
 .content1>h1{
  margin-top:20px;
 color:#ffffff;
-font-family:'jumper PERSONAL USE ONLY', sans-serif;
+font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
 font-size:45px;
 }
 
@@ -477,7 +537,7 @@ font-size:10px;
 					<div class="header-row">
 						<div id="logo">
 							<a href="{{url('/')}}">
-								<img class="logo-default"  src="images/60PX-01.png" alt="drone groupe Logo">
+								<img class="logo-default"  src="images/60PX-01.png"  alt="drone groupe Logo">
 							</a>
 						</div><!-- #logo end -->
 						<div class="primary-menu-trigger">
@@ -488,10 +548,10 @@ font-size:10px;
 
 						<!-- Primary Navigation
 						============================================= -->
-						<nav class="primary-menu" style="position:relative; left: 5px;">
+						<nav class="primary-menu with-arrows" style="position:relative; left: 5px;">
 
 							<ul class="menu-container" >
-								<li class="menu-item" >
+							<li class="menu-item" >
 									<a class="menu-link" href="{{url('/presentation')}}" >
 										<div >PRéSENTATION</div>
 									</a>
@@ -505,13 +565,32 @@ font-size:10px;
 									<a class="menu-link" href="#" >
 										<div >NOS FORMATIONS</div>
 									</a>
+									<ul class="sub-menu-container border-top" style="border-top:2px solid #483D8B">
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#theorique')}}"><div onmouseover="this.style.color='#483D8B';" onmouseout="this.style.color='#000';">FORMATION THÉORIQUE</div></a></li>
+										
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#pratique')}}"><div onmouseover="this.style.color='#483D8B';" onmouseout="this.style.color='#000';">FORMATION PRATIQUE</div></a></li>
+										
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#specialise')}}"><div onmouseover="this.style.color='#483D8B';" onmouseout="this.style.color='#000';">FORMATION SPECIALISÉE</div></a></li>
+										
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#tele')}}"><div onmouseover="this.style.color='#483D8B';" onmouseout="this.style.color='#000';">FORMATION AU TÉLÉPILOTAGE</div></a></li>
+									</ul>
 								</li>
 								<li class="menu-item">
 									<a class="menu-link" href="{{url('/video')}}" >
 										<div >VIDÉOTHèQUE</div>
 									</a>
 								</li>
-								<div class="morph-marker"></div>
+								<li class="menu-item" >
+									<a class="menu-link" href="#" >
+										<div >actualités</div>
+									</a>
+								</li>
+								<li class="menu-item " >
+									<a class="menu-link" href="{{url('/reglementation')}}" >
+										<div >REGLEMENTATION</div>
+									</a>
+								</li>
+								<!-- <div class="morph-marker"></div> -->
 							</ul>
 
 						</nav><!-- #primary-menu end -->
@@ -525,8 +604,8 @@ font-size:10px;
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1" >
-					<h1 class="text-transform-none " data-animate="fadeInUp"> POURQUOI UN CENTRE DE FORMATION ?</h1>
-					<div class="barre"  data-animate="fadeInUp"></div>
+					<h1 class="text-transform-none " data-animate="fadeInUp" data-delay="200"> POURQUOI UN CENTRE DE FORMATION ?</h1>
+					<div class="barre"  data-animate="fadeInUp" data-delay="500"></div>
 				</div>
 				<div class="content2" >
 					<img src="images/M4_Plan de travail 1-01-01.jpg" alt="">
@@ -617,7 +696,7 @@ font-size:10px;
                     <P><i class="fa-solid fa-book-bookmark"></i><strong>COURS DU JOUR: 05 JOURS</strong></P>
 					<ul>
 						<li><i class="fa-solid fa-angle-right"></i> TECHNIQUE DE CARTOGRAPHIE ET DE PHOTOGRAMMÉTRIE</li>
-						<li><i class="fa-solid fa-angle-right"></i> LASEROGRAPHIE</li>
+						<li><i class="fa-solid fa-angle-right"></i> LASERGRAMMETRIE</li>
 						<li><i class="fa-solid fa-angle-right"></i> TECHNIQUES DE L'AUDIOVISUEL</li>
 						<li><i class="fa-solid fa-angle-right"></i> TECHNIQUES DE COMMUNICATION</li>
 					</ul>

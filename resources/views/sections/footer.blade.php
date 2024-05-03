@@ -34,8 +34,12 @@
 
 		#copyrights{
 			background-color:#000000;
-			font-family:'DIN REGULAR', sans-serif;
 			color:#ffffff;
+		}
+
+		#copyrights strong{
+			background-color:#000000;
+			font-family:'Arial', sans-serif
 		}
 
 		.autorisations{
@@ -97,6 +101,15 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+		
+	.button.button-reveal i {
+		opacity: 0;
+		left: auto !important;
+		right: 20px !important;
+		background-color: transparent;
+		transition: all .3s ease !important;
+	}
 
 		@media screen and (max-width: 769px){
 
@@ -192,7 +205,7 @@
 			</section>
 			<section id="consulter" class="consulter">
 				<h5   style="color:#FFD966; "><i class="uil uil-file-alt"></i><span>EXTRAIT DU REGLEMENT AERONAUTIQUE DE COTE D'IVOIRE (RACI 2009) AMENDEMENT 02, EDITION 03</span></h5>
-				<a href="{{url('/reglementation')}}" class="button button-xlarge button-circle button-dark button-reveal text-transform-none ls-0"  style="background-color:#FFD966; margin-top: 20px;" ><i class="bi-arrow-right" style="color:#3A2F7C;"></i><span style="color:#3A2F7C; "><strong>CONSULTER</strong></a>
+				<a href="{{url('/reglementation')}}" class="button button-xlarge button-circle button-dark button-reveal text-transform-none ls-0"  style="background-color:#FFD966; margin-top: 20px;" ><i class="bi-arrow-right" style="color:#3A2F7C;"></i><span style="color:#3A2F7C;'jumper PERSONAL USE ONLY Light', sans-serif;">CONSULTER</span></a>
 			</section>
 			<footer >
 			<!-- Copyrights
@@ -201,10 +214,9 @@
 					<div class="container">
 						<div class="row align-items-center justify-content-between col-mb-30">
 							<div class="col-12 col-lg-auto text-center text-lg-start">
-								<a class="numb"  href="callto:+2552722543201">(+225) 27 22 54 32 01</a> | <a class="numb" href="callto:+2550768124797"> (+225)07 68 12 47 97 </a>| <a class="numb"  href="callto:+2550152995353"> (+225) 01 52 99 53 53</a><br>
-								BINGERVILLE, Rue lycée Mamie Faitai H<br>
-								<a class="numb" href="mailto:info@dronegroupe.com">info@dronegroupe.com</a><br>
-								Copyrights &copy;2024 | DRONE GROUPE - Tous Droits Réservés
+							<i class="fa-solid fa-phone"></i><a class="numb"  href="callto:+2552722543201"><strong> (+225) 27 22 54 32 01</strong></a> | <a class="numb" href="callto:+2550768124797"><strong> (+225)07 68 12 47 97 </strong></a>| <a class="numb"  href="callto:+2550152995353"><strong> (+225) 01 52 99 53 53</strong></a><br>
+							<i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/DRONEGROUPE+COTE+D'IVOIRE/@5.3548416,-3.8968656,17z/data=!3m1!4b1!4m6!3m5!1s0xfc1eb51ec3df261:0xd342b7bc5f6efd0b!8m2!3d5.3548416!4d-3.8942907!16s%2Fg%2F11gf9dwk8h?entry=ttu" style="color:#fff"  onmouseover="this.style.color='#FFD966'" onmouseout="this.style.color='#FFF';">	BINGERVILLE, Rue lycée Mamie Faitai H</a><br>
+							<i class="fa-solid fa-envelope"></i><a class="numb" href="mailto:info@dronegroupe.com"> info@dronegroupe.com</a><br>
 							</div>
 							<div class="col-12 col-lg-auto text-center text-lg-end">
 								<div class="d-flex justify-content-center justify-content-lg-end mt-4">
@@ -228,6 +240,8 @@
 								</div>
 								<div id="gotoTop" class="uil uil-angle-up"></div>
 						</div>
+						<p style="opacity:0.8; text-align:center">Copyrights &copy;<strong>2024</strong> | DRONE GROUPE - Tous Droits Réservés</p>
+
 					</div>
 				</div>
 			</div><!-- #copyrights end -->
@@ -238,87 +252,6 @@
     <script src="js/plugins.min.js"></script>
 	<script src="js/functions.bundle.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-	<script>
-		jQuery(window).on( 'load', function(){
-			jQuery('.primary-menu').each( function(){
-				let menuEl = jQuery(this),
-					marker = menuEl.find('.morph-marker'),
-					current = menuEl.find('.current');
 
-				// Initialize the marker position and the active class
-				current.addClass('active');
-
-				marker.css({
-					// Place the marker in the middle of the border
-					bottom: -(marker.height() / 2),
-					left: current.position().left,
-					width: current.outerWidth(),
-				});
-
-
-				if (Modernizr.csstransitions) {
-					// console.log("using css3 transitions");
-					menuEl.find('.menu-item').mouseover(function () {
-						var self = jQuery(this),
-							offsetLeft = self.position().left,
-
-						// Use the element under the pointer OR the current page item
-						width = self.outerWidth() || current.outerWidth(),
-						// Ternary operator, because if using OR when offsetLeft is 0, it is considered a falsy value, thus causing a bug for the first element.
-						left = offsetLeft == 0 ? 0 : offsetLeft || current.position().left;
-						// Play with the active class
-						menuEl.find('.active').removeClass('active');
-						self.addClass('active');
-						marker.css({
-							left: left,
-							width: width,
-						});
-					});
-
-					// When the mouse leaves the menu
-					menuEl.find('.menu-container').mouseleave(function () {
-					// remove all active classes, add active class to the current page item
-						menuEl.find('.active').removeClass('active');
-						current.addClass('active');
-					// reset the marker to the current page item position and width
-						marker.css({
-							left: current.position().left,
-							width: current.outerWidth()
-						});
-					});
-
-				} else {
-
-					menuEl.find('.menu-item').mouseover(function () {
-						var self = jQuery(this),
-							offsetLeft = self.position().left,
-							// Use the element under the pointer OR the current page item
-							width = self.outerWidth() || current.outerWidth(),
-							// Ternary operator, because if using OR when offsetLeft is 0, it is considered a falsy value, thus causing a bug for the first element.
-							left = offsetLeft == 0 ? 0 : offsetLeft || current.position().left;
-						// Play with the active class
-						menuEl.find('.active').removeClass('active');
-						self.addClass('active');
-						marker.stop().animate({
-							left: left,
-							width: width,
-						}, 300);
-					});
-
-					// When the mouse leaves the menu
-					menuEl.find('.menu-container').mouseleave(function () {
-						// remove all active classes, add active class to the current page item
-						menuEl.find('.active').removeClass('active');
-						current.addClass('active');
-						// reset the marker to the current page item position and width
-						marker.stop().animate({
-							left: current.position().left,
-							width: current.outerWidth()
-						}, 300);
-					});
-				}
-			});
-		});
-	</script>
 
 

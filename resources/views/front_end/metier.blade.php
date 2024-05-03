@@ -3,7 +3,8 @@
 	<style>
 
 		body{
-            font-family:'jumper PERSONAL USE ONLY', sans-serif;
+            font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
+			font-size: 17px;
             }
 
 		.sec{
@@ -15,12 +16,14 @@
 			padding-left:35px;
 			font-weight: lighter;
 			font-family:'DIN Regular', sans-serif;
+			font-size: 20px;
+
 		}
 
         .menu > p{
 			margin-left: 100px ;
 			margin-right: 100px;
-			font-size: 20px;
+			font-size: 17px;
         }
 		
 
@@ -36,19 +39,19 @@
 		}
 
 		.metiers >.text > h3{
-			font-family:'jumper PERSONAL USE ONLY', sans-serif;
+			font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
 			font-size: 25px;
 
 		}
 
 		.metiers >.text >p{
-			/* font-style:italic; */
-			text-transform: lowercase;
+			font-size: 17px;
+			
 		}
 
 		.metiers>.text{
 			width: 60%;
-			font-size: 20px;
+			font-size: 17px;
 			
 		}
 
@@ -74,12 +77,12 @@
 		
 
 		.specials>.text>h6{
-			font-family:'DIN', sans-serif;
+			font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
 			font-size: 23px;
 		}
 
 		.specials>.text>p>strong{
-			font-family:'DIN', sans-serif;
+			font-family:'Arial', sans-serif;
 		}
 
 		.text > .barre, h5{
@@ -154,7 +157,7 @@
 		.content1>h1{
 			color:#ffffff;
 			font-size:62px;
-			font-family:'jumper PERSONAL USE ONLY', sans-serif;
+			font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
 		}
 
 		.content2{
@@ -208,9 +211,9 @@
 			list-style: none;
 			background-color: #000000;
 			color:#fff;
-			height: 40px;
+			height: 30px;
 			width: 80%;
-			font-size: 20px;
+			font-size: 17px;
 			background: linear-gradient(to right, #000 60%, #fff 100%);
 
 			/* box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5); */
@@ -234,6 +237,16 @@
 
 		
 @media screen and (max-width: 769px){
+
+	.sub-menu-container {
+    background-color:#000000;
+  
+  }
+
+  #logo > a{
+	height:15px
+}
+
 	#content{
 		height:350px;	
 		margin-bottom:50px;
@@ -291,7 +304,6 @@
 		color:#fff;
 		font-size:35px;
 		text-align: center;
-		font-family:'jumper PERSONAL USE ONLY', sans-serif;
 
 		}
 
@@ -305,7 +317,7 @@
         flex-direction: column;
         align-items: stretch;
 		position: relative;
-		left: 80px;}
+		left: 50px;}
 
 		.metiers > .text >h3{
 			font-size:20px;
@@ -314,22 +326,81 @@
 			font-size:17px;
 		}
 
+		.sub-menu-container > .menu-item > .menu-link:hover{
+			color:#FFD966;
+		}
+
 		.menu-item{
 			text-align: justify;
-			border-bottom: 2px solid #fff;
+			/* border-bottom: 2px solid #fff; */
 		}
 
 		.specials >.text{
 			padding-top :20px;
-			width:450px;
-		}
-		.specials{
-			height: 500px;
+			width:100%;
 		}
 
 		.special{
 			height:100%;
 			width: 100%;
+			
+		}
+
+		.first-ligne .specials:Nth-child(2){
+			/* background:red; */
+			margin-bottom:-25%
+		}
+
+		.second-ligne .specials:Nth-child(2){
+			/* background:red; */
+			height: 600px;
+		}
+
+		.first-ligne, .specials{
+			
+			width:100%;
+			margin-left:3%;
+		}
+
+		.second-ligne, .specials{
+			
+			width:100%;
+			margin-left:3%;
+		}
+
+		.first-ligne .specials .text{
+			
+			width:100%;
+			margin-left:5%;
+		}
+		.second-ligne .specials .text{
+			width:100%;
+			margin-left:5%;
+			
+		}
+
+		.specials .text .barre{
+			width: 100%;
+		}
+		
+		.first-ligne, .second-ligne {
+			width:100%;
+			margin-left:-5%;
+			flex-direction: column;
+			align-items: stretch;
+		}
+		.specials{		
+			margin-bottom:10%;	
+			height: 500px;
+			width: 100%;
+			margin-bottom:5%;
+			padding-left:2%;
+			flex-direction: column;
+       		align-items: stretch;
+		}
+
+		.specials .image{
+			width: 95%;
 		}
 		.metiers>.text{
 			width: 400px;
@@ -351,65 +422,47 @@
 		.troisieme{
 			width: 400px;
 		}
-		
-		.first-ligne, .second-ligne {
-		flex-direction: column;
-        align-items: stretch;
-		}
-		.specials{
-			
-			flex-direction: column;
-       		 align-items: stretch;
-		}
-		.first-ligne, .second-ligne {
-		flex-direction: column;
-        align-items: stretch;
-		}
 
 	}
 
 	
 @media (min-width: 770px) and (max-width: 950px){
-	
-#content{
-	height: 500px ;
-}
 
+	.sub-menu-container {
+    background-color:#000000;
+  
+  }
 
-
-.content1{
-	background-color:#000000;
-	padding: 50px;
-	width: 70%;
-	height: 500px ;		
+ 	 #logo > a{
+	height:21px
 	}
 
-.menu > ul >li{
-	 padding-left: 4px;
-	margin-left: 40px;
-	margin-top: 20px;
-	list-style: none;
-	background-color: #000000;
-	color:#fff;
-	height: 60px;
-	width: 80%;
-	font-size: 20px;
+	.menu-container > .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+	
+	.content1{
+background-color:#000000;
+padding: 50px;
+width: 70%;
+height: 500px ;		
+	
+}
 
-		}
+	
 .content1>h1{
  margin-top:20px;
 color:#ffffff;
-font-family:'jumper PERSONAL USE ONLY', sans-serif;
-font-size:55px;
+font-size:45px;
 }
 
 .content2 {
-	height: 500px ;
+	height: 500px ;		
 	width: 100%;
 }
 
 .content2>img{
-	height: 500px ;
+	height: 500px ;		
 	width: 100%;                                                               
 }  
 
@@ -441,13 +494,26 @@ font-size:10px;
 		}
 		.menu-item{
 			text-align: justify;
-			border-bottom: 2px solid #fff;
 		}
+		.sub-menu-container > .menu-item > .menu-link:hover{
+		color:#FFD966;
+	}
 
 	}
 
 @media (min-width: 951px) and (max-width: 1400px){
-	
+
+	#logo > a{
+	height:21px
+	}
+
+	.menu-container > .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+
+	.menu-container > .menu-item > .menu-link{
+	text-align:justify
+}
 #content{
 	height: 500px ;		
 
@@ -469,7 +535,6 @@ font-size:10px;
 	 margin-top:20px;
 	color:#ffffff;
 	font-size: 55px;
-	font-family:'jumper PERSONAL USE ONLY', sans-serif;
 
 }
 
@@ -513,31 +578,21 @@ font-size:10px;
 	font-size: 20px;gba(0, 0, 0, 0.5);
 
 		}
-}
-
-#logo > a{
-		height: 35px;
-		width: 200px;
-	}
-		</style>
+}	</style>
 
 </head>
 
-	<body>
-
-	<div id="loader"></div>
-		<!-- Header
-		============================================= -->
+<body id="body" class="body">		
+	<div id="loader"></div>		
 		<header id="header" class="sticky dark">
 			<div id="header-wrap">
 				<div class="container">
 					<div class="header-row">
-
 						<div id="logo">
 							<a href="{{url('/')}}">
-								<img class="logo-default"  src="images/logodronegroupe.png" alt="drone groupe Logo">
+								<img class="logo-default"  src="images/logodronegroupe.png" alt="drone groupe Logo" style="height: 40px; width: auto;">
 							</a>
-						</div><!-- #logo end -->
+						</div>
 						<div class="primary-menu-trigger">
 							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
 								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
@@ -546,16 +601,16 @@ font-size:10px;
 
 						<!-- Primary Navigation
 						============================================= -->
-						<nav class="primary-menu" style="position:relative; left: 5px;">
+						<nav class="primary-menu with-arrows" style="position:relative; left: 5px;">
 
 							<ul class="menu-container" >
-								<li class="menu-item" >
+							<li class="menu-item" >
 									<a class="menu-link" href="{{url('/presentation')}}" >
 										<div >PRéSENTATION</div>
 									</a>
 								</li>
 								<li class="menu-item current">
-									<a class="menu-link" href="#" >
+									<a class="menu-link" href="{{url('/metier')}}" >
 										<div >NOS METIERS</div>
 									</a>
 								</li>
@@ -563,17 +618,35 @@ font-size:10px;
 									<a class="menu-link" href="{{url('/formation')}}" >
 										<div >NOS FORMATIONS</div>
 									</a>
+									<ul class="sub-menu-container border-top">
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#theorique')}}"><div>FORMATION THÉORIQUE</div></a></li>
+										
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#pratique')}}"><div>FORMATION PRATIQUE</div></a></li>
+										
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#specialise')}}"><div>FORMATION SPECIALISÉE</div></a></li>
+										
+										<li class="menu-item"><a class="menu-link" href="{{url('/formation#tele')}}"><div>FORMATION AU TÉLÉPILOTAGE</div></a></li>
+									</ul>
 								</li>
 								<li class="menu-item">
 									<a class="menu-link" href="{{url('/video')}}" >
 										<div >VIDÉOTHèQUE</div>
 									</a>
 								</li>
-								<div class="morph-marker"></div>
+								<li class="menu-item" >
+									<a class="menu-link" href="#" >
+										<div >actualités</div>
+									</a>
+								</li>
+								<li class="menu-item " >
+									<a class="menu-link" href="{{url('/reglementation')}}" >
+										<div >REGLEMENTATION</div>
+									</a>
+								</li>
+								<!-- <div class="morph-marker"></div> -->
 							</ul>
 
-							</nav><!-- #primary-menu end -->
-                        
+							</nav><!-- #primary-menu end -->      
 					</div>
 				</div>
 			</div>
@@ -583,8 +656,8 @@ font-size:10px;
 		<section id="content">
 		<div class="content-wrap py-0">
 				<div class="content1">
-					<h1 class="text-transform-none " data-animate="fadeInUp"> QUELS SONT NOS METIERS ?</h1>
-					<div class="barre" data-animate="fadeInUp"></div>
+					<h1 class="text-transform-none " data-animate="fadeInUp" data-delay="200"> QUELS SONT NOS METIERS ?</h1>
+					<div class="barre" data-animate="fadeInUp" data-delay="500"></div>
 				</div>
 				<div class="content2" >
 					<img src="images/drone2.jpg" alt="">
@@ -633,7 +706,7 @@ font-size:10px;
             <div class="metiers animate-on-scroll">
                 <div class="text">
                     <h3>TRAITEMENT DE DONNÉES</h3>
-                    <P>(CARTOGRAPHIE, TERMOGRAPHIE, LASEROGRAMMETRIE, ORTHOPHOTO, PHOTOGRAMMÉTRIE)</P>
+                    <P>(CARTOGRAPHIE, TERMOGRAPHIE, LASERGRAMMETRIE, ORTHOPHOTO, PHOTOGRAMMÉTRIE)</P>
                 </div>
                 <div class="image"><img src="images/M11-02.jpg" alt="" ></div>
             </div>
