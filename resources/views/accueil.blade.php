@@ -1,6 +1,6 @@
 
 @php
-    $actus = App\Models\actu_model::all(); 
+    $actus = App\Models\actu_model::orderBy('id_actu', 'desc')->take(3)->get(); 
 @endphp
 
 @include('sections.head')
@@ -123,7 +123,6 @@
 	}
 
 	.Title{
-		padding:50%
 		height: 10px;
 		width: 100%;
 		opacity: 0.85;
@@ -150,18 +149,26 @@
 		font-family:'Arial', sans-serif
 	}
 
-@media screen and (max-width: 769px){
+@media screen and (max-width: 768px){
 
 	#logo > a{
 			height:15px
-		}
-
-	.menu-link>div>i{
-		display:none
 	}
 	
 	.sub-menu-container > .menu-item > .menu-link:hover{
         color:#FFD966
+	}
+
+	.menu-container > .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+
+	.sub-menu-container> .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+
+	.menu-item> .menu-link{
+		text-align: justify;
 	}
 
 	.content-wrap{
@@ -172,78 +179,9 @@
 		text-align: justify;
 	}
 
-	.menu-item> .menu-link{
-		text-align: justify;
-	}
-
-	.feature-box{
-		height: 400px;
-		width: 120%;
-	}
-
-	.Title h1{
-		font-size:25px
-	}
-
-
-	 .column1{
-		margin-left: -10%;
-	}
-
-	.column2{
-		margin-left: -10%;
-	} 
-
 	#content{
 		height: 450px ;
 	}
-
-	.swiper-slide .content1> .barre{
-		margin-top:5px;
-		width: 100%;
-		display:none;		
-	}
-
-	.sub-menu-container{
-		background-color:transparent;
-		width: 100%;
-	}
-
-	.first-row, .second-row{
-		flex-direction: column;
-        align-items: stretch;
-	}
-	.consulter{
-		height:50px
-				/* overflow: hidden; */
-	}
-	.rounded-5{
-		width: 80%;
-	}
-
-	.display-5{
-		text-align: center;
-	}
-
-	.col-md-4> .barre{
-		width: 80%;
-		height: 2px;
-		margin-bottom: 10px;
-		margin-left: 40px;
-		text-align: center;
-	}
-
-	.center-nav{
-        position: relative;
-        left: 0
-    }
-
-	.col-md-4 > a > h1{
-		font-size:50px;
-		text-align: center;
-
-	}
-
 
 	.swiper-slide>.content1{
 		background-color:transparent;
@@ -276,7 +214,6 @@
 
 	.swiper-slide>.content1>.slider-caption>h1{
 		text-align: center;
-		/* margin-top:5%; */
 		color:#fff;
 		font-size:30px;
 		margin-right: 10px;
@@ -301,13 +238,65 @@
 		display:none;
 	}
 
-	.menu-item{
+	.feature-box{
+		height: 400px;
+		width: 120%;
+	}
+
+	.Title h1{
+		font-size:25px
+	}
+
+
+	 .column1{
+		margin-left: -10%;
+	}
+
+	.column2{
+		margin-left: -10%;
+	} 
+
+	.swiper-slide .content1> .barre{
+		margin-top:5px;
+		width: 100%;
+		display:none;		
+	}
+
+	.sub-menu-container{
+		background-color:transparent;
+		width: 100%;
+	}
+
+	.rounded-5{
+		width: 80%;
+	}
+
+	.display-5{
 		text-align: center;
+	}
+
+	.col-md-4> .barre{
+		width: 80%;
+		height: 2px;
+		margin-bottom: 10px;
+		margin-left: 40px;
+		text-align: center;
+	}
+
+	.center-nav{
+        position: relative;
+        left: 0
+    }
+
+	.col-md-4 > a > h1{
+		font-size:50px;
+		text-align: center;
+
 	}
 
 }
 
-@media (min-width: 550px) and (max-width: 769px){
+@media (min-width: 480px) and (max-width: 768px){
 
 	.feature-box{
 		height: 400px;
@@ -318,7 +307,6 @@
 		font-size:35px
 	}
 
-
 	 .column1{
 		margin-left: -5%;
 	}
@@ -328,24 +316,38 @@
 	} 
 }
 
-@media (min-width: 770px) and (max-width: 1100px){
+@media (min-width: 770px) and (max-width: 991px){
 
 	#logo > a{
-	height:21px
-}
+		height:21px
+	}
 
 	.menu-container > .menu-item > .menu-link >div{
 		font-size:11px;
 	}
-	.menu-link>div>i{
-		display:none
+
+	.sub-menu-container> .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+	
+	.sub-menu-container > .menu-item > .menu-link:hover{
+        color:#FFD966
+	}
+
+	.menu-item>.menu-link:hover{
+		color:#FFD966
+	}
+
+	.menu-item{
+		text-align: center;
 	}
 
 	#header > a{
-			height: 25vh;
-			}
+		height: 25vh;
+	}
+
 	.content-wrap{
-		 	height: 500px;
+		height: 500px;
 	}
 	
 	.swiper-slide>.content1>a{
@@ -410,49 +412,19 @@
 		margin-left:-5%;
 	}
 
-	.column2{
-		
+	.column2{		
 		margin-left: -5%;
 		margin-right: 5px;
 	} 
 
-	.menu-item> .menu-link{
-		text-align: justify;
-	}
-			
-	.swiper-slide>.content1>.slider-caption>h1{
-		 margin-top:30px;
-		color:#ffffff;
-		font-size:40px;
-		text-align: center;
-	}
-
-	.swiper-wrapper>.swiper-slide {
-		height: 500px ;
-		width: 100%;
-	}
-
 	.col-md-4 > a > h1{
 		font-size:35px;
-		text-align: center;
-
-	}
-
-	.sub-menu-container > .menu-item > .menu-link:hover{
-        color:#FFD966
-	}
-
-	.menu-item>.menu-link:hover{
-		color:#FFD966
-	}
-
-	.menu-item{
 		text-align: center;
 	}
 	
 }
 
-@media (min-width: 1101px) and (max-width: 1400px){
+@media (min-width: 992px) and (max-width: 1400px){
 	
 	#logo > a{
 	height:21px
@@ -462,7 +434,9 @@
 		font-size:11px;
 	}
 
-	
+	.sub-menu-container> .menu-item > .menu-link >div{
+		font-size:11px;
+	}
 
 	.swiper-wrapper>.swiper-slide {
 		height: 80vh;
@@ -487,7 +461,7 @@
 			
 	.swiper-slide>.content1>.slider-caption>h1{
 		color:#ffffff;
-		font-size:45px;
+		font-size:40px;
 	}
 
 	.swiper-wrapper>.swiper-slide {
@@ -506,7 +480,27 @@
         left: 0
     }
 
+	.feature-box{
+		height: 400px;
+		width: 125%;
+	}
+
+	.Title h1{
+		font-size: 23px
+	}
+
+	.column1{
+		margin-left:-5%;
+	}
+
+	.column2{
+		
+		margin-left: -5%;
+		margin-right: 5px;
+	} 
+
 }
+
 
 
 </style>
@@ -537,7 +531,7 @@
 								</li>
                                 <li class="menu-item">
 									<a class="menu-link" href="{{url('/metier')}}" >
-										<div >NOS METIERS</div>
+										<div >NOS MÉTIERS</div>
 									</a>
 								</li>
                                 <li class="menu-item">
@@ -560,7 +554,7 @@
 									</a>
 								</li>
 								<li class="menu-item" onover>
-									<a class="menu-link" href="#" >
+									<a class="menu-link" href="{{url('/actualites')}}" >
 										<div >actualités</div>
 									</a>
 								</li>

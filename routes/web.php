@@ -16,7 +16,6 @@ use App\Http\Controllers\ActuController;
 |
 */
 
-Route::get('/video', [ViewController::class, 'Video']);
 Route::get('/actu/{id}', [ActuController::class, 'afficherActualite'])->name('actu.show');
 
 
@@ -24,7 +23,6 @@ Route::get('/actu/{id}', [ActuController::class, 'afficherActualite'])->name('ac
 Route::get('/', function () {
     return view('accueil');
 });
-
 
 
 Route::get('/presentation', function () {
@@ -39,10 +37,18 @@ Route::get('/formation', function () {
     return view('front_end.formation');
 });
 
+Route::get('/video', function () {
+    return view('front_end.video');
+});
+
 Route::get('/reglementation', function () {
     return view('front_end.reglementation');
 });
 
 Route::get('/presentation', function () {
     return view('front_end.presentation');
+});
+
+Route::get('/actualites', function () {
+    return view('front_end.actualites');
 });

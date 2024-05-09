@@ -441,6 +441,17 @@ body {
   font-size:13px;
 }
 
+.sec{
+  background-color:#6A5ACD;
+  width: 500px; 
+  background: linear-gradient(to right, #6A5ACD 60%, #fff 100%);
+  margin-left: 10px;
+  color: yellow;
+  padding-left:35px;
+  font-family:'DIN Regular', sans-serif;
+
+}
+
 
 .sub-menu-container .menu-item .menu-link{
   text-align: justify;

@@ -1,107 +1,110 @@
 
 <style>
   
-		.numb{
-			color:#fff
-		}
-		.numb:hover{
-			color:#FFD966;
-		}
+	.numb{
+		color:#fff
+	}
 
-		.consulter>a{
-			margin-bottom:5%;
-		}
+	.numb:hover{
+		color:#FFD966;
+	}
+
+	.consulter>a{
+		margin-bottom:5%;
+	}
+	
+	.consulter{
+		height: 25vh;
+		width: 100%;
+		background-color:#3A2F7C;
+		font-size: 30px;
+		text-align: center;
+		padding: 30px;
+		overflow:hidden
+	}
+
+	.but{
+		margin-top: 20px;
+		border-radius: 100px;
+		color: #3A2F7C;
+		background-color: #FCDC12;
+	}
+
+	#gotoTop{
+		background-color:#3A2F7C 
+	}
+
+	#copyrights{
+		background-color:#000000;
+		color:#ffffff;
+	}
+
+	#copyrights strong{
+		background-color:#000000;
+		font-family:'Arial', sans-serif
+	}
+
+	.autorisations{
+	 background-color: #ffffff;
+	}
+
+	.autorisations > div{
+		margin: 40px;
+		margin-left: 60px;
+	}
+
+	.au{
+		background-color :#FFFF66;
+		width: 260px;
+		height: 50px;
+		text-align: center;
 		
-		.consulter{
-				height: 25vh;
-				width: 100%;
-				background-color:#3A2F7C;
-				font-size: 30px;
-				text-align: center;
-				padding: 30px;
-				overflow:hidden
-			}
+	}
+	
+	.grid-container p{
+		margin: 3px;
+		
+	}
 
-		.but{
-			margin-top: 20px;
-			border-radius: 100px;
-			color: #3A2F7C;
-			background-color: #FCDC12;
-		}
-		#gotoTop{
-			background-color:#3A2F7C 
-		}
+	.grid-item p{
+		font-size: 15px;
+		font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
+	}
 
-		#copyrights{
-			background-color:#000000;
-			color:#ffffff;
-		}
+	.grid-item p strong{
+		font-size: 15px;
+		font-family:'Arial', sans-serif;
+	}
 
-		#copyrights strong{
-			background-color:#000000;
-			font-family:'Arial', sans-serif
-		}
+	.grid-container > .first-row{
+        display: flex;
+		margin: 10px;
+		
+	}
 
-		.autorisations{
-         /* height: 50vh; */
-		 /* width: 100%; */
-		 background-color: #ffffff;
-		}
+	.grid-container > .second-row{
+        display: flex;
+		justify-content: space-between;
+	}
 
-		.autorisations > div{
-			margin: 40px;
-			margin-left: 60px;
-		}
+	.grid-container > .first-row > div{
+		margin: 20px ;
+	}
 
-		.au{
-			background-color :#FFFF66;
-;
-			width: 260px;
-			height: 50px;
-			text-align: center;
-			
-		}
+	.grid-container > .second-row > div{
+		margin: 30px ;
+	}
 
-		.grid-container p{
-			margin: 3px;
-			
-		}
+	.animate-on-scroll {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    }
 
-		.grid-container p{
-			font-size: 15px;
-			font-family:'DIN REGULAR', sans-serif;
-		}
-
-		.grid-container > .first-row{
-            display: flex;
-			margin: 10px;
-			
-		}
-
-		.grid-container > .second-row{
-            display: flex;
-
-			justify-content: space-between;
-		}
-
-		.grid-container > .first-row > div{
-			margin: 20px ;
-		}
-		.grid-container > .second-row > div{
-			margin: 30px ;
-		}
-
-		.animate-on-scroll {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
-        }
-
-        .is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
+    .is-visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
 		
 	.button.button-reveal i {
 		opacity: 0;
@@ -111,55 +114,49 @@
 		transition: all .3s ease !important;
 	}
 
-		@media screen and (max-width: 769px){
+@media screen and (max-width: 769px){
 
-		.first-row, .second-row{
+	.first-row, .second-row{
 		flex-direction: column;
-        align-items: stretch;
-		}
-		.consulter{
-			height:250px
-				
-		}
+		align-items: stretch;
+	}
 
-		.rounded-5{
-			width: 80%;
-		}
-
-		.display-5{
-			text-align: center;
-		}
-		.col-md-4> .barre{
-			width: 80%;
-			height: 2px;
-			margin-bottom: 70px;
-			margin-left: 40px;
-			text-align: center;
-		}
-
-		.menu-container > .menu-item > .menu-link:hover{
-			color: yellow;
-		}
-		.first-ligne, .second-ligne {
-		flex-direction: column;
-        align-items: stretch;
-		}
-}
-
-@media (min-width: 770px) and (max-width: 1100px){
 	.consulter{
-		height: 30vh;
+		height:250px
+			
+	}
+
+	.rounded-5{
+		width: 80%;
+	}
+
+	.display-5{
+		text-align: center;
+	}
+
+	.col-md-4> .barre{
+		width: 80%;
+		height: 2px;
+		margin-bottom: 70px;
+		margin-left: 40px;
+		text-align: center;
+	}
+
+	.menu-container > .menu-item > .menu-link:hover{
+		color: yellow;
+	}
+
+	.first-ligne, .second-ligne {
+		flex-direction: column;
+		align-items: stretch;
 	}
 }
 
+@media (min-width: 770px) and (max-width: 1100px){
 
-	#consulter > h5 > span {
-		padding: 2px;
-    	border-bottom: 2px solid #FFD966;
-}
-
-#consulter > h5 >i{
-	font-size: 30px;
+	.consulter{
+		height: 30vh;
+	}
 }
 
 @media (min-width: 1101px) and (max-width: 1400px){
@@ -177,12 +174,12 @@
 				<div class='au'><h3>AUTORISATIONS</h3></div>
 					<div class="grid-container">
 						<div class="first-row">
-							<div class="grid-item ">
-								<p>AGRMENT DU TRAVAIL AERIEN:</p>
+							<div class="grid-item">
+								<p>AGRÉMENT DU TRAVAIL AÉRIEN:</p>
 								<p><strong>ATA/DGP/2019-005/ANAC/DSV DU 20/04/2023</strong></p>
 							</div>
 							<div  class="grid-item ">
-								<p>AUTORISATION D'EXPLOITATION D'AERONEF TELEPILOTE:</p>
+								<p>AUTORISATION D'EXPLOITATION D'AÉRONEF TÉLÉPILOTÉ:</p>
 								<p><strong>AEAT/DGP/2023-005/ANAC/DSV DU 20/04/2023</strong></p>
 							</div>
 							<div  class="grid-item">
@@ -192,12 +189,12 @@
 						</div>
 						<div class="second-row">
 							<div  class="grid-item">
-								<p>SPECIFICATIONS RELATIVES A L'AUTORISATION D'EXPLOITATION</p>
-								<p> D'AERONEF TELEPILOTE:<strong>AEAT/DGP/2023-005/ANAC/DSV DU 20/04/2023</strong></p>
+								<p>SPÉCIFICATIONS RELATIVES A L'AUTORISATION D'EXPLOITATION</p>
+								<p> D'AÉRONEF TÉLÉPILOTÉ:<strong>AEAT/DGP/2023-005/ANAC/DSV DU 20/04/2023</strong></p>
 							</div>
 							<div  class="grid-item">
 								<p>APPROBATION AU PROGRAMME DE FORMATION AU </p>
-								<p>TELEPILOTAGE:<strong>003840/ANAC/DSV/SPDLA/SREF DU 20/06/2021</strong></p>
+								<p>TÉLÉPILOTAGE:<strong>003840/ANAC/DSV/SPDLA/SREF DU 20/06/2021</strong></p>
 							</div>
 						</div>
 					</div>
@@ -241,7 +238,6 @@
 								<div id="gotoTop" class="uil uil-angle-up"></div>
 						</div>
 						<p style="opacity:0.8; text-align:center">Copyrights &copy;<strong>2024</strong> | DRONE GROUPE - Tous Droits Réservés</p>
-
 					</div>
 				</div>
 			</div><!-- #copyrights end -->

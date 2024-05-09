@@ -2,13 +2,15 @@
 
 <style>
  		
-	 body{
-            font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
-        }
+	body{
+        font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
+    }
+
 	#content{
 		margin-top: 30px;
 		margin-bottom:30px;
 	}
+
     .content1{
 		background-color:#000000;
 		padding: 50px;
@@ -16,27 +18,32 @@
 		width: 40%;
 		height: 70vh;
 	}
+
 	.content1>h1{
 		color:#ffffff;
 		font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
 		font-size:60px;
 	}
+
 	.content2{
 		width: 60%;
 	}
+
 	.content2>img{
 		height: 70vh;
 		width: 100%;
-		}
+	}
     
 	.content-wrap{
 		display: flex;
 		background-color: #000000;
 	}
+
     .content{
         background-size:cover;
         width:60%;                                                                
     }  
+
 	.present > .presen{
 		background-color:#6A5ACD;
 		width: 500px; 
@@ -47,9 +54,11 @@
 		font-size: 15px;
 		font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
 	}
+
     .present >.presen > h3{
         color: yellow;
     }
+
     .present > .barre{
         background-color: #000000;
         
@@ -58,6 +67,7 @@
         margin-left: 50px;
         margin-right: 50px;
     }
+
     .present > p{
         margin-left: 100px ;
 		margin-right: 100px;
@@ -69,32 +79,31 @@
 @media screen and (max-width: 769px){
 
 	.sub-menu-container {
-    background-color:#000000;
-  
-  }
+    	background-color:#000000;
+  	}
 	
 	#logo > a{
 		height:15px
 	}
-
 	
-		#content{
-			height: 350px ;		
-			margin-bottom:50px;
-
-		}
-		.content1{
-			background-size:cover;
-			padding: 30px;
-			width: 100%;
-			height: 350px ;		
-			background-image:url('images/drone.jpg');
+	#content{
+		height: 350px ;		
+		margin-bottom:50px;
 	}
+
+	.content1{
+		background-size:cover;
+		padding: 30px;
+		width: 100%;
+		height: 350px ;		
+		background-image:url('images/drone.jpg');
+	}
+
 	.present>p{
-			font-size: 17px;
-			margin-left:20px;
-			margin-right:20px;
-		}
+		font-size: 17px;
+		margin-left:20px;
+		margin-right:20px;
+	}
 	
 	.content1>h1{
 		margin-top:12%;
@@ -109,170 +118,173 @@
 		
 	}
   
-		.content2>img{
-			height: 30vh;
-			width: 100%;
-			display:none
-			}
-
-		.content2 {
-			height: 30vh ;
-			width: 100%;
-			display:none
-		}	
-		
-		.col-md-4 {
-			padding-top: 10px;
-		}
-		.col-md-4 > a >h1{
-			text-align:center;
-			font-size:35px
-		}
-
-		.col-md-6 > img{
-			height: 300px;
-			width: 350px;
-		}
-
-		#equip >.content-wrap{
-			flex-direction: column;
-            align-items: stretch;
-		}
-
-		.first-row, .second-row{
-			flex-direction: column;
-			align-items: stretch;
-		}
-		.rounded-5{
-			width: 80%;
-		}
-
-		.display-5{
-			text-align: center;
-		}
-		.col-md-4> .barre{
-			width: 80%;
-			height: 2px;
-			margin-bottom: 70px;
-			margin-left: 40px;
-			text-align: center;
-		}
-		.sub-menu-container > .menu-item > .menu-link:hover{
-			color:#FFD966;
-;
-		}
-		
-		.menu-item{
-			text-align:justify ;
-			/* border-bottom: 2px solid #fff; */
-		}
+	.content2>img{
+		height: 30vh;
+		width: 100%;
+		display:none
 	}
-@media (min-width: 770px) and (max-width: 1100px){
 
+	.content2 {
+		height: 30vh ;
+		width: 100%;
+		display:none
+	}	
+		
+	.col-md-4 {
+		padding-top: 10px;
+	}
 
-#logo > a{
-	height:21px
-}
+	.col-md-4 > a >h1{
+		text-align:center;
+		font-size:35px
+	}
 
+	.col-md-6 > img{
+		height: 300px;
+		width: 350px;
+	}
 
-.sub-menu-container {
-    background-color:#696969;
-  
-  }
+	.first-row, .second-row{
+		flex-direction: column;
+		align-items: stretch;
+	}
 
+	.rounded-5{
+		width: 80%;
+	}
 
-#content{
-height:500px ;		
-margin-bottom:50px;
+	.display-5{
+		text-align: center;
+	}
 
-}
+	.col-md-4> .barre{
+		width: 80%;
+		height: 2px;
+		margin-bottom: 70px;
+		margin-left: 40px;
+		text-align: center;
+	}
 
-.content1{
-background-color:#000000;
-padding: 50px;
-width: 70%;
-height: 500px ;		
-	
-}
-
-	
-.content1>h1{
- margin-top:20px;
-color:#ffffff;
-font-size:45px;
-}
-
-.content2 {
-	height: 500px ;		
-	width: 100%;
-}
-
-.content2>img{
-	height: 500px ;		
-	width: 100%;                                                               
-}  
-
-.col-md-4{
-	padding-top: 25px;
-}
-
-.col-md-6{
-	margin-top: 10px;
-}
-
-.menu-item{
-	text-align: justify;
-}
-
-.sub-menu-container > .menu-item > .menu-link:hover{
+	.sub-menu-container > .menu-item > .menu-link:hover{
 		color:#FFD966;
 	}
 
-	/* .menu-container{
-		margin-left:10px
-	} */
 	.menu-container > .menu-item > .menu-link >div{
 		font-size:11px;
 	}
 
+	.sub-menu-container> .menu-item > .menu-link >div{
+		font-size:11px;
 	}
+		
+	.menu-item{
+		text-align:justify ;
+	}
+}
 
-@media (min-width: 1101px) and (max-width: 1400px){
+@media (min-width: 770px) and (max-width: 951px){
+
 
 	#logo > a{
-	height:21px
-}
+		height:21px
+	}
+
+	.sub-menu-container {
+		background-color:#000000;	
+	}
+
+	#content{
+		height:500px ;		
+		margin-bottom:50px;
+	}
+
+	.content1{
+		background-color:#000000;
+		padding: 50px;
+		width: 70%;
+		height: 500px ;				
+	}
+		
+	.content1>h1{
+		margin-top:20px;
+		color:#ffffff;
+		font-size:45px;
+	}
+
+	.content2 {
+		height: 500px ;		
+		width: 100%;
+	}
+
+	.content2>img{
+		height: 500px ;		
+		width: 100%;                                                               
+	}  
+
+	.col-md-4{
+		padding-top: 25px;
+	}
+
+	.col-md-6{
+		margin-top: 10px;
+	}
+
+	.menu-item{
+		text-align: justify;
+	}
+
+	.sub-menu-container > .menu-item > .menu-link:hover{
+		color:#FFD966;
+	}
 
 	.menu-container > .menu-item > .menu-link >div{
 		font-size:11px;
 	}
 
+	.sub-menu-container> .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+
+}
+
+@media (min-width: 952px) and (max-width: 1400px){
+
+	#logo > a{
+		height:21px
+	}
+
+	.menu-container > .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+
+	.sub-menu-container> .menu-item > .menu-link >div{
+		font-size:11px;
+	}
 
 	.content1{
-	background-color:#000000;
-	padding: 50px;
-	width: 70%;
-	height: 500px ;		
-}
-
+		background-color:#000000;
+		padding: 50px;
+		width: 70%;
+		height: 500px ;		
+	}
 		
-.content1>h1{
-	 margin-top:20px;
-	color:#ffffff;
-	font-size: 45px;
+	.content1>h1{
+		margin-top:20px;
+		color:#ffffff;
+		font-size: 45px;
+	}
+
+	.content2 {
+		height: 500px ;		
+		width: 100%;
+	}
+
+	.content2>img{
+		height: 500px ;		
+		width: 100%;                                                               
+	}  
 }
 
-.content2 {
-	height: 500px ;		
-	width: 100%;
-}
-
-.content2>img{
-	height: 500px ;		
-	width: 100%;                                                               
-}  
-
-}
 </style>
 
 </head>
@@ -308,7 +320,7 @@ font-size:45px;
 								</li>
 								<li class="menu-item">
 									<a class="menu-link" href="{{url('/metier')}}" >
-										<div >NOS METIERS</div>
+										<div >NOS MÉTIERS</div>
 									</a>
 								</li>
 								<li class="menu-item">
@@ -331,7 +343,7 @@ font-size:45px;
 									</a>
 								</li>
 								<li class="menu-item" >
-									<a class="menu-link" href="#" >
+									<a class="menu-link" href="{{url('/actualites')}}" >
 										<div >actualités</div>
 									</a>
 								</li>

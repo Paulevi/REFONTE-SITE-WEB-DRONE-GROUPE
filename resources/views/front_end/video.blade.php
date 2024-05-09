@@ -1,5 +1,5 @@
 @php
-    $videos = App\Models\VideosModel::all();
+    $videos = App\Models\VideosModel::orderBy('id_video' , 'desc')->get();
 @endphp
 
 @include('sections.head')
@@ -98,16 +98,16 @@
 		/* border-radius:0px 0px 10px 10px; */
 }
 
+
 @media screen and (max-width: 769px){
 
 	.sub-menu-container {
-    background-color:#000000;
-  
+    	background-color:#000000; 
   }
 
 	#logo > a{
-			height:15px
-		}
+		height:15px
+	}
 	
 	#content{
 		height: 350px ;
@@ -136,7 +136,6 @@
 	}
 
 	.hidden{
-		/* background-color:RED; */
 		position: relative;
 		bottom:50%;
 		display:unset;
@@ -180,51 +179,62 @@
 		color:#FFD966;
 	}
 
+	.menu-container > .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+
+	.sub-menu-container> .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+
 	.sub-menu-container > .menu-item > .menu-link:hover{
 			color:#FFD966;
-		}
+	}
 
 	.menu-item{
 		text-align: justify;
 	}
   
+	.sec{
+		width: 100%;
+	}
 }
 
 @media (min-width: 770px) and (max-width: 950px){
 
 	.sub-menu-container {
-    background-color:#000000;
-  
-  }
+   		 background-color:#000000; 
+  	}
 
-  #logo > a{
-	height:21px
-}
+ 	 #logo > a{
+		height:21px
+	}
 
 	.menu-container > .menu-item > .menu-link >div{
 		font-size:11px;
 	}
 
-.content1{
-background-color:#000000;
-padding: 50px;
-width: 70%;
-height: 500px ;		
-	
-}
+	.sub-menu-container> .menu-item > .menu-link >div{
+		font-size:11px;
+	}
 
-	
-.content1>h1{
- margin-top:20px;
-color:#ffffff;
-font-size:45px;
-}
+	.content1{
+		background-color:#000000;
+		padding: 50px;
+		width: 70%;
+		height: 500px ;		
+	}
 
-.content2 {
-	height: 500px ;		
-	width: 100%;
-}
+	.content1>h1{
+		margin-top:20px;
+		color:#ffffff;
+		font-size:45px;
+	}
 
+	.content2 {
+		height: 500px ;		
+		width: 100%;
+	}
 	
 	.content2>iframe{
 		height: 500px ;
@@ -248,19 +258,24 @@ font-size:45px;
 @media (min-width: 951px) and (max-width: 1400px){
 
 	#logo > a{
-	height:21px
-}
+		height:21px
+	}
 
 	.menu-container > .menu-item > .menu-link >div{
 		font-size:11px;
 	}
 
+	.sub-menu-container> .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+
 	.menu-container > .menu-item > .menu-link{
-	text-align:justify}
+		text-align:justify}
 
 	#content{
 		height: 500px ;
 	}
+
 	.content1{
 		background-color:#000000;
 		padding: 50px;
@@ -278,7 +293,8 @@ font-size:45px;
 		width: 100%;
 		background-color:#000000;
 	}
-		.content2>iframe{
+
+	.content2>iframe{
 		height: 500px ;
 		width: 100%;                                                               
 	}  
@@ -311,7 +327,7 @@ font-size:45px;
 								</li>
 								<li class="menu-item">
 									<a class="menu-link" href="{{url('/metier')}}" >
-										<div >NOS METIERS</div>
+										<div >NOS MÉTIERS</div>
 									</a>
 								</li>
 								<li class="menu-item">
@@ -334,7 +350,7 @@ font-size:45px;
 									</a>
 								</li>
 								<li class="menu-item" >
-									<a class="menu-link" href="#" >
+									<a class="menu-link" href="{{url('/actualites')}}" >
 										<div >actualités</div>
 									</a>
 								</li>
@@ -343,7 +359,6 @@ font-size:45px;
 										<div >REGLEMENTATION</div>
 									</a>
 								</li>
-								<!-- <div class="morph-marker"></div> -->
 							</ul>
 						</nav>                       
 					</div>
@@ -375,8 +390,10 @@ font-size:45px;
 				</div>			
 			<div>
 		</section>
-		<section>
-             <div class="container">
+		<section class="videos">
+			<h3 class="sec">NOS VIDÉOS</h3>
+			<div class="barre-2"></div>
+            <div class="container">
                 <div id="portfolio"  class="portfolio row gutter-40">
 					@foreach ($videos as $video)
 						<article class= "portfolio-item col-lg-3 col-md-4 col-sm-6 col-12 animate-on-scroll ">
@@ -385,6 +402,7 @@ font-size:45px;
 						</article>
 					@endforeach
 				</div>
+			</div>
 		</section>
 		@include('sections.footer')	
 </body>

@@ -7,25 +7,11 @@
 			font-size: 17px;
             }
 
-		.sec{
-			background-color:#6A5ACD;
-			width: 500px; 
-			background: linear-gradient(to right, #6A5ACD 60%, #fff 100%);
-			margin-left: 10px;
-            color: yellow;
-			padding-left:35px;
-			font-weight: lighter;
-			font-family:'DIN Regular', sans-serif;
-			font-size: 20px;
-
-		}
-
         .menu > p{
 			margin-left: 100px ;
 			margin-right: 100px;
 			font-size: 17px;
         }
-		
 
         .metier{
             margin-top: 50px;
@@ -89,13 +75,6 @@
 			margin:0;
 		}
 
-		/* .image{
-			height: 300px;
-			width: 300px;
-			
-			background-size:cover;
-		} */
-        
 		.special{
 			background-color:#000000;
 		}
@@ -215,9 +194,6 @@
 			width: 80%;
 			font-size: 17px;
 			background: linear-gradient(to right, #000 60%, #fff 100%);
-
-			/* box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.5); */
-
 		}
 
 		.menu > ul >li >i{
@@ -239,13 +215,12 @@
 @media screen and (max-width: 769px){
 
 	.sub-menu-container {
-    background-color:#000000;
-  
-  }
+  	  background-color:#000000;
+   }
 
   #logo > a{
 	height:15px
-}
+	}
 
 	#content{
 		height:350px;	
@@ -253,222 +228,218 @@
 	}
 
 	.menu > p{
-			margin-left: 50px ;
-			margin-right: 50px;
-			font-size: 17px;
-        }
+		margin-left: 50px ;
+		margin-right: 50px;
+		font-size: 17px;
+   }
 
 	.menu > ul >li>i{
 		margin-left: 4px;
 	}
 
 	.menu > ul >li{
-		    font-size:15px;
-			padding-left:2px;
-			margin-left: 40px;
-			margin-top: 20px;
-			list-style: none;
-			background: linear-gradient(to right, #000 70%, #fff 100%);
-			background-color: #000000;
-			color:#fff;
-			height: 50px;
-			width: 90%;
+		font-size:15px;
+		padding-left:2px;
+		margin-left: 40px;
+		margin-top: 20px;
+		list-style: none;
+		background: linear-gradient(to right, #000 70%, #fff 100%);
+		background-color: #000000;
+		color:#fff;
+		height: 50px;
+		width: 90%;
+	}
 
-		}
-
-
-	.menu-container{
-		
+	.menu-container{	
 		text-align:center;
-		}
-	.content1{
-			/* background-color: #000000; */
-			background-image:url('images/drone2.jpg');
-			background-size:cover;
-			padding: 30px;
-			width: 100%;
-			height: 350px;
-				}
+	}
 
-		.content2 {
-			height: 50vh;
-			width: 100%;
-			display:none;
-		}
-		.content2>img{
-			height: 50vh ;
-			width: 100%;                                                               
-		}  
+	.content1{
+		background-image:url('images/drone2.jpg');
+		background-size:cover;
+		padding: 30px;
+		width: 100%;
+		height: 350px;
+	}
+
+	.content2 {
+		height: 50vh;
+		width: 100%;
+		display:none;
+	}
+
+	.content2>img{
+		height: 50vh ;
+		width: 100%;                                                               
+	}
+
 	.content1>h1{
 		margin-top:18%;
 		color:#fff;
 		font-size:35px;
 		text-align: center;
+	}
 
-		}
+	.metier{
+		margin-left:-65px
+	}
 
-		.metier{
-			margin-left:-65px
-		}
-
-		
-
-		.metiers{
+	.metiers{
         flex-direction: column;
         align-items: stretch;
 		position: relative;
-		left: 50px;}
-
-		.metiers > .text >h3{
-			font-size:20px;
-		}
-		.metiers > .text >p{
-			font-size:17px;
-		}
-
-		.sub-menu-container > .menu-item > .menu-link:hover{
-			color:#FFD966;
-		}
-
-		.menu-item{
-			text-align: justify;
-			/* border-bottom: 2px solid #fff; */
-		}
-
-		.specials >.text{
-			padding-top :20px;
-			width:100%;
-		}
-
-		.special{
-			height:100%;
-			width: 100%;
-			
-		}
-
-		.first-ligne .specials:Nth-child(2){
-			/* background:red; */
-			margin-bottom:-25%
-		}
-
-		.second-ligne .specials:Nth-child(2){
-			/* background:red; */
-			height: 600px;
-		}
-
-		.first-ligne, .specials{
-			
-			width:100%;
-			margin-left:3%;
-		}
-
-		.second-ligne, .specials{
-			
-			width:100%;
-			margin-left:3%;
-		}
-
-		.first-ligne .specials .text{
-			
-			width:100%;
-			margin-left:5%;
-		}
-		.second-ligne .specials .text{
-			width:100%;
-			margin-left:5%;
-			
-		}
-
-		.specials .text .barre{
-			width: 100%;
-		}
-		
-		.first-ligne, .second-ligne {
-			width:100%;
-			margin-left:-5%;
-			flex-direction: column;
-			align-items: stretch;
-		}
-		.specials{		
-			margin-bottom:10%;	
-			height: 500px;
-			width: 100%;
-			margin-bottom:5%;
-			padding-left:2%;
-			flex-direction: column;
-       		align-items: stretch;
-		}
-
-		.specials .image{
-			width: 95%;
-		}
-		.metiers>.text{
-			width: 400px;
-		}
-
-		.metiers>.image{
-			width: 400px;
-		}
-
-		.metiers>.image>img{
-			height: 350px;
-		}
-
-		.sec{
-			padding-left:4px;
-			width: 400px;
-		}
-
-		.troisieme{
-			width: 400px;
-		}
-
+		left: 50px;
 	}
 
-	
-@media (min-width: 770px) and (max-width: 950px){
+	.metiers > .text >h3{
+		font-size:20px;
+	}
+	.metiers > .text >p{
+		font-size:17px;
+	}
 
-	.sub-menu-container {
-    background-color:#000000;
-  
-  }
-
- 	 #logo > a{
-	height:21px
+	.sub-menu-container > .menu-item > .menu-link:hover{
+		color:#FFD966;
 	}
 
 	.menu-container > .menu-item > .menu-link >div{
 		font-size:11px;
 	}
+
+	.sub-menu-container> .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+
+	.menu-item{
+		text-align: justify;
+	}
+
+	.specials >.text{
+		padding-top :20px;
+		width:100%;
+	}
+
+	.special{
+		height:100%;
+		width: 100%;		
+	}
+
+	.first-ligne .specials:Nth-child(2){
+		margin-bottom:-25%
+	}
+
+	.second-ligne .specials:Nth-child(2){
+		height: 600px;
+	}
+
+	.first-ligne, .specials{		
+		width:100%;
+		margin-left:3%;
+	}
+
+	.second-ligne, .specials{		
+		width:100%;
+		margin-left:3%;
+	}
+
+	.first-ligne .specials .text{		
+		width:100%;
+		margin-left:5%;
+	}
+
+	.second-ligne .specials .text{
+		width:100%;
+		margin-left:5%;	
+	}
+
+	.specials .text .barre{
+		width: 100%;
+	}
+		
+	.first-ligne, .second-ligne {
+		width:100%;
+		margin-left:-5%;
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.specials{		
+		margin-bottom:10%;	
+		height: 500px;
+		width: 100%;
+		margin-bottom:5%;
+		padding-left:2%;
+		flex-direction: column;
+       	align-items: stretch;
+	}
+
+	.specials .image{
+		width: 95%;
+	}
+	.metiers>.text{
+		width: 400px;
+	}
+	.metiers>.image{
+		width: 400px;
+	}
+	.metiers>.image>img{
+		height: 350px;
+	}
+	.sec{
+		width: 100%;
+	}
+	.troisieme{
+		width: 400px;
+	}
+
+}
+
+	
+@media (min-width: 770px) and (max-width: 950px){
+
+	.sub-menu-container {
+    	background-color:#000000;
+   }
+
+ 	 #logo > a{
+		height:21px
+	}
+
+	.menu-container > .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+
+	.sub-menu-container> .menu-item > .menu-link >div{
+		font-size:11px;
+	}
 	
 	.content1{
-background-color:#000000;
-padding: 50px;
-width: 70%;
-height: 500px ;		
-	
-}
+		background-color:#000000;
+		padding: 50px;
+		width: 70%;
+		height: 500px ;			
+	}
 
 	
-.content1>h1{
- margin-top:20px;
-color:#ffffff;
-font-size:45px;
-}
+	.content1>h1{
+		margin-top:20px;
+		color:#ffffff;
+		font-size:45px;
+	}
 
-.content2 {
-	height: 500px ;		
-	width: 100%;
-}
+	.content2 {
+		height: 500px ;		
+		width: 100%;
+	}
 
-.content2>img{
-	height: 500px ;		
-	width: 100%;                                                               
-}  
+	.content2>img{
+		height: 500px ;		
+		width: 100%;                                                               
+	}  
 
-#video h1{
-font-size:10px;
-} 
+	#video h1{
+		font-size:10px;
+	} 
 
 	.specials >.first-ligne>.image,
 	.specials >.second-ligne>.image{
@@ -478,28 +449,24 @@ font-size:10px;
 
 	.first-ligne, .second-ligne {
 		flex-direction: column;
-        align-items: stretch;
+		align-items: stretch;
 		padding-left:20%;
 		padding-right:20%
-		}
-
-		.specials{
-			
-			flex-direction: column;
-       		 align-items: stretch;
-		}
-
-		.specials>.text{
-			width: 500px;
-		}
-		.menu-item{
-			text-align: justify;
-		}
-		.sub-menu-container > .menu-item > .menu-link:hover{
+	}
+	.specials{
+		flex-direction: column;
+    	align-items: stretch;
+	}
+	.specials>.text{
+		width: 500px;
+	}
+	.menu-item{
+		text-align: justify;
+	}
+	.sub-menu-container > .menu-item > .menu-link:hover{
 		color:#FFD966;
 	}
-
-	}
+}
 
 @media (min-width: 951px) and (max-width: 1400px){
 
@@ -511,32 +478,35 @@ font-size:10px;
 		font-size:11px;
 	}
 
+	.sub-menu-container> .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+
 	.menu-container > .menu-item > .menu-link{
 	text-align:justify
-}
-#content{
-	height: 500px ;		
+	}
+	#content{
+		height: 500px ;		
 
-}
+	}
 	
 	.specials > image{
 		width:100px;
 		}
 
 	.content1{
-	background-color:#000000;
-	padding: 50px;
-	width: 70%;
-	height: 500px ;		
-}
+		background-color:#000000;
+		padding: 50px;
+		width: 70%;
+		height: 500px ;		
+	}
 
 		
-.content1>h1{
-	 margin-top:20px;
-	color:#ffffff;
-	font-size: 55px;
-
-}
+	.content1>h1{
+		margin-top:20px;
+		color:#ffffff;
+		font-size: 55px;
+	}
 
 	.content2 {
 		height: 500px ;		
@@ -544,41 +514,40 @@ font-size:10px;
 	}
 
 	.content2>img{
-	height: 500px ;		
-	width: 100%;                                                               
+		height: 500px;		
+		width: 100%;                                                               
 	}  
 
-	/* .specials{
-		width: 410px;
-	} */
 	.first-ligne, .second-ligne {
 		flex-direction: column;
         align-items: stretch;
 		padding-left:30%
-		}
+	}
 
-		.specials{
-			
-			flex-direction: column;
-       		 align-items: stretch;
-		}
+	.specials{			
+		flex-direction: column;
+       	align-items: stretch;
+	}
+	
+	.specials>.text{
+		width: 500px;
+	}
 
-		.specials>.text{
-			width: 500px;
-		}
-		.menu > ul >li{
-	 padding-left: 4px;
-	margin-left: 40px;
-	margin-top: 20px;
-	list-style: none;
-	background-color: #000000;
-	color:#fff;
-	height: 60px;
-	width: 80%;
-	font-size: 20px;gba(0, 0, 0, 0.5);
+	.menu > ul >li{
+		padding-left: 4px;
+		margin-left: 40px;
+		margin-top: 20px;
+		list-style: none;
+		background-color: #000000;
+		color:#fff;
+		height: 60px;
+		width: 80%;
+		font-size: 20px;gba(0, 0, 0, 0.5);
 
-		}
-}	</style>
+	}
+}	
+
+</style>
 
 </head>
 
@@ -611,7 +580,7 @@ font-size:10px;
 								</li>
 								<li class="menu-item current">
 									<a class="menu-link" href="{{url('/metier')}}" >
-										<div >NOS METIERS</div>
+										<div >NOS MÉTIERS</div>
 									</a>
 								</li>
 								<li class="menu-item">
@@ -634,7 +603,7 @@ font-size:10px;
 									</a>
 								</li>
 								<li class="menu-item" >
-									<a class="menu-link" href="#" >
+									<a class="menu-link" href="{{url('/actualites')}}" >
 										<div >actualités</div>
 									</a>
 								</li>
@@ -662,7 +631,7 @@ font-size:10px;
 				<div class="content2" >
 					<img src="images/drone2.jpg" alt="">
                 </div>
-		<div>
+			<div>
 		</section><!-- #content end -->
 		<section class="menu">
     		<h3 class="sec premier">EXPLORATION GEOSPACIALE</h3>

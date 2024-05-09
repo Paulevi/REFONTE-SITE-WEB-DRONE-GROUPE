@@ -6,16 +6,6 @@
             font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
 			font-size:20px;
         } 
-	.sec{
-		background-color:#6A5ACD;
-		width: 550px; 
-		background: linear-gradient(to right, #6A5ACD 60%, #fff 100%);
-		margin-left: 10px;
-        color: yellow;
-		padding-left:35px;
-		font-weight: lighter;
-		font-family:'DIN Regular', sans-serif;
-	}
 	
 	.text> ul > li{
 		list-style: none;
@@ -121,12 +111,11 @@
 @media screen and (max-width: 769px){
 
 	.sub-menu-container {
-    background-color:#000000;
-  
-  }
+   		 background-color:#000000;
+ 	 }
 
 	#logo > a{
-			height:15px
+		height:15px
 		}
 
 	#content{
@@ -166,11 +155,11 @@
 	}
 
 	.sec{
+		width: 100%;
 		background-color:#6A5ACD;
 		margin-left: 10px;
         color: yellow;
 		padding-left:35px;
-		font-weight: lighter;
 		font-family:'DIN Regular', sans-serif; 
 	}
 
@@ -180,7 +169,15 @@
 
 	.sub-menu-container > .menu-item > .menu-link:hover{
 			color:#FFD966;
-		}
+	}
+
+	.menu-container > .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+
+	.sub-menu-container> .menu-item > .menu-link >div{
+		font-size:11px;
+	}
 
 
 	p{
@@ -191,16 +188,21 @@
 		font-size: 17px;
 	}
 }
+
 @media (min-width: 770px) and (max-width: 950px){
 
+	.sub-menu-container> .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+
 	.sub-menu-container {
-    background-color:#000000;
+    	background-color:#000000;
   
-  }
+	}
 
 	#logo > a{
-			height:20px
-		}
+		height:20px
+	}
 
 	#content{
 		height: 500px ;
@@ -216,8 +218,8 @@
 	.content1>h1{
 		margin-top:10%;
 		color:#ffffff;
-		font-size:35px;
-		}
+		font-size:30px;
+	}
 
 	.content2 {
 		height: 500px ;
@@ -240,9 +242,10 @@
 	.sec{
 		width: 700px;
 	}
+
 	.menu-container > .menu-item > .menu-link{
-	text-align:justify
-}
+		text-align:justify
+	}
 
 }
 
@@ -256,34 +259,38 @@
 		font-size:11px;
 	}
 
+	.sub-menu-container> .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+
 	.menu-container > .menu-item > .menu-link{
 	text-align:justify
 	}
 
 	.content1{
-background-color:#000000;
-padding: 30px;
-width: 80%;
-height: 500px ;		
-	
-}
+		background-color:#000000;
+		padding: 30px;
+		padding-top:50px;
+		width: 80%;
+		height: 500px ;				
+	}
 
 	
-.content1>h1{
- margin-top:20px;
-color:#ffffff;
-font-size:40px;
-}
+	.content1>h1{
+		margin-top:20px;
+		color:#ffffff;
+		font-size:38px;
+	}
 
-.content2 {
-	height: 500px ;		
-	width: 100%;
-}
+	.content2 {
+		height: 500px ;		
+		width: 100%;
+	}
 
-.content2>img{
-	height: 500px ;		
-	width: 100%;                                                               
-}  
+	.content2>img{
+		height: 500px ;		
+		width: 100%;                                                               
+	}  
 
 	.sec{
 		background-color:#6A5ACD;
@@ -293,7 +300,6 @@ font-size:40px;
 	.premier{
 		width:1000px
 	}
-
 }
 
 </style>
@@ -323,7 +329,7 @@ font-size:40px;
 								</li>
 								<li class="menu-item">
 									<a class="menu-link" href="{{url('/metier')}}" >
-										<div >NOS METIERS</div>
+										<div >NOS MÉTIERS</div>
 									</a>
 								</li>
 								<li class="menu-item">
@@ -346,7 +352,7 @@ font-size:40px;
 									</a>
 								</li>
 								<li class="menu-item" >
-									<a class="menu-link" href="#" >
+									<a class="menu-link" href="{{url('/actualites')}}" >
 										<div >actualités</div>
 									</a>
 								</li>
