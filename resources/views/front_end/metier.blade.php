@@ -412,12 +412,16 @@
 	.sub-menu-container> .menu-item > .menu-link >div{
 		font-size:11px;
 	}
+
+	#content{
+		height:60vh
+	}
 	
 	.content1{
 		background-color:#000000;
 		padding: 50px;
 		width: 70%;
-		height: 500px ;			
+		height: 60vh ;			
 	}
 
 	
@@ -428,12 +432,12 @@
 	}
 
 	.content2 {
-		height: 500px ;		
+		height: 60vh ;		
 		width: 100%;
 	}
 
 	.content2>img{
-		height: 500px ;		
+		height: 60vh ;		
 		width: 100%;                                                               
 	}  
 
@@ -494,27 +498,31 @@
 		width:100px;
 		}
 
+	#content{
+		height:60vh
+	}
+
 	.content1{
 		background-color:#000000;
 		padding: 50px;
 		width: 70%;
-		height: 500px ;		
+		height: 60vh ;		
 	}
 
 		
 	.content1>h1{
 		margin-top:20px;
 		color:#ffffff;
-		font-size: 55px;
+		font-size: 50px;
 	}
 
 	.content2 {
-		height: 500px ;		
+		height: 60vh ;		
 		width: 100%;
 	}
 
 	.content2>img{
-		height: 500px;		
+		height: 60vh;		
 		width: 100%;                                                               
 	}  
 
@@ -609,7 +617,7 @@
 								</li>
 								<li class="menu-item " >
 									<a class="menu-link" href="{{url('/reglementation')}}" >
-										<div >REGLEMENTATION</div>
+										<div >RÉGLEMENTATION</div>
 									</a>
 								</li>
 								<!-- <div class="morph-marker"></div> -->
@@ -668,7 +676,7 @@
             <div class="metiers animate-on-scroll">
                 <div class="text">
                     <h3>AUDIT ET DÉTECTION DES INFRASTRUCTURES AÉRIENNES, ENTERRÉES, TERRESTES ET SOUS-TERRAINES, MARINES ET SOUS-MARINES</h3>
-                    <P>AVEC NOS SOLUTIONS DE DÉTECTION POUR DECOUVRIR DES DONNÉES DE RESEAUX, RELEVER NUMERIQUEMENT VOS SOUS-SURFACES ET LES CONVERTIR IMMÉDIATEMENT EN INFORMATIONS EXPLOITABLES ADAPTÉES A VOS BESOINS, AUSSI BIEN SUR LE TERRAIN </P>
+                    <P>AVEC NOS SOLUTIONS DE DÉTECTION POUR DECOUVRIR DES DONNÉES DE RESEAUX, RELEVER NUMERIQUEMENT VOS SOUS-SURFACES ET LES CONVERTIR IMMÉDIATEMENT EN INFORMATIONS EXPLOITABLES ADAPTÉES A VOS BESOINS, AUSSI BIEN SUR LE TERRAIN. </P>
                 </div>
                 <div class="image"><img src="images/hhj_Plan de travail 1 (1).jpg" alt=""></div>
             </div>
@@ -705,7 +713,7 @@
 			<h1> <span  style="color:#ffffff;">NOS SPECIALITÉS</span></h1>
 			<div class="first-ligne">
 			<div class="specials animate-on-scroll">
-			<div class="image"><img src="images/M12_Plan de travail 1-01.jpg" alt=""></div>
+			<div class="image"><img src="images/metier1.jpg" alt=""></div>
                 <div class="text">
                     <h6  style="color: #fff;">DETECTER, REPERTORIER, NUMERISER</h6>
 					<div class="barre"></div>
@@ -723,7 +731,7 @@
 			</div>
 			<div class="second-ligne">
 			<div class="specials animate-on-scroll">
-				<div class="image"><img src="images/KKK-01.jpg" alt=""></div>
+				<div class="image"><img src="images/metier2.jpg" alt=""></div>
 				<div class="text">	
                     <h6  style="color: #fff;">ETUDIER, EVALUER, INSPECTER, CONTROLLER</h6>
 					<div class="barre"></div>

@@ -52,10 +52,6 @@
 		border-radius: 10px;
 	}
 
-	.grid-inner>.portfolio-image>a>.minia{
-		height: 200px;
-		border-radius: 0px;}
-
 	.portfolio-desc{
 		background-color:#000;
 		color:#fff;
@@ -79,7 +75,6 @@
 		margin-left:10px;
 		width: 650px;
 		height: 450px;
-		border-radius:20px;
 	}
 
 	.iframe{
@@ -286,7 +281,7 @@
 	.content1>h1{
 		margin-top:20px;
 		color:#ffffff;
-		font-size: 45px;;
+		font-size: 50px;
 	}
 	.content2 {
 		height: 500px ;
@@ -356,7 +351,7 @@
 								</li>
 								<li class="menu-item " >
 									<a class="menu-link" href="{{url('/reglementation')}}" >
-										<div >REGLEMENTATION</div>
+										<div >RÉGLEMENTATION</div>
 									</a>
 								</li>
 							</ul>

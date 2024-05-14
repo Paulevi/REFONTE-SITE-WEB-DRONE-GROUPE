@@ -124,7 +124,7 @@
 	
 	#content{
 		height: 350px;	
-		margin-bottom:50px;
+		margin-bottom:30px;
 	}
 
 	.content-wrap{
@@ -159,7 +159,6 @@
 
 	.entry{
 		width: 100%;
-
 	}
 
 	.present >p {
@@ -179,11 +178,11 @@
 	}
 
 	.sec{
-			width: 100%;
-		}
+		width: 100%;
+	}
 }
 
-@media (min-width: 770px) and (max-width: 1100px){
+@media (min-width: 770px) and (max-width: 950px){
 
 
 	#logo > a{
@@ -219,11 +218,15 @@
 		color:#FFD966;
 	}
 
+	#content{
+		height: 60vh;
+	}
+
 	.content1{
 		background-color:#000000;
 		padding: 50px;
 		width: 70%;
-		height: 500px ;		
+		height: 60vh ;		
 	}
 	
 	.content1>h1{
@@ -233,12 +236,12 @@
 	}
 
 	.content2 {
-		height: 500px ;		
+		height: 60vh ;		
 		width: 100%;
 	}
 
 	.content2>img{
-		height: 500px ;		
+		height: 60vh ;		
 		width: 100%;                                                               
 	}    
 
@@ -252,7 +255,7 @@
 
 }
 
-@media (min-width: 1101px) and (max-width: 1400px){
+@media (min-width: 951px) and (max-width: 1400px){
 
 	#logo > a{
 		height:21px
@@ -266,6 +269,11 @@
 		font-size:11px;
 	}
 
+	#content{
+		height: 60vh;
+	}
+
+
 	.content1{
 		background-color:#000000;
 		padding: 50px;
@@ -276,7 +284,6 @@
 	.content1>h1{
 		margin-top:20px;
 		color:#ffffff;
-		font-family:arial;
 		font-size: 45px;;
 	}
 
@@ -359,7 +366,7 @@
 								</li>
 								<li class="menu-item " >
 									<a class="menu-link" href="{{url('/reglementation')}}" >
-										<div >REGLEMENTATION</div>
+										<div >RÉGLEMENTATION</div>
 									</a>
 								</li>
 							</ul>

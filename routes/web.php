@@ -24,7 +24,6 @@ Route::get('/', function () {
     return view('accueil');
 });
 
-
 Route::get('/presentation', function () {
     return view('front_end.presentation');
 });

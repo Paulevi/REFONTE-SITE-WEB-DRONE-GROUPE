@@ -98,29 +98,6 @@ document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(e
 
 // forma
 
-jQuery(window).on( 'load', function(){
-	var cssVarSpeed = getComputedStyle(document.querySelector('.swiper-pagination'));
-	var swiperSpeed = (cssVarSpeed.getPropertyValue('--cnvs-swiper-autoplay-speed')).split('ms');
-
-	var swiper = new Swiper('.swiper', {
-		slidesPerView: '1',
-		loop: true,
-		disableOnInteraction: false,
-		effect: "fade",
-		autoplay: {
-			delay: Number( swiperSpeed[0] ),
-			disableOnInteraction: false,
-		},
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: 'true',
-			type: 'bullets',
-			renderBullet: function (index, className) {
-				return '<span class="' + className + '">' + '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40"></svg>' + '</span>';
-			},
-		}
-	});
-});
 
 // When the user scrolls the page, execute myFunction
 	window.onscroll = function() {myFunction()};

@@ -104,6 +104,17 @@
 		margin-left:20px;
 		margin-right:20px;
 	}
+
+	.present > .presen{
+		background-color:#6A5ACD;
+		width: 100%; 
+		background: linear-gradient(to right, #6A5ACD 60%, #fff 100%);
+		margin-left: 10px;
+        color: yellow;
+		padding-left:35px;
+		font-size: 15px;
+		font-family:'jumper PERSONAL USE ONLY Light', sans-serif;
+	}
 	
 	.content1>h1{
 		margin-top:12%;
@@ -182,7 +193,7 @@
 	}
 }
 
-@media (min-width: 770px) and (max-width: 951px){
+@media (min-width: 770px) and (max-width: 950px){
 
 
 	#logo > a{
@@ -194,7 +205,7 @@
 	}
 
 	#content{
-		height:500px ;		
+		height:60vh ;		
 		margin-bottom:50px;
 	}
 
@@ -202,7 +213,7 @@
 		background-color:#000000;
 		padding: 50px;
 		width: 70%;
-		height: 500px ;				
+		height: 60vh ;				
 	}
 		
 	.content1>h1{
@@ -212,12 +223,12 @@
 	}
 
 	.content2 {
-		height: 500px ;		
+		height: 60vh ;		
 		width: 100%;
 	}
 
 	.content2>img{
-		height: 500px ;		
+		height: 60vh ;		
 		width: 100%;                                                               
 	}  
 
@@ -247,7 +258,7 @@
 
 }
 
-@media (min-width: 952px) and (max-width: 1400px){
+@media (min-width: 951px) and (max-width: 1400px){
 
 	#logo > a{
 		height:21px
@@ -261,11 +272,19 @@
 		font-size:11px;
 	}
 
+	.menu-item{
+		text-align: justify;
+	}
+
+	#content{
+		height:60vh
+	}
+
 	.content1{
 		background-color:#000000;
 		padding: 50px;
 		width: 70%;
-		height: 500px ;		
+		height: 60vh ;		
 	}
 		
 	.content1>h1{
@@ -275,12 +294,12 @@
 	}
 
 	.content2 {
-		height: 500px ;		
+		height: 60vh ;		
 		width: 100%;
 	}
 
 	.content2>img{
-		height: 500px ;		
+		height: 60vh ;		
 		width: 100%;                                                               
 	}  
 }
@@ -349,7 +368,7 @@
 								</li>
 								<li class="menu-item" >
 									<a class="menu-link" href="{{url('/reglementation')}}" >
-										<div >REGLEMENTATION</div>
+										<div >RÉGLEMENTATION</div>
 									</a>
 								</li>
 								<!-- <div class="morph-marker"></div> -->

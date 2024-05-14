@@ -195,6 +195,10 @@
 		font-size:11px;
 	}
 
+	.menu-container> .menu-item > .menu-link >div{
+		font-size:11px;
+	}
+
 	.sub-menu-container {
     	background-color:#000000;
   
@@ -205,29 +209,29 @@
 	}
 
 	#content{
-		height: 500px ;
+		height: 60vh ;
 	}
 
 	.content1{
 		background-color:#000000;
 		padding: 50px;
 		width: 70%;
-		height: 500px ;		
+		height: 60vh ;		
 	}
 
 	.content1>h1{
 		margin-top:10%;
 		color:#ffffff;
-		font-size:30px;
+		font-size:28px;
 	}
 
 	.content2 {
-		height: 500px ;
+		height: 60vh ;
 		width: 100%;
 	}
 
 	.content2>img{
-		height: 500px ;
+		height: 60vh ;
 		width: 100%;                                                               
 	}  
 
@@ -267,28 +271,32 @@
 	text-align:justify
 	}
 
+	#content{
+		height:60vh
+	}
+
 	.content1{
 		background-color:#000000;
 		padding: 30px;
 		padding-top:50px;
 		width: 80%;
-		height: 500px ;				
+		height: 60vh ;				
 	}
 
 	
 	.content1>h1{
 		margin-top:20px;
 		color:#ffffff;
-		font-size:38px;
+		font-size:35px;
 	}
 
 	.content2 {
-		height: 500px ;		
+		height: 60vh ;		
 		width: 100%;
 	}
 
 	.content2>img{
-		height: 500px ;		
+		height: 60vh ;		
 		width: 100%;                                                               
 	}  
 
@@ -358,7 +366,7 @@
 								</li>
 								<li class="menu-item current" >
 									<a class="menu-link" href="{{url('/reglementation')}}" >
-										<div >REGLEMENTATION</div>
+										<div >RÉGLEMENTATION</div>
 									</a>
 								</li>
 								<!-- <div class="morph-marker"></div> -->

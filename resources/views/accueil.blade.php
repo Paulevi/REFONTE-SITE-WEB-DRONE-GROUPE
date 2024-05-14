@@ -209,7 +209,6 @@
 	.swiper-slide>.content1>a:hover{
 		background-color:transparent;
 		color:#fff;
-		border: 4px solid #fff;
 	}
 
 	.swiper-slide>.content1>.slider-caption>h1{
@@ -338,9 +337,10 @@
 		color:#FFD966
 	}
 
-	.menu-item{
-		text-align: center;
+	.menu-container > .menu-item{
+		text-align:justify
 	}
+
 
 	#header > a{
 		height: 25vh;
@@ -369,17 +369,26 @@
 	}
 	
 	.col-md-4 > a > h1{
-		font-size:50px;
+		font-size:	60px;
 		text-align: center;
 
 	}
 	.sub-menu-container{
 		background-color:transparent;
 		width: 100%;
+		text-align: justify;
+
 	}
 	.swiper-wrapper>.swiper-slide {
 		height: 500px ;
 		width: 100%;
+	}
+
+	.swiper-slide>.content1>.slider-caption>h1{
+		text-align: center;
+		color:#fff;
+		font-size:40px;
+		margin-right: 10px;
 	}
 
 	.swiper-slide>.swiper-slide-bg{
@@ -461,7 +470,7 @@
 			
 	.swiper-slide>.content1>.slider-caption>h1{
 		color:#ffffff;
-		font-size:40px;
+		font-size:45px;
 	}
 
 	.swiper-wrapper>.swiper-slide {
@@ -470,7 +479,7 @@
 	}
 
 	.col-md-4 > a > h1{
-		font-size:55px;
+		font-size:50px;
 		text-align: center;
 
 	}
@@ -500,8 +509,6 @@
 	} 
 
 }
-
-
 
 </style>
 <body  class="stretched">
@@ -560,7 +567,7 @@
 								</li>
 								<li class="menu-item" >
 									<a class="menu-link" href="{{url('/reglementation')}}" >
-										<div >REGLEMENTATION</div>
+										<div >RÉGLEMENTATION</div>
 									</a>
 								</li>
 								<!-- <div class="morph-marker"></div> -->
@@ -572,7 +579,7 @@
 			</div>
 			<div class="header-wrap-clone"></div>
 		</header>
-		<section id="content" class="slider-element swiper_wrapper min-vh-60 " data-loop="true">
+		<section id="content" class=" content-wrap slider-element content-wrap py-0 swiper_wrapper min-vh-60 " data-loop="true">
 			<div class="slider-inner">
 				<div class="swiper swiper-parent">
 					<div class="swiper-wrapper">
@@ -592,7 +599,7 @@
 					</div>
 					<div class="slider-arrow-left"><i class="uil uil-angle-left-b"></i></div>
 					<div class="slider-arrow-right"><i class="uil uil-angle-right-b"></i></div>
-					<div class="slide-number"><div class="slide-number-current"></div><span style="font-family:'Arial', sans-serif">/</span><div class="slide-number-total"></div></div>
+					<div class="swiper-pagination"></div>
 				</div>
 			</div>
 		</section>
@@ -610,7 +617,7 @@
            			<div class="col-md-6 col-padding animate-on-scroll  box">
                 		<a href="{{url('/metier')}}" class="column2 feature-box fbox-center fbox-dark fbox-plain fbox-lg" style='background-image:url("images/M9_Plan de travail 1-01.jpg");-webkit-animation: 1s ease 0.5s normal both 1 running fadeInUp;animation: 1s ease 0.5s normal both 1 running fadeInUp;display:flex'>
                     		<div class="Title" style="height: 25%;">
-								<h1>NOS METIERS</h1>
+								<h1>NOS MÉTIERS</h1>
                    			</div>
 						</a>
            			</div>
@@ -650,4 +657,5 @@
 	</div>
 </body>
 </html>
+
 

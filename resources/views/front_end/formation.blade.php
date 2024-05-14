@@ -372,7 +372,7 @@
 		background-color:#483D8B;
 		padding: 50px;
 		width: 70%;
-		height: 500px ;				
+		height: 60vh ;				
 	}
 
 	
@@ -383,12 +383,12 @@
 	}
 
 	.content2 {
-		height: 500px ;		
+		height: 60vh ;		
 		width: 100%;
 	}
 
 	.content2>img{
-		height: 500px ;		
+		height: 60vh ;		
 		width: 100%;                                                               
 	}
 
@@ -523,7 +523,7 @@
 								</li>
 								<li class="menu-item " >
 									<a class="menu-link" href="{{url('/reglementation')}}" >
-										<div >REGLEMENTATION</div>
+										<div >RÉGLEMENTATION</div>
 									</a>
 								</li>
 								<!-- <div class="morph-marker"></div> -->

@@ -79,7 +79,6 @@
 		padding-right:20%;
 		padding-top:5px;
 		padding-bottom:5px;
-		font-weight: lighter;
 		font-family:'DIN Regular', sans-serif;
 	}
     .present > p{
@@ -186,24 +185,19 @@
 		margin-left: 10px;
         color: yellow;
 		font-size: 20px;
-		font-weight: lighter;
 		font-family:'DIN Regular', sans-serif;
 	}
 		
 	.present > .presen>h3>span{
-		background-color:red;
 		background: linear-gradient(to right, transparent 100%, #fff 100%);
-		margin-left: 10px;
         color: yellow;
-		padding-left:5px;
-		padding-right:62%;
-		font-weight: lighter;
 		font-family:'DIN Regular', sans-serif;
+		padding-left:0px
 	}
 
 }
 
-@media (min-width: 770px) and (max-width: 1100px){
+@media (min-width: 770px) and (max-width: 950px){
 
 
 	#logo > a{
@@ -269,30 +263,22 @@
 	.col-md-6{
 		margin-top: 10px;
 	}
-
-	.present > .presen>h3{
-		background-color:#6A5ACD;
-		margin-left: 10px;
-		color: yellow;
-		font-size: 20px;
-		font-weight: lighter;
-		font-family:'DIN Regular', sans-serif;
-	}
 			
 	.present > .presen>h3>span{
-		background-color:red;
-		background: linear-gradient(to right, transparent 100%, #fff 100%);
+		background-color:#6A5ACD;
+		background: linear-gradient(to right, #6A5ACD 60%, #fff 100%);
 		margin-left: 10px;
-		color: yellow;
-		padding-left:5px;
-		padding-right:62%;
-		font-weight: lighter;
+        color: yellow;
+		padding-left:35px;
+		padding-right:20%;
+		padding-top:5px;
+		padding-bottom:5px;
 		font-family:'DIN Regular', sans-serif;
 	}
 
 }
 
-@media (min-width: 1101px) and (max-width: 1400px){
+@media (min-width: 951px) and (max-width: 1400px){
 
 	#logo > a{
 	height:21px
@@ -396,7 +382,7 @@
 								</li>
 								<li class="menu-item " >
 									<a class="menu-link" href="{{url('/reglementation')}}" >
-										<div >REGLEMENTATION</div>
+										<div >RÉGLEMENTATION</div>
 									</a>
 								</li>
 

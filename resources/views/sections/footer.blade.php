@@ -23,6 +23,10 @@
 		overflow:hidden
 	}
 
+	.consulter> h5> span{
+		border-bottom:2px solid #FFD966
+	}
+
 	.but{
 		margin-top: 20px;
 		border-radius: 100px;
@@ -189,7 +193,7 @@
 						</div>
 						<div class="second-row">
 							<div  class="grid-item">
-								<p>SPÉCIFICATIONS RELATIVES A L'AUTORISATION D'EXPLOITATION</p>
+								<p>SPÉCIFICATIONS RELATIVES À L'AUTORISATION D'EXPLOITATION</p>
 								<p> D'AÉRONEF TÉLÉPILOTÉ:<strong>AEAT/DGP/2023-005/ANAC/DSV DU 20/04/2023</strong></p>
 							</div>
 							<div  class="grid-item">
@@ -212,7 +216,7 @@
 						<div class="row align-items-center justify-content-between col-mb-30">
 							<div class="col-12 col-lg-auto text-center text-lg-start">
 							<i class="fa-solid fa-phone"></i><a class="numb"  href="callto:+2552722543201"><strong> (+225) 27 22 54 32 01</strong></a> | <a class="numb" href="callto:+2550768124797"><strong> (+225)07 68 12 47 97 </strong></a>| <a class="numb"  href="callto:+2550152995353"><strong> (+225) 01 52 99 53 53</strong></a><br>
-							<i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/DRONEGROUPE+COTE+D'IVOIRE/@5.3548416,-3.8968656,17z/data=!3m1!4b1!4m6!3m5!1s0xfc1eb51ec3df261:0xd342b7bc5f6efd0b!8m2!3d5.3548416!4d-3.8942907!16s%2Fg%2F11gf9dwk8h?entry=ttu" style="color:#fff"  onmouseover="this.style.color='#FFD966'" onmouseout="this.style.color='#FFF';">	BINGERVILLE, Rue lycée Mamie Faitai H</a><br>
+							<i class="fa-solid fa-location-dot"></i><a href="https://www.google.com/maps/place/DRONEGROUPE+COTE+D'IVOIRE/@5.3548523,-3.8944248,19z/data=!4m6!3m5!1s0xfc1eb51ec3df261:0xd342b7bc5f6efd0b!8m2!3d5.3548416!4d-3.8942907!16s%2Fg%2F11gf9dwk8h?entry=ttu" style="color:#fff"  onmouseover="this.style.color='#FFD966'" onmouseout="this.style.color='#FFF';">	BINGERVILLE, Rue lycée Mamie Faitai H</a><br>
 							<i class="fa-solid fa-envelope"></i><a class="numb" href="mailto:info@dronegroupe.com"> info@dronegroupe.com</a><br>
 							</div>
 							<div class="col-12 col-lg-auto text-center text-lg-end">
